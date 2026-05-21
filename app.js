@@ -8,24 +8,11 @@ let errosSessao = 0;
 // Carrega o banco de dados JSON
 async function carregarPerguntas() {
     try {
-        const res = await fetch('perguntas.json');
-        perguntas = await res.json();
-        
-        const container = document.getElementById('categorias-container');
-        
-        // Extrai as categorias e as ordena em ordem alfabética
-        const cats = [...new Set(perguntas.map(p => p.categoria))].sort();
-        
-        container.innerHTML = ''; // Limpa o container
-        cats.forEach(cat => {
-            container.innerHTML += `
-                <label style="display: block; margin: 8px 0; font-size: 15px; cursor: pointer;">
-                    <input type="checkbox" class="cat-checkbox" value="${cat}" checked> ${cat}
-                </label>
-            `;
-        });
+        const response = await fetch('perguntas.json');
+        perguntas = await response.json();
+        preencherCategorias();
     } catch (error) {
-        console.error("Erro ao carregar perguntas:", error);
+        console.error("Erro ao carregar perguntas.", error);
     }
 }
 
