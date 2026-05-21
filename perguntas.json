@@ -548,7 +548,7 @@
   },
   {
     "id": "coll_001",
-    "categoria": "Inglês - Collocations",
+    "categoria": "Inglês",
     "tipo": "multipla",
     "pergunta": "Qual é a collocation correta para dizer que alguém vai se casar?",
     "opcoes": ["have married", "take married", "get married", "do married"],
@@ -557,7 +557,7 @@
   },
   {
     "id": "coll_002",
-    "categoria": "Inglês - Collocations",
+    "categoria": "Inglês",
     "tipo": "multipla",
     "pergunta": "Ao chegar em casa após o trabalho, qual verbo usamos?",
     "opcoes": ["get home", "have home", "take home", "do home"],
@@ -566,7 +566,7 @@
   },
   {
     "id": "coll_003",
-    "categoria": "Inglês - Collocations",
+    "categoria": "Inglês",
     "tipo": "multipla",
     "pergunta": "Qual destas opções usamos para refeições?",
     "opcoes": ["get lunch", "have lunch", "take lunch", "get dinner"],
@@ -575,7 +575,7 @@
   },
   {
     "id": "coll_004",
-    "categoria": "Inglês - Collocations",
+    "categoria": "Inglês",
     "tipo": "multipla",
     "pergunta": "Para tirar uma foto, qual verbo devemos utilizar?",
     "opcoes": ["have a photo", "take a photo", "get a photo", "make a photo"],
@@ -584,7 +584,7 @@
   },
   {
     "id": "coll_005",
-    "categoria": "Inglês - Collocations",
+    "categoria": "Inglês",
     "tipo": "multipla",
     "pergunta": "Se você precisa tomar uma decisão difícil, você deve ______.",
     "opcoes": ["have a decision", "take a decision", "get a decision", "make a decision"],
@@ -593,7 +593,7 @@
   },
   {
     "id": "coll_006",
-    "categoria": "Inglês - Collocations",
+    "categoria": "Inglês",
     "tipo": "multipla",
     "pergunta": "Como dizemos 'fazer uma anotação' durante uma aula?",
     "opcoes": ["get notes", "have notes", "take notes", "do notes"],
@@ -602,7 +602,7 @@
   },
   {
     "id": "coll_007",
-    "categoria": "Inglês - Collocations",
+    "categoria": "Inglês",
     "tipo": "multipla",
     "pergunta": "Qual verbo usamos para 'ficar cansado'?",
     "opcoes": ["get tired", "have tired", "take tired", "do tired"],
@@ -611,7 +611,7 @@
   },
   {
     "id": "coll_008",
-    "categoria": "Inglês - Collocations",
+    "categoria": "Inglês",
     "tipo": "multipla",
     "pergunta": "Como dizemos 'se divertir'?",
     "opcoes": ["get a good time", "have a good time", "take a good time", "do a good time"],
@@ -620,7 +620,7 @@
   },
   {
     "id": "coll_009",
-    "categoria": "Inglês - Collocations",
+    "categoria": "Inglês",
     "tipo": "multipla",
     "pergunta": "Qual verbo usamos com 'a shower'?",
     "opcoes": ["get a shower", "have a shower", "take a shower", "do a shower"],
@@ -629,7 +629,7 @@
   },
   {
     "id": "coll_010",
-    "categoria": "Inglês - Collocations",
+    "categoria": "Inglês",
     "tipo": "multipla",
     "pergunta": "Se você precisa consertar algo, você diz:",
     "opcoes": ["get something fixed", "have something fixed", "take something fixed", "do something fixed"],
@@ -638,7 +638,7 @@
   },
   {
     "id": "coll_011",
-    "categoria": "Inglês - Collocations",
+    "categoria": "Inglês",
     "tipo": "certo_errado",
     "pergunta": "Dizemos 'take a bus' para pegar um ônibus.",
     "opcoes": ["Certo", "Errado"],
@@ -647,7 +647,7 @@
   },
   {
     "id": "coll_012",
-    "categoria": "Inglês - Collocations",
+    "categoria": "Inglês",
     "tipo": "certo_errado",
     "pergunta": "Dizemos 'get an exam' para fazer um exame.",
     "opcoes": ["Certo", "Errado"],
@@ -656,7 +656,7 @@
   },
   {
     "id": "coll_013",
-    "categoria": "Inglês - Collocations",
+    "categoria": "Inglês",
     "tipo": "certo_errado",
     "pergunta": "Dizemos 'have a rest' para dizer que vai descansar.",
     "opcoes": ["Certo", "Errado"],
@@ -665,7 +665,7 @@
   },
   {
     "id": "coll_014",
-    "categoria": "Inglês - Collocations",
+    "categoria": "Inglês",
     "tipo": "certo_errado",
     "pergunta": "Dizemos 'get dressed' para dizer que está se vestindo.",
     "opcoes": ["Certo", "Errado"],
@@ -674,7 +674,7 @@
   },
   {
     "id": "coll_015",
-    "categoria": "Inglês - Collocations",
+    "categoria": "Inglês",
     "tipo": "certo_errado",
     "pergunta": "Dizemos 'have a problem' para dizer que tem um problema.",
     "opcoes": ["Certo", "Errado"],
@@ -683,7 +683,7 @@
   },
   {
     "id": "coll_016",
-    "categoria": "Inglês - Collocations",
+    "categoria": "Inglês",
     "tipo": "certo_errado",
     "pergunta": "Dizemos 'get a haircut' para dizer que vai cortar o cabelo.",
     "opcoes": ["Certo", "Errado"],
@@ -692,7 +692,7 @@
   },
   {
     "id": "coll_017",
-    "categoria": "Inglês - Collocations",
+    "categoria": "Inglês",
     "tipo": "certo_errado",
     "pergunta": "Dizemos 'take a walk' para fazer uma caminhada.",
     "opcoes": ["Certo", "Errado"],
@@ -701,7 +701,7 @@
   },
   {
     "id": "coll_018",
-    "categoria": "Inglês - Collocations",
+    "categoria": "Inglês",
     "tipo": "certo_errado",
     "pergunta": "Dizemos 'have an accident' para sofrer um acidente.",
     "opcoes": ["Certo", "Errado"],
@@ -710,7 +710,7 @@
   },
   {
     "id": "coll_019",
-    "categoria": "Inglês - Collocations",
+    "categoria": "Inglês",
     "tipo": "certo_errado",
     "pergunta": "Dizemos 'take a time' para pedir para alguém não ter pressa.",
     "opcoes": ["Certo", "Errado"],
@@ -719,7 +719,7 @@
   },
   {
     "id": "coll_020",
-    "categoria": "Inglês - Collocations",
+    "categoria": "Inglês",
     "tipo": "certo_errado",
     "pergunta": "Dizemos 'get lost' para dizer que alguém se perdeu.",
     "opcoes": ["Certo", "Errado"],
@@ -728,7 +728,7 @@
   },
   {
     "id": "flash_001",
-    "categoria": "Inglês - Flashcards",
+    "categoria": "Inglês",
     "tipo": "multipla",
     "pergunta": "Flashcard: Como dizemos 'ganhar um prêmio'?",
     "opcoes": ["get a prize", "have a prize", "take a prize", "do a prize"],
@@ -737,7 +737,7 @@
   },
   {
     "id": "flash_002",
-    "categoria": "Inglês - Flashcards",
+    "categoria": "Inglês",
     "tipo": "multipla",
     "pergunta": "Flashcard: Como dizemos 'tomar café da manhã'?",
     "opcoes": ["get breakfast", "have breakfast", "take breakfast", "eat breakfast"],
@@ -746,7 +746,7 @@
   },
   {
     "id": "flash_003",
-    "categoria": "Inglês - Flashcards",
+    "categoria": "Inglês",
     "tipo": "multipla",
     "pergunta": "Flashcard: Como dizemos 'pegar um táxi'?",
     "opcoes": ["get a taxi", "have a taxi", "take a taxi", "do a taxi"],
@@ -755,7 +755,7 @@
   },
   {
     "id": "flash_004",
-    "categoria": "Inglês - Flashcards",
+    "categoria": "Inglês",
     "tipo": "multipla",
     "pergunta": "Flashcard: Como dizemos 'ficar bravo'?",
     "opcoes": ["get angry", "have angry", "take angry", "do angry"],
@@ -764,7 +764,7 @@
   },
   {
     "id": "flash_005",
-    "categoria": "Inglês - Flashcards",
+    "categoria": "Inglês",
     "tipo": "multipla",
     "pergunta": "Flashcard: Como dizemos 'fazer uma pausa'?",
     "opcoes": ["get a break", "have a break", "take a break", "do a break"],
@@ -773,7 +773,7 @@
   },
   {
     "id": "flash_006",
-    "categoria": "Inglês - Flashcards",
+    "categoria": "Inglês",
     "tipo": "multipla",
     "pergunta": "Flashcard: Como dizemos 'conversar'?",
     "opcoes": ["get a chat", "have a chat", "take a chat", "do a chat"],
@@ -782,7 +782,7 @@
   },
   {
     "id": "flash_007",
-    "categoria": "Inglês - Flashcards",
+    "categoria": "Inglês",
     "tipo": "multipla",
     "pergunta": "Flashcard: Como dizemos 'fazer uma viagem'?",
     "opcoes": ["get a trip", "have a trip", "take a trip", "do a trip"],
@@ -791,7 +791,7 @@
   },
   {
     "id": "flash_008",
-    "categoria": "Inglês - Flashcards",
+    "categoria": "Inglês",
     "tipo": "multipla",
     "pergunta": "Flashcard: Como dizemos 'conseguir um emprego'?",
     "opcoes": ["get a job", "have a job", "take a job", "do a job"],
@@ -800,7 +800,7 @@
   },
   {
     "id": "flash_009",
-    "categoria": "Inglês - Flashcards",
+    "categoria": "Inglês",
     "tipo": "multipla",
     "pergunta": "Flashcard: Como dizemos 'ter uma ideia'?",
     "opcoes": ["get an idea", "have an idea", "take an idea", "do an idea"],
@@ -809,7 +809,7 @@
   },
   {
     "id": "flash_010",
-    "categoria": "Inglês - Flashcards",
+    "categoria": "Inglês",
     "tipo": "multipla",
     "pergunta": "Flashcard: Como dizemos 'dar uma olhada'?",
     "opcoes": ["get a look", "have a look", "take a look", "do a look"],
@@ -818,7 +818,7 @@
   },
   {
     "id": "flash_011",
-    "categoria": "Inglês - Flashcards",
+    "categoria": "Inglês",
     "tipo": "multipla",
     "pergunta": "Flashcard: Como dizemos 'ficar pronto'?",
     "opcoes": ["get ready", "have ready", "take ready", "do ready"],
@@ -827,7 +827,7 @@
   },
   {
     "id": "flash_012",
-    "categoria": "Inglês - Flashcards",
+    "categoria": "Inglês",
     "tipo": "multipla",
     "pergunta": "Flashcard: Como dizemos 'fazer um lanche'?",
     "opcoes": ["get a snack", "have a snack", "take a snack", "do a snack"],
@@ -836,7 +836,7 @@
   },
   {
     "id": "flash_013",
-    "categoria": "Inglês - Flashcards",
+    "categoria": "Inglês",
     "tipo": "multipla",
     "pergunta": "Flashcard: Como dizemos 'chegar ao aeroporto'?",
     "opcoes": ["get to the airport", "have to the airport", "take to the airport", "do to the airport"],
@@ -845,7 +845,7 @@
   },
   {
     "id": "flash_014",
-    "categoria": "Inglês - Flashcards",
+    "categoria": "Inglês",
     "tipo": "multipla",
     "pergunta": "Flashcard: Como dizemos 'ter um bebê'?",
     "opcoes": ["get a baby", "have a baby", "take a baby", "do a baby"],
@@ -854,7 +854,7 @@
   },
   {
     "id": "flash_015",
-    "categoria": "Inglês - Flashcards",
+    "categoria": "Inglês",
     "tipo": "multipla",
     "pergunta": "Flashcard: Como dizemos 'levar alguém para casa'?",
     "opcoes": ["get someone home", "have someone home", "take someone home", "do someone home"],
@@ -863,7 +863,7 @@
   },
   {
     "id": "flash_016",
-    "categoria": "Inglês - Flashcards",
+    "categoria": "Inglês",
     "tipo": "multipla",
     "pergunta": "Flashcard: Como dizemos 'receber um e-mail'?",
     "opcoes": ["get an email", "have an email", "take an email", "do an email"],
@@ -872,7 +872,7 @@
   },
   {
     "id": "flash_017",
-    "categoria": "Inglês - Flashcards",
+    "categoria": "Inglês",
     "tipo": "multipla",
     "pergunta": "Flashcard: Como dizemos 'nadar'?",
     "opcoes": ["get a swim", "have a swim", "take a swim", "do a swim"],
@@ -881,7 +881,7 @@
   },
   {
     "id": "flash_018",
-    "categoria": "Inglês - Flashcards",
+    "categoria": "Inglês",
     "tipo": "multipla",
     "pergunta": "Flashcard: Como dizemos 'não ter pressa'?",
     "opcoes": ["get your time", "have your time", "take your time", "do your time"],
@@ -890,7 +890,7 @@
   },
   {
     "id": "flash_019",
-    "categoria": "Inglês - Flashcards",
+    "categoria": "Inglês",
     "tipo": "multipla",
     "pergunta": "Flashcard: Como dizemos 'ter um sonho'?",
     "opcoes": ["get a dream", "have a dream", "take a dream", "do a dream"],
@@ -899,7 +899,7 @@
   },
   {
     "id": "flash_020",
-    "categoria": "Inglês - Flashcards",
+    "categoria": "Inglês",
     "tipo": "multipla",
     "pergunta": "Flashcard: Como dizemos 'receber uma carta'?",
     "opcoes": ["get a letter", "have a letter", "take a letter", "do a letter"],
