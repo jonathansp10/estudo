@@ -1,0 +1,550 @@
+[
+  {
+    "id": "sec_001",
+    "categoria": "Security+",
+    "tipo": "multipla",
+    "pergunta": "Qual é o principal objetivo de um ataque de Ransomware?",
+    "opcoes": [
+      "Interceptar tráfego de rede",
+      "Criptografar dados e exigir pagamento",
+      "Injetar scripts em um banco de dados",
+      "Derrubar um servidor com requisições em massa"
+    ],
+    "resposta_correta": "Criptografar dados e exigir pagamento",
+    "explicacao": "O ransomware é um tipo de malware que bloqueia o acesso aos arquivos do sistema (geralmente via criptografia) e exige um resgate (ransom) para liberar a chave de descriptografia."
+  },
+  {
+    "id": "redes_001",
+    "categoria": "Redes",
+    "tipo": "certo_errado",
+    "pergunta": "O protocolo HTTPS opera por padrão na porta 80.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Errado",
+    "explicacao": "O HTTPS opera na porta 443. A porta 80 é utilizada pelo tráfego HTTP não criptografado."
+  },
+
+  {
+    "id": "redes_002",
+    "categoria": "Redes",
+    "tipo": "multipla",
+    "pergunta": "Qual protocolo de roteamento é considerado um protocolo de 'Path Vector' e é o principal responsável pelo roteamento interdomínio na internet (entre diferentes ASNs)?",
+    "opcoes": [
+      "OSPF (Open Shortest Path First)",
+      "EIGRP (Enhanced Interior Gateway Routing Protocol)",
+      "BGP (Border Gateway Protocol)",
+      "RIPv2 (Routing Information Protocol)"
+    ],
+    "resposta_correta": "BGP (Border Gateway Protocol)",
+    "explicacao": "O BGP é o protocolo que faz a internet funcionar em larga escala, conectando diferentes provedores (Autonomous Systems). Ele é classificado como Path Vector. O OSPF é Link-State, enquanto o RIP é Distance Vector."
+  },
+  {
+    "id": "redes_003",
+    "categoria": "Redes",
+    "tipo": "multipla",
+    "pergunta": "Qual técnica de mitigação previne efetivamente ataques de VLAN Hopping do tipo 'Switch Spoofing'?",
+    "opcoes": [
+      "Habilitar o BPDU Guard e o PortFast em todas as portas de trunk.",
+      "Desabilitar o DTP (Dynamic Trunking Protocol) e configurar portas de usuários manualmente como acesso.",
+      "Filtrar endereços MAC em todas as portas de acesso utilizando Port Security.",
+      "Implementar criptografia IPsec no tráfego de gerenciamento da VLAN nativa."
+    ],
+    "resposta_correta": "Desabilitar o DTP (Dynamic Trunking Protocol) e configurar portas de usuários manualmente como acesso.",
+    "explicacao": "No 'Switch Spoofing', o atacante envia pacotes DTP fingindo ser um switch para forçar a porta a virar um Trunk e acessar outras VLANs. A solução é desabilitar a negociação automática (switchport nonegotiate) e forçar o modo de acesso (switchport mode access)."
+  },
+  {
+    "id": "redes_004",
+    "categoria": "Redes",
+    "tipo": "multipla",
+    "pergunta": "O padrão IEEE 802.1X é amplamente utilizado para controle de acesso à rede (NAC). Qual é o papel do switch ou do Access Point nesta arquitetura?",
+    "opcoes": [
+      "Supplicant (Solicitante)",
+      "Authenticator (Autenticador)",
+      "Authentication Server (Servidor de Autenticação)",
+      "RADIUS Proxy"
+    ],
+    "resposta_correta": "Authenticator (Autenticador)",
+    "explicacao": "No 802.1X, o dispositivo do usuário é o Supplicant. O servidor (como um RADIUS) é o Authentication Server. O switch ou AP atua como Authenticator, sendo o 'guarda de trânsito' que bloqueia a porta até que o servidor aprove a credencial do usuário."
+  },
+  {
+    "id": "redes_005",
+    "categoria": "Redes",
+    "tipo": "certo_errado",
+    "pergunta": "Durante o estabelecimento de uma conexão TCP (Three-way Handshake), o cliente inicia a comunicação enviando um pacote com as flags SYN e ACK ativadas simultaneamente.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Errado",
+    "explicacao": "O Three-way Handshake começa com o cliente enviando apenas a flag SYN. O servidor responde com as flags SYN e ACK juntas. Finalmente, o cliente conclui o aperto de mão enviando apenas a flag ACK."
+  },
+  {
+    "id": "redes_006",
+    "categoria": "Redes",
+    "tipo": "multipla",
+    "pergunta": "Um administrador de redes precisa dividir a rede 192.168.10.0/24 para criar 4 sub-redes utilizáveis, suportando o máximo de hosts possível em cada uma. Qual máscara de sub-rede deve ser aplicada?",
+    "opcoes": [
+      "255.255.255.128 (/25)",
+      "255.255.255.192 (/26)",
+      "255.255.255.224 (/27)",
+      "255.255.255.240 (/28)"
+    ],
+    "resposta_correta": "255.255.255.192 (/26)",
+    "explicacao": "Uma máscara /24 tem 8 bits para host. Para criar 4 sub-redes, precisamos emprestar 2 bits da porção de host (2^2 = 4). A máscara passa a ser /26. Isso deixa 6 bits para hosts (2^6 - 2 = 62 hosts por sub-rede). O valor do último octeto com os 2 bits ligados (11000000) é 192."
+  },
+  {
+    "id": "ing_001",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Qual é a forma correta da pergunta para a afirmação: 'He is a software engineer.'?",
+    "opcoes": [
+      "Does he is a software engineer?",
+      "Is he a software engineer?",
+      "Do he is a software engineer?",
+      "He is a software engineer?"
+    ],
+    "resposta_correta": "Is he a software engineer?",
+    "explicacao": "Regra 1 (Verbo To Be): Quando a frase já possui o verbo 'to be' (is/are/am), não usamos auxiliares como 'do' ou 'does'. Apenas invertemos a posição do verbo colocando-o no início da frase."
+  },
+  {
+    "id": "ing_002",
+    "categoria": "Inglês",
+    "tipo": "certo_errado",
+    "pergunta": "A pergunta 'Are they at the office today?' está gramaticalmente correta para saber se eles estão no escritório hoje.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Certo",
+    "explicacao": "Regra 1 (Verbo To Be): Para o sujeito 'They', o verbo correspondente é 'are'. Na pergunta, ele foi corretamente movido para o início da frase."
+  },
+  {
+    "id": "ing_003",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Como transformamos a frase 'You study English every day.' em uma pergunta?",
+    "opcoes": [
+      "Study you English every day?",
+      "Does you study English every day?",
+      "Do you study English every day?",
+      "Are you study English every day?"
+    ],
+    "resposta_correta": "Do you study English every day?",
+    "explicacao": "Regra 2 (Present Simple): Para verbos comuns (como 'study') no presente, usamos o auxiliar 'Do' para o sujeito 'You'."
+  },
+  {
+    "id": "ing_004",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Qual é a estrutura correta para perguntar se ele trabalha com segurança de redes?",
+    "opcoes": [
+      "Does he works in network security?",
+      "Do he works in network security?",
+      "Does he work in network security?",
+      "Is he work in network security?"
+    ],
+    "resposta_correta": "Does he work in network security?",
+    "explicacao": "Regra 2 (Present Simple): Usamos 'Does' para 'He'. Quando usamos o auxiliar 'Does', o verbo principal deve voltar para a sua forma base ('work'), perdendo o 's' da afirmação."
+  },
+  {
+    "id": "ing_005",
+    "categoria": "Inglês",
+    "tipo": "certo_errado",
+    "pergunta": "A pergunta 'Does they like the new system?' está correta.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Errado",
+    "explicacao": "Regra 2 (Present Simple): O auxiliar 'Does' é exclusivo para He, She e It. Para o sujeito 'They', o correto é utilizar 'Do' ('Do they like...')."
+  },
+  {
+    "id": "ing_006",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Transforme a frase do passado 'She configured the router yesterday.' em uma pergunta:",
+    "opcoes": [
+      "Did she configured the router yesterday?",
+      "Did she configure the router yesterday?",
+      "Does she configure the router yesterday?",
+      "Was she configure the router yesterday?"
+    ],
+    "resposta_correta": "Did she configure the router yesterday?",
+    "explicacao": "Regra 3 (Simple Past): No passado, usamos o auxiliar 'Did'. Assim que o 'Did' entra na frase, o verbo principal deve voltar para a forma base ('configure'), sem o sufixo 'ed'."
+  },
+  {
+    "id": "ing_007",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Qual é a pergunta correta para a afirmação no passado: 'They went to the server room.'?",
+    "opcoes": [
+      "Did they went to the server room?",
+      "Do they went to the server room?",
+      "Did they go to the server room?",
+      "Were they go to the server room?"
+    ],
+    "resposta_correta": "Did they go to the server room?",
+    "explicacao": "Regra 3 (Simple Past): Usamos o auxiliar 'Did'. O verbo 'went' (passado irregular de go) precisa obrigatoriamente retornar à sua forma base, que é 'go'."
+  },
+  {
+    "id": "ing_008",
+    "categoria": "Inglês",
+    "tipo": "certo_errado",
+    "pergunta": "A pergunta 'Did you see the alert on the dashboard?' está gramaticalmente correta.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Certo",
+    "explicacao": "Regra 3 (Simple Past): A estrutura está impecável. Auxiliar 'Did' + Sujeito 'you' + Verbo na forma base 'see'."
+  },
+  {
+    "id": "ing_009",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Se você quer saber ONDE alguém mora, qual 'Question Word' deve usar?",
+    "opcoes": ["What", "Where", "When", "Who"],
+    "resposta_correta": "Where",
+    "explicacao": "Regra 4 (Question Words): 'Where' significa 'Onde' e é usado para se referir a lugares ou posições físicas."
+  },
+  {
+    "id": "ing_010",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Complete a lacuna: '_______ did the server crash?' (Resposta esperada: 'Ontem à noite').",
+    "opcoes": ["Who", "Where", "When", "Which"],
+    "resposta_correta": "When",
+    "explicacao": "Regra 4 (Question Words): Como a resposta indica um momento no tempo ('Ontem à noite'), a pergunta deve começar com 'When' (Quando)."
+  },
+  {
+    "id": "ing_011",
+    "categoria": "Inglês",
+    "tipo": "certo_errado",
+    "pergunta": "A pergunta 'Why you are modifying the database firewall?' está estruturalmente correta.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Errado",
+    "explicacao": "Regra 4 (Question Words): Mesmo usando uma Question Word, a inversão com o verbo To Be ainda deve acontecer. O correto seria: 'Why ARE YOU modifying...'."
+  },
+  {
+    "id": "ing_012",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Qual das seguintes frases utiliza corretamente uma 'Question Word' combinada com o Simple Present?",
+    "opcoes": [
+      "What you do on weekends?",
+      "What do you do on weekends?",
+      "What are you do on weekends?",
+      "What does you do on weekends?"
+    ],
+    "resposta_correta": "What do you do on weekends?",
+    "explicacao": "Regra 4 + Regra 2: A estrutura exige: Question Word (What) + Verbo Auxiliar (do) + Sujeito (you) + Verbo Principal (do)."
+  },
+  {
+    "id": "ing_013",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Se você precisa dar uma opção de escolha limitada entre dois notebooks para o usuário, qual termo usa?",
+    "opcoes": [
+      "What laptop do you prefer?",
+      "Who laptop do you prefer?",
+      "Which laptop do you prefer?",
+      "How laptop do you prefer?"
+    ],
+    "resposta_correta": "Which laptop do you prefer?",
+    "explicacao": "Regra 4 (Question Words): Usamos 'Which' em vez de 'What' quando estamos apresentando uma escolha entre um número limitado de opções."
+  },
+  {
+    "id": "ing_014",
+    "categoria": "Inglês",
+    "tipo": "certo_errado",
+    "pergunta": "A pergunta 'How is your new team working?' significa 'Como sua nova equipe está trabalhando?'.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Certo",
+    "explicacao": "Regra 4 (Question Words): 'How' significa 'Como' e é usado aqui para investigar a maneira ou o estado em que a equipe trabalha."
+  },
+  {
+    "id": "ing_015",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Como perguntamos 'Por que você alterou a senha?' em inglês usando o passado simples?",
+    "opcoes": [
+      "Why did you changed the password?",
+      "Why do you change the password?",
+      "Why did you change the password?",
+      "Why you changed the password?"
+    ],
+    "resposta_correta": "Why did you change the password?",
+    "explicacao": "Mistura de Regras: Question Word (Why) + Auxiliar do Passado (Did) + Sujeito (you) + Verbo na forma base (change)."
+  },
+  {
+    "id": "ing_016",
+    "categoria": "Inglês",
+    "tipo": "certo_errado",
+    "pergunta": "A pergunta 'Is it your backup drive?' serve para saber se aquele objeto é o seu drive de backup.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Certo",
+    "explicacao": "Regra 1 (Verbo To Be): Frase afirmativa: 'It is your backup drive.' Na pergunta, o 'Is' vai corretamente para o início da sentença."
+  },
+  {
+    "id": "ing_017",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Qual das alternativas apresenta um erro comum ao formular perguntas com 'does'?",
+    "opcoes": [
+      "Does she have access to the logs?",
+      "Does she has access to the logs?",
+      "Does he need a new token?",
+      "Does it work properly?"
+    ],
+    "resposta_correta": "Does she has access to the logs?",
+    "explicacao": "Regra 2: O verbo 'have' é a forma base. O uso de 'has' só ocorre em afirmações. Como o 'Does' já está na frase, o correto é 'Does she HAVE...'"
+  },
+  {
+    "id": "ing_018",
+    "categoria": "Inglês",
+    "tipo": "certo_errado",
+    "pergunta": "Para criar a pergunta da frase passada 'You backuped the database.', o correto é escrever 'Did you backuped the database?'.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Errado",
+    "explicacao": "Regra 3: Erro clássico. O correto é 'Did you backup the database?'. O verbo não pode ficar no passado com o sufixo '-ed' se o auxiliar 'Did' já foi utilizado."
+  },
+  {
+    "id": "ing_019",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Complete a frase para mapear quem realizou uma ação: '_______ approved this security policy?'",
+    "opcoes": ["What", "Where", "Who", "Why"],
+    "resposta_correta": "Who",
+    "explicacao": "Regra 4 (Question Words): Usamos 'Who' (Quem) quando queremos descobrir a identidade da pessoa ou sujeito que executou o verbo."
+  },
+  {
+    "id": "ing_020",
+    "categoria": "Inglês",
+    "tipo": "certo_errado",
+    "pergunta": "A pergunta 'Where do you store the encryption keys?' está perfeitamente estruturada para o Present Simple.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Certo",
+    "explicacao": "Análise Final: A estrutura segue à risca o padrão: Question Word (Where) + Auxiliar (do) + Sujeito (you) + Verbo Base (store) + Complemento."
+  },
+  {
+    "id": "ing_021",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Você está segurando um pendrive na mão e quer dizer 'Este pendrive contém o backup'. Qual opção está correta?",
+    "opcoes": [
+      "That flash drive contains the backup.",
+      "This flash drive contains the backup.",
+      "Those flash drive contains the backup.",
+      "These flash drive contains the backup."
+    ],
+    "resposta_correta": "This flash drive contains the backup.",
+    "explicacao": "Como o objeto está na sua mão (perto) e está no singular (um pendrive), o pronome correto a ser usado é 'This'."
+  },
+  {
+    "id": "ing_022",
+    "categoria": "Inglês",
+    "tipo": "certo_errado",
+    "pergunta": "A frase 'These computers here are configured' está correta para se referir a computadores que estão próximos de quem fala.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Certo",
+    "explicacao": "Computadores estão no plural e a palavra 'here' (aqui) reforça a proximidade. Portanto, o uso de 'These' (estes/esses) está perfeito."
+  },
+  {
+    "id": "ing_023",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Você está apontando para um servidor do outro lado da sala (longe) e quer dizer 'Aquele servidor está offline'. Qual é a alternativa correta?",
+    "opcoes": [
+      "This server is offline.",
+      "These server is offline.",
+      "That server is offline.",
+      "Those server is offline."
+    ],
+    "resposta_correta": "That server is offline.",
+    "explicacao": "Para se referir a um único objeto (singular) que está distante (longe) de quem fala, usamos o pronome 'That' (aquele/aquela/aquilo)."
+  },
+  {
+    "id": "ing_024",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Olhando para algumas telas de monitor fixadas na parede distante da sala de monitoramento (longe/plural), como você diria 'Aquelas telas mostram os alertas'?",
+    "opcoes": [
+      "These screens show the alerts.",
+      "Those screens show the alerts.",
+      "That screens show the alerts.",
+      "This screens show the alerts."
+    ],
+    "resposta_correta": "Those screens show the alerts.",
+    "explicacao": "Como as telas estão distantes (longe) e no plural, o pronome demonstrativo correto é 'Those' (aqueles/aquelas)."
+  },
+  {
+    "id": "ing_025",
+    "categoria": "Inglês",
+    "tipo": "certo_errado",
+    "pergunta": "A frase 'This shoes are too tight' está gramaticalmente correta.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Errado",
+    "explicacao": "'Shoes' (sapatos) é uma palavra no plural. O pronome 'This' só pode ser usado com palavras no singular. O correto seria 'These shoes'."
+  },
+  {
+    "id": "ing_026",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Qual das alternativas abaixo preenche corretamente a lacuna: 'Look at _______ birds flying way up in the sky!'?",
+    "opcoes": ["this", "these", "that", "those"],
+    "resposta_correta": "those",
+    "explicacao": "A expressão 'way up in the sky' indica que os pássaros estão muito altos no céu (longe). Como 'birds' está no plural, a única combinação possível é 'those'."
+  },
+  {
+    "id": "ing_027",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Você quer apresentar um colega que está logo ao seu lado para outra pessoa. Qual é a estrutura correta em inglês?",
+    "opcoes": [
+      "That is Marcus.",
+      "Those is Marcus.",
+      "This is Marcus.",
+      "These is Marcus."
+    ],
+    "resposta_correta": "This is Marcus.",
+    "explicacao": "Em inglês, usamos a estrutura 'This is + nome' para introduzir ou apresentar pessoas que estão fisicamente próximas de nós."
+  },
+  {
+    "id": "ing_028",
+    "categoria": "Inglês",
+    "tipo": "certo_errado",
+    "pergunta": "Se você diz 'That car over there is beautiful', a expressão 'over there' justifica o uso do pronome 'That'.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Certo",
+    "explicacao": "'Over there' significa 'ali' ou 'lá adiante', o que indica que o carro está longe do falante. Como 'car' está no singular, o uso de 'That' está correto."
+  },
+  {
+    "id": "ing_029",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Imagine que você está organizando vários cabos de rede em cima da sua mesa de trabalho (perto/plural). Como você diz 'Estes cabos precisam ser identificados'?",
+    "opcoes": [
+      "This cables need to be labeled.",
+      "These cables need to be labeled.",
+      "That cables need to be labeled.",
+      "Those cables need to be labeled."
+    ],
+    "resposta_correta": "These cables need to be labeled.",
+    "explicacao": "Os cabos estão perto de você e são múltiplos objetos (plural). A regra dita o uso de 'These' para perto + plural."
+  },
+  {
+    "id": "ing_030",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Complete o diálogo: \nA: Is _______ your notebook on that empty desk over there? \nB: Yes, it is! Thanks!",
+    "opcoes": ["this", "these", "that", "those"],
+    "resposta_correta": "that",
+    "explicacao": "A pista está na expressão 'on that empty desk over there' (naquela mesa vazia lá adiante). Se a mesa está longe, o notebook em cima dela também está. Como é apenas um notebook, usamos 'that'."
+  },
+  {
+    "id": "ing_031",
+    "categoria": "Inglês",
+    "tipo": "certo_errado",
+    "pergunta": "A frase 'Those file you are reading is confidential' está correta.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Errado",
+    "explicacao": "Há um conflito de número: 'Those' é para o plural, mas 'file' (arquivo/documento) está no singular. Além disso, se a pessoa está lendo, o arquivo está perto dela, então o correto seria 'This file'."
+  },
+  {
+    "id": "ing_032",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Uma boa regra prática para memorizar a diferença de distância é lembrar que:",
+    "opcoes": [
+      "That é o que você pode pegar; This é o que você precisa apontar.",
+      "This é o que você pode pegar; That é o que você precisa apontar.",
+      "These é o que está longe; Those é o que está perto.",
+      "This e That servem apenas para o plural."
+    ],
+    "resposta_correta": "This é o que você pode pegar; That é o que você precisa apontar.",
+    "explicacao": "Exatamente. Se o objeto está ao alcance da sua mão a ponto de você pegá-lo, usamos 'This'. Se está fora do seu alcance e você precisa apontar o dedo para mostrar, usamos 'That'."
+  },
+  {
+    "id": "ing_033",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Alguém te entrega duas chaves na sua mão (perto/plural). Como você pergunta 'De quem são estas chaves?'",
+    "opcoes": [
+      "Whose keys are this?",
+      "Whose keys are that?",
+      "Whose keys are these?",
+      "Whose keys are those?"
+    ],
+    "resposta_correta": "Whose keys are these?",
+    "explicacao": "Como as chaves estão na sua mão (perto) e a palavra 'keys' está no plural, a forma correta do pronome demonstrativo para o final da pergunta é 'these'."
+  },
+  {
+    "id": "ing_034",
+    "categoria": "Inglês",
+    "tipo": "certo_errado",
+    "pergunta": "Na frase 'Look at that beautiful house on top of the hill', o uso de 'that' está correto.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Certo",
+    "explicacao": "A casa fica no topo da colina ('on top of the hill'), logo, está visivelmente distante (longe) de quem está falando. Como se trata de uma única casa (singular), o uso de 'that' está correto."
+  },
+  {
+    "id": "ing_035",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Qual das opções apresenta a concordância perfeita para se referir a canetas que estão dentro do seu bolso (perto/plural)?",
+    "opcoes": [
+      "This pens are blue.",
+      "That pens are blue.",
+      "These pens are blue.",
+      "Those pens are blue."
+    ],
+    "resposta_correta": "These pens are blue.",
+    "explicacao": "Canetas no seu bolso estão coladas ao seu corpo (perto). Como 'pens' está no plural, usamos o correspondente 'These'."
+  },
+  {
+    "id": "ing_036",
+    "categoria": "Inglês",
+    "tipo": "certo_errado",
+    "pergunta": "A pergunta 'Are those clouds beautiful?' está errada se as nuvens estiverem longe no céu.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Errado",
+    "explicacao": "A pergunta está correta! As nuvens estão longe (no céu) e no plural ('clouds'), logo, o uso de 'those' (aquelas) cumpre perfeitamente a regra gramatical."
+  },
+  {
+    "id": "ing_037",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Você quer dizer que a xícara de café que você está bebendo agora está muito quente. Como fica a frase?",
+    "opcoes": [
+      "That coffee is very hot.",
+      "Those coffee is very hot.",
+      "This coffee is very hot.",
+      "These coffee is very hot."
+    ],
+    "resposta_correta": "This coffee is very hot.",
+    "explicacao": "Se você está bebendo o café, ele está na sua mão (perto). Sendo um substantivo incontável tratado no singular, usamos 'This'."
+  },
+  {
+    "id": "ing_038",
+    "categoria": "Inglês",
+    "tipo": "certo_errado",
+    "pergunta": "Se um técnico aponta para dois roteadores queimados empilhados em uma prateleira alta e distante (longe/plural) e diz 'These routers need replacement', ele cometeu um erro gramatical.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Certo",
+    "explicacao": "Cometeu um erro sim. Como os roteadores estão longe e no plural, ele deveria ter dito 'Those routers' (aqueles roteadores) e não 'These' (estes)."
+  },
+  {
+    "id": "ing_039",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Complete a lacuna escolhendo a opção com a concordância verbal e pronominal correta: '_______ book I am reading is fantastic.'",
+    "opcoes": [
+      "These",
+      "Those",
+      "That",
+      "This"
+    ],
+    "resposta_correta": "This",
+    "explicacao": "A expressão 'I am reading' (que estou lendo) deixa claro que o livro está nas mãos da pessoa (perto). O substantivo 'book' está no singular. O único par correto para perto + singular é 'This'."
+  },
+  {
+    "id": "ing_040",
+    "categoria": "Inglês",
+    "tipo": "certo_errado",
+    "pergunta": "A palavra 'Those' é o plural de 'That', servindo para indicar múltiplos elementos que se encontram distantes de quem fala.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Certo",
+    "explicacao": "Definição exata. Enquanto 'That' aponta para um elemento distante (Ex: aquela máquina), 'Those' aponta para múltiplos elementos distantes (Ex: aquelas máquinas)."
+  }
+
+]
