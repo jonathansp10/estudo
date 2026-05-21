@@ -547,4 +547,364 @@
     "explicacao": "Definição exata. Enquanto 'That' aponta para um elemento distante (Ex: aquela máquina), 'Those' aponta para múltiplos elementos distantes (Ex: aquelas máquinas)."
   }
 
+  {
+    "id": "coll_001",
+    "categoria": "Inglês - Collocations",
+    "tipo": "multipla",
+    "pergunta": "Qual é a collocation correta para dizer que alguém vai se casar?",
+    "opcoes": ["have married", "take married", "get married", "do married"],
+    "resposta_correta": "get married",
+    "explicacao": "A collocation correta para mudança de estado civil é 'get married'."
+  },
+  {
+    "id": "coll_002",
+    "categoria": "Inglês - Collocations",
+    "tipo": "multipla",
+    "pergunta": "Ao chegar em casa após o trabalho, qual verbo usamos?",
+    "opcoes": ["get home", "have home", "take home", "do home"],
+    "resposta_correta": "get home",
+    "explicacao": "'Get home' é a expressão padrão para chegar em casa."
+  },
+  {
+    "id": "coll_003",
+    "categoria": "Inglês - Collocations",
+    "tipo": "multipla",
+    "pergunta": "Qual destas opções usamos para refeições?",
+    "opcoes": ["get lunch", "have lunch", "take lunch", "get dinner"],
+    "resposta_correta": "have lunch",
+    "explicacao": "Usamos o verbo 'have' para todas as refeições (breakfast, lunch, dinner)."
+  },
+  {
+    "id": "coll_004",
+    "categoria": "Inglês - Collocations",
+    "tipo": "multipla",
+    "pergunta": "Para tirar uma foto, qual verbo devemos utilizar?",
+    "opcoes": ["have a photo", "take a photo", "get a photo", "make a photo"],
+    "resposta_correta": "take a photo",
+    "explicacao": "A expressão correta é 'take a photo' ou 'take a picture'."
+  },
+  {
+    "id": "coll_005",
+    "categoria": "Inglês - Collocations",
+    "tipo": "multipla",
+    "pergunta": "Se você precisa tomar uma decisão difícil, você deve ______.",
+    "opcoes": ["have a decision", "take a decision", "get a decision", "make a decision"],
+    "resposta_correta": "take a decision",
+    "explicacao": "Embora 'make a decision' seja muito comum, o texto fornecido lista 'take a decision' como a collocation correta."
+  },
+  {
+    "id": "coll_006",
+    "categoria": "Inglês - Collocations",
+    "tipo": "multipla",
+    "pergunta": "Como dizemos 'fazer uma anotação' durante uma aula?",
+    "opcoes": ["get notes", "have notes", "take notes", "do notes"],
+    "resposta_correta": "take notes",
+    "explicacao": "A expressão correta para anotar é 'take notes'."
+  },
+  {
+    "id": "coll_007",
+    "categoria": "Inglês - Collocations",
+    "tipo": "multipla",
+    "pergunta": "Qual verbo usamos para 'ficar cansado'?",
+    "opcoes": ["get tired", "have tired", "take tired", "do tired"],
+    "resposta_correta": "get tired",
+    "explicacao": "'Get' indica mudança de estado, por isso 'get tired' é correto."
+  },
+  {
+    "id": "coll_008",
+    "categoria": "Inglês - Collocations",
+    "tipo": "multipla",
+    "pergunta": "Como dizemos 'se divertir'?",
+    "opcoes": ["get a good time", "have a good time", "take a good time", "do a good time"],
+    "resposta_correta": "have a good time",
+    "explicacao": "A expressão para se divertir é 'have a good time'."
+  },
+  {
+    "id": "coll_009",
+    "categoria": "Inglês - Collocations",
+    "tipo": "multipla",
+    "pergunta": "Qual verbo usamos com 'a shower'?",
+    "opcoes": ["get a shower", "have a shower", "take a shower", "do a shower"],
+    "resposta_correta": "have a shower",
+    "explicacao": "Em inglês britânico e comum, usamos 'have a shower' (também aceito 'take a shower' em alguns contextos, mas 'have' é a regra do texto)."
+  },
+  {
+    "id": "coll_010",
+    "categoria": "Inglês - Collocations",
+    "tipo": "multipla",
+    "pergunta": "Se você precisa consertar algo, você diz:",
+    "opcoes": ["get something fixed", "have something fixed", "take something fixed", "do something fixed"],
+    "resposta_correta": "get something fixed",
+    "explicacao": "'Get' + particípio é usado para indicar que algo foi feito/consertado."
+  },
+  {
+    "id": "coll_011",
+    "categoria": "Inglês - Collocations",
+    "tipo": "certo_errado",
+    "pergunta": "Dizemos 'take a bus' para pegar um ônibus.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Certo",
+    "explicacao": "Correto, 'take' é usado para meios de transporte."
+  },
+  {
+    "id": "coll_012",
+    "categoria": "Inglês - Collocations",
+    "tipo": "certo_errado",
+    "pergunta": "Dizemos 'get an exam' para fazer um exame.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Errado",
+    "explicacao": "O correto é 'take an exam'."
+  },
+  {
+    "id": "coll_013",
+    "categoria": "Inglês - Collocations",
+    "tipo": "certo_errado",
+    "pergunta": "Dizemos 'have a rest' para dizer que vai descansar.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Certo",
+    "explicacao": "Correto, 'have a rest' é a forma padrão."
+  },
+  {
+    "id": "coll_014",
+    "categoria": "Inglês - Collocations",
+    "tipo": "certo_errado",
+    "pergunta": "Dizemos 'get dressed' para dizer que está se vestindo.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Certo",
+    "explicacao": "Correto, 'get dressed' indica o ato de vestir-se."
+  },
+  {
+    "id": "coll_015",
+    "categoria": "Inglês - Collocations",
+    "tipo": "certo_errado",
+    "pergunta": "Dizemos 'have a problem' para dizer que tem um problema.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Certo",
+    "explicacao": "Correto, 'have a problem' indica posse ou experiência de uma situação."
+  },
+  {
+    "id": "coll_016",
+    "categoria": "Inglês - Collocations",
+    "tipo": "certo_errado",
+    "pergunta": "Dizemos 'get a haircut' para dizer que vai cortar o cabelo.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Certo",
+    "explicacao": "Correto, indica o serviço feito no seu cabelo."
+  },
+  {
+    "id": "coll_017",
+    "categoria": "Inglês - Collocations",
+    "tipo": "certo_errado",
+    "pergunta": "Dizemos 'take a walk' para fazer uma caminhada.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Certo",
+    "explicacao": "Correto, 'take a walk' é a collocation correta."
+  },
+  {
+    "id": "coll_018",
+    "categoria": "Inglês - Collocations",
+    "tipo": "certo_errado",
+    "pergunta": "Dizemos 'have an accident' para sofrer um acidente.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Certo",
+    "explicacao": "Correto, 'have' é usado para expressar experiências negativas como essa."
+  },
+  {
+    "id": "coll_019",
+    "categoria": "Inglês - Collocations",
+    "tipo": "certo_errado",
+    "pergunta": "Dizemos 'take a time' para pedir para alguém não ter pressa.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Errado",
+    "explicacao": "O correto é 'take your time'."
+  },
+  {
+    "id": "coll_020",
+    "categoria": "Inglês - Collocations",
+    "tipo": "certo_errado",
+    "pergunta": "Dizemos 'get lost' para dizer que alguém se perdeu.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Certo",
+    "explicacao": "Correto, 'get lost' indica a mudança de estado para estar perdido."
+  },
+  {
+    "id": "flash_001",
+    "categoria": "Inglês - Flashcards",
+    "tipo": "multipla",
+    "pergunta": "Flashcard: Como dizemos 'ganhar um prêmio'?",
+    "opcoes": ["get a prize", "have a prize", "take a prize", "do a prize"],
+    "resposta_correta": "get a prize",
+    "explicacao": "Get a prize."
+  },
+  {
+    "id": "flash_002",
+    "categoria": "Inglês - Flashcards",
+    "tipo": "multipla",
+    "pergunta": "Flashcard: Como dizemos 'tomar café da manhã'?",
+    "opcoes": ["get breakfast", "have breakfast", "take breakfast", "eat breakfast"],
+    "resposta_correta": "have breakfast",
+    "explicacao": "Have breakfast."
+  },
+  {
+    "id": "flash_003",
+    "categoria": "Inglês - Flashcards",
+    "tipo": "multipla",
+    "pergunta": "Flashcard: Como dizemos 'pegar um táxi'?",
+    "opcoes": ["get a taxi", "have a taxi", "take a taxi", "do a taxi"],
+    "resposta_correta": "take a taxi",
+    "explicacao": "Take a taxi."
+  },
+  {
+    "id": "flash_004",
+    "categoria": "Inglês - Flashcards",
+    "tipo": "multipla",
+    "pergunta": "Flashcard: Como dizemos 'ficar bravo'?",
+    "opcoes": ["get angry", "have angry", "take angry", "do angry"],
+    "resposta_correta": "get angry",
+    "explicacao": "Get angry."
+  },
+  {
+    "id": "flash_005",
+    "categoria": "Inglês - Flashcards",
+    "tipo": "multipla",
+    "pergunta": "Flashcard: Como dizemos 'fazer uma pausa'?",
+    "opcoes": ["get a break", "have a break", "take a break", "do a break"],
+    "resposta_correta": "take a break",
+    "explicacao": "Take a break."
+  },
+  {
+    "id": "flash_006",
+    "categoria": "Inglês - Flashcards",
+    "tipo": "multipla",
+    "pergunta": "Flashcard: Como dizemos 'conversar'?",
+    "opcoes": ["get a chat", "have a chat", "take a chat", "do a chat"],
+    "resposta_correta": "have a chat",
+    "explicacao": "Have a chat."
+  },
+  {
+    "id": "flash_007",
+    "categoria": "Inglês - Flashcards",
+    "tipo": "multipla",
+    "pergunta": "Flashcard: Como dizemos 'fazer uma viagem'?",
+    "opcoes": ["get a trip", "have a trip", "take a trip", "do a trip"],
+    "resposta_correta": "take a trip",
+    "explicacao": "Take a trip."
+  },
+  {
+    "id": "flash_008",
+    "categoria": "Inglês - Flashcards",
+    "tipo": "multipla",
+    "pergunta": "Flashcard: Como dizemos 'conseguir um emprego'?",
+    "opcoes": ["get a job", "have a job", "take a job", "do a job"],
+    "resposta_correta": "get a job",
+    "explicacao": "Get a job."
+  },
+  {
+    "id": "flash_009",
+    "categoria": "Inglês - Flashcards",
+    "tipo": "multipla",
+    "pergunta": "Flashcard: Como dizemos 'ter uma ideia'?",
+    "opcoes": ["get an idea", "have an idea", "take an idea", "do an idea"],
+    "resposta_correta": "have an idea",
+    "explicacao": "Have an idea."
+  },
+  {
+    "id": "flash_010",
+    "categoria": "Inglês - Flashcards",
+    "tipo": "multipla",
+    "pergunta": "Flashcard: Como dizemos 'dar uma olhada'?",
+    "opcoes": ["get a look", "have a look", "take a look", "do a look"],
+    "resposta_correta": "take a look",
+    "explicacao": "Take a look."
+  },
+  {
+    "id": "flash_011",
+    "categoria": "Inglês - Flashcards",
+    "tipo": "multipla",
+    "pergunta": "Flashcard: Como dizemos 'ficar pronto'?",
+    "opcoes": ["get ready", "have ready", "take ready", "do ready"],
+    "resposta_correta": "get ready",
+    "explicacao": "Get ready."
+  },
+  {
+    "id": "flash_012",
+    "categoria": "Inglês - Flashcards",
+    "tipo": "multipla",
+    "pergunta": "Flashcard: Como dizemos 'fazer um lanche'?",
+    "opcoes": ["get a snack", "have a snack", "take a snack", "do a snack"],
+    "resposta_correta": "have a snack",
+    "explicacao": "Have a snack."
+  },
+  {
+    "id": "flash_013",
+    "categoria": "Inglês - Flashcards",
+    "tipo": "multipla",
+    "pergunta": "Flashcard: Como dizemos 'chegar ao aeroporto'?",
+    "opcoes": ["get to the airport", "have to the airport", "take to the airport", "do to the airport"],
+    "resposta_correta": "get to the airport",
+    "explicacao": "Get to the airport."
+  },
+  {
+    "id": "flash_014",
+    "categoria": "Inglês - Flashcards",
+    "tipo": "multipla",
+    "pergunta": "Flashcard: Como dizemos 'ter um bebê'?",
+    "opcoes": ["get a baby", "have a baby", "take a baby", "do a baby"],
+    "resposta_correta": "have a baby",
+    "explicacao": "Have a baby."
+  },
+  {
+    "id": "flash_015",
+    "categoria": "Inglês - Flashcards",
+    "tipo": "multipla",
+    "pergunta": "Flashcard: Como dizemos 'levar alguém para casa'?",
+    "opcoes": ["get someone home", "have someone home", "take someone home", "do someone home"],
+    "resposta_correta": "take someone home",
+    "explicacao": "Take someone home."
+  },
+  {
+    "id": "flash_016",
+    "categoria": "Inglês - Flashcards",
+    "tipo": "multipla",
+    "pergunta": "Flashcard: Como dizemos 'receber um e-mail'?",
+    "opcoes": ["get an email", "have an email", "take an email", "do an email"],
+    "resposta_correta": "get an email",
+    "explicacao": "Get an email."
+  },
+  {
+    "id": "flash_017",
+    "categoria": "Inglês - Flashcards",
+    "tipo": "multipla",
+    "pergunta": "Flashcard: Como dizemos 'nadar'?",
+    "opcoes": ["get a swim", "have a swim", "take a swim", "do a swim"],
+    "resposta_correta": "have a swim",
+    "explicacao": "Have a swim."
+  },
+  {
+    "id": "flash_018",
+    "categoria": "Inglês - Flashcards",
+    "tipo": "multipla",
+    "pergunta": "Flashcard: Como dizemos 'não ter pressa'?",
+    "opcoes": ["get your time", "have your time", "take your time", "do your time"],
+    "resposta_correta": "take your time",
+    "explicacao": "Take your time."
+  },
+  {
+    "id": "flash_019",
+    "categoria": "Inglês - Flashcards",
+    "tipo": "multipla",
+    "pergunta": "Flashcard: Como dizemos 'ter um sonho'?",
+    "opcoes": ["get a dream", "have a dream", "take a dream", "do a dream"],
+    "resposta_correta": "have a dream",
+    "explicacao": "Have a dream."
+  },
+  {
+    "id": "flash_020",
+    "categoria": "Inglês - Flashcards",
+    "tipo": "multipla",
+    "pergunta": "Flashcard: Como dizemos 'receber uma carta'?",
+    "opcoes": ["get a letter", "have a letter", "take a letter", "do a letter"],
+    "resposta_correta": "get a letter",
+    "explicacao": "Get a letter."
+  }
 ]
