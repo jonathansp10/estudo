@@ -1,189 +1,178 @@
 let perguntas = [];
 let perguntasFiltradas = [];
 let perguntaAtualIndex = 0;
-// NOVAS VARIÁVEIS:
 let acertosSessao = 0;
 let errosSessao = 0;
 
-// Carrega o banco de dados JSON
 async function carregarPerguntas() {
     try {
-        const response = await fetch('perguntas.json');
-        perguntas = await response.json();
-        preencherCategorias();
+        const res = await fetch('perguntas.json');
+        perguntas = await res.json();
+        
+        const container = document.getElementById('categorias-container');
+        const cats = [...new Set(perguntas.map(p => p.categoria))].sort();
+        
+        container.innerHTML = ''; 
+        cats.forEach(cat => {
+            container.innerHTML += `
+                <div class="cat-row">
+                    <label>
+                        <input type="checkbox" class="cat-checkbox" value="${cat}" checked> 
+                        &nbsp; ${cat}
+                    </label>
+                    <input type="number" class="cat-qtd" value="5" min="1" max="50" title="Quantidade para ${cat}">
+                </div>
+            `;
+        });
     } catch (error) {
-        console.error("Erro ao carregar perguntas.", error);
+        console.error("Erro ao carregar perguntas:", error);
     }
 }
 
-// Cria os checkboxes baseados nas categorias do JSON
-function preencherCategorias() {
-    const container = document.getElementById('categorias-container');
-    const categorias = [...new Set(perguntas.map(p => p.categoria))];
-    
-    categorias.forEach(cat => {
-        const label = document.createElement('label');
-        const checkbox = document.createElement('input');
-        checkbox.type = 'checkbox';
-        checkbox.value = cat;
-        checkbox.checked = true; // Vem marcado por padrão
-        checkbox.className = 'cat-checkbox';
-
-        label.appendChild(checkbox);
-        label.appendChild(document.createTextNode(' ' + cat));
-        container.appendChild(label);
-    });
-}
-
-// Inicia a sessão
 document.getElementById('btn-iniciar').addEventListener('click', () => {
-    // 1. Coleta categorias selecionadas
-    const checkboxes = document.querySelectorAll('.cat-checkbox:checked');
-    const categoriasSelecionadas = Array.from(checkboxes).map(cb => cb.value);
-    
-    if (categoriasSelecionadas.length === 0) {
-        alert("Selecione pelo menos uma categoria!");
-        return;
-    }
-
-    // 2. Coleta quantidade desejada
-    const qtdDesejada = parseInt(document.getElementById('qtd-perguntas').value) || 10;
-    
     const progresso = JSON.parse(localStorage.getItem('progresso_estudos')) || {};
     const hoje = Date.now();
+    
+    perguntasFiltradas = []; 
 
-    // 3. Filtra as perguntas disponíveis
-    let disponiveis = perguntas.filter(p => {
-        const categoriaMatch = categoriasSelecionadas.includes(p.categoria);
-        const proximaRevisao = progresso[p.id] || 0;
-        const horaDeRevisar = hoje >= proximaRevisao;
-        return categoriaMatch && horaDeRevisar;
-    });
-
-    if (disponiveis.length === 0) {
-        alert("Nenhuma pergunta precisando de revisão agora para essas categorias.");
-        return;
+    const checkboxes = document.querySelectorAll('.cat-checkbox:checked');
+    
+    if (checkboxes.length === 0) {
+        return alert("Selecione pelo menos uma categoria!");
     }
 
-    // 4. Embaralha de forma aleatória e corta na quantidade escolhida
-    disponiveis = disponiveis.sort(() => 0.5 - Math.random()).slice(0, qtdDesejada);
-    
-    perguntasFiltradas = disponiveis;
-    perguntaAtualIndex = 0;
+    checkboxes.forEach(cb => {
+        const cat = cb.value;
+        const inputQtd = cb.closest('.cat-row').querySelector('.cat-qtd');
+        const qtdDesejada = parseInt(inputQtd.value) || 5;
 
-    // Transição de tela
+        let disponiveisCat = perguntas.filter(p => p.categoria === cat && hoje >= (progresso[p.id] || 0));
+        
+        // Embaralha APENAS dentro da própria categoria
+        disponiveisCat = disponiveisCat.sort(() => 0.5 - Math.random()).slice(0, qtdDesejada);
+        
+        // Junta no array principal (mantendo a ordem das disciplinas do menu)
+        perguntasFiltradas = perguntasFiltradas.concat(disponiveisCat);
+    });
+
+    if (perguntasFiltradas.length === 0) {
+        return alert("Você não tem perguntas agendadas para revisar hoje nas categorias selecionadas. Excelente!");
+    }
+
+    perguntaAtualIndex = 0;
+    acertosSessao = 0;
+    errosSessao = 0;
+
     document.getElementById('setup-screen').classList.add('hidden');
     document.getElementById('flashcard-screen').classList.remove('hidden');
     mostrarPergunta();
 });
 
-// Renderiza a pergunta
 function mostrarPergunta() {
     const p = perguntasFiltradas[perguntaAtualIndex];
-    
     document.getElementById('categoria-label').textContent = p.categoria;
     document.getElementById('contador-label').textContent = `${perguntaAtualIndex + 1} / ${perguntasFiltradas.length}`;
     document.getElementById('pergunta-texto').textContent = p.pergunta;
     
     const opcoesContainer = document.getElementById('opcoes-container');
-    opcoesContainer.innerHTML = ''; 
+    opcoesContainer.innerHTML = '';
     document.getElementById('explicacao').classList.add('hidden');
     document.getElementById('controles-feedback').classList.add('hidden');
 
-    // Embaralha as opções para não ficarem sempre na mesma ordem
+    // Lógica do Áudio (Web Speech API)
+    const btnOuvir = document.getElementById('btn-ouvir');
+    // Verifica se a palavra "Inglês" está no nome da categoria
+    if (p.categoria.includes('Inglês')) {
+        btnOuvir.classList.remove('hidden');
+        
+        // Remove leituras anteriores travadas, se houver
+        window.speechSynthesis.cancel(); 
+        
+        btnOuvir.onclick = () => {
+            // Se o texto for "Flashcard: Como dizemos 'tal coisa'?", podemos limpar para ler apenas a pergunta em inglês se preferir, 
+            // mas como as perguntas misturam português e inglês, a API vai tentar ler com sotaque americano.
+            const leitura = new SpeechSynthesisUtterance(p.pergunta);
+            leitura.lang = 'en-US'; // Força a pronúncia em inglês americano
+            leitura.rate = 0.9; // Velocidade um pouco reduzida para facilitar o entendimento
+            window.speechSynthesis.speak(leitura);
+        };
+    } else {
+        btnOuvir.classList.add('hidden');
+    }
+
     const opcoesEmbaralhadas = [...p.opcoes].sort(() => 0.5 - Math.random());
 
-    opcoesEmbaralhadas.forEach(opcao => {
+    opcoesEmbaralhadas.forEach(op => {
         const btn = document.createElement('button');
         btn.className = 'option-btn';
-        btn.textContent = opcao;
-        
-        // Passamos o objeto 'p' inteiro para a função de verificação
-        btn.onclick = () => verificarResposta(opcao, p, btn);
-        
+        btn.textContent = op;
+        btn.onclick = () => verificar(op, p, btn);
         opcoesContainer.appendChild(btn);
     });
 }
 
-// Automatiza o certo/errado
-function verificarResposta(escolha, perguntaObj, btnClicado) {
+function verificar(escolha, p, btnClicado) {
     const botoes = document.querySelectorAll('.option-btn');
     botoes.forEach(b => b.disabled = true); 
 
-    const acertou = (escolha === perguntaObj.resposta_correta);
-
-    if (acertou) {
-        acertosSessao++; // SOMA UM ACERTO
+    const acertou = (escolha === p.resposta_correta);
+    if (acertou) { 
+        acertosSessao++; 
+        registrar(p.id, 5); 
         btnClicado.style.backgroundColor = '#22c55e'; 
         btnClicado.style.color = 'white';
-        registrarRevisao(perguntaObj.id, 5); 
-    } else {
-        errosSessao++; // SOMA UM ERRO
+    } else { 
+        errosSessao++; 
+        registrar(p.id, 2); 
         btnClicado.style.backgroundColor = '#ef4444'; 
         btnClicado.style.color = 'white';
-        registrarRevisao(perguntaObj.id, 2); 
         
         botoes.forEach(b => {
-            if (b.textContent === perguntaObj.resposta_correta) {
+            if (b.textContent === p.resposta_correta) {
                 b.style.backgroundColor = '#22c55e';
                 b.style.color = 'white';
             }
         });
     }
-
-    const explicacaoDiv = document.getElementById('explicacao');
-    explicacaoDiv.innerHTML = `<strong>Explicação:</strong> ${perguntaObj.explicacao}`;
-    explicacaoDiv.classList.remove('hidden');
     
+    const explicacaoDiv = document.getElementById('explicacao');
+    explicacaoDiv.innerHTML = `<strong>Explicação:</strong> ${p.explicacao}`;
+    explicacaoDiv.classList.remove('hidden');
     document.getElementById('controles-feedback').classList.remove('hidden');
 }
 
-// Salva a nova data no LocalStorage
-function registrarRevisao(idPergunta, dias) {
+function registrar(id, dias) {
     const progresso = JSON.parse(localStorage.getItem('progresso_estudos')) || {};
-    const proximaData = Date.now() + (dias * 24 * 60 * 60 * 1000);
-    progresso[idPergunta] = proximaData;
+    progresso[id] = Date.now() + (dias * 24 * 60 * 60 * 1000);
     localStorage.setItem('progresso_estudos', JSON.stringify(progresso));
 }
 
-// Avança para a próxima ou encerra a sessão
-// Avança para a próxima ou exibe os resultados
 document.getElementById('btn-proxima').addEventListener('click', () => {
+    // Para o áudio imediatamente se a pessoa avançar a tela
+    window.speechSynthesis.cancel();
+    
     perguntaAtualIndex++;
     if (perguntaAtualIndex < perguntasFiltradas.length) {
         mostrarPergunta();
     } else {
-        mostrarResultados(); // Chama a nova função
+        document.getElementById('flashcard-screen').classList.add('hidden');
+        document.getElementById('resultado-screen').classList.remove('hidden');
+        
+        const total = acertosSessao + errosSessao;
+        const porcentagem = Math.round((acertosSessao / total) * 100);
+
+        document.getElementById('res-acertos').textContent = acertosSessao;
+        document.getElementById('res-erros').textContent = errosSessao;
+        
+        const spanPorcentagem = document.getElementById('res-porcentagem');
+        spanPorcentagem.textContent = `${porcentagem}%`;
+
+        if (porcentagem >= 80) spanPorcentagem.style.color = '#22c55e'; 
+        else if (porcentagem >= 50) spanPorcentagem.style.color = '#eab308'; 
+        else spanPorcentagem.style.color = '#ef4444'; 
     }
 });
 
-// Calcula e mostra os resultados finais
-function mostrarResultados() {
-    document.getElementById('flashcard-screen').classList.add('hidden');
-    document.getElementById('resultado-screen').classList.remove('hidden');
-
-    const total = acertosSessao + errosSessao;
-    const porcentagem = Math.round((acertosSessao / total) * 100);
-
-    document.getElementById('res-acertos').textContent = acertosSessao;
-    document.getElementById('res-erros').textContent = errosSessao;
-    
-    const spanPorcentagem = document.getElementById('res-porcentagem');
-    spanPorcentagem.textContent = `${porcentagem}%`;
-
-    // Muda a cor da porcentagem dependendo do desempenho
-    if (porcentagem >= 80) {
-        spanPorcentagem.style.color = '#22c55e'; // Verde para bom desempenho
-    } else if (porcentagem >= 50) {
-        spanPorcentagem.style.color = '#eab308'; // Amarelo para médio
-    } else {
-        spanPorcentagem.style.color = '#ef4444'; // Vermelho para baixo
-    }
-}
-
-// Botão para voltar à tela de setup
-document.getElementById('btn-voltar-inicio').addEventListener('click', () => {
-    window.location.reload(); 
-});
+document.getElementById('btn-voltar-inicio').addEventListener('click', () => location.reload());
 
 carregarPerguntas();
