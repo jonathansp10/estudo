@@ -905,5 +905,269 @@
     "opcoes": ["get a letter", "have a letter", "take a letter", "do a letter"],
     "resposta_correta": "get a letter",
     "explicacao": "Get a letter."
+  },
+  {
+    "id": "sec_006",
+    "categoria": "Security+",
+    "tipo": "multipla",
+    "pergunta": "Qual é a principal diferença de escopo entre Segurança da Informação (SegInfo) e Cibersegurança?",
+    "opcoes": [
+      "A Cibersegurança abrange todos os formatos de dados, enquanto a SegInfo foca apenas na rede.",
+      "A SegInfo protege dados independentemente do formato (físico ou digital), enquanto a Cibersegurança foca apenas no ciberespaço.",
+      "Não há diferença, ambos os termos descrevem a configuração de firewalls e antivírus.",
+      "A SegInfo lida com hackers e malwares, enquanto a Cibersegurança lida com a LGPD."
+    ],
+    "resposta_correta": "A SegInfo protege dados independentemente do formato (físico ou digital), enquanto a Cibersegurança foca apenas no ciberespaço.",
+    "explicacao": "A Segurança da Informação é o conceito mais amplo, englobando papéis, processos e dados físicos e digitais. A Cibersegurança é uma subcategoria estritamente focada no ambiente digital."
+  },
+  {
+    "id": "sec_007",
+    "categoria": "Security+",
+    "tipo": "certo_errado",
+    "pergunta": "A implementação de uma tranca biométrica para controlar o acesso à sala dos servidores é classificada puramente como uma medida de Cibersegurança.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Errado",
+    "explicacao": "O controle de acesso físico, como trancas e biometria em portas, é uma medida de Segurança da Informação (SegInfo), pois lida com a proteção física do ambiente, não com ameaças digitais diretas."
+  },
+  {
+    "id": "sec_008",
+    "categoria": "Security+",
+    "tipo": "multipla",
+    "pergunta": "Dentro da Tríade CIA, qual pilar visa garantir que a informação não seja alterada ou corrompida sem autorização?",
+    "opcoes": [
+      "Confidencialidade",
+      "Integridade",
+      "Disponibilidade",
+      "Conformidade"
+    ],
+    "resposta_correta": "Integridade",
+    "explicacao": "A Integridade assegura que os dados permaneçam exatos e inalterados. Alterações só podem ser feitas por usuários ou processos autorizados."
+  },
+  {
+    "id": "sec_009",
+    "categoria": "Security+",
+    "tipo": "multipla",
+    "pergunta": "Um ataque de DDoS (Distributed Denial of Service) visa derrubar um servidor, impedindo que usuários legítimos acessem um site. Qual pilar da Tríade CIA esse ataque fere diretamente?",
+    "opcoes": [
+      "Confidencialidade",
+      "Integridade",
+      "Disponibilidade",
+      "Autorização"
+    ],
+    "resposta_correta": "Disponibilidade",
+    "explicacao": "A Disponibilidade garante que a informação esteja acessível quando necessária. Um ataque DDoS sobrecarrega o sistema justamente para quebrar essa disponibilidade."
+  },
+  {
+    "id": "sec_010",
+    "categoria": "Security+",
+    "tipo": "multipla",
+    "pergunta": "Qual das alternativas abaixo é uma atividade típica da Cibersegurança, e não da gestão geral de Segurança da Informação?",
+    "opcoes": [
+      "Criação da Política de Mesa Limpa (Clean Desk).",
+      "Classificação de documentos impressos confidenciais.",
+      "Treinamento de funcionários sobre a LGPD.",
+      "Análise de logs de rede no SIEM para identificar tráfego anômalo."
+    ],
+    "resposta_correta": "Análise de logs de rede no SIEM para identificar tráfego anômalo.",
+    "explicacao": "A análise de logs em um SIEM é uma atividade técnica, focada em ameaças ativas no ambiente digital, o que define a Cibersegurança. As demais opções são governança e processos físicos (SegInfo)."
+  },
+  {
+    "id": "sec_011",
+    "categoria": "Security+",
+    "tipo": "certo_errado",
+    "pergunta": "Se uma informação não está em formato digital, como um balanço financeiro impresso em papel, ela não está sob a proteção da Cibersegurança.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Certo",
+    "explicacao": "Correto. A Cibersegurança lida exclusivamente com o ciberespaço (sistemas, redes digitais). Dados em papel são protegidos pelo escopo mais amplo da Segurança da Informação."
+  },
+  {
+    "id": "sec_012",
+    "categoria": "Security+",
+    "tipo": "multipla",
+    "pergunta": "Uma empresa contratou uma equipe para realizar testes de invasão (PenTests) em sua aplicação web. Essa ação se enquadra predominantemente em:",
+    "opcoes": [
+      "Compliance e Governança",
+      "Segurança Física",
+      "Cibersegurança",
+      "Continuidade de Negócios"
+    ],
+    "resposta_correta": "Cibersegurança",
+    "explicacao": "Testes de invasão em aplicações web são ações técnicas focadas em descobrir e mitigar vulnerabilidades de software no ambiente digital, uma atribuição direta da Cibersegurança."
+  },
+  {
+    "id": "sec_013",
+    "categoria": "Security+",
+    "tipo": "certo_errado",
+    "pergunta": "A implementação de criptografia de dados, tanto em trânsito (rede) quanto em repouso (disco), é um exemplo prático de Segurança da Informação que não envolve Cibersegurança.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Errado",
+    "explicacao": "A criptografia é, na verdade, um dos exemplos mais práticos de Cibersegurança, pois é uma defesa técnica aplicada diretamente a dados digitais para garantir sua confidencialidade."
+  },
+  {
+    "id": "sec_014",
+    "categoria": "Security+",
+    "tipo": "multipla",
+    "pergunta": "Ao comparar as abordagens, como podemos definir a postura da Segurança da Informação em relação à Cibersegurança?",
+    "opcoes": [
+      "A SegInfo é técnica e reativa, enquanto a Cibersegurança é focada em conformidade legal.",
+      "A SegInfo é estratégica, focada em processos e governança, enquanto a Cibersegurança é técnica e operacional.",
+      "Ambas são exclusivamente focadas em configurações de firewall e switches.",
+      "A Cibersegurança dita as regras e políticas, enquanto a SegInfo instala os softwares."
+    ],
+    "resposta_correta": "A SegInfo é estratégica, focada em processos e governança, enquanto a Cibersegurança é técnica e operacional.",
+    "explicacao": "A SegInfo estabelece o 'o que' proteger por meio de políticas (governança). A Cibersegurança estabelece o 'como' no mundo digital por meio de ferramentas e monitoramento (técnica)."
+  },
+  {
+    "id": "sec_015",
+    "categoria": "Security+",
+    "tipo": "multipla",
+    "pergunta": "Qual framework é conhecido por focar na resiliência cibernética, sendo um pilar forte no estudo de Cibersegurança?",
+    "opcoes": [
+      "ISO/IEC 27001",
+      "LGPD",
+      "NIST Cybersecurity Framework",
+      "PMBOK"
+    ],
+    "resposta_correta": "NIST Cybersecurity Framework",
+    "explicacao": "O NIST CSF é focado especificamente em avaliar e melhorar a capacidade de prevenir, detectar e responder a ataques cibernéticos. A ISO 27001 é mais abrangente para a gestão geral (SegInfo)."
+  },
+  {
+    "id": "sec_016",
+    "categoria": "Security+",
+    "tipo": "certo_errado",
+    "pergunta": "A destruição correta de documentos impressos utilizando fragmentadoras é uma prática exigida por políticas de Segurança da Informação.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Certo",
+    "explicacao": "Correto. O descarte adequado de informações sensíveis em formato físico impede incidentes de confidencialidade e faz parte do escopo da SegInfo."
+  },
+  {
+    "id": "sec_017",
+    "categoria": "Security+",
+    "tipo": "multipla",
+    "pergunta": "O que significa afirmar que a Cibersegurança depende da Segurança da Informação?",
+    "opcoes": [
+      "Significa que os firewalls não funcionam sem aprovação do RH.",
+      "Significa que ferramentas técnicas são inúteis se as políticas da empresa (como senhas fracas) permitirem brechas operacionais e humanas.",
+      "Significa que a cibersegurança só protege documentos em papel.",
+      "Significa que a LGPD substituiu os softwares de antivírus."
+    ],
+    "resposta_correta": "Significa que ferramentas técnicas são inúteis se as políticas da empresa (como senhas fracas) permitirem brechas operacionais e humanas.",
+    "explicacao": "A tecnologia (Cibersegurança) sozinha não salva uma empresa se a governança (SegInfo) for falha. Um firewall robusto não impede um funcionário de entregar sua senha em um ataque de phishing."
+  },
+  {
+    "id": "sec_018",
+    "categoria": "Security+",
+    "tipo": "certo_errado",
+    "pergunta": "Políticas de classificação de dados (como separar o que é 'Público', 'Interno' e 'Confidencial') são criadas e geridas pelas equipes técnicas de Cibersegurança durante a configuração de roteadores.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Errado",
+    "explicacao": "A classificação de dados é um processo estratégico de negócios e governança, pertencente à Segurança da Informação. Os roteadores apenas aplicam regras baseadas nessa política prévia."
+  },
+  {
+    "id": "sec_019",
+    "categoria": "Security+",
+    "tipo": "multipla",
+    "pergunta": "Qual dos cenários abaixo exemplifica a quebra de Confidencialidade (Tríade CIA)?",
+    "opcoes": [
+      "Um atacante intercepta um e-mail em trânsito e lê seu conteúdo financeiro secreto.",
+      "Um ataque de ransomware derruba os servidores da empresa por 3 dias.",
+      "Um vírus altera os valores numa planilha de banco de dados do RH.",
+      "O sistema de resfriamento do datacenter falha e as máquinas desligam."
+    ],
+    "resposta_correta": "Um atacante intercepta um e-mail em trânsito e lê seu conteúdo financeiro secreto.",
+    "explicacao": "A quebra de confidencialidade ocorre quando pessoas não autorizadas ganham acesso a informações restritas (leitura)."
+  },
+  {
+    "id": "sec_020",
+    "categoria": "Security+",
+    "tipo": "multipla",
+    "pergunta": "A proteção contra um ataque do tipo Ransomware exige ferramentas de monitoramento em tempo real. Esta é uma preocupação primária da:",
+    "opcoes": [
+      "Governança de TI",
+      "Segurança Física",
+      "Cibersegurança",
+      "Auditoria Financeira"
+    ],
+    "resposta_correta": "Cibersegurança",
+    "explicacao": "Ameaças ativas digitais, como o Ransomware, requerem defesas técnicas e resposta a incidentes no ciberespaço, que é a definição de Cibersegurança."
+  },
+  {
+    "id": "sec_021",
+    "categoria": "Security+",
+    "tipo": "certo_errado",
+    "pergunta": "Uma estratégia de Segurança da Informação (SegInfo) pode ser considerada completa e eficaz mesmo que a empresa não invista em defesas cibernéticas.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Errado",
+    "explicacao": "Errado. Hoje, a maioria dos dados está digitalizada. Portanto, a SegInfo falhará miseravelmente se a Cibersegurança (sua subcategoria para o mundo digital) não for robusta."
+  },
+  {
+    "id": "sec_022",
+    "categoria": "Security+",
+    "tipo": "multipla",
+    "pergunta": "Qual dos seguintes não é considerado um alvo direto da Cibersegurança?",
+    "opcoes": [
+      "Servidores web e bancos de dados.",
+      "Redes corporativas e switches.",
+      "Documentos físicos armazenados no arquivo morto.",
+      "Dispositivos móveis dos funcionários (Smartphones)."
+    ],
+    "resposta_correta": "Documentos físicos armazenados no arquivo morto.",
+    "explicacao": "Documentos físicos estão sob a proteção da Segurança da Informação, mas fogem do escopo técnico da Cibersegurança, que atua apenas no ciberespaço."
+  },
+  {
+    "id": "sec_023",
+    "categoria": "Security+",
+    "tipo": "certo_errado",
+    "pergunta": "A conformidade com leis de proteção de dados, como a LGPD, exige mapeamento de processos e treinamento de equipe, sendo essencialmente um esforço estratégico de Segurança da Informação.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Certo",
+    "explicacao": "Correto. O compliance (conformidade legal) e a governança são os pilares da Segurança da Informação. A Cibersegurança entra apenas para fornecer os controles técnicos exigidos por essas leis."
+  },
+  {
+    "id": "sec_024",
+    "categoria": "Security+",
+    "tipo": "multipla",
+    "pergunta": "Qual ameaça abaixo é considerada de natureza física e de governança (SegInfo), ao invés de um ataque puramente cibernético?",
+    "opcoes": [
+      "SQL Injection em um formulário web.",
+      "Engenharia Social onde um indivíduo entra no prédio fingindo ser técnico de manutenção.",
+      "Infecção de um trojan via download.",
+      "Ataque de força bruta em um portal de login."
+    ],
+    "resposta_correta": "Engenharia Social onde um indivíduo entra no prédio fingindo ser técnico de manutenção.",
+    "explicacao": "A intrusão física no prédio utilizando disfarces é uma ameaça ao perímetro físico e de governança, enquadrando-se nos controles da Segurança da Informação."
+  },
+  {
+    "id": "sec_025",
+    "categoria": "Security+",
+    "tipo": "certo_errado",
+    "pergunta": "A configuração de Firewalls e sistemas de prevenção de intrusão (IPS) são ações que traduzem as políticas da Segurança da Informação em defesas práticas da Cibersegurança.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Certo",
+    "explicacao": "Correto. A SegInfo escreve a política ('Acesso não autorizado deve ser bloqueado'). A Cibersegurança executa a ferramenta (Configura o Firewall para bloquear IPs maliciosos)."
   }
 ]
