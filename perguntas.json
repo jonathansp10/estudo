@@ -1170,4 +1170,284 @@
     "resposta_correta": "Certo",
     "explicacao": "Correto. A SegInfo escreve a política ('Acesso não autorizado deve ser bloqueado'). A Cibersegurança executa a ferramenta (Configura o Firewall para bloquear IPs maliciosos)."
   }
+  {
+    "id": "cyb_001",
+    "categoria": "Cibersegurança",
+    "tipo": "multipla",
+    "pergunta": "Segundo o conceito de 'Fórmula da Segurança', a segurança cibernética é o resultado de qual soma?",
+    "opcoes": [
+      "Software de Antivírus + Firewalls robustos",
+      "Tecnologia + Ações e comportamentos corretos das pessoas",
+      "Políticas de Governança + Criptografia assimétrica",
+      "Dispositivos IoT + Monitoramento em nuvem"
+    ],
+    "resposta_correta": "Tecnologia + Ações e comportamentos corretos das pessoas",
+    "explicacao": "A segurança cibernética eficiente não depende apenas de ferramentas técnicas. Ela é alcançada unindo a Tecnologia com o fator humano, ou seja, ações e comportamentos corretos das pessoas."
+  },
+  {
+    "id": "cyb_002",
+    "categoria": "Cibersegurança",
+    "tipo": "multipla",
+    "pergunta": "Qual pilar da Tríade CIA/CID garante que as informações privadas permaneçam confidenciais e acessíveis apenas por quem tem permissão?",
+    "opcoes": [
+      "Integridade",
+      "Disponibilidade",
+      "Confidencialidade",
+      "Auditoria"
+    ],
+    "resposta_correta": "Confidencialidade",
+    "explicacao": "A Confidencialidade tem o foco estrito de controlar o acesso a dados para garantir que apenas pessoas e processos devidamente autorizados visualizem a informação."
+  },
+  {
+    "id": "cyb_003",
+    "categoria": "Cibersegurança",
+    "tipo": "multipla",
+    "pergunta": "Se um arquivo do sistema foi modificado sem autorização por um malware, qual pilar da Tríade CID foi violado diretamente?",
+    "opcoes": [
+      "Disponibilidade",
+      "Integridade",
+      "Confidencialidade",
+      "Autenticação"
+    ],
+    "resposta_correta": "Integridade",
+    "explicacao": "A Integridade garante que os dados sejam autênticos, precisos e livres de adulteração. Qualquer alteração indevida quebra esse princípio."
+  },
+  {
+    "id": "cyb_004",
+    "categoria": "Cibersegurança",
+    "tipo": "multipla",
+    "pergunta": "Qual é o principal foco da disciplina de Segurança de Sistemas de Informação?",
+    "opcoes": [
+      "Proteger exclusivamente os documentos e relatórios impressos em papel.",
+      "Treinar familiares de funcionários contra engenharia social em redes sociais pessoais.",
+      "Proteger sistemas, redes, dispositivos e locais físicos de armazenamento contra acesso não autorizado e negação de serviço.",
+      "Criar leis nacionais para a regulação do tráfego de dados na internet de banda larga."
+    ],
+    "resposta_correta": "Proteger sistemas, redes, dispositivos e locais físicos de armazenamento contra acesso não autorizado e negação de serviço.",
+    "explicacao": "Diferente da InfoSec ampla, a Segurança de Sistemas de Informação foca nos ativos físicos e lógicos, como dispositivos, redes corporativas e locais de armazenamento ou transmissão de dados."
+  },
+  {
+    "id": "cyb_005",
+    "categoria": "Cibersegurança",
+    "tipo": "multipla",
+    "pergunta": "Dentro dos níveis de criticidade para informações protegidas, o que caracteriza a classificação 'Confidencial'?",
+    "opcoes": [
+      "Exigência de salvaguardas máximas, como biometria.",
+      "Nenhum controle ou monitoramento de credenciais é necessário.",
+      "Requisito de controles mais rigorosos, como Autenticação de Dois Fatores (2FA).",
+      "Requisito de controles básicos, como a verificação de nome de usuário e senha."
+    ],
+    "resposta_correta": "Requisito de controles básicos, como a verificação de nome de usuário e senha.",
+    "explicacao": "De acordo com os níveis de classificação, o nível 'Confidencial' é o estágio inicial de proteção, necessitando apenas de controles básicos de acesso, como login e senha comuns."
+  },
+  {
+    "id": "cyb_006",
+    "categoria": "Cibersegurança",
+    "tipo": "multipla",
+    "pergunta": "Qual das seguintes tecnologias de salvaguarda é explicitamente indicada para o nível de classificação 'Secreta'?",
+    "opcoes": [
+      "Autenticação de Dois Fatores (2FA)",
+      "Trancas físicas comuns",
+      "Controles biométricos avançados",
+      "Nenhum controle (Livre)"
+    ],
+    "resposta_correta": "Autenticação de Dois Fatores (2FA)",
+    "explicacao": "O nível 'Secreto' exige controles mais rigorosos do que o confidencial básico. O material associa este nível ao uso da Autenticação de Dois Fatores (2FA)."
+  },
+  {
+    "id": "cyb_007",
+    "categoria": "Cibersegurança",
+    "tipo": "multipla",
+    "pergunta": "A proteção de sistemas essenciais da sociedade, como redes elétricas, distribuição de água e comunicações, pertence a qual categoria da Cibersegurança?",
+    "opcoes": [
+      "Segurança de Aplicações",
+      "Infraestrutura Crítica",
+      "Segurança de Internet das Coisas (IoT)",
+      "Segurança na Nuvem"
+    ],
+    "resposta_correta": "Infraestrutura Crítica",
+    "explicacao": "A categoria de Infraestrutura Crítica destina-se a blindar sistemas que sustentam serviços vitais para o funcionamento de uma nação, como energia, água e telecomunicações."
+  },
+  {
+    "id": "cyb_008",
+    "categoria": "Cibersegurança",
+    "tipo": "multipla",
+    "pergunta": "O que representa a Tríade DAD no contexto da segurança cibernética?",
+    "opcoes": [
+      "Um modelo de auditoria de senhas para sistemas operacionais locais.",
+      "O oposto e espelho negativo da Tríade CID, representando o que a segurança tenta evitar.",
+      "Uma arquitetura técnica de criptografia de chave pública criada pela Fortinet.",
+      "Os três principais tipos de firewalls utilizados em perímetros de rede."
+    ],
+    "resposta_correta": "O oposto e espelho negativo da Tríade CID, representando o que a segurança tenta evitar.",
+    "explicacao": "A Tríade DAD (Divulgação, Alteração e Negação) representa exatamente os perigos e impactos negativos que a Segurança da Informação luta para neutralizar em relação à Tríade CID."
+  },
+  {
+    "id": "cyb_009",
+    "categoria": "Cibersegurança",
+    "tipo": "multipla",
+    "pergunta": "Assinale a alternativa que mapeia corretamente o par oposto entre a Tríade CID e a Tríade DAD:",
+    "opcoes": [
+      "Confidencialidade é o oposto de Alteração.",
+      "Integridade é o oposto de Negação.",
+      "Disponibilidade é o oposto de Negação.",
+      "Confidencialidade é o oposto de Negação."
+    ],
+    "resposta_correta": "Disponibilidade é o oposto de Negação.",
+    "explicacao": "Na correlação entre as duas tríades, a Disponibilidade (manter o sistema acessível) é combatida pela Negação (impedir o acesso de usuários legítimos ao sistema)."
+  },
+  {
+    "id": "cyb_0021",
+    "categoria": "Cibersegurança",
+    "tipo": "multipla",
+    "pergunta": "Quando ocorre um vazamento de dados corporativos sigilosos na internet, qual elemento da Tríade DAD se manifestou?",
+    "opcoes": [
+      "Negação",
+      "Alteração",
+      "Divulgação",
+      "Decodificação"
+    ],
+    "resposta_correta": "Divulgação",
+    "explicacao": "A Divulgação é o oposto da Confidencialidade. Ela acontece no momento em que dados restritos e confidenciais são expostos a partes não autorizadas (vazamentos)."
+  },
+  {
+    "id": "cyb_011",
+    "categoria": "Cibersegurança",
+    "tipo": "multipla",
+    "pergunta": "Na estrutura de controle AAA, qual processo responde à pergunta: 'Você é realmente quem diz ser?'",
+    "opcoes": [
+      "Autorização",
+      "Auditoria",
+      "Autenticação",
+      "Algoritmo"
+    ],
+    "resposta_correta": "Autenticação",
+    "explicacao": "A Autenticação serve para identificar e validar uma pessoa ou dispositivo, comparando as credenciais fornecidas (ex: senhas ou tokens) com o banco de dados para confirmar sua identidade."
+  },
+  {
+    "id": "cyb_012",
+    "categoria": "Cibersegurança",
+    "tipo": "multipla",
+    "pergunta": "A definição de quais arquivos, pastas e sistemas um usuário pode acessar após entrar na rede corporativa diz respeito a qual pilar da estrutura AAA?",
+    "opcoes": [
+      "Autenticação",
+      "Autorização",
+      "Auditoria",
+      "Armazenamento"
+    ],
+    "resposta_correta": "Autorização",
+    "explicacao": "A Autorização define os níveis de privilégios e permissões associados ao perfil do usuário, determinando o que ele tem o direito de acessar e modificar dentro da rede."
+  },
+  {
+    "id": "cyb_013",
+    "categoria": "Cibersegurança",
+    "tipo": "multipla",
+    "pergunta": "O rastreamento e registro de atividades por meio de logs, coletando tempos de conexão, IPs e URLs acessadas, cumpre o papel de qual pilar do AAA?",
+    "opcoes": [
+      "Autenticação",
+      "Autorização",
+      "Auditoria",
+      "Assinatura"
+    ],
+    "resposta_correta": "Auditoria",
+    "explicacao": "A Auditoria é a fase responsável por registrar e monitorar o comportamento de usuários e sistemas por meio de logs, permitindo análises posteriores e identificação de incidentes."
+  },
+  {
+    "id": "cyb_014",
+    "categoria": "Cibersegurança",
+    "tipo": "multipla",
+    "pergunta": "Considerando o fator humano como a primeira linha de defesa, qual medida protege os dados contra exclusões e ataques de malware ou ransomware?",
+    "opcoes": [
+      "Configuração de proxy reverso.",
+      "Uso de criptografia em chaves USB.",
+      "Realizar backups regulares e mantê-los em ambiente Offline.",
+      "Utilizar apenas navegadores em modo anônimo."
+    ],
+    "resposta_correta": "Realizar backups regulares e mantê-los em ambiente Offline.",
+    "explicacao": "Manter cópias de segurança (backups) e garantir que fiquem Offline é uma defesa essencial. Se o ransomware infectar a rede, ele não conseguirá alcançar e criptografar o backup isolado."
+  },
+  {
+    "id": "cyb_015",
+    "categoria": "Cibersegurança",
+    "tipo": "multipla",
+    "pergunta": "Qual é a principal motivação do agente de ameaça classificado como 'Explorador'?",
+    "opcoes": [
+      "Ganho financeiro milionário direto no mercado negro.",
+      "Defender ferozmente uma causa ideológica ou política.",
+      "Busca por notoriedade e satisfação do próprio ego.",
+      "Destruir ativos de comunicação militar a mando de um Estado."
+    ],
+    "resposta_correta": "Busca por notoriedade e satisfação do próprio ego.",
+    "explicacao": "O 'Explorador' age por curiosidade e ego. Seu objetivo é provar que consegue encontrar vulnerabilidades e invadir sistemas para ganhar fama ou notoriedade, geralmente sem intenção de causar danos críticos de destruição."
+  },
+  {
+    "id": "cyb_016",
+    "categoria": "Cibersegurança",
+    "tipo": "multipla",
+    "pergunta": "Grupos que atuam de forma coletiva, exigem anonimato e atacam um inimigo comum motivados por uma causa externa ou ideológica são chamados de:",
+    "opcoes": [
+      "Exploradores",
+      "Hacktivistas",
+      "Ciberguerreiros",
+      "Chapéus Azuis"
+    ],
+    "resposta_correta": "Hacktivistas",
+    "explicacao": "Os Hacktivistas são motivados por ideologias políticas, sociais ou emotivas. Eles utilizam suas habilidades digitais coletivamente para protestar ou expor alvos que consideram adversários da sua causa."
+  },
+  {
+    "id": "cyb_017",
+    "categoria": "Cibersegurança",
+    "tipo": "multipla",
+    "pergunta": "Qual método de ataque consiste na criação de uma rede de computadores zumbis infectados (Botnet) controlada por um servidor de Comando e Controle (C&C)?",
+    "opcoes": [
+      "Spear Phishing",
+      "Negação de Serviço Distribuída (DDoS)",
+      "Vulnerability Exploit",
+      "Vishing"
+    ],
+    "resposta_correta": "Negação de Serviço Distribuída (DDoS)",
+    "explicacao": "Para executar o DDoS, atacantes usam um servidor C&C para comandar uma Botnet (rede de computadores infectados) e forçar acessos simultâneos a um alvo, derrubando o sistema por sobrecarga de solicitações."
+  },
+  {
+    "id": "sec_018",
+    "categoria": "Cibersegurança",
+    "tipo": "multipla",
+    "pergunta": "Qual tipo de criminoso virtual tem como objetivo principal o lucro financeiro e utiliza o Ransomware como uma de suas ferramentas fundamentais?",
+    "opcoes": [
+      "Ciberterrorista",
+      "Cibercriminoso",
+      "Explorador",
+      "Ciberguerreiro"
+    ],
+    "resposta_correta": "Cibercriminoso",
+    "explicacao": "O Cibercriminoso busca exclusivamente o dinheiro. Eles sequestram dados corporativos usando ransomware e exigem resgates, além de vender dados de cartões e identidades no mercado negro."
+  },
+  {
+    "id": "cyb_019",
+    "categoria": "Cibersegurança",
+    "tipo": "multipla",
+    "pergunta": "Os 'Ciberguerreiros' atuam em nome de governos (Estados-nação). Para maximizar o sucesso de seus ataques contra infraestruturas críticas, o que eles buscam secretamente?",
+    "opcoes": [
+      "Pichar páginas web de e-commerce comuns para inflar o ego.",
+      "Vulnerabilidades do tipo Zero-Day (falhas desconhecidas pelos desenvolvedores).",
+      "Apenas listas de e-mails públicos para campanhas massivas de spam de produtos.",
+      "Fóruns de discussões abertas para revelar suas técnicas de invasão à comunidade."
+    ],
+    "resposta_correta": "Vulnerabilidades do tipo Zero-Day (falhas desconhecidas pelos desenvolvedores).",
+    "explicacao": "Atores estatais (Ciberguerreiros) rastreiam vulnerabilidades do tipo Zero-Day. Como essas falhas não são de conhecimento dos fabricantes, não possuem correção imediata, servindo como armas cibernéticas perfeitas e altamente destrutivas."
+  },
+  {
+    "id": "cyb_020",
+    "categoria": "Cibersegurança",
+    "tipo": "multipla",
+    "pergunta": "Como é classificado o hacker ético, que trabalha dentro da lei, usando seus conhecimentos para encontrar e corrigir falhas de segurança antes que criminosos as explorem?",
+    "opcoes": [
+      "Hacker de Chapéu Preto (Black Hat)",
+      "Hacker de Chapéu Cinzento (Gray Hat)",
+      "Hacker de Chapéu Branco (White Hat)",
+      "Explorador de Sistemas"
+    ],
+    "resposta_correta": "Hacker de Chapéu Branco (White Hat)",
+    "explicacao": "O Hacker de Chapéu Branco (White Hat) é o profissional que atua de forma totalmente legal e dentro de diretrizes éticas. Ele executa testes e auditorias autorizadas para fechar brechas no sistema."
+  }
 ]
