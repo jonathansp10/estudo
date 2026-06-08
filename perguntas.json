@@ -1169,7 +1169,7 @@
     ],
     "resposta_correta": "Certo",
     "explicacao": "Correto. A SegInfo escreve a política ('Acesso não autorizado deve ser bloqueado'). A Cibersegurança executa a ferramenta (Configura o Firewall para bloquear IPs maliciosos)."
-  }
+  },
   {
     "id": "cyb_001",
     "categoria": "Cibersegurança",
@@ -1449,5 +1449,241 @@
     ],
     "resposta_correta": "Hacker de Chapéu Branco (White Hat)",
     "explicacao": "O Hacker de Chapéu Branco (White Hat) é o profissional que atua de forma totalmente legal e dentro de diretrizes éticas. Ele executa testes e auditorias autorizadas para fechar brechas no sistema."
+  },
+  {
+    "id": "ts_001",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "In the lyric 'Man, it's been a while', what does the expression 'it's been a while' mean?",
+    "opcoes": [
+      "It happened just a moment ago",
+      "A lot of time has passed",
+      "It is going to happen soon",
+      "It never happened"
+    ],
+    "resposta_correta": "A lot of time has passed",
+    "explicacao": "A expressão 'it's been a while' é o equivalente a dizer 'faz tempo' ou 'faz bastante tempo' que não nos vemos ou que algo não acontece."
+  },
+  {
+    "id": "ts_002",
+    "categoria": "Inglês",
+    "tipo": "certo_errado",
+    "pergunta": "True or False: In the line 'Memorized the sound of your bare footsteps', the word 'bare' means that the person was wearing heavy boots.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Errado",
+    "explicacao": "'Bare' significa nu, descoberto ou desprovido de algo. No contexto da letra, 'bare footsteps' significa o som de passos descalços."
+  },
+  {
+    "id": "ts_003",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "What is the correct translation for the line: 'Life has ways of leaving those days behind'?",
+    "opcoes": [
+      "A vida sempre traz aqueles dias de volta.",
+      "A vida tem maneiras de deixar aqueles dias para trás.",
+      "Viver significa esquecer o passado rapidamente.",
+      "Os dias passam e a vida fica para trás."
+    ],
+    "resposta_correta": "A vida tem maneiras de deixar aqueles dias para trás.",
+    "explicacao": "Tradução exata: 'Life has ways' (A vida tem maneiras/jeitos) 'of leaving those days behind' (de deixar aqueles dias para trás)."
+  },
+  {
+    "id": "ts_004",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "In the phrase 'I knew you', the verb 'knew' is the past simple form of which verb?",
+    "opcoes": ["Know", "New", "Knit", "Known"],
+    "resposta_correta": "Know",
+    "explicacao": "'Knew' é o passado simples irregular do verbo 'to know' (saber, conhecer)."
+  },
+  {
+    "id": "ts_005",
+    "categoria": "Inglês",
+    "tipo": "certo_errado",
+    "pergunta": "True or False: In the lyric 'All your blues, like a mood ring changing colors', the word 'blues' refers to a musical genre.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Errado",
+    "explicacao": "Embora seja um gênero musical, a palavra 'blues' em inglês também é uma gíria poética para melancolia, tristezas ou fases ruins de alguém."
+  },
+  {
+    "id": "ts_006",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Choose the best translation for: 'Came back when it mattered, I saw you'.",
+    "opcoes": [
+      "Voltei quando tive vontade e te vi.",
+      "Voltou quando importava, eu te vi.",
+      "Eu te vi quando tudo estava dando errado.",
+      "Importava voltar para ver você."
+    ],
+    "resposta_correta": "Voltou quando importava, eu te vi.",
+    "explicacao": "O verbo 'matter' significa importar ou fazer diferença. 'Came back when it mattered' traduz como 'Voltou quando importava / fez diferença'."
+  },
+  {
+    "id": "ts_007",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "In the line 'Watched you drive around the bend', what does the phrase 'the bend' mean?",
+    "opcoes": [
+      "A straight highway",
+      "A curve in the road",
+      "A gas station",
+      "The parking lot"
+    ],
+    "resposta_correta": "A curve in the road",
+    "explicacao": "'The bend' refere-se a uma curva. Ver alguém dirigir 'around the bend' significa ver o carro sumir contornando a curva da estrada."
+  },
+  {
+    "id": "ts_008",
+    "categoria": "Inglês",
+    "tipo": "certo_errado",
+    "pergunta": "True or False: In 'Love has ways of bringing things back to life', the word 'bringing' is in the present continuous representing an action happening right now.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Errado",
+    "explicacao": "O '-ing' aqui não indica gerúndio contínuo. Em inglês, qualquer verbo posicionado imediatamente após uma preposição (neste caso, a palavra 'of') deve obrigatoriamente receber a terminação '-ing'."
+  },
+  {
+    "id": "ts_009",
+    "categoria": "Inglês",
+    "tipo": "certo_errado",
+    "pergunta": "True or False: The line 'Standing there in the light of the window' translates to 'Parado lá na luz da janela'.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Certo",
+    "explicacao": "A tradução está correta. 'Standing there' (Parado lá/ali) 'in the light' (na luz) 'of the window' (da janela)."
+  },
+  {
+    "id": "ts_010",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "In the lyric 'Oh, the rivers I cried when we said goodbye', the phrase 'rivers I cried' is an example of:",
+    "opcoes": [
+      "A literal description of a geographic map",
+      "An exaggeration (hyperbole) to express deep sadness",
+      "A technical term for infrastructure failure",
+      "A past perfect grammar pattern"
+    ],
+    "resposta_correta": "An exaggeration (hyperbole) to express deep sadness",
+    "explicacao": "Chorar rios ('rivers I cried') é uma hipérbole (um exagero idiomático comum) para demonstrar que a pessoa chorou intensamente na despedida."
+  },
+  {
+    "id": "ts_011",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "What does 'mood ring' mean in the sentence: 'like a mood ring changing colors'?",
+    "opcoes": [
+      "Anel de noivado",
+      "Anel do humor",
+      "Aliança de casamento",
+      "Anel de formatura"
+    ],
+    "resposta_correta": "Anel do humor",
+    "explicacao": "Um 'mood ring' é o famoso 'anel do humor', um acessório retrô cujas pedras mudam de cor de acordo com a temperatura da pele (associada ao humor de quem usa)."
+  },
+  {
+    "id": "ts_012",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Translate the following simple lyric from the song: 'All you said was: Hi'.",
+    "opcoes": [
+      "Tudo o que você falou foi: Tchau.",
+      "Tudo o que você disse foi: Oi.",
+      "Você nunca me disse oi.",
+      "Todos disseram oi para você."
+    ],
+    "resposta_correta": "Tudo o que você disse foi: Oi.",
+    "explicacao": "'All' (Tudo o que) 'you said' (você disse) 'was' (foi) 'Hi' (Oi)."
+  },
+  {
+    "id": "ts_013",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "In the line 'Wondering if I'd made it up in my mind', the contraction 'I'd' stands for:",
+    "opcoes": ["I do", "I had", "I did", "I am"],
+    "resposta_correta": "I had",
+    "explicacao": "Como o verbo seguinte está no particípio ('made'), o 'I'd' monta o tempo gramatical Past Perfect, sendo a contração de 'I had'."
+  },
+  {
+    "id": "ts_014",
+    "categoria": "Inglês",
+    "tipo": "certo_errado",
+    "pergunta": "True or False: The phrasal verb 'make something up' in 'made it up in my mind' means to physically build an object.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Errado",
+    "explicacao": "'To make something up in your mind' significa inventar, fantasiar ou imaginar algo que não aconteceu no mundo real."
+  },
+  {
+    "id": "ts_015",
+    "categoria": "Inglês",
+    "tipo": "certo_errado",
+    "pergunta": "True or False: The line 'And you told me I loved you' translates to 'E você me disse que eu te amava'.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Certo",
+    "explicacao": "Exatamente. 'And you told me' (E você me disse) 'I loved you' (que eu te amava). O conectivo 'that' (que) costuma ficar invisível nessas frases em inglês."
+  },
+  {
+    "id": "ts_016",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "In the lyric 'There were times we could fight like brothers', what does 'There were' indicate?",
+    "opcoes": [
+      "The past existence of something in the plural (Havia / Existiam)",
+      "A future project that will happen (Haverá)",
+      "A singular possession (Eu tenho)",
+      "A present location marker (Lá estão)"
+    ],
+    "resposta_correta": "The past existence of something in the plural (Havia / Existiam)",
+    "explicacao": "'There were' é o passado de 'There are'. É usado para indicar a existência de coisas no passado quando estão no plural ('times' / épocas, vezes)."
+  },
+  {
+    "id": "ts_017",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "What is the correct conceptual translation for the phrase: 'wearing that same smile'?",
+    "opcoes": [
+      "Comprando o mesmo sorriso",
+      "Ostentando / usando aquele mesmo sorriso",
+      "Esquecendo aquele mesmo sorriso",
+      "Consertando o mesmo sorriso"
+    ],
+    "resposta_correta": "Ostentando / usando aquele mesmo sorriso",
+    "explicacao": "Embora 'wear' signifique vestir roupas, em inglês você também 'veste' expressões faciais e sentimentos, como 'wear a smile' (estampar ou exibir um sorriso)."
+  },
+  {
+    "id": "ts_018",
+    "categoria": "Inglês",
+    "tipo": "certo_errado",
+    "pergunta": "True or False: In 'Through the daze of the blades of the grass', the word 'blades' means sharp metal weapons.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Errado",
+    "explicacao": "Apesar de 'blade' ser a lâmina de uma faca ou espada, a expressão combinada 'blades of grass' é uma collocation fixa que significa simplesmente 'folhas de grama'."
+  },
+  {
+    "id": "ts_019",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "What does the metaphor 'running wild' mean in the context of being younger?",
+    "opcoes": [
+      "Running away from dangerous jungle animals",
+      "Behaving in a free, untamed, or unrestricted way",
+      "Participating in an organized school track race",
+      "Getting completely lost in a foreign city"
+    ],
+    "resposta_correta": "Behaving in a free, untamed, or unrestricted way",
+    "explicacao": "'Running wild' significa viver livremente, agir sem amarras, regras estritas ou preocupações, uma analogia à liberdade da infância e juventude."
+  },
+  {
+    "id": "ts_020",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Select the option that translates perfectly: 'But now you look me in the eye'.",
+    "opcoes": [
+      "Mas agora você olha nos meus olhos.",
+      "Mas agora você pisca para mim.",
+      "Mas você nunca olhou nos meus olhos.",
+      "Mas agora vejo através dos seus olhos."
+    ],
+    "resposta_correta": "Mas agora você olha nos meus olhos.",
+    "explicacao": "A expressão 'look someone in the eye' significa olhar diretamente nos olhos de alguém, indicando honestidade ou confrontamento direto."
   }
+  
 ]
