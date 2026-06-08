@@ -1684,6 +1684,181 @@
     ],
     "resposta_correta": "Mas agora você olha nos meus olhos.",
     "explicacao": "A expressão 'look someone in the eye' significa olhar diretamente nos olhos de alguém, indicando honestidade ou confrontamento direto."
+  },
+  {
+    "id": "petro_001",
+    "categoria": "Petrobras",
+    "tipo": "certo_errado",
+    "pergunta": "O padrão POSIX (Portable Operating System Interface) adotado pelo Linux tem o objetivo primordial de garantir e facilitar a interoperabilidade de aplicativos entre diferentes sistemas operacionais que também o adotam.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Certo",
+    "explicacao": "Conforme o material, o POSIX é um padrão cujo objetivo é facilitar a interoperabilidade de aplicativos entre sistemas, simplificando a implementação de novos softwares que precisam rodar em várias versões."
+  },
+  {
+    "id": "petro_002",
+    "categoria": "Petrobras",
+    "tipo": "multipla",
+    "pergunta": "Qual das seguintes licenças rege o Kernel do Linux, impondo a condição de que qualquer software derivado dele deve obrigatoriamente manter a mesma licença, permanecendo livre e aberto?",
+    "opcoes": [
+      "Licença MIT",
+      "Licença Apache 2.0",
+      "Licença GPLv2",
+      "Proprietária Comercial"
+    ],
+    "resposta_correta": "Licença GPLv2",
+    "explicacao": "A licença do Linux é a GPLv2 (General Public License versão 2), que possui a característica de 'vidalidade' (copyleft), exigindo que os derivados continuem livres e abertos sob a mesma licença."
+  },
+  {
+    "id": "petro_003",
+    "categoria": "Petrobras",
+    "tipo": "multipla",
+    "pergunta": "O Linux é estruturado com base em um Kernel Monolítico. Do ponto de vista da arquitetura de Sistemas Operacionais, qual a principal implicação teórica desse modelo?",
+    "opcoes": [
+      "Cada módulo roda isolado em espaço de usuário, garantindo imunidade total a falhas do sistema.",
+      "Todos os serviços fundamentais rodam em um bloco único no núcleo, o que pode fazer o sistema falhar por inteiro caso um módulo apresente problemas.",
+      "O núcleo interage apenas com o servidor de janelas X11, impedindo conexões em linha de comando.",
+      "O sistema operacional fica restrito à execução de apenas um processo por vez (monotarefa)."
+    ],
+    "resposta_correta": "Todos os serviços fundamentais rodam em um bloco único no núcleo, o que pode fazer o sistema falhar por inteiro caso um módulo apresente problemas.",
+    "explicacao": "O kernel monolítico roda como um bloco único. Por essa razão, se um de seus módulos falhar ou corromper na memória, há o risco de derrubar e travar o sistema inteiro."
+  },
+  {
+    "id": "petro_004",
+    "categoria": "Petrobras",
+    "tipo": "certo_errado",
+    "pergunta": "Ao contrário de sistemas como o Windows, o Linux é classificado como 'case-sensitive', o que significa que o sistema operacional faz distinção estrita entre letras maiúsculas e minúsculas na nomeação de arquivos e pastas.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Certo",
+    "explicacao": "Correto. No Linux, os arquivos 'Relatorio.txt' e 'relatorio.txt' são tratados como dois arquivos completamente diferentes na mesma pasta devido ao comportamento case-sensitive."
+  },
+  {
+    "id": "petro_005",
+    "categoria": "Petrobras",
+    "tipo": "multipla",
+    "pergunta": "Um administrador de infraestrutura da Petrobras precisa instalar um pacote de segurança em um servidor rodando a distribuição Red Hat Enterprise Linux (RHEL). Qual comando e gerenciador moderno ele deve utilizar?",
+    "opcoes": [
+      "sudo apt install pacote",
+      "sudo pacman -S pacote",
+      "sudo dnf install pacote",
+      "sudo zypper install pacote"
+    ],
+    "resposta_correta": "sudo dnf install pacote",
+    "explicacao": "Nas distribuições derivadas da família Red Hat (como RHEL, Fedora e CentOS), o gerenciador de pacotes moderno que substituiu o Yum é o DNF."
+  },
+  {
+    "id": "petro_006",
+    "categoria": "Petrobras",
+    "tipo": "multipla",
+    "pergunta": "Se um técnico de suporte optar por utilizar a distribuição openSUSE, qual ferramenta nativa de gerenciamento de pacotes ele executará no shell?",
+    "opcoes": [
+      "APT",
+      "Zypper",
+      "Pacman",
+      "DNF"
+    ],
+    "resposta_correta": "Zypper",
+    "explicacao": "O gerenciador de pacotes padrão e nativo adotado pela distribuição openSUSE é o Zypper."
+  },
+  {
+    "id": "petro_007",
+    "categoria": "Petrobras",
+    "tipo": "certo_errado",
+    "pergunta": "No ecossistema GNU/Linux, os aplicativos de usuário interagem diretamente com o hardware da máquina, enquanto o Kernel atua apenas como o interpretador de comandos de texto (shell).",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Errado",
+    "explicacao": "Invertido. Quem interage e se comunica diretamente com o hardware é o Kernel. Os aplicativos se comunicam com o shell (interpretador) ou com o servidor de janelas gráficos."
+  },
+  {
+    "id": "petro_008",
+    "categoria": "Petrobras",
+    "tipo": "multipla",
+    "pergunta": "Qual é o nome técnico do sistema de janelas padrão amplamente utilizado para prover a infraestrutura de interface gráfica no Linux?",
+    "opcoes": [
+      "GPLv2",
+      "POSIX",
+      "X11",
+      "WINE"
+    ],
+    "resposta_correta": "X11",
+    "explicacao": "O material cita expressamente que o sistema de gerenciamento e servidor de janelas gráfico padrão no Linux é o X11."
+  },
+  {
+    "id": "petro_009",
+    "categoria": "Petrobras",
+    "tipo": "certo_errado",
+    "pergunta": "O termo GNU/Linux provém da junção do Kernel desenvolvido por Linus Torvalds com o conjunto de softwares livres e utilitários criados pelo projeto GNU.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Certo",
+    "explicacao": "O sistema operacional completo é comumente chamado de GNU/Linux porque o Linux é apenas o núcleo (kernel), enquanto o ecossistema de programas e ferramentas ao redor dele nasceu do projeto GNU."
+  },
+  {
+    "id": "petro_010",
+    "categoria": "Petrobras",
+    "tipo": "multipla",
+    "pergunta": "A distribuição Arch Linux e sua derivada Manjaro utilizam qual ferramenta para a administração, instalação e atualização de seus pacotes de software?",
+    "opcoes": [
+      "Pacman",
+      "APT",
+      "DNF",
+      "Yum"
+    ],
+    "resposta_correta": "Pacman",
+    "explicacao": "O gerenciador de pacotes exclusivo e nativo das distribuições baseadas na árvore do Arch Linux é o Pacman."
+  },
+  {
+    "id": "petro_011",
+    "categoria": "Petrobras",
+    "tipo": "certo_errado",
+    "pergunta": "Por ser um sistema nativamente multiusuário, o Linux permite que vários usuários cadastrados no sistema acessem e utilizem os recursos computacionais simultaneamente.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Certo",
+    "explicacao": "A característica 'multiusuário' garante exatamente o isolamento e compartilhamento de recursos para que múltiplas pessoas usem a máquina de forma concorrente e paralela."
+  },
+  {
+    "id": "petro_012",
+    "categoria": "Petrobras",
+    "tipo": "multipla",
+    "pergunta": "Com o uso de softwares utilitários específicos de compatibilidade, torna-se viável a execução de aplicações nativas do Windows dentro de um ambiente Linux. Qual programa realiza essa função?",
+    "opcoes": [
+      "X11",
+      "WINE",
+      "POSIX",
+      "APT"
+    ],
+    "resposta_correta": "WINE",
+    "explicacao": "Com base nas notas do exercício resolvido do Gran Concursos, é possível rodar aplicações Windows no Linux utilizando a camada de compatibilidade do aplicativo WINE."
+  },
+  {
+    "id": "petro_013",
+    "categoria": "Petrobras",
+    "tipo": "certo_errado",
+    "pergunta": "O Linux é considerado um sistema 'Unix-Like' porque foi construído clonando exatamente o código-fonte comercial e privado do sistema Unix original da década de 1970.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Errado",
+    "explicacao": "O Linux é Unix-Like porque compartilha semelhanças arquiteturais e de comportamento com o Unix, além de seguir padrões como o POSIX. No entanto, seu código-fonte foi escrito do zero e é aberto, não possuindo o código comercial privado do Unix."
+  },
+  {
+    "id": "petro_014",
+    "categoria": "Petrobras",
+    "tipo": "multipla",
+    "pergunta": "Em termos de estabilidade de distribuições citadas no texto, qual a relação exposta entre os sistemas Debian e Ubuntu?",
+    "opcoes": [
+      "O Ubuntu é uma distribuição puramente comercial e privada, ao contrário do Debian.",
+      "O Debian é baseado no Ubuntu, contudo apresenta um nível de estabilidade considerado superior.",
+      "O Ubuntu abandonou o padrão POSIX, forçando o Debian a usar o gerenciador Pacman.",
+      "O Debian não aceita a execução de tarefas simultâneas (multitarefa)."
+    ],
+    "resposta_correta": "O Debian é baseado no Ubuntu, contudo apresenta um nível de estabilidade considerado superior.",
+    "explicacao": "O resumo textual do material aponta diretamente que o Debian é baseado no Ubuntu, mas é tido como uma opção mais estável para servidores e serviços de missão crítica."
+  },
+  {
+    "id": "petro_015",
+    "categoria": "Petrobras",
+    "tipo": "certo_errado",
+    "pergunta": "Ao realizar a instalação padrão do sistema operacional GNU/Linux, o administrador é obrigado a instalar um ambiente gráfico, sendo impossível operar o sistema unicamente através da linha de comando (shell).",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Errado",
+    "explicacao": "O Linux oferece flexibilidade total. É perfeitamente possível e comum (especialmente em servidores de grandes empresas como a Petrobras) realizar a instalação enxuta, operando o sistema puramente via linha de comando (shell) sem gastar hardware com interfaces gráficas."
   }
   
 ]
