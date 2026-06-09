@@ -1859,6 +1859,432 @@
     "opcoes": ["Certo", "Errado"],
     "resposta_correta": "Errado",
     "explicacao": "O Linux oferece flexibilidade total. É perfeitamente possível e comum (especialmente em servidores de grandes empresas como a Petrobras) realizar a instalação enxuta, operando o sistema puramente via linha de comando (shell) sem gastar hardware com interfaces gráficas."
+  },
+  {
+    "id": "cyb_v2_001",
+    "categoria": "Cibersegurança",
+    "tipo": "multipla",
+    "pergunta": "De acordo com o material, qual é a fórmula exata utilizada para definir um vetor de ataque?",
+    "opcoes": [
+      "Vetor de Ataque = Malware + Exploit + Payload",
+      "Vetor de Ataque = Vulnerabilidade + Mecanismo + Caminho",
+      "Vetor de Ataque = Usuário + E-mail + Firewall",
+      "Vetor de Ataque = Phishing + Criptografia + DNS"
+    ],
+    "resposta_correta": "Vetor de Ataque = Vulnerabilidade + Mecanismo + Caminho",
+    "explicacao": "O material define explicitamente que o vetor de ataque (o método específico para obter acesso) é composto pela soma da vulnerabilidade existente, o mecanismo utilizado e o caminho percorrido."
+  },
+  {
+    "id": "cyb_v2_002",
+    "categoria": "Cibersegurança",
+    "tipo": "certo_errado",
+    "pergunta": "A Engenharia Social é classificada como uma ameaça de natureza puramente técnica, pois ataca falhas de projeto ocultas diretamente no código-fonte do sistema operacional.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Errado",
+    "explicacao": "A Engenharia Social foca na manipulação psicológica de pessoas (o fator humano) para obter vantagens ou dados confidenciais, não sendo uma falha técnica de código de software."
+  },
+  {
+    "id": "cyb_v2_003",
+    "categoria": "Cibersegurança",
+    "tipo": "multipla",
+    "pergunta": "Um ataque de phishing altamente personalizado e direcionado especificamente ao CEO ou a diretores executivos de alto escalão (VIPs) de uma corporação é classificado como:",
+    "opcoes": [
+      "Spear Phishing",
+      "Smishing",
+      "Whale Phishing",
+      "Vishing"
+    ],
+    "resposta_correta": "Whale Phishing",
+    "explicacao": "O Whale Phishing é uma variante do phishing focada em 'peixes grandes' da empresa, ou seja, executivos de alto escalão como CEOs e Diretores."
+  },
+  {
+    "id": "cyb_v2_004",
+    "categoria": "Cibersegurança",
+    "tipo": "multipla",
+    "pergunta": "Durante o ciclo de exploração de um ataque cibernético, o momento em que o invasor efetivamente instala ou executa uma carga maliciosa como um ransomware ou cavalo de troia ocorre em qual estágio?",
+    "opcoes": [
+      "Estágio de Pré-exploração",
+      "Ponto Fraco Explorado",
+      "Estágio de Pós-exploração",
+      "Fase de Reconhecimento passivo"
+    ],
+    "resposta_correta": "Estágio de Pós-exploração",
+    "explicacao": "O estágio de pós-exploração ocorre logo após a barreira protetora ser rompida. É nesta fase que o atacante executa a sua carga maliciosa (payload), como o ransomware."
+  },
+  {
+    "id": "cyb_v2_005",
+    "categoria": "Cibersegurança",
+    "tipo": "certo_errado",
+    "pergunta": "O Ataque de Aniversário explora falhas em algoritmos de hashing, ocorrendo quando duas entradas de dados diferentes geram o mesmo resultado de saída (colisão).",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Certo",
+    "explicacao": "Correto. O ataque de aniversário baseia-se no paradoxo do aniversário para encontrar colisões em funções hash, comprometendo a integridade dos dados."
+  },
+  {
+    "id": "cyb_v2_006",
+    "categoria": "Cibersegurança",
+    "tipo": "multipla",
+    "pergunta": "Ao avaliar a Threat Intelligence (Inteligência de Ameaças), quais são as três características obrigatórias que a informação deve possuir para ser considerada eficaz?",
+    "opcoes": [
+      "Secreta, Gratuita e Criptografada",
+      "Relevante, Acionável e Contextual",
+      "Automática, Digital e Compartilhada",
+      "Rápida, Ofensiva e Governamental"
+    ],
+    "resposta_correta": "Relevante, Acionável e Contextual",
+    "explicacao": "Segundo o Gartner citado no texto, para que a inteligência de ameaças funcione, ela deve impactar a empresa (relevante), permitir uma tomada de atitude (acionável) e trazer o cenário completo (contextual)."
+  },
+  {
+    "id": "cyb_v2_007",
+    "categoria": "Cibersegurança",
+    "tipo": "multipla",
+    "pergunta": "Onde pode ser encontrada a Threat Intelligence categorizada como 'Interna'?",
+    "opcoes": [
+      "Em relatórios gratuitos emitidos pelo FBI e pela agência DHS.",
+      "Nos serviços de assinatura pagos contratados junto ao FortiGuard Labs.",
+      "Na própria equipe de TI, através da análise de logs de servidores e registros de tráfego de rede.",
+      "No dicionário de vulnerabilidades públicas conhecido como CVE."
+    ],
+    "resposta_correta": "Na própria equipe de TI, através da análise de logs de servidores e registros de tráfego de rede.",
+    "explicacao": "A inteligência interna provém do monitoramento dos próprios ativos da organização, coletando dados de logs históricos e capturas de tráfego da rede interna."
+  },
+  {
+    "id": "cyb_v2_008",
+    "categoria": "Cibersegurança",
+    "tipo": "certo_errado",
+    "pergunta": "O modelo Cyber Kill Chain, desenvolvido pela Lockheed Martin, é uma estrutura de ataque de matriz complexa que mapeia táticas e técnicas específicas sem adotar um fluxo linear.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Errado",
+    "explicacao": "O Cyber Kill Chain é um modelo linear composto por 7 etapas sequenciais. A estrutura não linear, complexa e em formato de matriz que mapeia táticas e técnicas é o framework MITRE ATT&CK."
+  },
+  {
+    "id": "cyb_v2_009",
+    "categoria": "Cibersegurança",
+    "tipo": "multipla",
+    "pergunta": "No modelo Cyber Kill Chain, a etapa em que o atacante cria uma carga útil maligna (como um arquivo do Word infectado anexado a um e-mail falso de emprego) é chamada de:",
+    "opcoes": [
+      "Reconhecimento",
+      "Armamentização (Weaponization)",
+      "Entrega",
+      "Instalação"
+    ],
+    "resposta_correta": "Armamentização (Weaponization)",
+    "explicacao": "A armamentização é a segunda fase da Kill Chain. Nela, o invasor une um artefato legítimo a um código malicioso, criando a carga útil (payload) que será enviada."
+  },
+  {
+    "id": "cyb_v2_010",
+    "categoria": "Cibersegurança",
+    "tipo": "multipla",
+    "pergunta": "Qual é a ordem correta das 3 últimas etapas da Cyber Kill Chain tradicional?",
+    "opcoes": [
+      "Entrega ➔ Instalação ➔ Exfiltração",
+      "Instalação ➔ Comando e Controle (C2) ➔ Exfiltração",
+      "Exploração ➔ Armamentização ➔ Comando e Controle (C2)",
+      "Reconhecimento ➔ Instalação ➔ Entrega"
+    ],
+    "resposta_correta": "Instalação ➔ Comando e Controle (C2) ➔ Exfiltração",
+    "explicacao": "As três fases finais que concluem o ataque na Kill Chain são: Instalação do malware, estabelecimento do canal de Comando e Controle (C2) para receber ordens e, por fim, a Exfiltração de dados (ações nos objetivos)."
+  },
+  {
+    "id": "cyb_v2_011",
+    "categoria": "Cibersegurança",
+    "tipo": "certo_errado",
+    "pergunta": "Uma das críticas apontadas ao modelo tradicional da Cyber Kill Chain é que ela foca excessivamente em defesas de perímetro e ignora ameaças de invasores internos (insiders).",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Certo",
+    "explicacao": "Correto. O material ressalta como ponto negativo o fato de a Kill Chain assumir que o ataque sempre vem de fora, falhando em mapear de forma robusta os ataques internos."
+  },
+  {
+    "id": "cyb_v2_012",
+    "categoria": "Cibersegurança",
+    "tipo": "multipla",
+    "pergunta": "Dentro da categorização de TTPs (Táticas, Técnicas e Procedimentos), qual item responde ao OBJETIVO final do invasor (ex: obter acesso persistente à rede)?",
+    "opcoes": [
+      "Táticas",
+      "Técnicas",
+      "Procedimentos",
+      "Políticas"
+    ],
+    "resposta_correta": "Táticas",
+    "explicacao": "As Táticas representam o objetivo tático ou a intenção do invasor em uma determinada fase do ataque (o 'quê' ele quer alcançar)."
+  },
+  {
+    "id": "cyb_v2_013",
+    "categoria": "Cibersegurança",
+    "tipo": "certo_errado",
+    "pergunta": "De acordo com dados estatísticos apresentados pelo site Looking Glass, cerca de 90% das violações de dados atuais incluem componentes de Engenharia Social.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Certo",
+    "explicacao": "Correto. Essa alta porcentagem reforça que o fator humano continua sendo explorado como o elo mais vulnerável nas estratégias corporativas de segurança."
+  },
+  {
+    "id": "cyb_v2_014",
+    "categoria": "Cibersegurança",
+    "tipo": "multipla",
+    "pergunta": "Um ataque de engenharia social que utiliza mensagens de texto de celular (SMS) contendo links maliciosos que simulam alertas bancários é tecnicamente denominado:",
+    "opcoes": [
+      "Vishing",
+      "Smishing",
+      "Baiting",
+      "Scareware"
+    ],
+    "resposta_correta": "Smishing",
+    "explicacao": "Smishing é o termo originado da junção de SMS + Phishing, caracterizando ataques de engenharia social disparados via mensagens de texto em dispositivos móveis."
+  },
+  {
+    "id": "cyb_v2_015",
+    "categoria": "Cibersegurança",
+    "tipo": "multipla",
+    "pergunta": "Qual técnica de engenharia social consiste em deixar propositalmente um pendrive infectado em um local de grande circulação com uma etiqueta atraente (ex: 'Salários da Diretoria') esperando que um funcionário o conecte à rede por curiosidade?",
+    "opcoes": [
+      "Quid Pro Quo",
+      "Watering Hole",
+      "Baiting (Isca)",
+      "Spear Phishing"
+    ],
+    "resposta_correta": "Baiting (Isca)",
+    "explicacao": "O Baiting (Isca) utiliza a promessa de um bem ou a curiosidade da vítima, materializada em um item digital ou físico infectado, para induzi-la a comprometer sua própria segurança."
+  },
+  {
+    "id": "cyb_v2_016",
+    "categoria": "Cibersegurança",
+    "tipo": "certo_errado",
+    "pergunta": "A técnica de 'Watering Hole' consiste em criar janelas pop-up falsas que alertam o usuário de que seu computador está infectado, induzindo o pânico para que ele baixe um falso antivírus.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Errado",
+    "explicacao": "A descrição refere-se ao Scareware. O 'Watering Hole' (Ponto de Dessedentação) consiste em infectar sites legítimos frequentemente visitados por um grupo de alvos específicos."
+  },
+  {
+    "id": "cyb_v2_017",
+    "categoria": "Cibersegurança",
+    "tipo": "multipla",
+    "pergunta": "Como é classificado, na tipologia de ameaças internas (insiders), o funcionário legítimo que não possui má intenção, mas acaba comprometendo a segurança da empresa por puro descuido ou falta de atenção às políticas vigentes?",
+    "opcoes": [
+      "Toupeira (Mole)",
+      "Lobo Solitário",
+      "Peão (Pawn)",
+      "Pateta/Negligente"
+    ],
+    "resposta_correta": "Pateta/Negligente",
+    "explicacao": "O usuário negligente (ou 'pateta', segundo a tradução do slide) é aquele que gera brechas e incidentes de segurança puramente por descuido, preguiça ou falta de conscientização, sem intenção maliciosa."
+  },
+  {
+    "id": "cyb_v2_018",
+    "categoria": "Cibersegurança",
+    "tipo": "multipla",
+    "pergunta": "Qual tipo de fraude cibernética ocorre quando criminosos atacam e alteram Servidores DNS, fazendo com que o usuário seja redirecionado secretamente para um site falso, mesmo tendo digitado a URL correta no navegador?",
+    "opcoes": [
+      "Pharming",
+      "Dumpster Diving",
+      "Eavesdropping",
+      "Tailgating"
+    ],
+    "resposta_correta": "Pharming",
+    "explicacao": "O Pharming ataca a infraestrutura de resolução de nomes (DNS). Ao envenenar o servidor DNS, o tráfego do usuário é desviado para réplicas de sites fraudulentos criadas pelos criminosos."
+  },
+  {
+    "id": "cyb_v2_019",
+    "categoria": "Cibersegurança",
+    "tipo": "certo_errado",
+    "pergunta": "Diferente de ataques focados em ganho financeiro direto, as campanhas de influência on-line buscam mudar a opinião pública espalhando narrativas falsas executadas de má-fé.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Certo",
+    "explicacao": "Correto. O objetivo das campanhas de influência é ideológico, geopolítico ou de imagem pública. Elas visam desestabilizar concorrentes ou nações manipulando a percepção em massa."
+  },
+  {
+    "id": "cyb_v2_020",
+    "categoria": "Cibersegurança",
+    "tipo": "multipla",
+    "pergunta": "Qual é a sequência exata de passos do ciclo de funcionamento de uma campanha de influência on-line bem-sucedida?",
+    "opcoes": [
+      "Publicação ➔ Criação de conteúdo ➔ Contas falsas ➔ Compartilhamento real ➔ Amplificação pela mídia",
+      "Criação de contas falsas ➔ Criação de conteúdo ➔ Publicação ➔ Compartilhamento por pessoas reais ➔ Amplificação pela mídia de massa",
+      "Infeção por malware ➔ Criptografia de dados ➔ Exfiltração ➔ Resgate ➔ Amplificação",
+      "Interceptação ➔ Auditoria ➔ DNS Spoofing ➔ Compartilhamento ➔ Fraude de férias"
+    ],
+    "resposta_correta": "Criação de contas falsas ➔ Criação de conteúdo ➔ Publicação ➔ Compartilhamento por pessoas reais ➔ Amplificação pela mídia de massa",
+    "explicacao": "A sequência apresentada no gabarito do curso dita as 5 etapas estruturais para consolidar uma campanha de desinformação em massa: criar os perfis fakes, produzir a narrativa, publicar, obter compartilhamentos orgânicos de pessoas reais enganadas e, por fim, ganhar espaço na grande mídia corporativa."
+  },
+  {
+    "id": "petro_016",
+    "categoria": "Petrobras",
+    "tipo": "multipla",
+    "pergunta": "Após a instalação do Ubuntu 24.04, um técnico de suporte N2 precisa atualizar completamente os pacotes do sistema via terminal. Qual é a ordem obrigatória de execução dos comandos?",
+    "opcoes": [
+      "sudo apt upgrade primeiro; depois sudo apt update.",
+      "Apenas o comando sudo apt update já baixa e instala todas as atualizações de pacotes.",
+      "sudo apt update primeiro; depois sudo apt upgrade.",
+      "sudo apt install -all para automatizar o repositório."
+    ],
+    "resposta_correta": "sudo apt update primeiro; depois sudo apt upgrade.",
+    "explicacao": "Pegadinha clássica de prova: o 'update' apenas baixa os índices e atualiza as listas de repositórios. Quem efetivamente instala as novas versões dos pacotes no sistema é o 'upgrade', que deve ser rodado logo em sequência."
+  },
+  {
+    "id": "petro_017",
+    "categoria": "Petrobras",
+    "tipo": "certo_errado",
+    "pergunta": "No padrão de estrutura de diretórios do Linux (FHS), o símbolo '~' representa a raiz absoluta de todo o sistema operacional, enquanto o caractere '/' aponta para o diretório pessoal (home) do usuário que está logado no momento.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Errado",
+    "explicacao": "Conceito invertido. A raiz do sistema é representada obrigatoriamente pela barra '/', enquanto o til '~' representa o diretório home do usuário atual."
+  },
+  {
+    "id": "petro_018",
+    "categoria": "Petrobras",
+    "tipo": "multipla",
+    "pergunta": "Como boa prática de infraestrutura em servidores de produção, qual diretório deve ser isolado em uma partição própria para evitar que o crescimento desordenado de logs sature o disco e cause a indisponibilidade do sistema?",
+    "opcoes": [
+      "/boot",
+      "/etc",
+      "/proc",
+      "/var"
+    ],
+    "resposta_correta": "/var",
+    "explicacao": "O diretório '/var' contém dados variáveis, incluindo os logs do sistema em '/var/log'. Isolá-lo em uma partição impede que logs gigantes ocupem todo o espaço da partição raiz (/), blindando o servidor."
+  },
+  {
+    "id": "petro_019",
+    "categoria": "Petrobras",
+    "tipo": "multipla",
+    "pergunta": "Um administrador de sistemas precisa acessar o diretório que armazena os arquivos de configuração globais do sistema operacional e de seus serviços. Qual caminho absoluto ele deve acessar?",
+    "opcoes": [
+      "/bin",
+      "/etc",
+      "/opt",
+      "/dev"
+    ],
+    "resposta_correta": "/etc",
+    "explicacao": "O diretório '/etc' é o local padrão no Linux reservado estritamente para guardar os arquivos de configuração do sistema e dos serviços instalados."
+  },
+  {
+    "id": "petro_020",
+    "categoria": "Petrobras",
+    "tipo": "certo_errado",
+    "pergunta": "Os diretórios /bin e /sbin contêm arquivos binários e comandos essenciais para a inicialização (boot) e recuperação do sistema, diferindo de /usr/bin e /usr/sbin, que guardam binários de espaço de usuário não críticos ao boot.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Certo",
+    "explicacao": "Perfeito. Essa diferenciação de criticidade entre as pastas binárias (/bin vs /usr/bin) é muito cobrada em provas de nível técnico e superior."
+  },
+  {
+    "id": "petro_021",
+    "categoria": "Petrobras",
+    "tipo": "multipla",
+    "pergunta": "Considere que um analista está atualmente posicionado no diretório '/home/user3'. Ele precisa navegar para a pasta de imagens utilizando um caminho RELATIVO. Qual comando ele deve digitar?",
+    "opcoes": [
+      "cd /home/user3/IMG",
+      "cd ~",
+      "cd IMG",
+      "cd /IMG"
+    ],
+    "resposta_correta": "cd IMG",
+    "explicacao": "Caminhos relativos não começam com '/'; eles dependem do local atual. Se o usuário já está em '/home/user3', basta digitar 'cd IMG' para acessar a subpasta."
+  },
+  {
+    "id": "petro_022",
+    "categoria": "Petrobras",
+    "tipo": "multipla",
+    "pergunta": "Durante uma manutenção de hardware, um técnico precisa acessar o diretório que contém os arquivos que representam os dispositivos físicos conectados ao sistema (como discos rígidos e mídias). Este diretório é o:",
+    "opcoes": [
+      "/proc",
+      "/tmp",
+      "/dev",
+      "/mnt"
+    ],
+    "resposta_correta": "/dev",
+    "explicacao": "O diretório '/dev' (devices) armazena pseudoarquivos que mapeiam e representam os dispositivos de hardware do sistema (ex: /dev/sda)."
+  },
+  {
+    "id": "petro_023",
+    "categoria": "Petrobras",
+    "tipo": "certo_errado",
+    "pergunta": "A licença GNU GPL adota um copyleft forte, exigindo que códigos derivados continuem livres. Por outro lado, a licença LGPL é mais permissiva e viabiliza a ligação (link edição) de bibliotecas do sistema com softwares proprietários.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Certo",
+    "explicacao": "Correto. A LGPL (Lesser GPL) foi criada especificamente para permitir que bibliotecas livres (como a glibc do GNU) pudessem ser linkadas por programas de código fechado/proprietários."
+  },
+  {
+    "id": "petro_024",
+    "categoria": "Petrobras",
+    "tipo": "multipla",
+    "pergunta": "Bancas organizadoras costumam listar opções fictícias ou erradas para testar o conhecimento do candidato sobre ecossistemas. Qual das alternativas abaixo NÃO representa uma distribuição Linux?",
+    "opcoes": [
+      "Fedora",
+      "Slackware",
+      "CentOS",
+      "Atlantis"
+    ],
+    "resposta_correta": "Atlantis",
+    "explicacao": "Conforme destacado nas pegadinhas de concurso do material, 'Atlantis/Atlântis' é um termo comumente usado em questões de múltipla escolha como uma opção falsa de distribuição Linux."
+  },
+  {
+    "id": "petro_025",
+    "categoria": "Petrobras",
+    "tipo": "certo_errado",
+    "pergunta": "Se um administrador de servidores precisar verificar informações dinâmicas do kernel e dados de processos em tempo real através de arquivos virtuais, ele deve consultar o diretório '/proc'.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Certo",
+    "explicacao": "O diretório '/proc' é um pseudo filesystem (sistema de arquivos virtual) que atua como uma janela para as informações de processos e do kernel em execução na memória."
+  },
+  {
+    "id": "petro_026",
+    "categoria": "Petrobras",
+    "tipo": "multipla",
+    "pergunta": "Um analista de infraestrutura da Petrobras foi designado para administrar um servidor rodando o sistema operacional CentOS. Qual ferramenta ele deve utilizar para gerenciar e instalar pacotes corporativos?",
+    "opcoes": [
+      "apt",
+      "dnf (ou yum)",
+      "pacman",
+      "apt-get"
+    ],
+    "resposta_correta": "dnf (ou yum)",
+    "explicacao": "Na família Red Hat/CentOS/Fedora, o gerenciamento de pacotes é de responsabilidade do DNF (ou do legado YUM), enquanto o APT é exclusivo da família Debian/Ubuntu."
+  },
+  {
+    "id": "petro_027",
+    "categoria": "Petrobras",
+    "tipo": "certo_errado",
+    "pergunta": "Diferente do ecossistema Microsoft Windows 10, o Linux permite que o administrador desinstale e substitua completamente o ambiente de desktop gráfico (como trocar o Gnome pelo KDE) mantendo o mesmo sistema operacional.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Certo",
+    "explicacao": "Correto. O Linux é modular e flexível. O ambiente gráfico (Desktop Environment) é independente do Kernel e pode ser trocado livremente, o que não ocorre nativamente no Windows corporativo."
+  },
+  {
+    "id": "petro_028",
+    "categoria": "Petrobras",
+    "tipo": "multipla",
+    "pergunta": "Qual comando de terminal é utilizado de forma rápida para subir um nível na árvore de diretórios (ir para o diretório pai) no shell do Linux?",
+    "opcoes": [
+      "cd /",
+      "cd ~",
+      "cd ...",
+      "cd .."
+    ],
+    "resposta_correta": "cd ...",
+    "explicacao": "Nota do material: O comando 'cd ...' (ou o tradicional 'cd ..' dependendo da parametrização/alias do shell) é usado para retornar ou subir um nível hierárquico na navegação."
+  },
+  {
+    "id": "petro_029",
+    "categoria": "Petrobras",
+    "tipo": "certo_errado",
+    "pergunta": "As pastas '/root' e '/' referem-se ao mesmo local no Linux, sendo ambas a pasta raiz do sistema onde ficam armazenados os arquivos temporários criados por usuários comuns.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Errado",
+    "explicacao": "'/' é a raiz de todo o sistema. '/root' é o diretório de arquivos pessoais (home) exclusivo do superusuário root. Eles são locais completamente separados. Arquivos temporários ficam em '/tmp'."
+  },
+  {
+    "id": "petro_030",
+    "categoria": "Petrobras",
+    "tipo": "multipla",
+    "pergunta": "Ao gerenciar pontos de montagem no Linux, qual a diferenciação recomendada pelo FHS para o uso dos diretórios /mnt e /media?",
+    "opcoes": [
+      "/mnt armazena configurações e /media armazena logs.",
+      "/mnt é para binários de administração e /media para arquivos do usuário.",
+      "/mnt é usado para montagens manuais/genéricas e /media para mídias removíveis automáticas.",
+      "Ambos são idênticos e o uso de um ou outro depende apenas se o sistema é case-sensitive."
+    ],
+    "resposta_correta": "Apenas o comando sudo apt update já baixa e instala todas as atualizações de pacotes.",
+    "resposta_correta": "/mnt é usado para montagens manuais/genéricas e /media para mídias removíveis automáticas.",
+    "explicacao": "O diretório '/mnt' serve como ponto de montagem temporário ou manual feito pelo administrador. O '/media' é utilizado pelo sistema para montagens automáticas de mídias do usuário (como pendrives e CDs)."
   }
   
 ]
