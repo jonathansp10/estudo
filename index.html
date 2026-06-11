@@ -6,76 +6,98 @@
     <title>Sistema de Estudos</title>
     <style>
         body { font-family: Arial, sans-serif; background-color: #f4f4f9; display: flex; flex-direction: column; align-items: center; padding: 20px; }
-        #setup-screen, #flashcard-screen, #resultado-screen { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); width: 100%; max-width: 500px; text-align: center; }
+        .card { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); width: 100%; max-width: 500px; text-align: center; margin-bottom: 20px; }
         .hidden { display: none !important; }
         input[type="number"], button { padding: 10px; margin: 10px 0; font-size: 16px; border-radius: 5px; box-sizing: border-box; }
-        button { background-color: #007bff; color: white; border: none; cursor: pointer; width: 100%; }
+        button { background-color: #007bff; color: white; border: none; cursor: pointer; width: 100%; font-weight: bold; }
         button:hover { background-color: #0056b3; }
         
-        /* Novo estilo para alinhar categoria e quantidade */
         .categorias-box { text-align: left; margin: 15px 0; padding: 15px; background: #f8f9fa; border-radius: 5px; }
         .cat-row { display: flex; justify-content: space-between; align-items: center; margin: 10px 0; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px; }
         .cat-row:last-child { border-bottom: none; padding-bottom: 0; }
         .cat-row label { display: flex; align-items: center; cursor: pointer; font-size: 15px; margin: 0; }
         .cat-row input[type="number"] { width: 70px; padding: 5px; margin: 0; text-align: center; border: 1px solid #ccc; }
         
-        .option-btn { background-color: #e2e8f0; color: #333; margin: 5px 0; transition: background-color 0.3s; }
+        .option-btn { background-color: #e2e8f0; color: #333; margin: 5px 0; transition: background-color 0.3s; text-align: left; padding: 15px; }
         .option-btn:hover:not(:disabled) { background-color: #cbd5e1; }
         .option-btn:disabled { cursor: not-allowed; opacity: 0.9; }
         #explicacao { margin-top: 20px; padding: 15px; background-color: #eef2ff; border-left: 4px solid #4f46e5; text-align: left; font-size: 14px; line-height: 1.5; }
-        .btn-proxima { background-color: #4f46e5; margin-top: 20px; font-weight: bold; }
-        .btn-proxima:hover { background-color: #4338ca; }
+        
+        /* --- ESTILOS EXCLUSIVOS PARA IMPRESSÃO DA PROVA --- */
+        #print-area { text-align: left; width: 100%; max-width: 800px; font-family: 'Times New Roman', serif; background: white; padding: 20px; }
+        .questao-print { margin-bottom: 30px; page-break-inside: avoid; }
+        .questao-texto { font-weight: bold; margin-bottom: 10px; font-size: 16px; }
+        .opcao-print { margin-bottom: 5px; margin-left: 20px; font-size: 15px; }
+        .gabarito-print { margin-top: 40px; page-break-before: always; border-top: 2px solid #000; padding-top: 20px; }
+        .gabarito-item { margin-bottom: 5px; font-size: 14px; }
+        
+        @media print {
+            body { background: white; padding: 0; }
+            .card, #btn-voltar-inicio { display: none !important; }
+            #print-area { display: block !important; width: 100%; max-width: none; }
+        }
     </style>
 </head>
 <body>
 
-    <!-- Tela de Configuração -->
-    <div id="setup-screen">
-        <h2>Configurar Sessão</h2>
-        
+    <div id="setup-screen" class="card">
+        <h2>Configurar Sessão Diária</h2>
         <div class="categorias-box">
             <strong style="display:block; margin-bottom: 10px;">Categorias e Quantidades:</strong>
-            <div id="categorias-container">
-                <!-- Linhas preenchidas via JS -->
-            </div>
+            <div id="categorias-container"></div>
         </div>
-
-        <button id="btn-iniciar" style="background: #22c55e; margin-top: 20px;">Iniciar Sessão</button>
+        <button id="btn-iniciar" style="background: #22c55e;">Iniciar Flashcards</button>
+        
+        <hr style="margin: 25px 0; border: 0; border-top: 1px solid #ddd;">
+        
+        <h2>Caderno de Erros (Simulado)</h2>
+        <p style="font-size: 14px; color: #666;">Gera uma prova para impressão com as questões que você mais errou no sistema.</p>
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 15px;">
+            <label for="qtd-prova" style="font-weight: bold;">Qtd de Questões:</label>
+            <input type="number" id="qtd-prova" min="1" max="100" value="10" style="width: 80px;">
+        </div>
+        <button id="btn-gerar-prova" style="background: #64748b; margin-top: 10px;">🖨️ Gerar e Imprimir Prova</button>
     </div>
 
-    <!-- Tela do Flashcard -->
-    <div id="flashcard-screen" class="hidden">
+    <hr style="margin: 25px 0; border: 0; border-top: 1px solid #ddd;">
+<h2>Sincronização Manual</h2>
+<div style="display: flex; gap: 10px; margin-top: 15px;">
+    <button id="btn-exportar" style="background: #0ea5e9;">📥 Baixar Progresso</button>
+    <label for="btn-importar" style="background: #f59e0b; color: white; padding: 10px; border-radius: 5px; cursor: pointer; text-align: center; width: 100%; font-weight: bold;">
+        📤 Carregar Progresso
+    </label>
+    <input type="file" id="btn-importar" accept=".json" style="display: none;">
+</div>
+
+    <div id="flashcard-screen" class="card hidden">
         <div style="display: flex; justify-content: space-between; color: #64748b; font-size: 14px;">
             <span id="categoria-label">Categoria</span>
             <span id="contador-label">0/0</span>
         </div>
-        
         <h2 id="pergunta-texto" style="margin: 20px 0;">Texto da pergunta aqui...</h2>
-        
-        <!-- Novo botão de áudio -->
-        <button id="btn-ouvir" class="hidden" style="background-color: #eab308; color: #fff; margin-bottom: 15px; width: auto; padding: 8px 20px; border-radius: 20px; font-weight: bold;">🔊 Ouvir Pronúncia</button>
-        
+        <button id="btn-ouvir" class="hidden" style="background-color: #eab308; color: #fff; margin-bottom: 15px; width: auto; padding: 8px 20px; border-radius: 20px;">🔊 Ouvir</button>
         <div id="opcoes-container"></div>
-        
         <div id="explicacao" class="hidden"></div>
-
         <div id="controles-feedback" class="hidden">
-            <button id="btn-proxima" class="btn-proxima">Próxima Pergunta ➔</button>
+            <button id="btn-proxima" style="background-color: #4f46e5; margin-top: 20px;">Próxima Pergunta ➔</button>
         </div>
     </div>
 
-    <!-- Tela de Resultados -->
-    <div id="resultado-screen" class="hidden">
+    <div id="resultado-screen" class="card hidden">
         <h2>Sessão Concluída! 🚀</h2>
-        
         <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin: 20px 0; font-size: 18px;">
             <p>Acertos: <span id="res-acertos" style="color: #22c55e; font-weight: bold;">0</span></p>
             <p>Erros: <span id="res-erros" style="color: #ef4444; font-weight: bold;">0</span></p>
             <hr style="border: 0; border-top: 1px solid #ddd; margin: 15px 0;">
             <h3>Aproveitamento: <span id="res-porcentagem">0%</span></h3>
         </div>
+        <button onclick="location.reload()" style="background: #64748b;">Voltar ao Início</button>
+    </div>
 
-        <button id="btn-voltar-inicio" style="background: #64748b;">Voltar ao Início</button>
+    <div id="print-area" class="hidden">
+        <h1 style="text-align: center; margin-bottom: 30px;">Caderno de Erros - Simulado</h1>
+        <div id="prova-conteudo"></div>
+        <div id="prova-gabarito" class="gabarito-print"></div>
     </div>
 
     <script src="app.js"></script>
