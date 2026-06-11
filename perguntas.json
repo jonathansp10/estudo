@@ -1,5 +1,181 @@
 [
   {
+    "id": "pmbok_016",
+    "categoria": "Petrobras - PMBOK 7",
+    "tipo": "multipla",
+    "pergunta": "Sobre o Sistema de Entrega de Valor detalhado no PMBOK 7ª edição, qual afirmação reflete corretamente o conceito de 'Valor' adotado pelo PMI?",
+    "opcoes": [
+      "Valor é sinônimo exclusivo de lucratividade e Retorno Sobre o Investimento (ROI) financeiro.",
+      "Valor é caracterizado como o benefício, a importância ou a utilidade percebida pelas partes interessadas, podendo incluir aspectos sociais e ambientais.",
+      "A entrega de valor ocorre apenas na fase final de descontinuação do ciclo de vida do produto.",
+      "Valor é a garantia de que as operações contínuas não sofrerão mudanças ao longo do projeto."
+    ],
+    "resposta_correta": "Valor é caracterizado como o benefício, a importância ou a utilidade percebida pelas partes interessadas, podendo incluir aspectos sociais e ambientais.",
+    "explicacao": "Pegadinha clássica: valor não se limita a lucro financeiro. Ele é amplo e representa a utilidade ou benefício percebido pelas partes interessadas, seja ele social, de conformidade ou financeiro."
+  },
+  {
+    "id": "pmbok_017",
+    "categoria": "Petrobras - PMBOK 7",
+    "tipo": "certo_errado",
+    "pergunta": "As Operações (trabalho contínuo e repetitivo da empresa) ficam de fora do Sistema de Entrega de Valor, uma vez que apenas os projetos (trabalhos temporários) geram valor à organização.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Errado",
+    "explicacao": "As operações são parte integrante e fundamental do Sistema de Entrega de Valor. Elas mantêm o negócio funcionando e sustentam a entrega contínua dos produtos ou serviços."
+  },
+  {
+    "id": "pmbok_018",
+    "categoria": "Petrobras - PMBOK 7",
+    "tipo": "multipla",
+    "pergunta": "Considerando a hierarquia estrutural proposta pelo PMI para governança organizacional, qual das opções abaixo apresenta a ordem correta de agrupamento, do nível mais alto estratégico para o mais operacional?",
+    "opcoes": [
+      "Programa > Portfólio > Operação > Projeto",
+      "Projeto > Programa > Portfólio > Produto",
+      "Portfólio > Programa > Projeto",
+      "Produto > Portfólio > Programa > Operação"
+    ],
+    "resposta_correta": "Portfólio > Programa > Projeto",
+    "explicacao": "A ordem correta determina que: Portfólios podem agrupar programas; Programas agrupam projetos relacionados. Inversões dessa lógica costumam ser cobradas como erradas nas provas."
+  },
+  {
+    "id": "pmbok_019",
+    "categoria": "Petrobras - PMBOK 7",
+    "tipo": "certo_errado",
+    "pergunta": "O ambiente em que o projeto está inserido é dividido em fatores internos e externos. Como a distribuição geográfica das instalações da empresa é considerada um fator interno, ela está totalmente fora de qualquer influência ou controle organizacional por parte da equipe.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Errado",
+    "explicacao": "Erro clássico listado no material. Se o fator é 'interno' (como a distribuição de filiais e infraestrutura), há sim influência e margem de gestão/controle por parte da organização."
+  },
+  {
+    "id": "pmbok_020",
+    "categoria": "Petrobras - PMBOK 7",
+    "tipo": "multipla",
+    "pergunta": "Questão de Relacionamento de Focos.\nAssocie cada nível ao seu foco central:\n1. Portfólio\n2. Programas e Projetos\n\n( ) Fazer os trabalhos do jeito certo, buscando eficiência e eficácia técnica.\n( ) Fazer os trabalhos certos, buscando alinhamento e priorização estratégica.",
+    "opcoes": [
+      "1 - 2",
+      "2 - 1"
+    ],
+    "resposta_correta": "2 - 1",
+    "explicacao": "Programas e projetos (2) têm o foco em fazer do jeito certo (eficiência na entrega). O Portfólio (1) tem foco estratégico em escolher/priorizar as iniciativas certas."
+  },
+  {
+    "id": "pmbok_021",
+    "categoria": "Petrobras - PMBOK 7",
+    "tipo": "multipla",
+    "pergunta": "Dentro da relação entre o ciclo de vida do Produto e a execução de Projetos, é correto afirmar que:",
+    "opcoes": [
+      "Um único projeto nunca pode durar o ciclo de vida inteiro de um produto complexo.",
+      "Em cada fase do ciclo de um produto (ex: lançamento, maturidade, descontinuação), novos projetos podem ser iniciados para adicionar funções ou retirar o produto do mercado.",
+      "Projetos e Produtos são sinônimos, ambos representando um trabalho contínuo.",
+      "Após o produto entrar no mercado, não se pode abrir mais projetos relacionados a ele."
+    ],
+    "resposta_correta": "Em cada fase do ciclo de um produto (ex: lançamento, maturidade, descontinuação), novos projetos podem ser iniciados para adicionar funções ou retirar o produto do mercado.",
+    "explicacao": "Um produto possui um ciclo de vida longo. Para mantê-lo, a organização abre múltiplos projetos durante suas fases (ex: Projeto de versão 2.0, Projeto de encerramento)."
+  },
+  {
+    "id": "pmbok_022",
+    "categoria": "Petrobras - PMBOK 7",
+    "tipo": "certo_errado",
+    "pergunta": "Os 12 princípios de gerenciamento de projetos delineados no PMBOK 7 possuem uma estrutura hierárquica estrita, em que o princípio de 'Administração/Intendência' possui maior peso e deve ser priorizado sobre os demais.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Errado",
+    "explicacao": "Regra máxima: NÃO HÁ hierarquia, ordem ou pesos entre os 12 princípios do PMBOK 7. Todos possuem igual importância para guiar o comportamento da equipe."
+  },
+  {
+    "id": "pmbok_023",
+    "categoria": "Petrobras - PMBOK 7",
+    "tipo": "multipla",
+    "pergunta": "Sobre as diretrizes do Código de Ética e Conduta Profissional do PMI, assinale a opção correta.",
+    "opcoes": [
+      "O Código de Ética substitui e invalida os 12 princípios do PMBOK 7.",
+      "O Código de Ética possui apenas recomendações de comportamento, não havendo padrões obrigatórios que limitem ou proíbam condutas.",
+      "O Código de Ética aplica-se a todos os detentores de certificações PMI (como PMP ou CAPM), mesmo que eles não sejam membros filiados ao PMI.",
+      "O Código de Ética não se sobrepõe aos princípios do PMBOK em temas como Respeito."
+    ],
+    "resposta_correta": "O Código de Ética aplica-se a todos os detentores de certificações PMI (como PMP ou CAPM), mesmo que eles não sejam membros filiados ao PMI.",
+    "explicacao": "Pegadinha listada no material. Qualquer pessoa que tenha a certificação, seja ela pagante da filiação do PMI ou não, está subordinada e deve cumprir o Código de Ética."
+  },
+  {
+    "id": "pmbok_024",
+    "categoria": "Petrobras - PMBOK 7",
+    "tipo": "multipla",
+    "pergunta": "A mnemônica 'R2 JH' (ou 'R2 EH') é utilizada para recordar os 4 valores fundamentais que baseiam o Código de Ética do PMI. Quais são eles?",
+    "opcoes": [
+      "Responsabilidade, Respeito, Justiça/Equidade e Honestidade.",
+      "Rigor, Resiliência, Justiça/Equidade e Honestidade.",
+      "Responsabilidade, Respeito, Justiça/Equidade e Habilidade.",
+      "Respeito, Reputação, Justiça e Honra."
+    ],
+    "resposta_correta": "Responsabilidade, Respeito, Justiça/Equidade e Honestidade.",
+    "explicacao": "Conforme a revisão rápida do material, os quatro pilares do código são: Responsabilidade, Respeito, Justiça (Fairness/Equidade) e Honestidade."
+  },
+  {
+    "id": "pmbok_025",
+    "categoria": "Petrobras - PMBOK 7",
+    "tipo": "certo_errado",
+    "pergunta": "Questão de pegadinha. Segundo o Código de Ética do PMI, o 'compromisso com o melhor interesse da sociedade' é listado categoricamente como um dos quatro valores fundamentais do documento.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Errado",
+    "explicacao": "Dica explícita do material: 'melhor interesse da sociedade' NÃO faz parte da lista dos quatro valores básicos (Responsabilidade, Respeito, Justiça, Honestidade)."
+  },
+  {
+    "id": "pmbok_026",
+    "categoria": "Petrobras - PMBOK 7",
+    "tipo": "multipla",
+    "pergunta": "Um líder de projetos está lidando com incertezas regulatórias de mercado (novas leis do governo) e pesquisas acadêmicas instáveis. Segundo a classificação ambiental do projeto, com o que ele está lidando?",
+    "opcoes": [
+      "Ativos de processos organizacionais controláveis.",
+      "Fatores ambientais internos, de total influência da empresa.",
+      "Fatores ambientais externos (Fora do controle direto; necessita monitoramento e adaptação).",
+      "Um trabalho contínuo de operações internas."
+    ],
+    "resposta_correta": "Fatores ambientais externos (Fora do controle direto; necessita monitoramento e adaptação).",
+    "explicacao": "Mercado, questões culturais, leis (regulatórios) e pesquisas são fatores externos. Eles fogem do controle da organização, exigindo planejamento para respostas a riscos."
+  },
+  {
+    "id": "pmbok_027",
+    "categoria": "Petrobras - PMBOK 7",
+    "tipo": "certo_errado",
+    "pergunta": "Em relação à teoria de abordagens, o modelo híbrido de entrega deve ser escolhido quando se busca unir partes previsíveis de um projeto (ex: engenharia civil) com partes de alta incerteza e feedback frequente (ex: desenvolvimento de software) dentro do mesmo esforço.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Certo",
+    "explicacao": "Correto. O modelo Híbrido, fortalecido pelo princípio do Tailoring no PMBOK 7, mistura exatamente características da cascata (previsível) com metodologias ágeis (adaptativas)."
+  },
+  {
+    "id": "pmbok_028",
+    "categoria": "Petrobras - PMBOK 7",
+    "tipo": "multipla",
+    "pergunta": "Questão de Mapeamento de Princípios. Qual dos seguintes itens faz parte da lista dos 12 princípios de gerenciamento de projetos do PMBOK 7?",
+    "opcoes": [
+      "Evitar qualquer tipo de complexidade ou mudança de escopo no projeto.",
+      "Focar unicamente no triângulo de ferro (Custo, Prazo, Qualidade).",
+      "Adaptação (Tailoring) e Visão Sistêmica.",
+      "Excluir os stakeholders para facilitar o trabalho da Equipe."
+    ],
+    "resposta_correta": "Adaptação (Tailoring) e Visão Sistêmica.",
+    "explicacao": "Da lista dos 12 princípios, 'Visão Sistêmica' e 'Tailoring' são fundamentais. Os outros itens negam explicitamente as premissas modernas (ex: o PMBOK pede para abraçar a mudança e engajar as partes interessadas)."
+  },
+  {
+    "id": "pmbok_029",
+    "categoria": "Petrobras - PMBOK 7",
+    "tipo": "multipla",
+    "pergunta": "Questão de Relacionamento. Associe a característica de entrega à classificação correspondente:\n1. Projeto\n2. Operação\n\n( ) Trabalho com característica contínua, repetitiva, que visa manter o serviço em funcionamento e garantir a estabilidade do negócio.\n( ) Esforço focado em gerar uma entrega única, que possui um fim predeterminado.",
+    "opcoes": [
+      "1 - 2",
+      "2 - 1"
+    ],
+    "resposta_correta": "2 - 1",
+    "explicacao": "A ordem correta é: (2) Operação é contínua e repetitiva; (1) Projeto é focado em entregar um resultado único de forma temporária."
+  },
+  {
+    "id": "pmbok_030",
+    "categoria": "Petrobras - PMBOK 7",
+    "tipo": "certo_errado",
+    "pergunta": "Um dos legados da 6ª edição que persiste na ótica atual do PMBOK é que as interações e ligações entre diferentes processos nunca podem ser iterativas; um processo sempre deve terminar completamente antes que o próximo se inicie.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Errado",
+    "explicacao": "Um dos pontos principais listados nos erros comuns do seu material: afirmar que os processos e as ligações no PMBOK não são iterativas torna o item errado. O PMBOK reconhece que os processos se sobrepõem e se repetem iterativamente."
+  },
+  {
     "id": "sec_001",
     "categoria": "Security+",
     "tipo": "multipla",
