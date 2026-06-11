@@ -1,5 +1,256 @@
 [
   {
+    "id": "opa_001",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "In the lyric 'I had a bad habit / Of missing lovers past', why is the verb 'miss' written as 'missing' with an '-ing' at the end?",
+    "opcoes": [
+      "Because the action is happening right now in the present continuous.",
+      "Because in English, verbs that come immediately after a preposition (like 'of') must be in the '-ing' form.",
+      "Because 'missing' is an adjective describing the lovers.",
+      "Because it is an irregular verb in the past simple."
+    ],
+    "resposta_correta": "Because in English, verbs that come immediately after a preposition (like 'of') must be in the '-ing' form.",
+    "explicacao": "Regra gramatical de ouro: Em inglês, qualquer verbo que apareça logo após uma preposição (in, on, at, of, for, about, etc.) deve obrigatoriamente receber o sufixo '-ing'. Por isso é 'of missing' (de sentir falta)."
+  },
+  {
+    "id": "opa_002",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "In the phrase 'My brother used to call it', what does the grammatical structure 'used to' indicate?",
+    "opcoes": [
+      "An action that is happening right now.",
+      "A machine or tool that was utilized by the brother.",
+      "A past habit or state that was true in the past but is not true anymore.",
+      "A future prediction about what the brother will say."
+    ],
+    "resposta_correta": "A past habit or state that was true in the past but is not true anymore.",
+    "explicacao": "A expressão 'used to' + verbo significa 'costumava' fazer algo. Indica um hábito ou situação que acontecia repetidamente no passado, mas que não acontece mais hoje em dia."
+  },
+  {
+    "id": "opa_003",
+    "categoria": "Inglês",
+    "tipo": "certo_errado",
+    "pergunta": "True or False: The lyric 'Eating out of the trash' is a literal statement meaning the singer was looking for physical food in garbage cans.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Errado",
+    "explicacao": "É uma metáfora ('revirar o lixo'). No contexto de 'sentir falta de ex-amores', a expressão significa voltar para relacionamentos tóxicos ou para pessoas que não te fazem bem (o 'lixo' emocional)."
+  },
+  {
+    "id": "opa_004",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Translate and identify the concept in the lyric: 'I thought my house was haunted'. What does 'haunted' mean?",
+    "opcoes": [
+      "Decorated",
+      "Haunted / Assombrada",
+      "Abandoned",
+      "Rented / Alugada"
+    ],
+    "resposta_correta": "Haunted / Assombrada",
+    "explicacao": "A palavra 'haunted' (assombrada) deriva do verbo 'to haunt' (perseguir/assombrar). Ela é usada aqui metaforicamente para dizer que a casa estava cheia de 'fantasmas' (memórias de relacionamentos passados)."
+  },
+  {
+    "id": "opa_005",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "What is the meaning of the common expression used in the lyric: 'When you know, you know'?",
+    "opcoes": [
+      "It means you need to study hard to understand something.",
+      "It expresses the idea of deep intuition; when something is truly right (like true love), you feel it with absolute certainty.",
+      "It means you should ask for directions when you are lost.",
+      "It implies that knowing too much is dangerous."
+    ],
+    "resposta_correta": "It expresses the idea of deep intuition; when something is truly right (like true love), you feel it with absolute certainty.",
+    "explicacao": "'Quando você sabe, você sabe'. É um ditado muito comum em inglês para descrever aquela intuição inegável, especialmente no amor. Você não precisa de provas, o seu coração simplesmente avisa que é a pessoa certa."
+  },
+  {
+    "id": "opa_006",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "In the line 'And all of the foes, and all of the friends', what is the best synonym for the word 'foes'?",
+    "opcoes": [
+      "Family members",
+      "Co-workers",
+      "Enemies or adversaries",
+      "Pets"
+    ],
+    "resposta_correta": "Enemies or adversaries",
+    "explicacao": "A palavra 'foe' é um sinônimo poético e ligeiramente mais formal para 'enemy' (inimigo/adversário). A letra faz um contraste direto: 'inimigos e amigos'."
+  },
+  {
+    "id": "opa_007",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "What verb tense is used in the lyric: 'You were dancing through the lightning strikes'?",
+    "opcoes": [
+      "Present Perfect",
+      "Past Simple",
+      "Past Continuous",
+      "Future Perfect"
+    ],
+    "resposta_correta": "Past Continuous",
+    "explicacao": "A estrutura 'were' (verbo to be no passado) + 'dancing' (verbo com -ing) forma o Past Continuous (Passado Contínuo). Indica uma ação que estava em andamento em um momento do passado ('Você estava dançando...')."
+  },
+  {
+    "id": "opa_008",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "In the word 'Sleepless' (from 'Sleepless in the onyx night'), what does the suffix '-less' do to the noun 'sleep'?",
+    "opcoes": [
+      "It means 'full of sleep' (very tired).",
+      "It indicates 'without' or 'lacking', meaning 'without sleep' or insomniac.",
+      "It turns the word into a plural.",
+      "It indicates a place to sleep."
+    ],
+    "resposta_correta": "It indicates 'without' or 'lacking', meaning 'without sleep' or insomniac.",
+    "explicacao": "O sufixo '-less' em inglês significa 'sem'. 'Sleep' (sono) + 'less' (sem) = Sleepless (sem sono / insone). Outros exemplos: 'fearless' (sem medo), 'endless' (sem fim)."
+  },
+  {
+    "id": "opa_009",
+    "categoria": "Inglês",
+    "tipo": "certo_errado",
+    "pergunta": "True or False: In the lyric 'Never made no one like you before', the grammar uses a 'Double Negative', which is technically incorrect in formal English but widely used in songs for emphasis.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Certo",
+    "explicacao": "Correto. Em inglês formal, duas negativas ('never' e 'no one') na mesma frase se anulam. O correto seria 'Never made anyone'. Porém, na fala coloquial e na música, o duplo negativo é muito usado para dar ênfase, traduzindo-se como 'Nunca fez ninguém...'."
+  },
+  {
+    "id": "opa_010",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "What does the slang phrase 'She was in her phone' imply about the girl in the song?",
+    "opcoes": [
+      "She was trapped inside a digital simulation.",
+      "She was a software developer.",
+      "She was physically making a phone call.",
+      "She was constantly distracted by looking at her mobile device, ignoring the real world."
+    ],
+    "resposta_correta": "She was constantly distracted by looking at her mobile device, ignoring the real world.",
+    "explicacao": "Estar 'in your phone' (literalmente 'dentro do seu celular') é uma gíria moderna para descrever alguém que está tão vidrado ou distraído mexendo no aparelho que ignora o relacionamento e o mundo ao redor."
+  },
+  {
+    "id": "opa_011",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "In the lyric 'We give it all we got', what does this expression mean?",
+    "opcoes": [
+      "We gave all our money to someone.",
+      "We try our absolute best and put 100% effort into something.",
+      "We receive everything we ask for.",
+      "We gave up on trying."
+    ],
+    "resposta_correta": "We try our absolute best and put 100% effort into something.",
+    "explicacao": "A expressão 'give it all we got' (damos tudo o que temos) significa se esforçar ao máximo, dedicar 100% da sua energia, emoção ou esforço em algo (neste caso, no relacionamento)."
+  },
+  {
+    "id": "opa_012",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "The lyric 'You finally left the table' is a powerful metaphor. What does 'leaving the table' mean in relationships or negotiations?",
+    "opcoes": [
+      "Finishing a meal and going to sleep.",
+      "Walking away from a situation, relationship, or deal that is no longer respectful or beneficial to you.",
+      "Cleaning the furniture in the house.",
+      "Refusing to pay the restaurant bill."
+    ],
+    "resposta_correta": "Walking away from a situation, relationship, or deal that is no longer respectful or beneficial to you.",
+    "explicacao": "É uma metáfora baseada em jogos de cartas ou negociações. 'Se levantar da mesa' significa ter o amor próprio de ir embora quando você percebe que a situação não te serve mais ou que o outro não está te valorizando."
+  },
+  {
+    "id": "opa_013",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "What is the meaning of the phrasal verb in the lyric: 'they'll mess up again'?",
+    "opcoes": [
+      "To clean a messy room.",
+      "To make a mistake, ruin something, or handle a situation badly.",
+      "To send a text message.",
+      "To organize a party."
+    ],
+    "resposta_correta": "To make a mistake, ruin something, or handle a situation badly.",
+    "explicacao": "O phrasal verb 'mess up' significa cometer um erro, estragar tudo ou pisar na bola. 'They'll mess up again' = 'eles vão errar de novo'."
+  },
+  {
+    "id": "opa_014",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Translate the concept of the phrasal verb in the short lyric: 'You move on'.",
+    "opcoes": [
+      "Você se muda de casa.",
+      "Você segue em frente (supera uma situação emocional).",
+      "Você dança no ritmo.",
+      "Você liga o motor."
+    ],
+    "resposta_correta": "Você segue em frente (supera uma situação emocional).",
+    "explicacao": "O phrasal verb 'move on' é clássico em términos de relacionamento ou luto. Significa deixar o passado para trás, superar a dor e seguir a vida."
+  },
+  {
+    "id": "opa_015",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "The lyric says: 'This is just a storm inside a teacup'. What does this famous English idiom mean?",
+    "opcoes": [
+      "A literal weather warning for rain.",
+      "Making a huge problem or a lot of drama out of something that is actually very small and unimportant.",
+      "A technique for making hot tea.",
+      "A broken piece of ceramic."
+    ],
+    "resposta_correta": "Making a huge problem or a lot of drama out of something that is actually very small and unimportant.",
+    "explicacao": "A expressão 'a storm in a teacup' é o exato equivalente em português de 'uma tempestade em copo d'água'. Significa fazer muito drama por um problema muito pequeno."
+  },
+  {
+    "id": "opa_016",
+    "categoria": "Inglês",
+    "tipo": "certo_errado",
+    "pergunta": "True or False: In the lyric 'But shelter here with me', the word 'shelter' is acting as a noun (a physical building or roof).",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Errado",
+    "explicacao": "Aqui, 'shelter' está sendo usado como verbo imperativo (se abrigue / busque refúgio). Embora a palavra também exista como substantivo (um abrigo), na frase ela indica uma ação."
+  },
+  {
+    "id": "opa_017",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "What does the phrasal verb 'beat up' mean in the lyric: 'This life will beat you up'?",
+    "opcoes": [
+      "To physically or emotionally attack, damage, or defeat someone.",
+      "To mix ingredients in a bowl quickly.",
+      "To raise the volume of the music.",
+      "To wake up early in the morning."
+    ],
+    "resposta_correta": "To physically or emotionally attack, damage, or defeat someone.",
+    "explicacao": "'Beat up' significa espancar ou dar uma surra. No contexto da letra, é usado de forma metafórica: a vida vai te dar umas surras (vai te machucar com desafios e dores)."
+  },
+  {
+    "id": "opa_018",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "In the lyric 'This is just a temporary speed bump', what is a 'speed bump' used as a metaphor for?",
+    "opcoes": [
+      "A fast car.",
+      "An energy drink.",
+      "A small obstacle or minor delay on your journey.",
+      "A permanent stop sign."
+    ],
+    "resposta_correta": "A small obstacle or minor delay on your journey.",
+    "explicacao": "'Speed bump' é a palavra inglesa para 'quebra-molas' ou 'lombada'. Metaforicamente, significa um obstáculo temporário na vida, algo que te faz desacelerar, mas não te impede de continuar a viagem."
+  },
+  {
+    "id": "opa_019",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "What does the slang phrase mean in the lyric: 'Don't you sweat it, baby'?",
+    "opcoes": [
+      "Don't go to the gym.",
+      "Don't wear warm clothes.",
+      "Don't worry about it / Don't stress over it.",
+      "Don't cry."
+    ],
+    "resposta_correta": "Don't worry about it / Don't stress over it.",
+    "explicacao": "A expressão 'don't sweat it' (literalmente: não sue por causa disso) é uma forma muito comum, carinhosa e informal de dizer: 'não se preocupe com isso', 'não esquenta a cabeça'."
+  },
+  {
     "id": "eng_soft_001",
     "categoria": "Engenharia de software",
     "tipo": "multipla",
