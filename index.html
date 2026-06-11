@@ -24,17 +24,32 @@
         #explicacao { margin-top: 20px; padding: 15px; background-color: #eef2ff; border-left: 4px solid #4f46e5; text-align: left; font-size: 14px; line-height: 1.5; }
         
         /* --- ESTILOS EXCLUSIVOS PARA IMPRESSÃO DA PROVA --- */
-        #print-area { text-align: left; width: 100%; max-width: 800px; font-family: 'Times New Roman', serif; background: white; padding: 20px; }
-        .questao-print { margin-bottom: 30px; page-break-inside: avoid; }
-        .questao-texto { font-weight: bold; margin-bottom: 10px; font-size: 16px; }
-        .opcao-print { margin-bottom: 5px; margin-left: 20px; font-size: 15px; }
+        #print-area { text-align: left; width: 100%; max-width: 1000px; font-family: 'Times New Roman', serif; background: white; padding: 20px; }
+        
+        /* Configuração das Duas Colunas */
+        #prova-conteudo, .gabarito-print {
+            column-count: 2; /* Divide em 2 colunas */
+            column-gap: 40px; /* Espaço entre as colunas */
+            column-rule: 1px solid #ccc; /* Linha divisória sutil entre as colunas */
+        }
+
+        .questao-print { 
+            margin-bottom: 20px; 
+            display: block; /* Permite o fluxo contínuo e natural do texto */
+            width: 100%; 
+        }
+        
+        .questao-texto { font-weight: bold; margin-bottom: 8px; font-size: 14px; text-align: justify; }
+        .opcao-print { margin-bottom: 4px; margin-left: 15px; font-size: 13px; }
+        
         .gabarito-print { margin-top: 40px; page-break-before: always; border-top: 2px solid #000; padding-top: 20px; }
-        .gabarito-item { margin-bottom: 5px; font-size: 14px; }
+        .gabarito-item { margin-bottom: 8px; font-size: 13px; display: block; width: 100%; }
         
         @media print {
             body { background: white; padding: 0; }
             .card, #btn-voltar-inicio { display: none !important; }
             #print-area { display: block !important; width: 100%; max-width: none; }
+            @page { margin: 1.5cm; } /* Margens da folha A4 */
         }
     </style>
 </head>

@@ -113,7 +113,7 @@ function verificar(escolha, p, btnClicado) {
         btnClicado.style.backgroundColor = '#ef4444'; 
         btnClicado.style.color = 'white';
         
-        // NOVO: SALVA O ERRO NO HISTÓRICO PARA GERAR A PROVA DEPOIS
+        // SALVA O ERRO NO HISTÓRICO PARA GERAR A PROVA DEPOIS
         const rankingErros = JSON.parse(localStorage.getItem('ranking_erros')) || {};
         rankingErros[p.id] = (rankingErros[p.id] || 0) + 1;
         localStorage.setItem('ranking_erros', JSON.stringify(rankingErros));
@@ -185,9 +185,8 @@ document.getElementById('btn-gerar-prova').addEventListener('click', () => {
 
     provaLista.forEach((p, index) => {
         const numQuestao = index + 1;
-        const qtdErros = rankingErros[p.id]; // Quantas vezes você já errou ela
+        const qtdErros = rankingErros[p.id]; 
 
-        // Cabeçalho da questão
         htmlProva += `
             <div class="questao-print">
                 <div class="questao-texto">
@@ -196,7 +195,6 @@ document.getElementById('btn-gerar-prova').addEventListener('click', () => {
                 </div>
         `;
 
-        // Embaralha as opções para a prova
         const opcoesEmbaralhadas = [...p.opcoes].sort(() => 0.5 - Math.random());
         let letraCorreta = '';
 
@@ -207,7 +205,6 @@ document.getElementById('btn-gerar-prova').addEventListener('click', () => {
         });
         htmlProva += `</div>`;
 
-        // Adiciona ao gabarito no final
         htmlGabarito += `
             <div class="gabarito-item">
                 <strong>Questão ${numQuestao}: ${letraCorreta}</strong> - ${p.explicacao}
@@ -215,49 +212,58 @@ document.getElementById('btn-gerar-prova').addEventListener('click', () => {
         `;
     });
 
-    // Joga os HTMLs gerados na tela
     document.getElementById('prova-conteudo').innerHTML = htmlProva;
     document.getElementById('prova-gabarito').innerHTML = htmlGabarito;
 
-    // Esconde o menu e mostra a área da prova
     document.getElementById('setup-screen').classList.add('hidden');
     document.getElementById('print-area').classList.remove('hidden');
 
-    // Mágica: Chama a tela de impressão do navegador (Ctrl+P automático)
     setTimeout(() => {
         window.print();
-        
-        // Pergunta se quer voltar ao menu após fechar a janela de impressão
         if(confirm("Deseja voltar para a tela inicial?")) {
             location.reload();
         }
     }, 500); 
+});
 
-    // ==========================================
+
+// ==========================================
 // LÓGICA DE EXPORTAR / IMPORTAR PROGRESSO
 // ==========================================
 
-// Baixar os dados do LocalStorage
+// Baixar os dados do LocalStorage (Versão Atualizada e Segura)
 document.getElementById('btn-exportar').addEventListener('click', () => {
-    const progresso = localStorage.getItem('progresso_estudos') || '{}';
-    const ranking = localStorage.getItem('ranking_erros') || '{}';
-    
-    const dados = {
-        progresso_estudos: JSON.parse(progresso),
-        ranking_erros: JSON.parse(ranking)
-    };
+    try {
+        const progressoStr = localStorage.getItem('progresso_estudos');
+        const rankingStr = localStorage.getItem('ranking_erros');
+        
+        const dados = {
+            progresso_estudos: progressoStr ? JSON.parse(progressoStr) : {},
+            ranking_erros: rankingStr ? JSON.parse(rankingStr) : {}
+        };
 
-    const blob = new Blob([JSON.stringify(dados)], { type: "application/json" });
-    const url = URL.createObjectURL(blob);
-    
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = "meu_progresso_estudos.json";
-    a.click();
-    URL.revokeObjectURL(url);
+        const jsonString = JSON.stringify(dados, null, 2);
+        const blob = new Blob([jsonString], { type: "application/json" });
+        const url = URL.createObjectURL(blob);
+        
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = "meu_progresso_estudos.json";
+        
+        a.style.display = 'none';
+        document.body.appendChild(a);
+        a.click();
+        
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+        
+    } catch (error) {
+        console.error("Erro ao gerar o download:", error);
+        alert("Ocorreu um erro ao preparar o seu progresso. Pressione F12 para ver os detalhes no console.");
+    }
 });
 
-// Ler o arquivo e salvar no LocalStorage
+// Ler o arquivo e salvar no LocalStorage (Restaurado)
 document.getElementById('btn-importar').addEventListener('change', (event) => {
     const file = event.target.files[0];
     if (!file) return;
@@ -280,6 +286,6 @@ document.getElementById('btn-importar').addEventListener('change', (event) => {
     };
     reader.readAsText(file);
 });
-});
 
+// Inicializa o sistema
 carregarPerguntas();
