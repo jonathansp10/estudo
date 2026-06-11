@@ -1,5 +1,401 @@
 [
   {
+    "id": "eng_soft_001",
+    "categoria": "Engenharia de software",
+    "tipo": "multipla",
+    "pergunta": "A Engenharia de Requisitos organiza suas atividades em cinco fases essenciais. Assinale a alternativa que apresenta essas fases na sequência lógica de execução (com a gerência atuando de forma transversal):",
+    "opcoes": [
+      "Levantamento, Projeto Técnico, Codificação, Testes e V&V.",
+      "Levantamento, Análise e Negociação, Documentação/Especificação, Verificação e Validação, e Gerência.",
+      "Identificação, Modelagem de Banco de Dados, Negociação, Aceite e Homologação.",
+      "Análise, V&V, Levantamento, Programação Ágil e Gerência de Mudanças."
+    ],
+    "resposta_correta": "Levantamento, Análise e Negociação, Documentação/Especificação, Verificação e Validação, e Gerência.",
+    "explicacao": "O fluxo lógico da engenharia de requisitos começa com o Levantamento (elicitação) das necessidades, passa pela Análise e Negociação para resolver conflitos, segue para a Documentação/Especificação para formalizar, depois passa pela Verificação e Validação (V&V) para buscar o aceite. A Gerência de requisitos corre em paralelo a todas essas fases controlando versões e mudanças."
+  },
+  {
+    "id": "eng_soft_002",
+    "categoria": "Engenharia de software",
+    "tipo": "certo_errado",
+    "pergunta": "Na fase de Verificação e Validação (V&V) da engenharia de requisitos, a 'Verificação' responde à pergunta 'escrevemos a coisa certa?' (foco no que o cliente quer), enquanto a 'Validação' responde a 'escrevemos certo?' (foco na qualidade estrutural do documento).",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Errado",
+    "explicacao": "Os conceitos estão invertidos na afirmação. A Verificação (escrevemos certo?) avalia a conformidade, completude e qualidade do documento em si. A Validação (escrevemos a coisa certa?) checa a aderência ao negócio, ou seja, se o que foi documentado atende de fato ao que o cliente solicitou e precisa."
+  },
+  {
+    "id": "eng_soft_003",
+    "categoria": "Engenharia de software",
+    "tipo": "multipla",
+    "pergunta": "Qual é a principal função da 'Rastreabilidade' no contexto da engenharia de requisitos?",
+    "opcoes": [
+      "Garantir que o código-fonte seja escrito na linguagem de programação exigida pelo cliente.",
+      "Criar cópias de backup do documento de requisitos automaticamente.",
+      "Estabelecer a capacidade de ligar requisitos entre si e com outros artefatos, permitindo identificar dependências e medir impactos de mudanças.",
+      "Substituir o aceite formal do cliente (assinatura) por um sistema de logs do sistema operacional."
+    ],
+    "resposta_correta": "Estabelecer a capacidade de ligar requisitos entre si e com outros artefatos, permitindo identificar dependências e medir impactos de mudanças.",
+    "explicacao": "A rastreabilidade é a conexão vital do projeto. Se o requisito A mudar, a rastreabilidade mostra imediatamente que o requisito B (que depende de A) também sofrerá impacto, evitando regressões inesperadas."
+  },
+  {
+    "id": "eng_soft_004",
+    "categoria": "Engenharia de software",
+    "tipo": "certo_errado",
+    "pergunta": "O aceite formal do cliente no documento de requisitos é apenas uma formalidade burocrática, não possuindo utilidade prática para as fases de teste e homologação do software.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Errado",
+    "explicacao": "O aceite do cliente (assinatura ou ata) é crucial. Sem esse aceite formal, a equipe de testes e o próprio cliente não terão contra o quê 'bater' (comparar) o sistema durante a homologação, gerando grandes riscos jurídicos e de retrabalho."
+  },
+  {
+    "id": "eng_soft_005",
+    "categoria": "Engenharia de software",
+    "tipo": "multipla",
+    "pergunta": "Durante reuniões de levantamento, dois stakeholders (partes interessadas) apresentam demandas conflitantes: um solicita permissão de exclusão de dados para todos os usuários, enquanto o outro exige que essa permissão seja bloqueada. Em qual fase da engenharia de requisitos esse conflito deve ser tratado?",
+    "opcoes": [
+      "Fase de Levantamento/Elicitação",
+      "Fase de Análise e Negociação",
+      "Fase de Gerência de Mudanças",
+      "Fase de Verificação e Validação"
+    ],
+    "resposta_correta": "Fase de Análise e Negociação",
+    "explicacao": "A fase de Análise e Negociação existe exatamente para 'tirar empecilhos', detectar lacunas, identificar inconsistências e resolver conflitos entre stakeholders (como regras de negócio contraditórias), para que se chegue a um consenso antes de documentar a regra final."
+  },
+  {
+    "id": "eng_soft_006",
+    "categoria": "Engenharia de software",
+    "tipo": "certo_errado",
+    "pergunta": "A análise e a modelagem do problema não devem se preocupar com a solução técnica (implementação), visto que a definição de como o software será construído cabe à fase de Projeto (Design).",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Certo",
+    "explicacao": "Correto. Trata-se de uma pegadinha clássica: confundir Análise com Projeto. A Análise foca em entender 'O QUE' o sistema deve fazer (o problema e o comportamento desejado). O Projeto (Design) define 'COMO' a solução técnica e o código irão implementar isso."
+  },
+  {
+    "id": "eng_soft_007",
+    "categoria": "Engenharia de software",
+    "tipo": "multipla",
+    "pergunta": "Ao lidar com um problema muito grande ou de alta complexidade no levantamento de escopo, qual é a abordagem recomendada pelo material de apoio para reduzir riscos de entendimento?",
+    "opcoes": [
+      "Ignorar o aceite do cliente até que o projeto todo esteja programado.",
+      "Usar abordagens preditivas rígidas, documentando tudo em um único arquivo PDF inalterável.",
+      "Usar abordagens iterativas (como metodologias Ágeis) para quebrar o escopo em partes entregáveis, acelerando o feedback.",
+      "Terceirizar a análise para o time de programação sem envolver os stakeholders."
+    ],
+    "resposta_correta": "Usar abordagens iterativas (como metodologias Ágeis) para quebrar o escopo em partes entregáveis, acelerando o feedback.",
+    "explicacao": "Em cenários complexos, a abordagem ágil/iterativa quebra o problema maior em ciclos menores. Isso permite validar os requisitos e o entendimento do negócio gradativamente com o cliente, reduzindo o risco de entregar o produto errado."
+  },
+  {
+    "id": "eng_soft_008",
+    "categoria": "Engenharia de software",
+    "tipo": "certo_errado",
+    "pergunta": "Dizer que houve 'Verificação e Validação' na engenharia de requisitos é o mesmo que afirmar que os testadores de qualidade realizaram 'testes de código-fonte' no software em produção.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Errado",
+    "explicacao": "Na engenharia de requisitos, a fase de V&V aplica-se estritamente à qualidade e aderência do 'Documento de Requisitos' (revisão estruturada, leitura com stakeholders), e não aos testes dinâmicos de execução de código feitos na fase final de qualidade do software finalizado."
+  },
+  {
+    "id": "eng_soft_009",
+    "categoria": "Engenharia de software",
+    "tipo": "multipla",
+    "pergunta": "Qual é a correta relação na 'pirâmide prática' que transforma o mundo dos negócios no mundo do desenvolvimento de sistemas?",
+    "opcoes": [
+      "Característica → Requisito → Necessidade",
+      "Necessidade → Característica → Requisito",
+      "Requisito → Dependência → Rastreabilidade",
+      "Aceite Formal → V&V → Documentação"
+    ],
+    "resposta_correta": "Necessidade → Característica → Requisito",
+    "explicacao": "A pirâmide prática vai do macro ao micro. Primeiro identifica-se a 'Necessidade' (o problema do negócio), depois mapeia-se a 'Característica' (a solução no sistema), e por fim documenta-se o 'Requisito' (a declaração formal, clara e testável que guiará o desenvolvimento)."
+  },
+  {
+    "id": "eng_soft_010",
+    "categoria": "Engenharia de software",
+    "tipo": "certo_errado",
+    "pergunta": "A fase de Gerência de Requisitos ocorre exclusivamente após o fim da fase de Verificação e Validação, atuando apenas na manutenção corretiva do software já lançado.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Errado",
+    "explicacao": "A Gerência de Requisitos é uma atividade transversal. Ela não espera as outras acabarem; ela ocorre em paralelo a todas as fases desde o início do projeto, dando suporte contínuo ao controlar o fluxo de mudanças, comunicação e versionamento dos documentos."
+  },
+  {
+    "id": "eng_soft_011",
+    "categoria": "Engenharia de software",
+    "tipo": "multipla",
+    "pergunta": "Quando um cliente solicita uma mudança de requisito após a fase de documentação já estar concluída, qual deve ser a postura do Gerente de Requisitos?",
+    "opcoes": [
+      "Aceitar qualquer mudança imediatamente e enviá-la aos programadores, visto que o cliente sempre tem razão.",
+      "Rejeitar todas as mudanças para garantir que o documento permaneça inalterado.",
+      "Avaliar a real necessidade, analisar impactos em dependências, custo, prazo e viabilidade técnica, para então validar a mudança com todos os stakeholders.",
+      "Decidir pelo cliente sobre a importância da mudança sem realizar testes de regressão."
+    ],
+    "resposta_correta": "Avaliar a real necessidade, analisar impactos em dependências, custo, prazo e viabilidade técnica, para então validar a mudança com todos os stakeholders.",
+    "explicacao": "Mudanças em projetos são naturais, mas devem ser submetidas ao fluxo de controle. Aceitar qualquer mudança cegamente compromete o orçamento, prazo e arquitetura do software. Toda mudança exige análise de impacto e aprovação das partes."
+  },
+  {
+    "id": "eng_soft_012",
+    "categoria": "Engenharia de software",
+    "tipo": "certo_errado",
+    "pergunta": "Modelar requisitos utilizando diagramas visuais na fase de Análise é uma prática contraindicada, pois ferramentas textuais são suficientes e evitam a descoberta precoce de regras contraditórias.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Errado",
+    "explicacao": "Totalmente incorreto. Modelar com diagramas e fluxos visuais é uma técnica excelente e altamente recomendada. Especificar os requisitos apenas em texto puro muitas vezes oculta inconsistências e contradições sistêmicas que só a modelagem consegue revelar precocemente."
+  },
+  {
+    "id": "eng_soft_013",
+    "categoria": "Engenharia de software",
+    "tipo": "multipla",
+    "pergunta": "Na definição formal da engenharia de software, qual é a distinção clara entre uma 'Necessidade' e um 'Requisito'?",
+    "opcoes": [
+      "Necessidade é uma declaração formal testável, enquanto o Requisito é um problema de negócio.",
+      "Necessidade é um problema/objetivo do negócio, enquanto o Requisito é a declaração formal testável criada para atender àquela necessidade.",
+      "Não há distinção, ambas são documentos jurídicos de homologação de V&V.",
+      "A Necessidade foca na solução técnica (Design), e o Requisito foca nas metas de marketing da empresa."
+    ],
+    "resposta_correta": "Necessidade é um problema/objetivo do negócio, enquanto o Requisito é a declaração formal testável criada para atender àquela necessidade.",
+    "explicacao": "A 'Necessidade' é o desejo humano e corporativo (ex: preciso vender mais pela internet). O 'Requisito' é a especificação sistêmica precisa e testável que resolverá esse problema (ex: o sistema deve possuir integração com gateway de pagamento por cartão de crédito)."
+  },
+  {
+    "id": "eng_soft_014",
+    "categoria": "Engenharia de software",
+    "tipo": "certo_errado",
+    "pergunta": "A ausência de envolvimento dos stakeholders técnicos (time de desenvolvimento e arquitetura) durante o levantamento e especificação pode levar o analista a prometer requisitos inviáveis de prazo e custo.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Certo",
+    "explicacao": "Correto. O time técnico deve estar envolvido na verificação de 'viabilidade técnica'. Prometer um escopo apenas ouvindo o cliente de negócio, sem o balizador técnico, é uma receita para atrasos severos e custos estourados na hora da implementação."
+  },
+  {
+    "id": "eng_soft_015",
+    "categoria": "Engenharia de software",
+    "tipo": "multipla",
+    "pergunta": "Como o custo de correção de um erro em um requisito se comporta ao longo do tempo no ciclo de vida de desenvolvimento de software (conhecido como relação causa-efeito dos requisitos)?",
+    "opcoes": [
+      "O custo é estático e igual em qualquer fase que o erro for descoberto.",
+      "O custo de corrigir um defeito no requisito diminui exponencialmente se descoberto apenas após o software estar em produção.",
+      "Um requisito mal especificado compromete o produto em cascata e eleva drasticamente o custo de correção quanto mais tarde o erro for descoberto no projeto.",
+      "Apenas o prazo é afetado pela má especificação; o custo financeiro permanece inalterado por causa do contrato de escopo fechado."
+    ],
+    "resposta_correta": "Um requisito mal especificado compromete o produto em cascata e eleva drasticamente o custo de correção quanto mais tarde o erro for descoberto no projeto.",
+    "explicacao": "A regra de ouro da engenharia de requisitos: corrigir um erro no papel (fase de análise) é barato. Corrigir o mesmo erro quando ele já virou código, passou por testes e já está no cliente rodando em produção (manutenção), pode custar até 100 vezes mais caro devido ao retrabalho sistêmico."
+  },
+  {
+    "id": "mal_001",
+    "categoria": "Cibersegurança",
+    "tipo": "multipla",
+    "pergunta": "Qual é a diferença fundamental no método de propagação entre um Vírus de Computador e um Worm (Verme)?",
+    "opcoes": [
+      "O vírus se espalha apenas por e-mail, enquanto o worm usa unidades USB.",
+      "O vírus requer a interação humana ou a execução de um arquivo hospedeiro para se espalhar, enquanto o worm se autorreplica e se propaga de forma autônoma pela rede.",
+      "O worm exige que o usuário clique em um link malicioso, enquanto o vírus infecta a máquina apenas por estar conectado à internet.",
+      "Não há diferença, ambos os termos são sinônimos e exigem interação do usuário."
+    ],
+    "resposta_correta": "O vírus requer a interação humana ou a execução de um arquivo hospedeiro para se espalhar, enquanto o worm se autorreplica e se propaga de forma autônoma pela rede.",
+    "explicacao": "Conceito fundamental: Um vírus sempre precisa de um 'hospedeiro' (um arquivo executável) e da ação do usuário (como abrir o arquivo) para infectar. O worm é autônomo, explorando vulnerabilidades de rede para se replicar sem intervenção humana."
+  },
+  {
+    "id": "mal_002",
+    "categoria": "Cibersegurança",
+    "tipo": "certo_errado",
+    "pergunta": "A implementação de requisitos de senha complexos (mínimo de 12 caracteres, símbolos, letras maiúsculas e minúsculas) tem como objetivo principal diminuir a superfície de ataque do sistema.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Certo",
+    "explicacao": "Correto. A superfície de ataque representa o número total de pontos de entrada ou vulnerabilidades. Senhas fracas criam uma superfície ampla (fácil adivinhação/força bruta). Senhas complexas reduzem essas brechas, diminuindo a superfície de ataque."
+  },
+  {
+    "id": "mal_003",
+    "categoria": "Cibersegurança",
+    "tipo": "multipla",
+    "pergunta": "Como atua o vírus classificado como 'Residente' em um sistema computacional?",
+    "opcoes": [
+      "Ele altera as configurações do navegador para redirecionar o tráfego do usuário.",
+      "Ele se anexa exclusivamente a e-mails e só atua quando a caixa de entrada é aberta.",
+      "Ele se instala na memória RAM do computador e infecta outras aplicações e arquivos assim que são abertos ou executados.",
+      "Ele apaga os dados originais do disco e se substitui permanentemente, sem usar a memória RAM."
+    ],
+    "resposta_correta": "Ele se instala na memória RAM do computador e infecta outras aplicações e arquivos assim que são abertos ou executados.",
+    "explicacao": "Os vírus residentes ganham esse nome porque 'residem' na memória principal (RAM). A partir daí, eles monitoram o sistema e infectam ativamente novos arquivos ou programas no momento em que o usuário ou o sistema operacional tenta acessá-los."
+  },
+  {
+    "id": "mal_004",
+    "categoria": "Cibersegurança",
+    "tipo": "multipla",
+    "pergunta": "Qual das alternativas abaixo descreve a técnica empregada em um ataque do tipo 'Watering Hole' (Ataque de Açude)?",
+    "opcoes": [
+      "O invasor envia milhões de e-mails de phishing de forma genérica esperando que alguém clique.",
+      "O invasor infecta um site legítimo ou fórum que o público-alvo costuma visitar frequentemente, esperando que a vítima acesse e baixe o malware.",
+      "O invasor liga para o telefone pessoal da vítima fingindo ser do suporte técnico da empresa.",
+      "O invasor realiza um ataque de força bruta contra os servidores de DNS da empresa."
+    ],
+    "resposta_correta": "O invasor infecta um site legítimo ou fórum que o público-alvo costuma visitar frequentemente, esperando que a vítima acesse e baixe o malware.",
+    "explicacao": "A analogia do 'Açude' (Watering Hole) vem de predadores que esperam na beira do rio onde as presas costumam beber água. O atacante infecta um site de confiança do alvo em vez de atacar o alvo diretamente, usando o usuário como a vulnerabilidade."
+  },
+  {
+    "id": "mal_005",
+    "categoria": "Cibersegurança",
+    "tipo": "certo_errado",
+    "pergunta": "No contexto de injeção e execução de código, a 'Bomba Lógica' (Logic Bomb) é um malware que permanece latente e adormecido no sistema, sendo ativado apenas quando uma condição específica (como uma data ou a exclusão de um usuário) é atendida.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Certo",
+    "explicacao": "Correto. As bombas lógicas são projetadas para não causar danos imediatos, dificultando sua detecção. Elas 'explodem' (executam a carga maliciosa) apenas mediante um gatilho lógico pré-programado."
+  },
+  {
+    "id": "mal_006",
+    "categoria": "Cibersegurança",
+    "tipo": "multipla",
+    "pergunta": "Qual é a principal diferença arquitetônica e de comportamento entre um Dropper e um Downloader?",
+    "opcoes": [
+      "O Dropper é usado para ataques físicos via USB, enquanto o Downloader é usado via Bluetooth.",
+      "O Dropper traz o código malicioso embutido em si mesmo e o extrai para o disco, enquanto o Downloader utiliza a internet para buscar e baixar o malware de um servidor C2.",
+      "O Downloader é um tipo de ransomware, enquanto o Dropper é exclusivamente um keylogger.",
+      "Não há diferença, ambos são termos técnicos para o mesmo tipo de vírus de setor de inicialização."
+    ],
+    "resposta_correta": "O Dropper traz o código malicioso embutido em si mesmo e o extrai para o disco, enquanto o Downloader utiliza a internet para buscar e baixar o malware de um servidor C2.",
+    "explicacao": "Ambos são usados para entregar a carga útil, mas o Dropper já contém o payload malicioso camuflado dentro de seu próprio código (não precisando de internet na hora da infecção inicial), enquanto o Downloader atua apenas como uma ponte, exigindo conexão externa para trazer a ameaça."
+  },
+  {
+    "id": "mal_007",
+    "categoria": "Cibersegurança",
+    "tipo": "multipla",
+    "pergunta": "Um invasor conseguiu inserir um código em linguagem Assembly na memória de um processo de um servidor, com o objetivo de assumir o controle do sistema e abrir uma linha de comando. Que nome se dá a esse tipo de carga útil (payload)?",
+    "opcoes": [
+      "Dialer",
+      "Easter Egg",
+      "Rootkit",
+      "Shellcode"
+    ],
+    "resposta_correta": "Shellcode",
+    "explicacao": "Shellcode é um pequeno pedaço de código usado como carga útil na exploração de vulnerabilidades. Seu nome deriva de seu objetivo histórico primário: fornecer ao atacante um 'shell' (interface de linha de comando) no sistema comprometido."
+  },
+  {
+    "id": "mal_008",
+    "categoria": "Cibersegurança",
+    "tipo": "certo_errado",
+    "pergunta": "O malware classificado como 'Rootkit' tem como principal característica a exibição massiva e ininterrupta de anúncios publicitários agressivos na tela do usuário para gerar lucro.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Errado",
+    "explicacao": "A descrição refere-se ao Adware. O Rootkit é um malware altamente furtivo projetado para operar no nível do núcleo do sistema (kernel), escondendo sua própria presença e a de outros malwares dos softwares de segurança (antivírus)."
+  },
+  {
+    "id": "mal_009",
+    "categoria": "Cibersegurança",
+    "tipo": "multipla",
+    "pergunta": "Qual tipo de vírus é projetado para atacar e infectar o Registro Mestre de Inicialização (MBR) do disco rígido, agindo antes mesmo que o sistema operacional seja carregado na máquina?",
+    "opcoes": [
+      "Vírus de Ação Direta",
+      "Vírus Multipartido",
+      "Vírus de Setor de Inicialização (Boot Sector)",
+      "Vírus de Scripts da Web"
+    ],
+    "resposta_correta": "Vírus de Setor de Inicialização (Boot Sector)",
+    "explicacao": "Os vírus de Boot Sector infectam a área do disco responsável pelo processo de inicialização do computador (o MBR). Como são carregados antes do próprio Windows/Linux, são muito difíceis de serem detectados por antivírus comuns operando em nível de usuário."
+  },
+  {
+    "id": "mal_010",
+    "categoria": "Cibersegurança",
+    "tipo": "multipla",
+    "pergunta": "Um usuário percebe que e-mails em massa estão sendo enviados da sua conta sem a sua autorização. Segundo o material da Fortinet, esse sintoma indica um comprometimento em qual aspecto do sistema?",
+    "opcoes": [
+      "Desempenho e Performance",
+      "Acesso e Autenticação",
+      "Comunicação",
+      "Navegação"
+    ],
+    "resposta_correta": "Comunicação",
+    "explicacao": "De acordo com a tabela de sintomas de infecção, o envio não autorizado de e-mails em massa ou o disparo de mensagens para a lista de contatos do usuário são classificados como sintomas de que a 'Comunicação' do sistema foi comprometida por um malware (frequentemente para transformar a máquina em um disparador de spam/phishing)."
+  },
+  {
+    "id": "mal_011",
+    "categoria": "Cibersegurança",
+    "tipo": "certo_errado",
+    "pergunta": "A Injeção de DLL é uma técnica furtiva em que o invasor insere um código malicioso dentro de bibliotecas dinâmicas legítimas do sistema operacional, fazendo com que o computador execute o malware acreditando ser um processo confiável.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Certo",
+    "explicacao": "Correto. As DLLs (Dynamic-link libraries) são essenciais para o funcionamento do Windows. Ao injetar código malicioso em uma DLL legítima, o malware burla firewalls e ferramentas de monitoramento, que confiam no processo original que carregou a biblioteca."
+  },
+  {
+    "id": "mal_012",
+    "categoria": "Cibersegurança",
+    "tipo": "multipla",
+    "pergunta": "Qual das definições abaixo corresponde a um 'Backdoor' (Porta dos Fundos) no contexto de Cibersegurança?",
+    "opcoes": [
+      "Um método documentado e legal exigido pelo governo para realizar auditorias financeiras.",
+      "Um método furtivo, muitas vezes não documentado, criado propositalmente para contornar a autenticação normal do sistema e garantir acesso remoto contínuo ao invasor.",
+      "Um ataque que apaga dados de um arquivo substituindo-os pelo código do malware.",
+      "Um tipo de hardware instalado fisicamente na placa-mãe para monitorar rede."
+    ],
+    "resposta_correta": "Um método furtivo, muitas vezes não documentado, criado propositalmente para contornar a autenticação normal do sistema e garantir acesso remoto contínuo ao invasor.",
+    "explicacao": "Um Backdoor é exatamente uma porta dos fundos. Após a invasão inicial (ou deixado de propósito por um desenvolvedor malicioso), ele garante que o invasor possa retornar ao sistema sem precisar roubar senhas ou explorar a vulnerabilidade original novamente."
+  },
+  {
+    "id": "mal_013",
+    "categoria": "Cibersegurança",
+    "tipo": "multipla",
+    "pergunta": "No modelo de funcionamento das Botnets, qual é o papel do servidor de Comando e Controle (C&C)?",
+    "opcoes": [
+      "Proteger o computador do usuário (zumbi) contra ataques de outros hackers.",
+      "Armazenar exclusivamente os dados de backup do atacante de forma criptografada.",
+      "Enviar ordens e instruções remotas e coordenadas para a rede de computadores infectados (Zumbis), geralmente para disparar um ataque de DDoS.",
+      "Atuar como um honeypot para enganar os profissionais de segurança corporativa."
+    ],
+    "resposta_correta": "Enviar ordens e instruções remotas e coordenadas para a rede de computadores infectados (Zumbis), geralmente para disparar um ataque de DDoS.",
+    "explicacao": "Em uma Botnet, as máquinas infectadas ficam passivas aguardando comandos. O servidor C&C atua como o 'cérebro' da operação, enviando a instrução para que milhares de zumbis ataquem o mesmo alvo simultaneamente."
+  },
+  {
+    "id": "mal_014",
+    "categoria": "Cibersegurança",
+    "tipo": "certo_errado",
+    "pergunta": "A técnica chamada de 'Ovo de Páscoa' (Easter Egg) em desenvolvimento de software não apresenta riscos de cibersegurança, visto que são apenas recursos visuais inofensivos aprovados durante a auditoria de código.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Errado",
+    "explicacao": "Embora a intenção inicial possa ser uma brincadeira do desenvolvedor, Easter Eggs representam código não documentado e oculto rodando no sistema. Isso aumenta desnecessariamente a superfície de ataque e pode conter bugs ou lógicas que podem ser exploradas por invasores."
+  },
+  {
+    "id": "mal_015",
+    "categoria": "Cibersegurança",
+    "tipo": "multipla",
+    "pergunta": "Sobre ameaças recentes, como é definido o ataque classificado como 'IA Adversária' (Adversarial AI)?",
+    "opcoes": [
+      "É um antivírus baseado em inteligência artificial que tenta adivinhar senhas dos usuários para protegê-los.",
+      "Consiste em entradas (inputs) maliciosas geradas especificamente com o objetivo de confundir, enganar ou manipular modelos de aprendizado de máquina e redes neurais.",
+      "É a substituição completa de humanos por robôs em operações de engenharia social (call centers falsos).",
+      "É o uso de criptografia quântica para sequestrar bancos de dados de empresas de IA."
+    ],
+    "resposta_correta": "Consiste em entradas (inputs) maliciosas geradas especificamente com o objetivo de confundir, enganar ou manipular modelos de aprendizado de máquina e redes neurais.",
+    "explicacao": "A IA Adversária explora vulnerabilidades em algoritmos de Inteligência Artificial. Por exemplo, alterar sutilmente os pixels de uma imagem de um semáforo para que o sistema de um carro autônomo o reconheça como uma placa de 'Siga', enganando a lógica da máquina."
+  },
+  {
     "id": "pmbok_001",
     "categoria": "Petrobras - PMBOK 7",
     "tipo": "multipla",
