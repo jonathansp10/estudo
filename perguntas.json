@@ -1,5 +1,201 @@
 [
   {
+    "id": "sedes_qdx_001",
+    "categoria": "SEDES",
+    "tipo": "certo_errado",
+    "pergunta": "De acordo com a jurisprudência pacificada do Supremo Tribunal Federal (STF), o Preâmbulo da Constituição Federal de 1988 possui força normativa plena, servindo como parâmetro direto e isolado para o controle de constitucionalidade de leis estaduais.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Errado",
+    "explicacao": "O STF firmou o entendimento (ADI 2076) de que o preâmbulo não tem força normativa, não cria direitos nem deveres e não serve como parâmetro para o controle de constitucionalidade. Sua função é puramente interpretativa."
+  },
+  {
+    "id": "sedes_qdx_002",
+    "categoria": "SEDES",
+    "tipo": "multipla",
+    "pergunta": "A Constituição do Estado 'X' foi promulgada sem a expressão 'sob a proteção de Deus' em seu texto introdutório. Diante disso, é correto afirmar que:",
+    "opcoes": [
+      "A Constituição Estadual é inconstitucional, pois fere a norma de reprodução obrigatória imposta pelo preâmbulo da Constituição Federal.",
+      "O Estado deve sofrer intervenção federal imediata para corrigir a omissão preambular.",
+      "Não há inconstitucionalidade, pois o STF entende que o preâmbulo da CF/88 não é norma de reprodução obrigatória pelos Estados e Municípios.",
+      "A omissão anula todos os efeitos jurídicos dos direitos fundamentais previstos na referida Constituição Estadual."
+    ],
+    "resposta_correta": "Não há inconstitucionalidade, pois o STF entende que o preâmbulo da CF/88 não é norma de reprodução obrigatória pelos Estados e Municípios.",
+    "explicacao": "O STF já decidiu (ADI 2076) que a invocação a Deus presente no preâmbulo da CF não configura norma de reprodução obrigatória nas Constituições Estaduais ou Leis Orgânicas Municipais."
+  },
+  {
+    "id": "sedes_qdx_003",
+    "categoria": "SEDES",
+    "tipo": "multipla",
+    "pergunta": "A República Federativa do Brasil é formada pela união indissolúvel de seus entes. Quando o Art. 1º da CF/88 menciona a expressão 'união indissolúvel', ele está se referindo a:",
+    "opcoes": [
+      "Indissolubilidade da pessoa jurídica de Direito Público Interno chamada 'União'.",
+      "Indissolubilidade do pacto federativo, garantindo que não existe direito de secessão (separação) por parte de nenhum Estado-membro ou ente.",
+      "Indissolubilidade entre o Estado e a Igreja no âmbito da administração federal.",
+      "Garantia de que os Municípios não possuem autonomia política dentro do pacto."
+    ],
+    "resposta_correta": "Indissolubilidade do pacto federativo, garantindo que não existe direito de secessão (separação) por parte de nenhum Estado-membro ou ente.",
+    "explicacao": "Pegadinha comum: a palavra 'união' com letra minúscula no art. 1º refere-se à união (vínculo) do pacto federativo, e não à União como ente político. Por isso, não há direito de secessão."
+  },
+  {
+    "id": "sedes_qdx_004",
+    "categoria": "SEDES",
+    "tipo": "certo_errado",
+    "pergunta": "No modelo federativo adotado pelo Brasil, os entes da Federação (União, Estados, DF e Municípios) são dotados de autonomia política plena. No entanto, os Municípios representam uma exceção à capacidade de autogoverno total, visto que não possuem Poder Judiciário próprio.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Certo",
+    "explicacao": "Correto. Os municípios possuem autonomia (auto-organização via lei orgânica, autolegislação e autoadministração), mas seu autogoverno se restringe ao Executivo (Prefeito) e Legislativo (Câmara). Não existe Judiciário Municipal no Brasil."
+  },
+  {
+    "id": "sedes_qdx_005",
+    "categoria": "SEDES",
+    "tipo": "multipla",
+    "pergunta": "Questão de Relacionamento de Artigos Constitucionais. Associe o conceito à sua correta localização nos princípios fundamentais:\n\n1. Fundamentos da República\n2. Objetivos Fundamentais\n3. Princípios das Relações Internacionais\n\n( ) Artigo 3º (Construir, Garantir, Erradicar, Promover)\n( ) Artigo 4º (Defesa da Paz, Repúdio ao Terrorismo)\n( ) Artigo 1º (Soberania, Cidadania, Dignidade da Pessoa Humana)",
+    "opcoes": [
+      "1 - 2 - 3",
+      "2 - 3 - 1",
+      "3 - 1 - 2",
+      "2 - 1 - 3"
+    ],
+    "resposta_correta": "2 - 3 - 1",
+    "explicacao": "A associação estrutural exata da CF é: Art. 1º = Fundamentos; Art. 3º = Objetivos Fundamentais (verbos no infinitivo); Art. 4º = Relações Internacionais."
+  },
+  {
+    "id": "sedes_qdx_006",
+    "categoria": "SEDES",
+    "tipo": "certo_errado",
+    "pergunta": "Se um Estado da Federação aprovar, mediante plebiscito popular com 90% de aprovação, a sua separação do restante do Brasil para formar um novo país independente, tal ato será válido sob a ótica da soberania popular garantida na CF/88.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Errado",
+    "explicacao": "O pacto federativo brasileiro é indissolúvel (não há direito de secessão). Qualquer tentativa de separação, mesmo via plebiscito, é inconstitucional e pode ensejar intervenção federal imediata para manter a integridade nacional."
+  },
+  {
+    "id": "sedes_qdx_007",
+    "categoria": "SEDES",
+    "tipo": "multipla",
+    "pergunta": "De acordo com o Art. 60, § 4º da CF/88, não será objeto de deliberação a proposta de emenda tendente a abolir determinadas matérias, conhecidas como Cláusulas Pétreas. Qual das opções abaixo NÃO constitui uma cláusula pétrea?",
+    "opcoes": [
+      "O voto direto, secreto, universal e periódico.",
+      "A separação dos Poderes.",
+      "A forma federativa de Estado.",
+      "A obrigatoriedade do voto para maiores de 18 anos."
+    ],
+    "resposta_correta": "A obrigatoriedade do voto para maiores de 18 anos.",
+    "explicacao": "Pegadinha frequente de bancas como a Quadrix: O voto obrigatório NÃO é cláusula pétrea e pode ser alterado por emenda constitucional. A proteção pétrea recai apenas sobre o voto direto, secreto, universal e periódico."
+  },
+  {
+    "id": "sedes_qdx_008",
+    "categoria": "SEDES",
+    "tipo": "certo_errado",
+    "pergunta": "No âmbito do princípio federativo e da capacidade de 'Auto-organização', a União organiza-se por meio da Constituição Federal, os Estados por meio de suas Constituições Estaduais e o Distrito Federal e os Municípios por meio de Leis Orgânicas.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Certo",
+    "explicacao": "Exatamente. A auto-organização confere aos Estados a criação de suas próprias Constituições. Já o DF e os Municípios se estruturam juridicamente através de Leis Orgânicas, e não Constituições."
+  },
+  {
+    "id": "sedes_qdx_009",
+    "categoria": "SEDES",
+    "tipo": "multipla",
+    "pergunta": "Ao comparar o modelo de Federação com o modelo de Estado Unitário, qual é a principal diferença jurídica que caracteriza a República Federativa do Brasil?",
+    "opcoes": [
+      "Na Federação há centralização política total no Governo Federal, enquanto no Estado Unitário os Estados possuem autonomia de secessão.",
+      "Na Federação ocorre a descentralização do poder, garantindo autonomia política, administrativa e financeira aos entes regionais e locais.",
+      "O Estado Unitário possui três poderes distintos, ao passo que a Federação concentra os poderes no Executivo Federal.",
+      "A Federação permite que Estados-membros se relacionem de forma soberana com outros países, celebrando tratados internacionais independentes da União."
+    ],
+    "resposta_correta": "Na Federação ocorre a descentralização do poder, garantindo autonomia política, administrativa e financeira aos entes regionais e locais.",
+    "explicacao": "A essência da Federação é a descentralização do poder político, criando entes (União, Estados, Municípios) dotados de autonomia própria. Estados não possuem soberania (não podem negociar com outros países), apenas autonomia."
+  },
+  {
+    "id": "sedes_qdx_010",
+    "categoria": "SEDES",
+    "tipo": "certo_errado",
+    "pergunta": "Conforme entendimento doutrinário majoritário cobrado em concursos, a cláusula pétrea que protege os 'direitos e garantias individuais' restringe-se estritamente àqueles elencados no artigo 5º da Constituição Federal, não se aplicando a outros direitos difusos no texto.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Errado",
+    "explicacao": "Erro comum. A doutrina e a jurisprudência majoritárias consideram que a proteção pétrea aos 'direitos e garantias individuais' abrange um sentido material mais amplo, englobando direitos e garantias fundamentais espalhados por todo o texto constitucional."
+  },
+  {
+    "id": "sedes_qdx_011",
+    "categoria": "SEDES",
+    "tipo": "multipla",
+    "pergunta": "Qual das características abaixo NÃO compõe uma das 4 capacidades da autonomia política dos entes federativos (União, Estados, DF e Municípios)?",
+    "opcoes": [
+      "Auto-organização (elaborar suas próprias leis orgânicas ou constituições).",
+      "Autogoverno (eleição de seus próprios governantes e legisladores).",
+      "Soberania Absoluta (capacidade de declarar guerra a nações estrangeiras).",
+      "Autoadministração (gestão e prestação dos próprios serviços e servidores)."
+    ],
+    "resposta_correta": "Soberania Absoluta (capacidade de declarar guerra a nações estrangeiras).",
+    "explicacao": "Soberania é um atributo exclusivo da República Federativa do Brasil (o país como um todo no cenário internacional). Os entes internos (Estados e Municípios) possuem apenas autonomia (autoadministração, autolegislação, autogoverno e auto-organização)."
+  },
+  {
+    "id": "sedes_qdx_012",
+    "categoria": "SEDES",
+    "tipo": "certo_errado",
+    "pergunta": "O Distrito Federal é um ente anômalo da Federação, mas, assim como os Estados e os Municípios, é dotado de autonomia política e não pode se separar do pacto federativo brasileiro.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Certo",
+    "explicacao": "Correto. O Distrito Federal integra a organização político-administrativa do país como um ente dotado de autonomia política (auto-organização, autogoverno, autolegislação e autoadministração) e submete-se ao princípio da indissolubilidade."
+  },
+  {
+    "id": "sedes_qdx_013",
+    "categoria": "SEDES",
+    "tipo": "multipla",
+    "pergunta": "Sobre o Preâmbulo da Constituição de 1988, indique a afirmação que está em total consonância com a interpretação jurisprudencial do Supremo Tribunal Federal:",
+    "opcoes": [
+      "O Preâmbulo atua no vácuo jurídico, servindo para anular leis anteriores a 1988 que não mencionem Deus.",
+      "As normas de repúdio ao terrorismo estão listadas no preâmbulo e devem ser replicadas pelos Estados.",
+      "O Preâmbulo serve para orientar e nortear a interpretação do texto constitucional, embora não possua força normativa vinculante.",
+      "Os princípios republicano e federativo estão exclusivamente definidos no preâmbulo."
+    ],
+    "resposta_correta": "O Preâmbulo serve para orientar e nortear a interpretação do texto constitucional, embora não possua força normativa vinculante.",
+    "explicacao": "Conforme a ADI 2076, o STF decretou que o preâmbulo é um vetor de interpretação principiológica. Ele inspira o legislador e o juiz, mas não vincula, não é parâmetro de controle e não tem força normativa própria."
+  },
+  {
+    "id": "sedes_qdx_014",
+    "categoria": "SEDES",
+    "tipo": "certo_errado",
+    "pergunta": "O Princípio Republicano, que adota a República como forma de governo no Brasil, assegura a eletividade, a temporariedade dos mandatos e a responsabilidade dos governantes (prestação de contas).",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Certo",
+    "explicacao": "Correto. Essa é a definição clássica cobrada em provas sobre o princípio republicano (forma de governo). A República opõe-se à Monarquia, garantindo que o poder emane do povo por tempo determinado e com dever de prestação de contas."
+  },
+  {
+    "id": "sedes_qdx_015",
+    "categoria": "SEDES",
+    "tipo": "multipla",
+    "pergunta": "Questão de Relacionamento. Associe a característica de autonomia à sua descrição aplicável aos entes da federação:\n\n1. Autolegislação\n2. Autogoverno\n3. Autoadministração\n\n( ) Competência para organizar e gerir seus próprios serviços públicos e patrimônio.\n( ) Capacidade de eleger seus próprios representantes políticos para o Poder Executivo e Legislativo.\n( ) Competência para editar leis federais, estaduais, distritais ou municipais sobre matérias específicas.",
+    "opcoes": [
+      "2 - 1 - 3",
+      "3 - 2 - 1",
+      "1 - 3 - 2",
+      "3 - 1 - 2"
+    ],
+    "resposta_correta": "3 - 2 - 1",
+    "explicacao": "A associação exata é: (3) Autoadministração (gestão de serviços/bens); (2) Autogoverno (capacidade de eleger Prefeitos, Governadores, Vereadores, Deputados); (1) Autolegislação (capacidade de criar leis próprias no limite de suas competências)."
+  },
+  {
     "id": "opa_001",
     "categoria": "Inglês",
     "tipo": "multipla",
