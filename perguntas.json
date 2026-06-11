@@ -1,5 +1,185 @@
 [
   {
+    "id": "pmbok_001",
+    "categoria": "Petrobras - PMBOK 7",
+    "tipo": "multipla",
+    "pergunta": "Com o lançamento da 7ª edição do Guia PMBOK pelo PMI (Project Management Institute), a estrutura conceitual do gerenciamento de projetos passou por uma profunda alteração. Qual das seguintes alternativas descreve corretamente a espinha dorsal dessa nova versão?",
+    "opcoes": [
+      "Substituição de 12 princípios e 8 domínios por 49 processos estruturados em 5 grupos de processos.",
+      "Migração de um modelo baseado em 49 processos e 10 áreas de conhecimento para uma estrutura orientada por 12 princípios e 8 domínios de desempenho.",
+      "Instituição de uma norma técnica legal e mandatória focada exclusivamente na abordagem de desenvolvimento preditiva (cascata).",
+      "Eliminação completa do conceito de ciclo de vida e a transformação do guia em um software de gerenciamento de portfólios."
+    ],
+    "resposta_correta": "Migração de um modelo baseado em 49 processos e 10 áreas de conhecimento para uma estrutura orientada por 12 princípios e 8 domínios de desempenho.",
+    "explicacao": "A 7ª edição do PMBOK mudou o foco de processos (como era na 6ª edição) para um modelo orientado a princípios (diretrizes comportamentais) e domínios de desempenho."
+  },
+  {
+    "id": "pmbok_002",
+    "categoria": "Petrobras - PMBOK 7",
+    "tipo": "certo_errado",
+    "pergunta": "O Guia PMBOK é classificado pela literatura de gerenciamento como uma norma técnica com força de lei (norma legal) e uma metodologia rígida de projetos, devendo ser seguido sem alterações pelas empresas estatais.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Errado",
+    "explicacao": "O PMBOK não é lei, não é software e não é uma metodologia. Ele é um guia de boas práticas. As organizações adaptam suas diretrizes através do processo de Tailoring (adaptação)."
+  },
+  {
+    "id": "pmbok_003",
+    "categoria": "Petrobras - PMBOK 7",
+    "tipo": "certo_errado",
+    "pergunta": "Os 8 domínios de desempenho introduzidos pelo Guia PMBOK 7ª edição funcionam como áreas isoladas e operam de forma estritamente independente umas das outras para evitar a complexidade no projeto.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Errado",
+    "explicacao": "Pegadinha clássica de concurso! Os domínios de desempenho não são isolados; eles são interativos, interrelacionados e interdependentes, funcionando como um sistema integrado."
+  },
+  {
+    "id": "pmbok_004",
+    "categoria": "Petrobras - PMBOK 7",
+    "tipo": "multipla",
+    "pergunta": "Ao avaliar o sucesso de um projeto sob a ótica do Guia PMBOK 7ª edição, o foco principal das métricas de gerenciamento mudou. De acordo com o guia, o sucesso é determinado quando:",
+    "opcoes": [
+      "As entregas (escopo físico) são concluídas, visto que as entregas representam o fim absoluto do projeto.",
+      "O projeto foca em gerar valor e benefícios alinhados aos objetivos do negócio, sendo as entregas apenas o meio.",
+      "O gerente elimina o processo de tailoring para manter o projeto idêntico aos modelos anteriores.",
+      "A abordagem escolhida é puramente preditiva, pois o guia não aceita abordagens adaptativas ou híbridas."
+    ],
+    "resposta_correta": "O projeto foca em gerar valor e benefícios alinhados aos objetivos do negócio, sendo as entregas apenas o meio.",
+    "explicacao": "A 7ª edição foca no valor e nos benefícios gerados para o negócio e para as partes interessadas, indo além do simples cumprimento do escopo físico (entregas)."
+  },
+  {
+    "id": "pmbok_005",
+    "categoria": "Petrobras - PMBOK 7",
+    "tipo": "multipla",
+    "pergunta": "Um analista de projetos da Petrobras está avaliando uma iniciativa que consiste em um esforço temporário empreendido para criar um produto, serviço ou resultado único. Essa definição técnica refere-se a um:",
+    "opcoes": [
+      "Programa",
+      "Portfólio",
+      "Processo Contínuo",
+      "Projeto"
+    ],
+    "resposta_correta": "Projeto",
+    "explicacao": "As duas palavras-chave obrigatórias que definem um projeto no PMBOK são: esforço 'temporário' e resultado 'único'."
+  },
+  {
+    "id": "pmbok_006",
+    "categoria": "Petrobras - PMBOK 7",
+    "tipo": "certo_errado",
+    "pergunta": "A publicação da 7ª edição do Guia PMBOK extinguiu por completo o uso e a validação de processos, tornando incorreto qualquer alinhamento com os grupos de processos das edições anteriores.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Errado",
+    "explicacao": "A 7ª edição não invalida nem nega o alinhamento com processos anteriores. Ela apenas reorganiza o guia; os grupos de processos continuam existindo como referências dentro da seção de Modelos, Métodos e Artefatos."
+  },
+  {
+    "id": "pmbok_007",
+    "categoria": "Petrobras - PMBOK 7",
+    "tipo": "multipla",
+    "pergunta": "Na estrutura organizacional, as ferramentas, técnicas e insumos que antes ficavam dispersos dentro de processos específicos no PMBOK 6ª edição foram reagrupados na 7ª edição sob qual denominação?",
+    "opcoes": [
+      "Áreas de Conhecimento Ampliadas",
+      "Restrições Concorrentes e Sustentáveis",
+      "Modelos, Métodos e Artefatos",
+      "Princípios de Intendência Organizacional"
+    ],
+    "resposta_correta": "Modelos, Métodos e Artefatos",
+    "explicacao": "As ferramentas e técnicas antigas migraram e foram consolidadas na nova seção de 'Modelos, Métodos e Artefatos' da 7ª edição."
+  },
+  {
+    "id": "pmbok_008",
+    "categoria": "Petrobras - PMBOK 7",
+    "tipo": "certo_errado",
+    "pergunta": "Em gerenciamento de projetos, o conceito de 'Programa' é definido como um sistema de software ou repositório digital integrado para controle automatizado de cronogramas.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Errado",
+    "explicacao": "Erro conceitual comum em provas. Um programa é um conjunto de projetos ou subprogramas relacionados e gerenciados de forma coordenada para obter benefícios que não seriam alcançados se fossem geridos isoladamente."
+  },
+  {
+    "id": "pmbok_009",
+    "categoria": "Petrobras - PMBOK 7",
+    "tipo": "multipla",
+    "pergunta": "Quando a alta liderança de uma organização realiza o agrupamento de projetos, programas e operações com o objetivo específico de priorizar recursos e garantir o alinhamento com os objetivos estratégicos do negócio, ela está gerenciando um:",
+    "opcoes": [
+      "Subprograma Técnico",
+      "Portfólio",
+      "Domínio de Entrega",
+      "Escritório de Processos (PMO)"
+    ],
+    "resposta_correta": "Portfólio",
+    "explicacao": "O foco do portfólio é a estratégia e a priorização de iniciativas para garantir que a organização execute os projetos certos para o seu plano macro."
+  },
+  {
+    "id": "pmbok_010",
+    "categoria": "Petrobras - PMBOK 7",
+    "tipo": "certo_errado",
+    "pergunta": "O termo 'Tailoring', que ganhou seção própria e destaque central no PMBOK 7, refere-se ao processo de adaptação deliberada da abordagem de desenvolvimento, governança e artefatos ao contexto específico do projeto e da organização.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Certo",
+    "explicacao": "Exato. O tailoring (adaptação) reconhece que cada projeto é único e exige a customização das práticas para garantir a eficiência e a entrega de valor."
+  },
+  {
+    "id": "pmbok_011",
+    "categoria": "Petrobras - PMBOK 7",
+    "tipo": "multipla",
+    "pergunta": "As bancas de concurso costumam misturar a lista de Princípios com a lista de Domínios. Com base nas definições do PMBOK 7, qual dos itens abaixo representa um DOMÍNIO de desempenho (grupo de atividades práticas) e não um Princípio comportamental?",
+    "opcoes": [
+      "Liderança",
+      "Foco no Valor",
+      "Incerteza",
+      "Visão Sistêmica"
+    ],
+    "resposta_correta": "Incerteza",
+    "explicacao": "Incerteza é um dos 8 domínios de desempenho (atividades focadas em lidar com riscos e volatilidade). Liderança, Foco no Valor e Visão Sistêmica são diretrizes filosóficas e comportamentais, ou seja, Princípios."
+  },
+  {
+    "id": "pmbok_012",
+    "categoria": "Petrobras - PMBOK 7",
+    "tipo": "certo_errado",
+    "pergunta": "No modelo de restrições concorrentes que o gerente de projetos deve equilibrar, as bancas tradicionais cobravam apenas o triângulo de ferro (escopo, prazo e custo). O PMBOK 7 expande essa visão, incluindo variáveis como sustentabilidade (social/ambiental) e conformidade com códigos e normas.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Certo",
+    "explicacao": "O gerenciamento contemporâneo exige o equilíbrio de restrições expandidas, integrando qualidade, riscos, recursos, conformidade regulatória e impactos de sustentabilidade."
+  },
+  {
+    "id": "pmbok_013",
+    "categoria": "Petrobras - PMBOK 7",
+    "tipo": "multipla",
+    "pergunta": "Questão de Relacionamento (Nível Superior). Associe as estruturas organizacionais às suas funções-chave:\n1. Projeto\n2. Programa\n3. Portfólio\n\n( ) Coordena iniciativas correlacionadas buscando benefícios sinérgicos adicionais.\n( ) Foca em um esforço com data de início e fim para gerar um resultado único.\n( ) Opera decisões de priorização visando atingir metas estratégicas corporativas.",
+    "opcoes": [
+      "1 - 2 - 3",
+      "3 - 1 - 2",
+      "2 - 1 - 3",
+      "2 - 3 - 1"
+    ],
+    "resposta_correta": "2 - 1 - 3",
+    "explicacao": "A ordem correta é: (2) Programa busca benefícios coordenados; (1) Projeto cria um resultado único e temporário; (3) Portfólio lida com metas estratégicas e priorização."
+  },
+  {
+    "id": "pmbok_014",
+    "categoria": "Petrobras - PMBOK 7",
+    "tipo": "multipla",
+    "pergunta": "Questão de Relacionamento de Conceitos. Correlacione as Abordagens de Desenvolvimento às suas características:\n1. Preditiva\n2. Adaptativa\n3. Híbrida\n\n( ) Escopo e requisitos mudam frequentemente; foco em entregas iterativas rápidas.\n( ) Combina elementos de planejamento planejado em fases estáveis com ciclos ágeis.\n( ) Escopo, cronograma e custos são definidos detalhadamente nas fases iniciais.",
+    "opcoes": [
+      "2 - 3 - 1",
+      "1 - 2 - 3",
+      "2 - 1 - 3",
+      "3 - 2 - 1"
+    ],
+    "resposta_correta": "2 - 3 - 1",
+    "explicacao": "A associação correta é: (2) Adaptativa/Ágil lida com mudanças frequentes; (3) Híbrida une previsibilidade e agilidade; (1) Preditiva (cascata) planeja detalhadamente no início."
+  },
+  {
+    "id": "pmbok_015",
+    "categoria": "Petrobras - PMBOK 7",
+    "tipo": "multipla",
+    "pergunta": "Questão de Relacionamento Estrutural. Associe os blocos do PMBOK 7 às suas definições nativas:\n1. Princípios\n2. Domínios de Desempenho\n3. Artefatos\n\n( ) Elementos tangíveis como modelos, planos, gráficos ou documentos de controle.\n( ) Diretrizes que servem como parâmetros comportamentais e de conduta para a equipe.\n( ) Áreas ou grupos focados em atividades e entrega de resultados práticos do projeto.",
+    "opcoes": [
+      "3 - 1 - 2",
+      "3 - 2 - 1",
+      "1 - 2 - 3",
+      "2 - 1 - 3"
+    ],
+    "resposta_correta": "3 - 1 - 2",
+    "explicacao": "A associação correta determina que: (3) Artefatos são os documentos e planos gerados; (1) Princípios são as orientações de comportamento/filosofia; (2) Domínios são as áreas de execução de atividades práticas."
+  },
+  {
     "id": "pmbok_016",
     "categoria": "Petrobras - PMBOK 7",
     "tipo": "multipla",
