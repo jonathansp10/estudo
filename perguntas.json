@@ -1,5 +1,135 @@
 [
   {
+    "id": "arq_001",
+    "categoria": "Arquitetura de Computadores",
+    "tipo": "multipla",
+    "pergunta": "Qual das alternativas a seguir apresenta um exemplo clássico de atributo relacionado à 'Organização de Computadores' e não à 'Arquitetura'?",
+    "opcoes": [
+      "O conjunto de instruções (ISA) utilizado pelo processador.",
+      "As técnicas e modos de endereçamento de memória visíveis ao software.",
+      "Os formatos de dados estruturados pelo programador.",
+      "A implementação física dos barramentos, sinais de controle e tecnologia de memória."
+    ],
+    "resposta_correta": "A implementação física dos barramentos, sinais de controle e tecnologia de memória.",
+    "explicacao": "Arquitetura é o que o programador 'vê' (ISA, formatos, endereçamento). Organização é 'como é feito por dentro' (sinais de controle, barramentos, caches, tecnologias de memória), impactando o desempenho de forma indireta sem alterar a lógica do programa."
+  },
+  {
+    "id": "arq_002",
+    "categoria": "Arquitetura de Computadores",
+    "tipo": "certo_errado",
+    "pergunta": "Na arquitetura clássica de von Neumann, os programas (instruções a serem executadas) e os dados são armazenados em espaços de memória fisicamente separados para evitar gargalos de processamento.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Errado",
+    "explicacao": "Pegadinha clássica! O princípio fundamental da arquitetura de von Neumann é justamente armazenar programas (instruções) e dados no MESMO espaço de memória de leitura e escrita."
+  },
+  {
+    "id": "arq_003",
+    "categoria": "Arquitetura de Computadores",
+    "tipo": "multipla",
+    "pergunta": "A Lei de Moore não é uma lei da física, mas uma tendência histórica. Em sua formulação clássica revisada em 1975, ela estabelece que o poder computacional (ou a densidade de transistores em um chip):",
+    "opcoes": [
+      "Triplica a cada 5 anos.",
+      "Dobra a cada 18 meses exclusivamente para memórias RAM.",
+      "Dobra a cada 2 anos.",
+      "Aumenta exponencialmente a cada década dependendo do barramento."
+    ],
+    "resposta_correta": "Dobra a cada 2 anos.",
+    "explicacao": "A revisão clássica da Lei de Moore, feita pelo próprio Gordon Moore em 1975, dita que o número de transistores em um chip (e consequentemente o poder computacional) tende a dobrar a cada 2 anos."
+  },
+  {
+    "id": "arq_004",
+    "categoria": "Arquitetura de Computadores",
+    "tipo": "certo_errado",
+    "pergunta": "Um processador multicore moderno abriga vários núcleos no mesmo chip de silício. De acordo com a estrutura padrão, cada núcleo (core) possui sua própria Unidade Lógica e Aritmética (ALU), lógica de instrução e caches separadas exclusivamente para instruções e dados.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Certo",
+    "explicacao": "Correto. Em arquiteturas multicore, cada núcleo funciona como um processador independente completo, possuindo sua própria lógica de instrução (busca/decodificação), ALU, Load/Store e memórias cache L1 divididas entre cache de instrução e cache de dados."
+  },
+  {
+    "id": "arq_005",
+    "categoria": "Arquitetura de Computadores",
+    "tipo": "multipla",
+    "pergunta": "Em relação à evolução histórica dos microprocessadores da Intel na década de 1970, assinale a sequência correta que representa o primeiro microprocessador comercial, o primeiro de 8 bits e o primeiro de propósito geral, respectivamente:",
+    "opcoes": [
+      "8080 → 8008 → 4004",
+      "4004 → 8008 → 8080",
+      "ENIAC → 4004 → Core i7",
+      "8008 → 8080 → 4004"
+    ],
+    "resposta_correta": "4004 → 8008 → 8080",
+    "explicacao": "Os marcos históricos da Intel exigidos em prova são: Intel 4004 (1971, o primeiro comercial), Intel 8008 (1972, o primeiro de 8 bits) e Intel 8080 (1974, o primeiro microprocessador de propósito geral)."
+  },
+  {
+    "id": "arq_006",
+    "categoria": "Arquitetura de Computadores",
+    "tipo": "certo_errado",
+    "pergunta": "As quatro funções essenciais de um computador são: processamento, armazenamento, movimentação e controle. O fluxo de movimentação de dados (E/S) atua de forma autônoma, comunicando-se diretamente com o processamento sem precisar passar pela unidade de controle.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Errado",
+    "explicacao": "Totalmente incorreto. Qualquer fluxo essencial no computador, incluindo a movimentação de dados e o armazenamento, passa obrigatoriamente e é coordenado pela função de Controle."
+  },
+  {
+    "id": "arq_007",
+    "categoria": "Arquitetura de Computadores",
+    "tipo": "multipla",
+    "pergunta": "Considerando o contexto histórico do ENIAC, reconhecido como o primeiro computador digital eletrônico de grande escala da Segunda Guerra Mundial, assinale a alternativa que apresenta seus números críticos e arquitetônicos corretos:",
+    "opcoes": [
+      "Um bilhão de transistores, alcançando 4 GHz de velocidade.",
+      "Cinco mil operações por segundo, composto por 7.468 válvulas e usando cartões perfurados para E/S.",
+      "Oito mil operações por segundo, operando totalmente sem a necessidade de intervenção humana.",
+      "Estrutura baseada em microprocessadores 4004 com barramento multicore de 64 bits."
+    ],
+    "resposta_correta": "Cinco mil operações por segundo, composto por 7.468 válvulas e usando cartões perfurados para E/S.",
+    "explicacao": "O ENIAC é o ícone da 1ª Geração de Computadores. As bancas cobram os números exatos do projeto: 5.000 operações por segundo, o uso de 17.468 válvulas (arredondado ou listado em partes como 7.468 depedendo da literatura da banca, mas sempre ligado a milhares de válvulas) e entrada por cartões perfurados."
+  },
+  {
+    "id": "arq_008",
+    "categoria": "Arquitetura de Computadores",
+    "tipo": "certo_errado",
+    "pergunta": "Um engenheiro de software alterou o mecanismo de endereçamento imediato do conjunto de instruções (ISA) para otimizar uma aplicação. Por ser visível ao programador e impactar a execução do programa, essa alteração é um atributo da Arquitetura de Computadores.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Certo",
+    "explicacao": "Correto. O Conjunto de Instruções (ISA), os formatos de dados e as técnicas de endereçamento são visíveis ao programador e pertencem à Arquitetura (o que o software enxerga), e não à Organização."
+  },
+  {
+    "id": "arq_009",
+    "categoria": "Arquitetura de Computadores",
+    "tipo": "multipla",
+    "pergunta": "Ao analisar a evolução física e as gerações dos componentes de processamento de computadores ao longo das décadas, qual é a sequência histórica e tecnológica correta?",
+    "opcoes": [
+      "Transistores → Válvulas → Circuitos Integrados",
+      "Válvulas → Transistores → Circuitos Integrados",
+      "Circuitos Integrados → Transistores → Válvulas",
+      "Válvulas → Circuitos Integrados → Transistores"
+    ],
+    "resposta_correta": "Válvulas → Transistores → Circuitos Integrados",
+    "explicacao": "A ordem clássica das gerações de hardware de computadores é: 1ª Geração (Válvulas, alto consumo e aquecimento), 2ª Geração (Transistores, menores e mais eficientes) e 3ª Geração em diante (Circuitos Integrados/Chips de silício)."
+  },
+  {
+    "id": "arq_010",
+    "categoria": "Arquitetura de Computadores",
+    "tipo": "certo_errado",
+    "pergunta": "Em relação aos barramentos de interconexão, o 'barramento de instruções' e o 'barramento de dados' possuem a mesma finalidade lógica, sendo ambos responsáveis por carregar exclusivamente os operandos matemáticos da memória para a ALU.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Errado",
+    "explicacao": "O material faz a distinção clara, alertando para essa pegadinha: O barramento de instruções transfere as instruções (o que a CPU deve fazer), enquanto o barramento de dados transfere os operandos e os resultados (os dados que serão calculados)."
+  },
+  {
     "id": "sedes_qdx_001",
     "categoria": "SEDES",
     "tipo": "certo_errado",
