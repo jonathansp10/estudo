@@ -974,7 +974,7 @@
   },
   {
     "id": "pmbok_001",
-    "categoria": "Petrobras - PMBOK 7",
+    "categoria": "Petrobras",
     "tipo": "multipla",
     "pergunta": "Com o lançamento da 7ª edição do Guia PMBOK pelo PMI (Project Management Institute), a estrutura conceitual do gerenciamento de projetos passou por uma profunda alteração. Qual das seguintes alternativas descreve corretamente a espinha dorsal dessa nova versão?",
     "opcoes": [
@@ -988,7 +988,7 @@
   },
   {
     "id": "pmbok_002",
-    "categoria": "Petrobras - PMBOK 7",
+    "categoria": "Petrobras",
     "tipo": "certo_errado",
     "pergunta": "O Guia PMBOK é classificado pela literatura de gerenciamento como uma norma técnica com força de lei (norma legal) e uma metodologia rígida de projetos, devendo ser seguido sem alterações pelas empresas estatais.",
     "opcoes": ["Certo", "Errado"],
@@ -997,7 +997,7 @@
   },
   {
     "id": "pmbok_003",
-    "categoria": "Petrobras - PMBOK 7",
+    "categoria": "Petrobras",
     "tipo": "certo_errado",
     "pergunta": "Os 8 domínios de desempenho introduzidos pelo Guia PMBOK 7ª edição funcionam como áreas isoladas e operam de forma estritamente independente umas das outras para evitar a complexidade no projeto.",
     "opcoes": ["Certo", "Errado"],
@@ -1006,7 +1006,7 @@
   },
   {
     "id": "pmbok_004",
-    "categoria": "Petrobras - PMBOK 7",
+    "categoria": "Petrobras",
     "tipo": "multipla",
     "pergunta": "Ao avaliar o sucesso de um projeto sob a ótica do Guia PMBOK 7ª edição, o foco principal das métricas de gerenciamento mudou. De acordo com o guia, o sucesso é determinado quando:",
     "opcoes": [
@@ -1020,7 +1020,7 @@
   },
   {
     "id": "pmbok_005",
-    "categoria": "Petrobras - PMBOK 7",
+    "categoria": "Petrobras",
     "tipo": "multipla",
     "pergunta": "Um analista de projetos da Petrobras está avaliando uma iniciativa que consiste em um esforço temporário empreendido para criar um produto, serviço ou resultado único. Essa definição técnica refere-se a um:",
     "opcoes": [
@@ -1034,7 +1034,7 @@
   },
   {
     "id": "pmbok_006",
-    "categoria": "Petrobras - PMBOK 7",
+    "categoria": "Petrobras",
     "tipo": "certo_errado",
     "pergunta": "A publicação da 7ª edição do Guia PMBOK extinguiu por completo o uso e a validação de processos, tornando incorreto qualquer alinhamento com os grupos de processos das edições anteriores.",
     "opcoes": ["Certo", "Errado"],
@@ -1043,7 +1043,7 @@
   },
   {
     "id": "pmbok_007",
-    "categoria": "Petrobras - PMBOK 7",
+    "categoria": "Petrobras",
     "tipo": "multipla",
     "pergunta": "Na estrutura organizacional, as ferramentas, técnicas e insumos que antes ficavam dispersos dentro de processos específicos no PMBOK 6ª edição foram reagrupados na 7ª edição sob qual denominação?",
     "opcoes": [
@@ -1057,7 +1057,7 @@
   },
   {
     "id": "pmbok_008",
-    "categoria": "Petrobras - PMBOK 7",
+    "categoria": "Petrobras",
     "tipo": "certo_errado",
     "pergunta": "Em gerenciamento de projetos, o conceito de 'Programa' é definido como um sistema de software ou repositório digital integrado para controle automatizado de cronogramas.",
     "opcoes": ["Certo", "Errado"],
@@ -1066,7 +1066,7 @@
   },
   {
     "id": "pmbok_009",
-    "categoria": "Petrobras - PMBOK 7",
+    "categoria": "Petrobras",
     "tipo": "multipla",
     "pergunta": "Quando a alta liderança de uma organização realiza o agrupamento de projetos, programas e operações com o objetivo específico de priorizar recursos e garantir o alinhamento com os objetivos estratégicos do negócio, ela está gerenciando um:",
     "opcoes": [
@@ -1080,7 +1080,7 @@
   },
   {
     "id": "pmbok_010",
-    "categoria": "Petrobras - PMBOK 7",
+    "categoria": "Petrobras",
     "tipo": "certo_errado",
     "pergunta": "O termo 'Tailoring', que ganhou seção própria e destaque central no PMBOK 7, refere-se ao processo de adaptação deliberada da abordagem de desenvolvimento, governança e artefatos ao contexto específico do projeto e da organização.",
     "opcoes": ["Certo", "Errado"],
@@ -1089,7 +1089,7 @@
   },
   {
     "id": "pmbok_011",
-    "categoria": "Petrobras - PMBOK 7",
+    "categoria": "Petrobras",
     "tipo": "multipla",
     "pergunta": "As bancas de concurso costumam misturar a lista de Princípios com a lista de Domínios. Com base nas definições do PMBOK 7, qual dos itens abaixo representa um DOMÍNIO de desempenho (grupo de atividades práticas) e não um Princípio comportamental?",
     "opcoes": [
@@ -1103,7 +1103,7 @@
   },
   {
     "id": "pmbok_012",
-    "categoria": "Petrobras - PMBOK 7",
+    "categoria": "Petrobras",
     "tipo": "certo_errado",
     "pergunta": "No modelo de restrições concorrentes que o gerente de projetos deve equilibrar, as bancas tradicionais cobravam apenas o triângulo de ferro (escopo, prazo e custo). O PMBOK 7 expande essa visão, incluindo variáveis como sustentabilidade (social/ambiental) e conformidade com códigos e normas.",
     "opcoes": ["Certo", "Errado"],
@@ -1112,7 +1112,7 @@
   },
   {
     "id": "pmbok_013",
-    "categoria": "Petrobras - PMBOK 7",
+    "categoria": "Petrobras",
     "tipo": "multipla",
     "pergunta": "Questão de Relacionamento (Nível Superior). Associe as estruturas organizacionais às suas funções-chave:\n1. Projeto\n2. Programa\n3. Portfólio\n\n( ) Coordena iniciativas correlacionadas buscando benefícios sinérgicos adicionais.\n( ) Foca em um esforço com data de início e fim para gerar um resultado único.\n( ) Opera decisões de priorização visando atingir metas estratégicas corporativas.",
     "opcoes": [
@@ -1126,7 +1126,7 @@
   },
   {
     "id": "pmbok_014",
-    "categoria": "Petrobras - PMBOK 7",
+    "categoria": "Petrobras",
     "tipo": "multipla",
     "pergunta": "Questão de Relacionamento de Conceitos. Correlacione as Abordagens de Desenvolvimento às suas características:\n1. Preditiva\n2. Adaptativa\n3. Híbrida\n\n( ) Escopo e requisitos mudam frequentemente; foco em entregas iterativas rápidas.\n( ) Combina elementos de planejamento planejado em fases estáveis com ciclos ágeis.\n( ) Escopo, cronograma e custos são definidos detalhadamente nas fases iniciais.",
     "opcoes": [
@@ -1140,7 +1140,7 @@
   },
   {
     "id": "pmbok_015",
-    "categoria": "Petrobras - PMBOK 7",
+    "categoria": "Petrobras",
     "tipo": "multipla",
     "pergunta": "Questão de Relacionamento Estrutural. Associe os blocos do PMBOK 7 às suas definições nativas:\n1. Princípios\n2. Domínios de Desempenho\n3. Artefatos\n\n( ) Elementos tangíveis como modelos, planos, gráficos ou documentos de controle.\n( ) Diretrizes que servem como parâmetros comportamentais e de conduta para a equipe.\n( ) Áreas ou grupos focados em atividades e entrega de resultados práticos do projeto.",
     "opcoes": [
@@ -1154,7 +1154,7 @@
   },
   {
     "id": "pmbok_016",
-    "categoria": "Petrobras - PMBOK 7",
+    "categoria": "Petrobras",
     "tipo": "multipla",
     "pergunta": "Sobre o Sistema de Entrega de Valor detalhado no PMBOK 7ª edição, qual afirmação reflete corretamente o conceito de 'Valor' adotado pelo PMI?",
     "opcoes": [
@@ -1168,7 +1168,7 @@
   },
   {
     "id": "pmbok_017",
-    "categoria": "Petrobras - PMBOK 7",
+    "categoria": "Petrobras",
     "tipo": "certo_errado",
     "pergunta": "As Operações (trabalho contínuo e repetitivo da empresa) ficam de fora do Sistema de Entrega de Valor, uma vez que apenas os projetos (trabalhos temporários) geram valor à organização.",
     "opcoes": ["Certo", "Errado"],
@@ -1177,7 +1177,7 @@
   },
   {
     "id": "pmbok_018",
-    "categoria": "Petrobras - PMBOK 7",
+    "categoria": "Petrobras",
     "tipo": "multipla",
     "pergunta": "Considerando a hierarquia estrutural proposta pelo PMI para governança organizacional, qual das opções abaixo apresenta a ordem correta de agrupamento, do nível mais alto estratégico para o mais operacional?",
     "opcoes": [
@@ -1191,7 +1191,7 @@
   },
   {
     "id": "pmbok_019",
-    "categoria": "Petrobras - PMBOK 7",
+    "categoria": "Petrobras",
     "tipo": "certo_errado",
     "pergunta": "O ambiente em que o projeto está inserido é dividido em fatores internos e externos. Como a distribuição geográfica das instalações da empresa é considerada um fator interno, ela está totalmente fora de qualquer influência ou controle organizacional por parte da equipe.",
     "opcoes": ["Certo", "Errado"],
@@ -1200,7 +1200,7 @@
   },
   {
     "id": "pmbok_020",
-    "categoria": "Petrobras - PMBOK 7",
+    "categoria": "Petrobras",
     "tipo": "multipla",
     "pergunta": "Questão de Relacionamento de Focos.\nAssocie cada nível ao seu foco central:\n1. Portfólio\n2. Programas e Projetos\n\n( ) Fazer os trabalhos do jeito certo, buscando eficiência e eficácia técnica.\n( ) Fazer os trabalhos certos, buscando alinhamento e priorização estratégica.",
     "opcoes": [
@@ -1212,7 +1212,7 @@
   },
   {
     "id": "pmbok_021",
-    "categoria": "Petrobras - PMBOK 7",
+    "categoria": "Petrobras",
     "tipo": "multipla",
     "pergunta": "Dentro da relação entre o ciclo de vida do Produto e a execução de Projetos, é correto afirmar que:",
     "opcoes": [
@@ -1226,7 +1226,7 @@
   },
   {
     "id": "pmbok_022",
-    "categoria": "Petrobras - PMBOK 7",
+    "categoria": "Petrobras",
     "tipo": "certo_errado",
     "pergunta": "Os 12 princípios de gerenciamento de projetos delineados no PMBOK 7 possuem uma estrutura hierárquica estrita, em que o princípio de 'Administração/Intendência' possui maior peso e deve ser priorizado sobre os demais.",
     "opcoes": ["Certo", "Errado"],
@@ -1235,7 +1235,7 @@
   },
   {
     "id": "pmbok_023",
-    "categoria": "Petrobras - PMBOK 7",
+    "categoria": "Petrobras",
     "tipo": "multipla",
     "pergunta": "Sobre as diretrizes do Código de Ética e Conduta Profissional do PMI, assinale a opção correta.",
     "opcoes": [
@@ -1249,7 +1249,7 @@
   },
   {
     "id": "pmbok_024",
-    "categoria": "Petrobras - PMBOK 7",
+    "categoria": "Petrobras",
     "tipo": "multipla",
     "pergunta": "A mnemônica 'R2 JH' (ou 'R2 EH') é utilizada para recordar os 4 valores fundamentais que baseiam o Código de Ética do PMI. Quais são eles?",
     "opcoes": [
@@ -1263,7 +1263,7 @@
   },
   {
     "id": "pmbok_025",
-    "categoria": "Petrobras - PMBOK 7",
+    "categoria": "Petrobras",
     "tipo": "certo_errado",
     "pergunta": "Questão de pegadinha. Segundo o Código de Ética do PMI, o 'compromisso com o melhor interesse da sociedade' é listado categoricamente como um dos quatro valores fundamentais do documento.",
     "opcoes": ["Certo", "Errado"],
@@ -1272,7 +1272,7 @@
   },
   {
     "id": "pmbok_026",
-    "categoria": "Petrobras - PMBOK 7",
+    "categoria": "Petrobras",
     "tipo": "multipla",
     "pergunta": "Um líder de projetos está lidando com incertezas regulatórias de mercado (novas leis do governo) e pesquisas acadêmicas instáveis. Segundo a classificação ambiental do projeto, com o que ele está lidando?",
     "opcoes": [
@@ -1286,7 +1286,7 @@
   },
   {
     "id": "pmbok_027",
-    "categoria": "Petrobras - PMBOK 7",
+    "categoria": "Petrobras",
     "tipo": "certo_errado",
     "pergunta": "Em relação à teoria de abordagens, o modelo híbrido de entrega deve ser escolhido quando se busca unir partes previsíveis de um projeto (ex: engenharia civil) com partes de alta incerteza e feedback frequente (ex: desenvolvimento de software) dentro do mesmo esforço.",
     "opcoes": ["Certo", "Errado"],
@@ -1295,7 +1295,7 @@
   },
   {
     "id": "pmbok_028",
-    "categoria": "Petrobras - PMBOK 7",
+    "categoria": "Petrobras",
     "tipo": "multipla",
     "pergunta": "Questão de Mapeamento de Princípios. Qual dos seguintes itens faz parte da lista dos 12 princípios de gerenciamento de projetos do PMBOK 7?",
     "opcoes": [
@@ -1309,7 +1309,7 @@
   },
   {
     "id": "pmbok_029",
-    "categoria": "Petrobras - PMBOK 7",
+    "categoria": "Petrobras",
     "tipo": "multipla",
     "pergunta": "Questão de Relacionamento. Associe a característica de entrega à classificação correspondente:\n1. Projeto\n2. Operação\n\n( ) Trabalho com característica contínua, repetitiva, que visa manter o serviço em funcionamento e garantir a estabilidade do negócio.\n( ) Esforço focado em gerar uma entrega única, que possui um fim predeterminado.",
     "opcoes": [
@@ -1321,7 +1321,7 @@
   },
   {
     "id": "pmbok_030",
-    "categoria": "Petrobras - PMBOK 7",
+    "categoria": "Petrobras",
     "tipo": "certo_errado",
     "pergunta": "Um dos legados da 6ª edição que persiste na ótica atual do PMBOK é que as interações e ligações entre diferentes processos nunca podem ser iterativas; um processo sempre deve terminar completamente antes que o próximo se inicie.",
     "opcoes": ["Certo", "Errado"],
@@ -3611,7 +3611,6 @@
       "/mnt é usado para montagens manuais/genéricas e /media para mídias removíveis automáticas.",
       "Ambos são idênticos e o uso de um ou outro depende apenas se o sistema é case-sensitive."
     ],
-    "resposta_correta": "Apenas o comando sudo apt update já baixa e instala todas as atualizações de pacotes.",
     "resposta_correta": "/mnt é usado para montagens manuais/genéricas e /media para mídias removíveis automáticas.",
     "explicacao": "O diretório '/mnt' serve como ponto de montagem temporário ou manual feito pelo administrador. O '/media' é utilizado pelo sistema para montagens automáticas de mídias do usuário (como pendrives e CDs)."
   }
