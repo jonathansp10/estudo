@@ -1,5 +1,135 @@
 [
   {
+    "id": "pnas_001",
+    "categoria": "SEDEs",
+    "tipo": "certo_errado",
+    "pergunta": "O financiamento da Assistência Social, integrado ao orçamento da Seguridade Social, obedece ao princípio da solidariedade e é custeado exclusivamente por impostos municipais, dispensando contribuições de empregadores e trabalhadores.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Errado",
+    "explicacao": "A afirmativa é incorreta. De acordo com o Art. 195 da CF e a LOAS (Art. 28), o financiamento segue o princípio da solidariedade, significando que TODA a sociedade financia a seguridade social. Isso inclui contribuições do empregador, do empregado, sobre receitas de concursos de prognósticos e de importadores, além dos orçamentos da União, Estados, DF e Municípios."
+  },
+  {
+    "id": "pnas_002",
+    "categoria": "SEDEs",
+    "tipo": "multipla",
+    "pergunta": "A Constituição Federal de 1988 estabelece os alicerces estruturais da Assistência Social. Assinale a alternativa que indica corretamente o escopo dos artigos 203 e 204 da CF/88, temática frequente em pegadinhas de prova:",
+    "opcoes": [
+      "O art. 203 define as diretrizes de descentralização, enquanto o art. 204 lista os beneficiários do BPC.",
+      "Ambos os artigos tratam do financiamento da política e da criação compulsória de Fundos Estaduais.",
+      "O art. 203 define os objetivos da assistência social (como proteção à família e amparo a crianças), enquanto o art. 204 estabelece suas diretrizes (descentralização e participação da população).",
+      "O art. 203 cria o Conselho Nacional de Assistência Social (CNAS), ao passo que o art. 204 define os valores pagos na Proteção Social Básica."
+    ],
+    "resposta_correta": "O art. 203 define os objetivos da assistência social (como proteção à família e amparo a crianças), enquanto o art. 204 estabelece suas diretrizes (descentralização e participação da população).",
+    "explicacao": "É essencial não confundir: Art. 203 = Objetivos da Assistência Social. Art. 204 = Diretrizes (lembre-se do mnemônico DE-PAPO: Descentralização político-administrativa e Participação da população)."
+  },
+  {
+    "id": "pnas_003",
+    "categoria": "SEDEs",
+    "tipo": "multipla",
+    "pergunta": "Um adolescente é resgatado de uma situação de trabalho infantil (corte de cana). Foi constatada a violação de seus direitos, mas ele mantém vínculos familiares fortes e não necessita ser retirado de casa. De acordo com a PNAS (2004) e a Tipificação Nacional (2009), qual nível de proteção deve atender esse caso?",
+    "opcoes": [
+      "Proteção Social Básica.",
+      "Proteção Social Especial de Alta Complexidade.",
+      "Proteção Social Especial de Média Complexidade.",
+      "Rede Intersetorial de Saúde Exclusiva."
+    ],
+    "resposta_correta": "Proteção Social Especial de Média Complexidade.",
+    "explicacao": "A Proteção Social Básica atua na prevenção. Como já houve violação de direitos (trabalho infantil / risco social consumado), o caso vai para a Proteção Especial. Como os vínculos familiares foram mantidos, enquadra-se na Média Complexidade. A Alta Complexidade seria exigida apenas se houvesse rompimento de vínculos necessitando de acolhimento institucional."
+  },
+  {
+    "id": "pnas_004",
+    "categoria": "SEDEs",
+    "tipo": "certo_errado",
+    "pergunta": "A transferência regular e automática de recursos federais destinados à Assistência Social, conhecida como modalidade 'fundo a fundo', exige obrigatoriamente que o ente recebedor (Estado, DF ou Município) possua um Fundo de Assistência Social próprio e formalmente instituído.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Certo",
+    "explicacao": "Correto. O cofinanciamento do SUAS flui do Fundo Nacional de Assistência Social (FNAS) diretamente para os fundos locais. É requisito indispensável, normatizado na LOAS, que o ente governamental tenha o seu próprio Fundo (além do Conselho e Plano de Assistência) para receber esses recursos fundo a fundo."
+  },
+  {
+    "id": "pnas_005",
+    "categoria": "SEDEs",
+    "tipo": "multipla",
+    "pergunta": "No modelo de governança e pactuação do SUAS, o debate, negociação e operacionalização da gestão ocorrem nas chamadas Comissões Intergestores. Como se divide a composição da Comissão Intergestores Tripartite (CIT)?",
+    "opcoes": [
+      "Apenas por representantes do Ministério da Saúde, Educação e Trabalho.",
+      "Por representantes da União, dos Estados/DF e dos Municípios.",
+      "Por representantes exclusivos da Sociedade Civil e do Terceiro Setor.",
+      "Por representantes do Poder Legislativo, Judiciário e Executivo."
+    ],
+    "resposta_correta": "Por representantes da União, dos Estados/DF e dos Municípios.",
+    "explicacao": "A CIT (Comissão Intergestores Tripartite) representa as três esferas de governo no pacto federativo: União, Estados/DF e Municípios. Já a CIB (Comissão Intergestores Bipartite) atua no âmbito estadual, unindo representantes do Estado e de seus Municípios."
+  },
+  {
+    "id": "pnas_006",
+    "categoria": "SEDEs",
+    "tipo": "multipla",
+    "pergunta": "Associe os marcos normativos da Assistência Social aos seus respectivos anos de consolidação:\n\n1. Resolução que aprovou a NOB e instituiu o SUAS.\n2. Lei que incorporou formalmente o SUAS à LOAS.\n3. Resolução (145) do CNAS que instituiu a PNAS.\n\nA ordem correta das datas (2005 / 2011 / 2004) é:",
+    "opcoes": [
+      "1 - 2 - 3",
+      "2 - 3 - 1",
+      "3 - 1 - 2",
+      "2 - 1 - 3"
+    ],
+    "resposta_correta": "2 - 3 - 1",
+    "explicacao": "A cronologia exigida em concursos é: 2004 = Resolução nº 145 instituiu a PNAS (item 3). 2005 = Resolução nº 130 aprovou a NOB e instituiu o SUAS (item 1). 2011 = Lei nº 12.435 incorporou o SUAS na LOAS (item 2)."
+  },
+  {
+    "id": "pnas_007",
+    "categoria": "SEDEs",
+    "tipo": "certo_errado",
+    "pergunta": "Ao contrário da política filantrópica e do assistencialismo, a Assistência Social como política pública não exige participação popular em sua formulação, sendo as Conferências de Assistência Social fóruns meramente consultivos coordenados verticalmente (Top-Down) pela União.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Errado",
+    "explicacao": "A afirmativa comete vários erros gravíssimos: a Assistência Social garante o controle social (CF, art. 204) e as Conferências e Conselhos (como o CNAS) são espaços *deliberativos* (não apenas consultivos) que horizontalizam as decisões, afastando a lógica 'Top-Down' e o assistencialismo clientelista."
+  },
+  {
+    "id": "pnas_008",
+    "categoria": "SEDEs",
+    "tipo": "multipla",
+    "pergunta": "No contexto da PNAS, os conceitos de 'Vulnerabilidade' e 'Risco' norteiam as diferentes esferas de proteção. Assinale a alternativa que os diferencia corretamente:",
+    "opcoes": [
+      "Vulnerabilidade refere-se à violação de direitos já efetivada, enquanto o risco indica apenas a possibilidade dessa violação ocorrer.",
+      "Vulnerabilidade é uma condição socioeconômica que pode levar à violação de direitos, enquanto o risco social ocorre quando essa violação já foi consumada.",
+      "Risco e vulnerabilidade são sinônimos normativos que justificam a concessão exclusiva do BPC.",
+      "A vulnerabilidade é tratada exclusivamente pela saúde, e o risco apenas pela segurança pública, isentando o SUAS."
+    ],
+    "resposta_correta": "Vulnerabilidade é uma condição socioeconômica que pode levar à violação de direitos, enquanto o risco social ocorre quando essa violação já foi consumada.",
+    "explicacao": "Pegadinha clássica de banca! Vulnerabilidade (foco da Proteção Básica) é a 'possibilidade' ou condição precarizada (ex: pobreza, insegurança alimentar). Risco (foco da Proteção Especial) é o dano já ocorrido / violação consumada (ex: abuso, trabalho escravo, abandono)."
+  },
+  {
+    "id": "pnas_009",
+    "categoria": "SEDEs",
+    "tipo": "certo_errado",
+    "pergunta": "O sistema de Seguridade Social brasileiro atua sobre um tripé. Nele, a Saúde obedece ao princípio da universalidade, a Previdência Social exige caráter contributivo, e a Assistência Social é prestada de forma não contributiva a quem dela necessitar.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Certo",
+    "explicacao": "Corretíssimo. Esse é o panorama fundamental do art. 194 da CF/88. A Assistência Social se difere da Previdência pois independe de contribuição prévia (não contributiva) e difere da Saúde, pois não é estritamente universal, mas direcionada 'a quem dela necessitar'."
+  },
+  {
+    "id": "pnas_010",
+    "categoria": "SEDEs",
+    "tipo": "certo_errado",
+    "pergunta": "No contexto das visões críticas sobre políticas públicas, a perspectiva neoliberal do 'Estado Mínimo' contribui para o fortalecimento do SUAS, pois reduz a focalização e elimina condicionalidades, gerando estabilidade empregatícia para os trabalhadores da rede socioassistencial.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Errado",
+    "explicacao": "A afirmativa inverte os conceitos críticos da teoria do Serviço Social. A perspectiva do Estado Mínimo (neoliberal) causa exatamente o oposto: *precarização* do trabalho (rotatividade, ausência de direitos) e *focalização excessiva* na pobreza extrema, criando burocracias e cortando benefícios por pequenas diferenças de renda."
+  },
+  {
     "id": "arq_001",
     "categoria": "Arquitetura de Computadores",
     "tipo": "multipla",
