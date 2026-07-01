@@ -1,7 +1,137 @@
 [
   {
+    "id": "eng_soft_req_001",
+    "categoria": "Engenharia de software",
+    "tipo": "multipla",
+    "pergunta": "Durante a especificação de um novo sistema de e-commerce, a equipe de análise documentou a seguinte restrição: 'O sistema deve mascarar os números de CPF dos clientes nas telas de consulta para adequação à Lei Geral de Proteção de Dados (LGPD) e seguir o modelo de acessibilidade Magno do governo federal'. Como esse requisito não funcional é subclassificado?",
+    "opcoes": [
+      "Requisito de Produto.",
+      "Requisito Funcional de Interface.",
+      "Requisito Organizacional.",
+      "Requisito Externo."
+    ],
+    "resposta_correta": "Requisito Externo.",
+    "explicacao": "**Requisitos Externos** são aqueles derivados de obrigações regulatórias, leis, normas éticas ou exigências externas à organização. Exemplos clássicos em concursos incluem regras da LGPD, normas de acessibilidade impostas por governos e regras de tributação."
+  },
+  {
+    "id": "eng_soft_req_002",
+    "categoria": "Engenharia de software",
+    "tipo": "certo_errado",
+    "pergunta": "Os 'requisitos de usuário' devem ser escritos utilizando uma linguagem estritamente técnica, detalhando serviços, algoritmos e restrições de arquitetura, servindo como o manual definitivo para a equipe de programadores.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Errado",
+    "explicacao": "Pegadinha clássica! Os **requisitos de usuário** expressam a visão do negócio e utilizam linguagem natural (não técnica) para descrever o que o usuário espera. O detalhamento técnico feito especificamente para os programadores constitui os **requisitos de sistema**."
+  },
+  {
+    "id": "eng_soft_req_003",
+    "categoria": "Engenharia de software",
+    "tipo": "multipla",
+    "pergunta": "Um analista júnior escreveu os seguintes requisitos não funcionais. Assinale a única alternativa que apresenta um requisito escrito de forma verificável e mensurável, conforme as boas práticas da Engenharia de Requisitos:",
+    "opcoes": [
+      "O sistema deve ser extremamente rápido e responsivo durante os picos de acesso no fim de ano.",
+      "A plataforma deverá suportar até mil usuários simultâneos com um tempo de resposta de no máximo dois segundos por transação.",
+      "O módulo de pagamento deve ser muito seguro contra ataques de hackers externos.",
+      "O software precisa ter uma interface amigável para que idosos aprendam a usá-lo facilmente."
+    ],
+    "resposta_correta": "A plataforma deverá suportar até mil usuários simultâneos com um tempo de resposta de no máximo dois segundos por transação.",
+    "explicacao": "Requisitos não funcionais (RNF) com termos vagos como 'rápido', 'seguro' ou 'fácil' são impossíveis de testar. Um bom RNF precisa de **métricas numéricas** ou limites exatos (throughput, tempo de resposta, capacidade, RTO) para que a equipe de qualidade possa validar a entrega."
+  },
+  {
+    "id": "eng_soft_req_004",
+    "categoria": "Engenharia de software",
+    "tipo": "certo_errado",
+    "pergunta": "A definição de uma meta de disponibilidade de '100% (cem por cento)' é uma exigência padrão e altamente recomendada para sistemas críticos, garantindo que o software nunca saia do ar sob nenhuma circunstância.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Errado",
+    "explicacao": "Estabelecer disponibilidade de '100%' é uma armadilha, pois é virtualmente inalcançável. Sistemas precisam de janelas de manutenção, atualizações de banco de dados e patches de segurança. O correto é acordar metas realistas, como '98%' ou '99,9%', alinhadas com o cliente."
+  },
+  {
+    "id": "eng_soft_req_005",
+    "categoria": "Engenharia de software",
+    "tipo": "multipla",
+    "pergunta": "Um analista precisa entender detalhadamente o comportamento de um sistema de faturamento que possui muitas regras e exceções complexas, como isenção de impostos para empresas sem fins lucrativos. Qual técnica de elicitação é a mais indicada para mapear esse fluxo passo a passo e suas variações?",
+    "opcoes": [
+      "Brainstorming.",
+      "Cenários.",
+      "Questionário.",
+      "Garimpo de documentos."
+    ],
+    "resposta_correta": "Cenários.",
+    "explicacao": "Os **Cenários** (ou casos de uso) são histórias detalhadas que mapeiam o Ator, o Objetivo, os Passos e, principalmente, as **exceções**. É a técnica ideal para lidar com processos sensíveis a regras específicas (como tributação) e suas variações."
+  },
+  {
+    "id": "eng_soft_req_006",
+    "categoria": "Engenharia de software",
+    "tipo": "certo_errado",
+    "pergunta": "A Prototipagem é uma técnica de elicitação de requisitos livre de desvantagens, sendo sempre recomendada pois garante o engajamento do cliente sem gerar nenhum impacto negativo no entendimento do cronograma do projeto.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Errado",
+    "explicacao": "Embora a prototipagem valide fluxos de forma imediata, ela possui desvantagens clássicas: consome tempo, pode fazer o cliente focar indevidamente na aparência (cores/fontes) em vez da funcionalidade e, perigosamente, gera a ilusão no cliente de que 'o sistema já está pronto'."
+  },
+  {
+    "id": "eng_soft_req_007",
+    "categoria": "Engenharia de software",
+    "tipo": "multipla",
+    "pergunta": "Qual é a principal recomendação doutrinária sobre a escolha das técnicas de elicitação (levantamento) de requisitos em um projeto de software?",
+    "opcoes": [
+      "Deve-se escolher uma única técnica e aplicá-la do início ao fim do projeto para manter a padronização e evitar confusão documental.",
+      "A técnica de Questionário deve ser evitada em todos os cenários, pois a interação fria impede a coleta de requisitos não funcionais.",
+      "Não existe uma 'única técnica' suficiente. A melhor prática é mesclar e combinar múltiplas técnicas conforme o objetivo, o contexto e as restrições de tempo/custo.",
+      "Workshops devem ser usados exclusivamente para documentar fluxos de exceção após o software estar programado."
+    ],
+    "resposta_correta": "Não existe uma 'única técnica' suficiente. A melhor prática é mesclar e combinar múltiplas técnicas conforme o objetivo, o contexto e as restrições de tempo/custo.",
+    "explicacao": "A regra de ouro da engenharia de requisitos é a complementariedade. Cada técnica tem vantagens e riscos. Um fluxo eficiente mistura várias delas (ex: garimpo de documentos → entrevistas para preencher lacunas → protótipos para validar)."
+  },
+  {
+    "id": "eng_soft_req_008",
+    "categoria": "Engenharia de software",
+    "tipo": "certo_errado",
+    "pergunta": "A técnica de 'Garimpo de documentos' é extremamente confiável por utilizar fontes oficiais, eliminando totalmente o risco de desatualização dos processos e dispensando a necessidade de confirmar os fluxos com os usuários finais.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Errado",
+    "explicacao": "O grande perigo do garimpo de documentos é exatamente a **desatualização**. Muitas vezes a empresa possui manuais antigos, mas, na prática diária, os funcionários já executam as tarefas de outra forma. Por isso, essa técnica deve ser complementada com entrevistas ou observação em campo."
+  },
+  {
+    "id": "eng_soft_req_009",
+    "categoria": "Engenharia de software",
+    "tipo": "multipla",
+    "pergunta": "Ao enfrentar um processo crítico e muito engessado em que o usuário não consegue explicar verbalmente as dificuldades do dia a dia, o Analista de Requisitos decide sentar na cadeira do usuário e executar a tarefa sob a orientação do mesmo. Qual é o nome dessa técnica de elicitação?",
+    "opcoes": [
+      "Fotografia (Observação).",
+      "Inversão de papéis (Role play).",
+      "Brainstorming.",
+      "Entrevista não estruturada."
+    ],
+    "resposta_correta": "Inversão de papéis (Role play).",
+    "explicacao": "Na **Inversão de papéis**, o analista executa o trabalho na prática para 'sentir' as dores e descobrir lacunas do processo. É diferente da Fotografia (Observação), onde o analista fica apenas assistindo o usuário trabalhar sem interferir."
+  },
+  {
+    "id": "eng_soft_req_010",
+    "categoria": "Engenharia de software",
+    "tipo": "certo_errado",
+    "pergunta": "Ao aplicar a técnica de Questionários para um público muito extenso, o analista deve priorizar a utilização de perguntas abertas, pois elas garantem uma análise estatística rápida e não impactam o cronograma do projeto.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Errado",
+    "explicacao": "É exatamente o oposto. Questionários com muitas perguntas abertas disparados para um público grande geram um volume de texto caótico, tornando a tabulação e análise demoradas e inviáveis, o que impacta severamente o cronograma. Em questionários, deve-se priorizar perguntas **fechadas** (múltipla escolha) para triagem."
+  },
+  {
     "id": "pnas_001",
-    "categoria": "SEDEs",
+    "categoria": "SEDES",
     "tipo": "certo_errado",
     "pergunta": "O financiamento da Assistência Social, integrado ao orçamento da Seguridade Social, obedece ao princípio da solidariedade e é custeado exclusivamente por impostos municipais, dispensando contribuições de empregadores e trabalhadores.",
     "opcoes": [
@@ -13,7 +143,7 @@
   },
   {
     "id": "pnas_002",
-    "categoria": "SEDEs",
+    "categoria": "SEDES",
     "tipo": "multipla",
     "pergunta": "A Constituição Federal de 1988 estabelece os alicerces estruturais da Assistência Social. Assinale a alternativa que indica corretamente o escopo dos artigos 203 e 204 da CF/88, temática frequente em pegadinhas de prova:",
     "opcoes": [
@@ -27,7 +157,7 @@
   },
   {
     "id": "pnas_003",
-    "categoria": "SEDEs",
+    "categoria": "SEDES",
     "tipo": "multipla",
     "pergunta": "Um adolescente é resgatado de uma situação de trabalho infantil (corte de cana). Foi constatada a violação de seus direitos, mas ele mantém vínculos familiares fortes e não necessita ser retirado de casa. De acordo com a PNAS (2004) e a Tipificação Nacional (2009), qual nível de proteção deve atender esse caso?",
     "opcoes": [
@@ -41,7 +171,7 @@
   },
   {
     "id": "pnas_004",
-    "categoria": "SEDEs",
+    "categoria": "SEDES",
     "tipo": "certo_errado",
     "pergunta": "A transferência regular e automática de recursos federais destinados à Assistência Social, conhecida como modalidade 'fundo a fundo', exige obrigatoriamente que o ente recebedor (Estado, DF ou Município) possua um Fundo de Assistência Social próprio e formalmente instituído.",
     "opcoes": [
@@ -53,7 +183,7 @@
   },
   {
     "id": "pnas_005",
-    "categoria": "SEDEs",
+    "categoria": "SEDES",
     "tipo": "multipla",
     "pergunta": "No modelo de governança e pactuação do SUAS, o debate, negociação e operacionalização da gestão ocorrem nas chamadas Comissões Intergestores. Como se divide a composição da Comissão Intergestores Tripartite (CIT)?",
     "opcoes": [
@@ -67,7 +197,7 @@
   },
   {
     "id": "pnas_006",
-    "categoria": "SEDEs",
+    "categoria": "SEDES",
     "tipo": "multipla",
     "pergunta": "Associe os marcos normativos da Assistência Social aos seus respectivos anos de consolidação:\n\n1. Resolução que aprovou a NOB e instituiu o SUAS.\n2. Lei que incorporou formalmente o SUAS à LOAS.\n3. Resolução (145) do CNAS que instituiu a PNAS.\n\nA ordem correta das datas (2005 / 2011 / 2004) é:",
     "opcoes": [
@@ -81,7 +211,7 @@
   },
   {
     "id": "pnas_007",
-    "categoria": "SEDEs",
+    "categoria": "SEDES",
     "tipo": "certo_errado",
     "pergunta": "Ao contrário da política filantrópica e do assistencialismo, a Assistência Social como política pública não exige participação popular em sua formulação, sendo as Conferências de Assistência Social fóruns meramente consultivos coordenados verticalmente (Top-Down) pela União.",
     "opcoes": [
@@ -93,7 +223,7 @@
   },
   {
     "id": "pnas_008",
-    "categoria": "SEDEs",
+    "categoria": "SEDES",
     "tipo": "multipla",
     "pergunta": "No contexto da PNAS, os conceitos de 'Vulnerabilidade' e 'Risco' norteiam as diferentes esferas de proteção. Assinale a alternativa que os diferencia corretamente:",
     "opcoes": [
@@ -107,7 +237,7 @@
   },
   {
     "id": "pnas_009",
-    "categoria": "SEDEs",
+    "categoria": "SEDES",
     "tipo": "certo_errado",
     "pergunta": "O sistema de Seguridade Social brasileiro atua sobre um tripé. Nele, a Saúde obedece ao princípio da universalidade, a Previdência Social exige caráter contributivo, e a Assistência Social é prestada de forma não contributiva a quem dela necessitar.",
     "opcoes": [
@@ -119,7 +249,7 @@
   },
   {
     "id": "pnas_010",
-    "categoria": "SEDEs",
+    "categoria": "SEDES",
     "tipo": "certo_errado",
     "pergunta": "No contexto das visões críticas sobre políticas públicas, a perspectiva neoliberal do 'Estado Mínimo' contribui para o fortalecimento do SUAS, pois reduz a focalização e elimina condicionalidades, gerando estabilidade empregatícia para os trabalhadores da rede socioassistencial.",
     "opcoes": [
