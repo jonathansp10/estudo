@@ -1,451 +1,271 @@
-let perguntas = [];
-let perguntasFiltradas = [];
-let perguntaAtualIndex = 0;
-let acertosSessao = 0;
-let errosSessao = 0;
-
-async function carregarPerguntas() {
-    try {
-        const res = await fetch('perguntas.json');
-        perguntas = await res.json();
-        
-        const container = document.getElementById('categorias-container');
-        const cats = [...new Set(perguntas.map(p => p.categoria))].sort();
-        
-        container.innerHTML = ''; 
-        cats.forEach(cat => {
-            container.innerHTML += `
-                <div class="cat-row">
-                    <label>
-                        <input type="checkbox" class="cat-checkbox" value="${cat}" checked> 
-                        &nbsp; ${cat}
-                    </label>
-                    <input type="number" class="cat-qtd" value="5" min="1" max="50">
-                </div>
-            `;
-        });
-
-        renderizarDashboard(cats);
-
-    } catch (error) {
-        console.error("Erro ao carregar perguntas:", error);
-    }
-}
-
-// ==========================================
-// RENDERIZAR DASHBOARD
-// ==========================================
-function renderizarDashboard(categorias) {
-    const stats = JSON.parse(localStorage.getItem('estatisticas_categorias')) || {};
-    const container = document.getElementById('dashboard-container');
-    container.innerHTML = '';
-
-    if (Object.keys(stats).length === 0) {
-        container.innerHTML = '<p style="font-size:14px; color:#94a3b8; font-style: italic;">Comece a responder perguntas para gerar seu gráfico de desempenho.</p>';
-        return;
-    }
-
-    categorias.forEach(cat => {
-        if (stats[cat] && stats[cat].total > 0) {
-            const total = stats[cat].total;
-            const acertos = stats[cat].acertos;
-            const pct = Math.round((acertos / total) * 100);
-            
-            // Cores: Verde (>=80%), Amarelo (>=50%), Vermelho (<50%)
-            let cor = pct >= 80 ? '#22c55e' : (pct >= 50 ? '#eab308' : '#ef4444');
-
-            container.innerHTML += `
-                <div style="margin-bottom: 12px;">
-                    <div style="display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 5px;">
-                        <strong>${cat}</strong>
-                        <span style="color: ${cor}; font-weight: bold;">${pct}% (${acertos}/${total})</span>
-                    </div>
-                    <div style="background: #334155; border-radius: 10px; width: 100%; height: 8px; overflow: hidden;">
-                        <div style="background: ${cor}; width: ${pct}%; height: 100%; border-radius: 10px;"></div>
-                    </div>
-                </div>
-            `;
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Estudos PRO</title>
+    <style>
+        /* --- VARIÁVEIS DE TEMA (CLARO / ESCURO) --- */
+        :root {
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --border-color: #e2e8f0;
+            --btn-bg: #f1f5f9;
+            --btn-hover: #e2e8f0;
+            --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
         }
-    });
-}
 
-// ==========================================
-// MODO ESTUDO DIÁRIO (Leitner System)
-// ==========================================
-document.getElementById('btn-iniciar').addEventListener('click', () => {
-    const progresso = JSON.parse(localStorage.getItem('progresso_estudos')) || {};
-    const hoje = Date.now();
-    perguntasFiltradas = []; 
+        .dark-mode {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border-color: #334155;
+            --btn-bg: #334155;
+            --btn-hover: #475569;
+            --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+        }
 
-    const checkboxes = document.querySelectorAll('.cat-checkbox:checked');
-    if (checkboxes.length === 0) return alert("Selecione pelo menos uma categoria!");
+        /* --- ESTILOS GERAIS --- */
+        body { 
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+            background-color: var(--bg-color); 
+            color: var(--text-main);
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            padding: 20px; 
+            transition: background-color 0.3s ease, color 0.3s ease;
+            margin: 0;
+        }
 
-    checkboxes.forEach(cb => {
-        const cat = cb.value;
-        const inputQtd = cb.closest('.cat-row').querySelector('.cat-qtd');
-        const qtdDesejada = parseInt(inputQtd.value) || 5;
+        .header-bar {
+            width: 100%;
+            max-width: 600px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
 
-        // Puxa apenas as perguntas cuja data de revisão (timestamp) já venceu
-        let disponiveisCat = perguntas.filter(p => p.categoria === cat && hoje >= (progresso[p.id] || 0));
-        disponiveisCat = disponiveisCat.sort(() => 0.5 - Math.random()).slice(0, qtdDesejada);
-        perguntasFiltradas = perguntasFiltradas.concat(disponiveisCat);
-    });
+        .streak-badge {
+            background: #ffedd5;
+            color: #ea580c;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            border: 1px solid #fdba74;
+            font-size: 15px;
+        }
+        .dark-mode .streak-badge { background: #431407; border-color: #9a3412; color: #fdba74; }
 
-    if (perguntasFiltradas.length === 0) return alert("Parabéns! Nenhuma revisão atrasada para as categorias selecionadas.");
+        .card { 
+            background: var(--card-bg); 
+            padding: 30px; 
+            border-radius: 16px; 
+            box-shadow: var(--shadow); 
+            width: 100%; 
+            max-width: 600px; 
+            text-align: center; 
+            margin-bottom: 20px; 
+            box-sizing: border-box;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
 
-    iniciarSessao();
-});
+        .hidden { display: none !important; }
 
-// ==========================================
-// MODO REFORÇO (Ignora datas, puxa os piores erros)
-// ==========================================
-document.getElementById('btn-reforco').addEventListener('click', () => {
-    const rankingErros = JSON.parse(localStorage.getItem('ranking_erros')) || {};
-    
-    // Filtra só as que têm erro registrado
-    let perguntasComErro = perguntas.filter(p => rankingErros[p.id] > 0);
-    
-    if (perguntasComErro.length === 0) {
-        return alert("Excelente! Você ainda não tem erros registrados para reforçar.");
-    }
-
-    // Ordena das mais erradas para as menos erradas e pega o Top 15
-    perguntasFiltradas = perguntasComErro.sort((a, b) => rankingErros[b.id] - rankingErros[a.id]).slice(0, 15);
-    
-    // Embaralha as 15 escolhidas
-    perguntasFiltradas = perguntasFiltradas.sort(() => 0.5 - Math.random());
-
-    iniciarSessao();
-});
-
-function iniciarSessao() {
-    perguntaAtualIndex = 0;
-    acertosSessao = 0;
-    errosSessao = 0;
-    document.getElementById('setup-screen').classList.add('hidden');
-    document.getElementById('flashcard-screen').classList.remove('hidden');
-    mostrarPergunta();
-}
-
-
-// ==========================================
-// FLASHCARDS E LÓGICA DE REGISTRO
-// ==========================================
-function mostrarPergunta() {
-    const p = perguntasFiltradas[perguntaAtualIndex];
-    document.getElementById('categoria-label').textContent = p.categoria;
-    document.getElementById('contador-label').textContent = `${perguntaAtualIndex + 1} / ${perguntasFiltradas.length}`;
-    document.getElementById('pergunta-texto').textContent = p.pergunta;
-    
-    const opcoesContainer = document.getElementById('opcoes-container');
-    opcoesContainer.innerHTML = '';
-    document.getElementById('explicacao').classList.add('hidden');
-    document.getElementById('controles-feedback').classList.add('hidden');
-
-    const btnOuvir = document.getElementById('btn-ouvir');
-    if (p.categoria.includes('Inglês')) {
-        btnOuvir.classList.remove('hidden');
-        window.speechSynthesis.cancel(); 
-        btnOuvir.onclick = () => {
-            const leitura = new SpeechSynthesisUtterance(p.pergunta);
-            leitura.lang = 'en-US'; 
-            window.speechSynthesis.speak(leitura);
-        };
-    } else {
-        btnOuvir.classList.add('hidden');
-    }
-
-    const opcoesEmbaralhadas = [...p.opcoes].sort(() => 0.5 - Math.random());
-
-    opcoesEmbaralhadas.forEach(op => {
-        const btn = document.createElement('button');
-        btn.className = 'option-btn';
-        btn.textContent = op;
-        btn.onclick = () => verificar(op, p, btn);
-        opcoesContainer.appendChild(btn);
-    });
-}
-
-function verificar(escolha, p, btnClicado) {
-    const botoes = document.querySelectorAll('.option-btn');
-    botoes.forEach(b => b.disabled = true); 
-
-    const acertou = (escolha === p.resposta_correta);
-    
-    if (acertou) { 
-        acertosSessao++; 
-        btnClicado.style.backgroundColor = '#22c55e'; 
-        btnClicado.style.color = 'white';
-    } else { 
-        errosSessao++; 
-        btnClicado.style.backgroundColor = '#ef4444'; 
-        btnClicado.style.color = 'white';
+        /* --- BOTÕES E INPUTS --- */
+        input[type="number"], button { 
+            padding: 12px; 
+            margin: 10px 0; 
+            font-size: 16px; 
+            border-radius: 8px; 
+            box-sizing: border-box; 
+            border: 1px solid var(--border-color);
+            background: var(--card-bg);
+            color: var(--text-main);
+        }
         
-        botoes.forEach(b => {
-            if (b.textContent === p.resposta_correta) {
-                b.style.backgroundColor = '#22c55e';
-                b.style.color = 'white';
-            }
-        });
-    }
+        button { 
+            border: none; 
+            cursor: pointer; 
+            width: 100%; 
+            font-weight: bold; 
+            transition: all 0.2s; 
+        }
+        button:hover { opacity: 0.9; transform: translateY(-1px); }
+        button:active { transform: translateY(1px); }
 
-    // PROCESSA ALGORITMO, ESTATÍSTICAS E DASHBOARD
-    processarDadosDaResposta(p, acertou);
-    
-    const explicacaoDiv = document.getElementById('explicacao');
-    explicacaoDiv.innerHTML = `<strong>Explicação:</strong> ${p.explicacao}`;
-    explicacaoDiv.classList.remove('hidden');
-    document.getElementById('controles-feedback').classList.remove('hidden');
-}
+        .btn-primary { background-color: #3b82f6; color: white; }
+        .btn-success { background-color: #22c55e; color: white; }
+        .btn-warning { background-color: #f97316; color: white; }
+        .btn-dark-toggle { background: transparent; font-size: 24px; width: auto; padding: 5px; }
 
-// --- FUNÇÃO DE GAMIFICAÇÃO ---
-function processarDadosDaResposta(p, acertou, fezReforco = false) {
-    // 1. CÁLCULO DE XP
-    let xpAtual = parseInt(localStorage.getItem('user_xp')) || 0;
-    
-    // Pontuação: Acerto direto (+20), Reforço (+30), Erro (-5)
-    let ganho = acertou ? 20 : (fezReforco ? 30 : -5);
-    xpAtual = Math.max(0, xpAtual + ganho);
-    localStorage.setItem('user_xp', xpAtual);
-
-    // 2. LÓGICA DE NÍVEL (A cada 200 XP sobe um nível)
-    let nivel = Math.floor(xpAtual / 200) + 1;
-    localStorage.setItem('user_nivel', nivel);
-
-    // 3. REPETIÇÃO ESPAÇADA (LEITNER - Mantida)
-    const progresso = JSON.parse(localStorage.getItem('progresso_estudos')) || {};
-    const niveis = JSON.parse(localStorage.getItem('nivel_acertos')) || {};
-    let nivelQuestao = (niveis[p.id] || 0) + (acertou ? 1 : - (niveis[p.id] || 0));
-    niveis[p.id] = Math.max(0, Math.min(5, nivelQuestao));
-    
-    const diasEspacamento = [0, 1, 3, 7, 15, 30][niveis[p.id]];
-    progresso[p.id] = Date.now() + (diasEspacamento * 86400000);
-
-    localStorage.setItem('nivel_acertos', JSON.stringify(niveis));
-    localStorage.setItem('progresso_estudos', JSON.stringify(progresso));
-
-    // 4. ESTATÍSTICAS E INTERFACE
-    atualizarInterfaceXP(xpAtual, nivel);
-    // ... (o restante da sua lógica de stats permanece aqui)
-}
-
-document.getElementById('btn-proxima').addEventListener('click', () => {
-    window.speechSynthesis.cancel();
-    perguntaAtualIndex++;
-    if (perguntaAtualIndex < perguntasFiltradas.length) {
-        mostrarPergunta();
-    } else {
-        document.getElementById('flashcard-screen').classList.add('hidden');
-        document.getElementById('resultado-screen').classList.remove('hidden');
-        const total = acertosSessao + errosSessao;
-        const porcentagem = Math.round((acertosSessao / total) * 100);
-        document.getElementById('res-acertos').textContent = acertosSessao;
-        document.getElementById('res-erros').textContent = errosSessao;
+        /* --- DASHBOARD --- */
+        .dashboard-box { background: var(--bg-color); border: 1px solid var(--border-color); padding: 20px; border-radius: 12px; margin-bottom: 20px; text-align: left; }
+        .cat-row { display: flex; justify-content: space-between; align-items: center; margin: 10px 0; border-bottom: 1px solid var(--border-color); padding-bottom: 8px; }
+        .cat-row:last-child { border-bottom: none; padding-bottom: 0; }
+        .cat-row label { display: flex; align-items: center; cursor: pointer; font-size: 15px; margin: 0; }
         
-        const spanPorcentagem = document.getElementById('res-porcentagem');
-        spanPorcentagem.textContent = `${porcentagem}%`;
-        if (porcentagem >= 80) spanPorcentagem.style.color = '#22c55e'; 
-        else if (porcentagem >= 50) spanPorcentagem.style.color = '#eab308'; 
-        else spanPorcentagem.style.color = '#ef4444'; 
-    }
-});
+        /* --- FLASHCARDS MAIS BONITOS --- */
+        #pergunta-texto {
+            font-size: 1.3rem;
+            line-height: 1.5;
+            margin: 20px 0;
+            color: var(--text-main);
+            font-weight: 600;
+        }
 
+        .option-btn { 
+            background-color: var(--btn-bg); 
+            color: var(--text-main); 
+            margin: 8px 0; 
+            text-align: left; 
+            padding: 18px; 
+            border-radius: 12px;
+            border: 2px solid transparent;
+            font-size: 15px;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .option-btn:hover:not(:disabled) { 
+            background-color: var(--btn-hover); 
+            border-color: #cbd5e1;
+            transform: translateX(5px);
+        }
+        .dark-mode .option-btn:hover:not(:disabled) { border-color: #475569; }
+        .option-btn:disabled { cursor: not-allowed; opacity: 1; }
 
-// ==========================================
-// GERADOR DE PROVA IMPRESSA (Simulado de Erros)
-// ==========================================
-document.getElementById('btn-gerar-prova').addEventListener('click', () => {
-    const rankingErros = JSON.parse(localStorage.getItem('ranking_erros')) || {};
-    let perguntasComErro = perguntas.filter(p => rankingErros[p.id] > 0);
-    
-    if (perguntasComErro.length === 0) return alert("Você não tem registros de erros para imprimir!");
+        #explicacao { 
+            margin-top: 20px; 
+            padding: 20px; 
+            background-color: var(--btn-bg); 
+            border-left: 5px solid #4f46e5; 
+            border-radius: 0 8px 8px 0;
+            text-align: left; 
+            font-size: 15px; 
+            line-height: 1.6; 
+            color: var(--text-main);
+        }
 
-    perguntasComErro.sort((a, b) => rankingErros[b.id] - rankingErros[a.id]);
-    const qtd = parseInt(document.getElementById('qtd-prova').value) || 10;
-    const provaLista = perguntasComErro.slice(0, qtd);
-    const letras = ['A', 'B', 'C', 'D', 'E'];
-    let htmlProva = '';
-    let htmlGabarito = '<h2>Gabarito e Comentários</h2>';
+        /* --- MODAL DE RECOMPENSA --- */
+        .modal-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.7); backdrop-filter: blur(5px);
+            display: flex; justify-content: center; align-items: center; z-index: 1000;
+        }
+        .modal-content {
+            background: var(--card-bg); padding: 40px 30px; border-radius: 20px;
+            text-align: center; max-width: 400px; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+        }
+        .modal-icon { font-size: 60px; margin-bottom: 10px; animation: bounce 2s infinite; }
+        @keyframes popIn { 0% { transform: scale(0.5); opacity: 0; } 100% { transform: scale(1); opacity: 1; } }
+        @keyframes bounce { 0%, 20%, 50%, 80%, 100% { transform: translateY(0); } 40% { transform: translateY(-20px); } 60% { transform: translateY(-10px); } }
 
-    provaLista.forEach((p, index) => {
-        const numQuestao = index + 1;
-        const qtdErros = rankingErros[p.id]; 
+    </style>
+</head>
+<body>
 
-        htmlProva += `
-            <div class="questao-print">
-                <div class="questao-texto">
-                    ${numQuestao}. [${p.categoria}] ${p.pergunta} 
-                    <span style="font-size:11px; font-weight:normal; color:#666;">(Errou ${qtdErros}x)</span>
-                </div>
-        `;
+    <!-- Header / Nav -->
+    <div class="header-bar">
+        <div class="streak-badge" id="streak-display">🔥 0 dias seguidos</div>
+        <button id="btn-theme-toggle" class="btn-dark-toggle" title="Alternar Tema">🌙</button>
+    </div>
 
-        const opcoesEmbaralhadas = [...p.opcoes].sort(() => 0.5 - Math.random());
-        let letraCorreta = '';
+    <!-- Tela Inicial -->
+    <div id="setup-screen" class="card">
+        
+        <!-- Barra de Progresso de XP -->
+        <div style="background: var(--border-color); border-radius: 10px; height: 24px; width: 100%; margin: 0 0 20px 0; overflow: hidden; position: relative;">
+            <div id="barra-xp" style="background: linear-gradient(90deg, #8b5cf6, #c084fc); height: 100%; width: 0%; transition: width 0.8s ease-out;"></div>
+            <span id="texto-nivel" style="position: absolute; width: 100%; text-align: center; font-size: 13px; font-weight: bold; color: #fff; line-height: 24px; text-shadow: 1px 1px 2px rgba(0,0,0,0.5); left: 0;">Nível 1 (0 XP)</span>
+        </div>
 
-        opcoesEmbaralhadas.forEach((op, idx) => {
-            const letra = letras[idx];
-            if (op === p.resposta_correta) letraCorreta = letra;
-            htmlProva += `<div class="opcao-print">( ${letra} ) ${op}</div>`;
-        });
-        htmlProva += `</div>`;
+        <div class="dashboard-box">
+            <h3 style="margin-top: 0; border-bottom: 1px solid var(--border-color); padding-bottom: 10px;">📊 Seu Desempenho</h3>
+            <div id="dashboard-container"></div>
+        </div>
 
-        htmlGabarito += `
-            <div class="gabarito-item">
-                <strong>Questão ${numQuestao}: ${letraCorreta}</strong> - ${p.explicacao}
+        <button id="btn-reforco" class="btn-warning" style="margin-bottom: 15px;">🎯 Revisar Minhas Fraquezas (Top 15)</button>
+        
+        <div class="dashboard-box" style="margin-bottom: 15px;">
+            <strong style="display:block; margin-bottom: 10px; color: var(--text-main);">📚 Estudo Diário (Repetição Espaçada):</strong>
+            <div id="categorias-container"></div>
+        </div>
+        <button id="btn-iniciar" class="btn-success" style="padding: 15px; font-size: 18px;">▶ Iniciar Sessão do Dia</button>
+        
+        <hr style="margin: 25px 0; border: 0; border-top: 1px solid var(--border-color);">
+        
+        <h3 style="margin-top:0;">Sincronização & Impressão</h3>
+        <div style="display: flex; gap: 10px; margin-top: 10px;">
+            <button id="btn-exportar" class="btn-primary">📥 Backup</button>
+            <label for="btn-importar" class="btn-warning" style="padding: 12px; border-radius: 8px; cursor: pointer; text-align: center; width: 100%; font-weight: bold;">📤 Restaurar</label>
+            <input type="file" id="btn-importar" accept=".json" style="display: none;">
+        </div>
+        <div style="display: flex; gap: 10px; margin-top: 10px;">
+            <input type="number" id="qtd-prova" min="1" max="100" value="10" style="width: 80px;" title="Qtd. Questões">
+            <button id="btn-gerar-prova" style="background: var(--text-muted); color: white;">🖨️ Imprimir Erros</button>
+        </div>
+    </div>
+
+    <!-- Tela do Flashcard -->
+    <div id="flashcard-screen" class="card hidden">
+        <div style="display: flex; justify-content: space-between; color: var(--text-muted); font-size: 14px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">
+            <span id="categoria-label">Categoria</span>
+            <span id="contador-label">0/0</span>
+        </div>
+        
+        <button id="btn-ouvir" class="hidden" style="background-color: #38bdf8; color: #fff; margin: 15px auto; width: auto; padding: 6px 15px; border-radius: 20px; font-size: 13px;">🔊 Ouvir Pronúncia</button>
+
+        <h2 id="pergunta-texto">Texto da pergunta...</h2>
+        
+        <div id="opcoes-container"></div>
+        <div id="explicacao" class="hidden"></div>
+        
+        <div id="controles-feedback" class="hidden">
+            <button id="btn-proxima" class="btn-primary" style="margin-top: 20px; padding: 15px; font-size: 16px;">Próxima Pergunta ➔</button>
+        </div>
+    </div>
+
+    <!-- Tela de Resultados -->
+    <div id="resultado-screen" class="card hidden">
+        <h2 style="font-size: 28px;">Sessão Concluída! 🚀</h2>
+        <div style="background: var(--btn-bg); padding: 25px; border-radius: 12px; margin: 20px 0; font-size: 18px; border: 1px solid var(--border-color);">
+            <p>Acertos de primeira: <span id="res-acertos" style="color: #22c55e; font-weight: bold; font-size: 24px;">0</span></p>
+            <p>Erros (Repescagem): <span id="res-erros" style="color: #ef4444; font-weight: bold; font-size: 24px;">0</span></p>
+            <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 15px 0;">
+            <h3>Aproveitamento: <span id="res-porcentagem" style="font-size: 32px;">0%</span></h3>
+        </div>
+        <button onclick="location.reload()" class="btn-primary" style="padding: 15px;">Voltar ao Início</button>
+    </div>
+
+    <!-- Modal de Recompensa (Oculto por padrão) -->
+    <div id="modal-recompensa" class="modal-overlay hidden">
+        <div class="modal-content">
+            <div class="modal-icon">🎉</div>
+            <h2 style="margin-top:0;">Subiu de Nível!</h2>
+            <p style="color: var(--text-muted); font-size: 16px;">Você alcançou o Nível <strong id="modal-nivel-num" style="color: #8b5cf6;">X</strong>. Seu esforço está dando resultados!</p>
+            <div style="background: var(--bg-color); border: 2px dashed #c084fc; padding: 15px; border-radius: 10px; margin: 20px 0;">
+                <span style="font-size: 12px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px;">Sua Recompensa:</span>
+                <h3 id="modal-recompensa-texto" style="margin: 10px 0 0 0; color: var(--text-main);">...</h3>
             </div>
-        `;
-    });
+            <button class="btn-success" onclick="fecharModalRecompensa()">Resgatar & Continuar</button>
+        </div>
+    </div>
 
-    document.getElementById('prova-conteudo').innerHTML = htmlProva;
-    document.getElementById('prova-gabarito').innerHTML = htmlGabarito;
+    <!-- Área de Impressão (Fica oculta na tela) -->
+    <div id="print-area" class="hidden" style="text-align: left; width: 100%; font-family: 'Times New Roman', serif; background: white; color: black; padding: 20px;">
+        <h1 style="text-align: center; margin-bottom: 30px;">Caderno de Erros - Simulado</h1>
+        <div id="prova-conteudo" style="column-count: 2; column-gap: 40px;"></div>
+        <div id="prova-gabarito" style="column-count: 2; column-gap: 40px; margin-top: 40px; page-break-before: always; border-top: 2px solid #000; padding-top: 20px;"></div>
+    </div>
 
-    document.getElementById('setup-screen').classList.add('hidden');
-    document.getElementById('print-area').classList.remove('hidden');
-
-    setTimeout(() => {
-        window.print();
-        if(confirm("Deseja voltar para a tela inicial?")) {
-            location.reload();
-        }
-    }, 500); 
-});
-
-
-// ==========================================
-// EXPORTAR / IMPORTAR (Atualizado)
-// ==========================================
-document.getElementById('btn-exportar').addEventListener('click', () => {
-    try {
-        const progressoStr = localStorage.getItem('progresso_estudos');
-        const rankingStr = localStorage.getItem('ranking_erros');
-        const statsStr = localStorage.getItem('estatisticas_categorias');
-        const niveisStr = localStorage.getItem('nivel_acertos');
-        
-        const dados = {
-            progresso_estudos: progressoStr ? JSON.parse(progressoStr) : {},
-            ranking_erros: rankingStr ? JSON.parse(rankingStr) : {},
-            estatisticas_categorias: statsStr ? JSON.parse(statsStr) : {},
-            nivel_acertos: niveisStr ? JSON.parse(niveisStr) : {}
-        };
-
-        const jsonString = JSON.stringify(dados, null, 2);
-        const blob = new Blob([jsonString], { type: "application/json" });
-        const url = URL.createObjectURL(blob);
-        
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = "meu_progresso_completo.json";
-        
-        a.style.display = 'none';
-        document.body.appendChild(a);
-        a.click();
-        
-        document.body.removeChild(a);
-        URL.revokeObjectURL(url);
-        
-    } catch (error) {
-        alert("Ocorreu um erro ao preparar o seu progresso. Pressione F12 para detalhes.");
-    }
-});
-
-document.getElementById('btn-importar').addEventListener('change', (event) => {
-    const file = event.target.files[0];
-    if (!file) return;
-
-    const reader = new FileReader();
-    reader.onload = (e) => {
-        try {
-            const dados = JSON.parse(e.target.result);
-            if (dados.progresso_estudos) localStorage.setItem('progresso_estudos', JSON.stringify(dados.progresso_estudos));
-            if (dados.ranking_erros) localStorage.setItem('ranking_erros', JSON.stringify(dados.ranking_erros));
-            if (dados.estatisticas_categorias) localStorage.setItem('estatisticas_categorias', JSON.stringify(dados.estatisticas_categorias));
-            if (dados.nivel_acertos) localStorage.setItem('nivel_acertos', JSON.stringify(dados.nivel_acertos));
-            
-            alert("Progresso sincronizado com sucesso!");
-            location.reload();
-        } catch (error) {
-            alert("Erro ao ler o arquivo.");
-        }
-    };
-    reader.readAsText(file);
-    // ==========================================
-// INTEGRAÇÃO COM IA (API GEMINI)
-// ==========================================
-async function buscarExplicacaoIA(perguntaTexto, explicacaoOriginal) {
-    const API_KEY = 'AQ.Ab8RN6IcJhi_-gDiO388P-5-odmZPweHXJKK0kHEr4Qg-LHs2g'; // <--- COLE SUA CHAVE AQUI
-    const URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
-    
-    const prompt = `O aluno errou uma questão de concurso com o seguinte enunciado: "${perguntaTexto}". A explicação básica é: "${explicacaoOriginal}". Por favor, atue como um professor especialista, explique o conceito teórico por trás da questão, esclareça por que a resposta está correta e por que as outras estariam incorretas. Seja didático e objetivo.`;
-
-    try {
-        const response = await fetch(URL, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] })
-        });
-        const data = await response.json();
-        return data.candidates[0].content.parts[0].text;
-    } catch (error) {
-        return "Erro ao conectar com a IA. Verifique sua chave API ou conexão.";
-    }
-}
-
-// ==========================================
-// NOVO MODO REFORÇO (Com IA)
-// ==========================================
-document.getElementById('btn-reforco').addEventListener('click', () => {
-    const rankingErros = JSON.parse(localStorage.getItem('ranking_erros')) || {};
-    let perguntasComErro = perguntas.filter(p => rankingErros[p.id] > 0);
-    
-    if (perguntasComErro.length === 0) return alert("Nenhum erro registrado para reforçar!");
-
-    // O "Modo Reforço" agora vira uma sessão de tutoria
-    perguntasFiltradas = perguntasComErro.sort((a, b) => rankingErros[b.id] - rankingErros[a.id]).slice(0, 5);
-    
-    iniciarSessaoReforco();
-});
-
-function iniciarSessaoReforco() {
-    // Esconde telas padrão e mostra uma interface simplificada de Mentoria
-    document.getElementById('setup-screen').classList.add('hidden');
-    document.getElementById('flashcard-screen').classList.remove('hidden');
-    
-    // Adiciona o botão da IA dinamicamente se não existir
-    if (!document.getElementById('btn-ia-explicar')) {
-        const divIA = document.createElement('div');
-        divIA.innerHTML = `<button id="btn-ia-explicar" style="background:#8b5cf6; margin-top:10px;">🤖 IA: Explique o conceito profundo</button>`;
-        document.getElementById('controles-feedback').appendChild(divIA);
-    }
-    
-    document.getElementById('btn-ia-explicar').onclick = async () => {
-        const p = perguntasFiltradas[perguntaAtualIndex];
-        document.getElementById('explicacao').innerHTML = "Buscando explicação com IA...";
-        const respostaIA = await buscarExplicacaoIA(p.pergunta, p.explicacao);
-        document.getElementById('explicacao').innerHTML = `<strong>Mentoria IA:</strong><br>${respostaIA.replace(/\n/g, '<br>')}`;
-    };
-    
-    mostrarPergunta();
-}
-});
-function atualizarInterfaceXP(xp, nivel) {
-    const barra = document.getElementById('barra-xp');
-    const texto = document.getElementById('texto-nivel');
-    const progressoNoNivel = xp % 200;
-    const porcentagem = (progressoNoNivel / 200) * 100;
-    
-    if(barra) {
-        barra.style.width = `${porcentagem}%`;
-        texto.textContent = `Nível ${nivel} (${xp} XP)`;
-    }
-}
-
-// Chame esta função na carga inicial da página
-window.onload = () => {
-    carregarPerguntas();
-    const xp = parseInt(localStorage.getItem('user_xp')) || 0;
-    const nivel = parseInt(localStorage.getItem('user_nivel')) || 1;
-    atualizarInterfaceXP(xp, nivel);
-};
-
-// Start
-carregarPerguntas();
+    <script src="app.js"></script>
+</body>
+</html>
