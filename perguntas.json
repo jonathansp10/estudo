@@ -1,5 +1,135 @@
 [
   {
+    "id": "petro_cluster_001",
+    "categoria": "PETROBRAS",
+    "tipo": "multipla",
+    "pergunta": "Um engenheiro de infraestrutura precisa projetar um cluster para hospedar o sistema de transações financeiras (pagamentos via Pix) de uma instituição. O requisito primordial é que o sistema não pode parar, mesmo em caso de falha de hardware em um dos servidores. Qual tipo de cluster e quais componentes essenciais ele deve adotar?",
+    "opcoes": [
+      "HPC (High Performance Computing), utilizando InfiniBand e Open MPI.",
+      "Load Balancer, focando apenas em distribuir as requisições entre as CPUs para acelerar a resposta.",
+      "HA (High Availability), utilizando Storage compartilhado, IP virtual compartilhado e um mecanismo de Heartbeat para acionar o failover.",
+      "Cluster de Processamento Paralelo, utilizando escalabilidade vertical e GPUs."
+    ],
+    "resposta_correta": "HA (High Availability), utilizando Storage compartilhado, IP virtual compartilhado e um mecanismo de Heartbeat para acionar o failover.",
+    "explicacao": "Sistemas críticos que exigem 'não parar' (alta continuidade) demandam clusters de Alta Disponibilidade (HA). Os pilares técnicos do HA para garantir a continuidade transparente incluem o failover, orquestrado pelo monitoramento do Heartbeat, além da migração de IP virtual e acesso a um Storage compartilhado."
+  },
+  {
+    "id": "petro_cluster_002",
+    "categoria": "PETROBRAS",
+    "tipo": "certo_errado",
+    "pergunta": "No contexto de métricas de Alta Disponibilidade (HA), um acordo de nível de serviço (SLA) que garante 'quatro noves' (99,99%) de uptime permite uma indisponibilidade máxima teórica de aproximadamente 8 horas e 45 minutos por ano.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Errado",
+    "explicacao": "Pegadinha clássica de métricas de HA. 'Três noves' (99,9%) equivalem a cerca de 8h45min de indisponibilidade por ano. 'Quatro noves' (99,99%) são muito mais rigorosos, equivalendo a no máximo 52 minutos de indisponibilidade por ano."
+  },
+  {
+    "id": "petro_cluster_003",
+    "categoria": "PETROBRAS",
+    "tipo": "multipla",
+    "pergunta": "Ao comparar a infraestrutura necessária para diferentes tipos de clusters, assinale a alternativa que descreve os componentes críticos indispensáveis para que um cluster HPC (High Performance Computing) não sofra com gargalos durante simulações massivas:",
+    "opcoes": [
+      "Rede de alta velocidade (como InfiniBand), Sistemas de arquivos paralelos (como Lustre ou GPFS) e Jobs Schedulers.",
+      "Balanceadores de carga externos, IP flutuante e bancos de dados isolados por nó.",
+      "Redundância total de hardware sem tolerância a falhas e mecanismos estritos de fallback automático.",
+      "Virtualização de desktops e armazenamento unificado em HDDs mecânicos conectados por Gigabit Ethernet padrão."
+    ],
+    "resposta_correta": "Rede de alta velocidade (como InfiniBand), Sistemas de arquivos paralelos (como Lustre ou GPFS) e Jobs Schedulers.",
+    "explicacao": "A essência do HPC é o processamento paralelo. Para que dezenas de nós calculem juntos sem criar filas de I/O, eles dependem vitalmente de redes de baixa latência (InfiniBand/10G+), sistemas de arquivos paralelos e orquestradores (Schedulers como Slurm ou PBS)."
+  },
+  {
+    "id": "petro_cluster_004",
+    "categoria": "PETROBRAS",
+    "tipo": "certo_errado",
+    "pergunta": "Tolerância a Falhas e Alta Disponibilidade (HA) são conceitos tecnicamente idênticos e sinônimos no design de data centers, ambos buscando um RTO (Recovery Time Objective) maior que 15 minutos utilizando componentes paralelos para evitar a parada total do sistema.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Errado",
+    "explicacao": "Eles não são sinônimos. Alta Disponibilidade (HA) utiliza redundância com failover e aceita uma interrupção mínima (segundos a minutos) para transferir o serviço. Tolerância a Falhas (Fault Tolerance) é um nível extremo, muito mais caro, que busca zero interrupção, executando processos idênticos em hardwares redundantes simultaneamente."
+  },
+  {
+    "id": "petro_cluster_005",
+    "categoria": "PETROBRAS",
+    "tipo": "multipla",
+    "pergunta": "Questão de Relacionamento. Associe a característica central ao seu respectivo tipo de cluster:\n\n1. HPC (High Performance Computing)\n2. HA (High Availability)\n3. Load Balancer\n\n(  ) Distribui requisições web para otimizar o tempo de resposta e evitar sobrecarga.\n(  ) Seu principal mecanismo de proteção envolve o Heartbeat e a transferência de um IP compartilhado para um nó standby.\n(  ) Focado em paralelismo de tarefas e tempo de conclusão, muito utilizado em simulações climáticas.",
+    "opcoes": [
+      "3 - 2 - 1",
+      "1 - 3 - 2",
+      "2 - 1 - 3",
+      "3 - 1 - 2"
+    ],
+    "resposta_correta": "3 - 2 - 1",
+    "explicacao": "A ordem correta é: Load Balancer (3) foca em distribuição de requisições web. HA (2) foca em não parar, usando Heartbeat, Failover e IPs/Storage compartilhados. HPC (1) foca em performance de cálculo (paralelismo) para modelagens e simulações."
+  },
+  {
+    "id": "petro_cluster_006",
+    "categoria": "PETROBRAS",
+    "tipo": "certo_errado",
+    "pergunta": "Durante a operação de um cluster de Alta Disponibilidade, se ocorrer a falha do nó primário, o mecanismo de failover transfere os serviços para o nó standby. Ao normalizar e restaurar o nó primário, a devolução dos serviços a ele (conhecida como fallback) deve ocorrer obrigatoriamente e de imediato, independentemente das políticas configuradas.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Errado",
+    "explicacao": "O fallback (ou failback) não é obrigatório nem sempre imediato. Ele é opcional e depende estritamente das políticas do gerenciador do cluster. Em muitos ambientes de missão crítica, a devolução do serviço ao nó original é feita manualmente em janelas de manutenção para evitar novas interrupções inesperadas."
+  },
+  {
+    "id": "petro_cluster_007",
+    "categoria": "PETROBRAS",
+    "tipo": "multipla",
+    "pergunta": "Para orquestrar os recursos e alocar as cargas de trabalho computacionais através de filas nos nós de um cluster HPC, os administradores utilizam softwares conhecidos como 'Jobs Schedulers'. Qual das alternativas contém exemplos reais desses orquestradores?",
+    "opcoes": [
+      "Pacemaker e Microsoft Failover Cluster.",
+      "Slurm, PBS Torque e HTCondor.",
+      "VMware vSphere HA e Proxmox.",
+      "Message Passing Interface (MPI) e OpenMP."
+    ],
+    "resposta_correta": "Slurm, PBS Torque e HTCondor.",
+    "explicacao": "Slurm, PBS/Torque e HTCondor são schedulers típicos de HPC. Pacemaker e VMware HA são orquestradores/gerenciadores para clusters de Alta Disponibilidade (HA). MPI e OpenMP são bibliotecas/middlewares de paralelismo."
+  },
+  {
+    "id": "petro_cluster_008",
+    "categoria": "PETROBRAS",
+    "tipo": "certo_errado",
+    "pergunta": "Uma das grandes restrições arquiteturais dos clusters HPC (High Performance Computing) é a sua limitação geográfica, sendo impossível implementar esse tipo de solução em um modelo multi-site devido à latência de rede externa.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Errado",
+    "explicacao": "Afirmação falsa (e comum em concursos). Embora a baixa latência seja crítica para o HPC, a tecnologia não limita o cluster a uma única localização física num único rack. É possível implementar HPC multi-site utilizando links dedicados de altíssima velocidade (ex: links escuros de fibra ou InfiniBand estendido)."
+  },
+  {
+    "id": "petro_cluster_009",
+    "categoria": "PETROBRAS",
+    "tipo": "multipla",
+    "pergunta": "Na arquitetura de cluster HA focado em bancos de dados corporativos (ex: Oracle RAC, SQL Server Failover), para garantir que, caso o 'Nó Ativo' apresente falha de hardware, o 'Nó Standby' possa assumir a operação sem corrupção ou divergência de dados, é imperativo que a arquitetura contenha:",
+    "opcoes": [
+      "Múltiplos bancos de dados fragmentados, mantidos nos discos locais mecânicos de cada servidor individualmente.",
+      "Um Storage compartilhado (Shared Storage) conectado via SAN/NAS, permitindo que todos os nós acessem a mesma base de dados.",
+      "Um sistema de arquivos em paralelo como o Lustre otimizado para pequenos pacotes de rede sem uso de IP virtual.",
+      "Uma rede InfiniBand configurada exclusivamente para a criação de Jobs no Scheduler Slurm."
+    ],
+    "resposta_correta": "Um Storage compartilhado (Shared Storage) conectado via SAN/NAS, permitindo que todos os nós acessem a mesma base de dados.",
+    "explicacao": "O coração de um cluster HA de banco de dados clássico (Active/Passive) é o Storage compartilhado. Sem ele, se o disco estivesse atrelado apenas fisicamente ao nó que falhou, o nó Standby não teria acesso aos dados transacionais atualizados. A migração do IP Virtual também acompanha o serviço."
+  },
+  {
+    "id": "petro_cluster_010",
+    "categoria": "PETROBRAS",
+    "tipo": "certo_errado",
+    "pergunta": "Um cluster de servidores estruturado para balanceamento de carga (Load Balancer) tem como benefício colateral o fornecimento parcial de alta disponibilidade, pois se um dos nós de processamento web falhar, as requisições param de ser enviadas a ele e a aplicação como um todo não fica fora do ar para os usuários finais.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Certo",
+    "explicacao": "Correto. Embora o objetivo primário do Load Balancer seja distribuir carga para melhorar o desempenho (Performance/Throughput), ele fornece inerentemente um grau de disponibilidade. Quando configurado corretamente, o balanceador detecta o nó 'morto' e para de enviar tráfego a ele, redirecionando as novas conexões aos nós saudáveis, mantendo o serviço operacional."
+  },
+  {
     "id": "eng_soft_req_001",
     "categoria": "Engenharia de software",
     "tipo": "multipla",
