@@ -1,5 +1,617 @@
 [
   {
+    "id": "eng_001",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Qual é a principal diferença gramatical e de uso entre os modais 'Can' e 'May' ao solicitar permissão?",
+    "opcoes": [
+      "'Can' é usado apenas para o passado, enquanto 'May' é usado para o presente.",
+      "'Can' exige a preposição 'to' após o verbo, enquanto 'May' não exige.",
+      "'Can' é mais informal e foca em habilidade ou pedidos simples, enquanto 'May' é mais formal e polido, focando na permissão em si.",
+      "Ambos são idênticos em nível de formalidade, mas 'May' é usado apenas no inglês britânico."
+    ],
+    "resposta_correta": "'Can' é mais informal e foca em habilidade ou pedidos simples, enquanto 'May' é mais formal e polido, focando na permissão em si.",
+    "explicacao": "Gramática e Contexto: Verbos modais em inglês nunca são seguidos por 'to' (exceção para 'ought to'). 'Can' (poder/conseguir) é amplamente usado no dia a dia para capacidade e pedidos informais ('Can you help me?'). 'May' (poder) carrega um tom muito mais educado e cerimonial ('May I come in?')."
+  },
+  {
+    "id": "eng_002",
+    "categoria": "Inglês",
+    "tipo": "certo_errado",
+    "pergunta": "A frase 'She may cook delicious dishes' significa que ela tem a habilidade técnica (ela sabe) cozinhar pratos deliciosos.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Errado",
+    "explicacao": "Errado. Para expressar HABILIDADE (saber fazer algo), usamos 'can' ('She can cook'). O uso de 'may' ('She may cook') expressa PROBABILIDADE ou PERMISSÃO, significando 'Talvez ela cozinhe' ou 'Ela tem permissão para cozinhar'. Tradução: Ela (she) pode/talvez (may) cozinhar (cook) pratos (dishes) deliciosos (delicious)."
+  },
+  {
+    "id": "eng_003",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Em um contexto de prova de concurso (nível formal), preencha a lacuna corretamente: '_______ I see your passport, sir?'",
+    "opcoes": [
+      "Can",
+      "May",
+      "Am",
+      "Do"
+    ],
+    "resposta_correta": "May",
+    "explicacao": "Contexto: A presença da palavra 'sir' (senhor) indica um ambiente formal (ex: imigração). Para pedir permissão de forma educada e oficial, usa-se 'May'. 'Can' seria muito informal. Tradução: Posso (May I) ver (see) seu (your) passaporte (passport), senhor (sir)?"
+  },
+  {
+    "id": "eng_004",
+    "categoria": "Inglês",
+    "tipo": "traducao_escrita",
+    "pergunta": "Traduza a seguinte frase para o inglês: 'Crianças não devem correr durante eventos.' (Utilize o modal formal que expressa proibição/dever, conforme o material).",
+    "opcoes": [],
+    "resposta_correta": "Children may not run during events.",
+    "explicacao": "Gramática: O modal 'may not' é usado para ditar regras formais ou proibições. Tradução das palavras: Crianças (Children) não devem/não têm permissão (may not) correr (run) durante (during) eventos (events)."
+  },
+  {
+    "id": "eng_005",
+    "categoria": "Inglês",
+    "tipo": "certo_errado",
+    "pergunta": "O verbo modal 'Could' pode ser utilizado tanto para fazer pedidos de forma muito educada no presente, quanto para expressar uma capacidade que alguém possuía no passado.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Certo",
+    "explicacao": "Certo. Gramática: 'Could' é o passado de 'Can' (ex: 'I could run fast when I was young' - Eu conseguia correr rápido quando era jovem). No entanto, ele também atua como um modal de polidez extrema no presente (ex: 'Could you help me?' - Você poderia me ajudar?)."
+  },
+  {
+    "id": "eng_006",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Qual das alternativas abaixo expressa uma probabilidade incerta (talvez aconteça) de forma adequada?",
+    "opcoes": [
+      "It can rains tomorrow.",
+      "It may rain tomorrow.",
+      "It can to rain tomorrow.",
+      "It may to rain tomorrow."
+    ],
+    "resposta_correta": "It may rain tomorrow.",
+    "explicacao": "Gramática: Modais não aceitam 's' na terceira pessoa (eliminando a primeira opção) e não são seguidos de 'to' (eliminando a terceira e a quarta opções). Além disso, 'may' é o modal perfeito para expressar probabilidade (talvez). Tradução: Pode ser que (may) chova (rain) amanhã (tomorrow)."
+  },
+  {
+    "id": "eng_007",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Relacione as frases (1, 2, 3) aos seus respectivos usos gramaticais (A, B, C) e assinale a sequência correta.\n1. A bird can fly.\n2. May I leave the table?\n3. Can you pass me the salt?\n\nA. Pedido simples/informal.\nB. Habilidade física.\nC. Permissão formal.",
+    "opcoes": [
+      "1-B, 2-C, 3-A",
+      "1-C, 2-A, 3-B",
+      "1-B, 2-A, 3-C",
+      "1-A, 2-C, 3-B"
+    ],
+    "resposta_correta": "1-B, 2-C, 3-A",
+    "explicacao": "1 (A bird can fly / Um pássaro sabe voar) = Habilidade física (B). 2 (May I leave the table? / Posso me retirar da mesa?) = Permissão formal exigida em ambientes restritos (C). 3 (Can you pass me the salt? / Pode me passar o sal?) = Pedido informal diário (A)."
+  },
+  {
+    "id": "eng_008",
+    "categoria": "Inglês",
+    "tipo": "traducao_escrita",
+    "pergunta": "Traduza para o português: 'Can you grab my coat, please?'",
+    "opcoes": [],
+    "resposta_correta": "Você pode pegar meu casaco, por favor?",
+    "explicacao": "Contexto: Um pedido simples e cotidiano usando 'Can'. Tradução detalhada: Can you (Você pode) grab (pegar/agarrar) my (meu) coat (casaco), please (por favor)?"
+  },
+  {
+    "id": "eng_009",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Um amigo diz: 'Are you up for that?'. Se você deseja recusar de forma educada, qual resposta é a correta?",
+    "opcoes": [
+      "I'm in!",
+      "Count me in!",
+      "I'm alright, thanks.",
+      "I'm down with that!"
+    ],
+    "resposta_correta": "I'm alright, thanks.",
+    "explicacao": "Expressões: 'Are you up for that?' significa 'Você topa?'. Para recusar educadamente, dizemos 'I'm alright, thanks' (Eu estou bem, obrigado) ou 'I'm good'. Todas as outras opções ('I'm in', 'Count me in', 'I'm down') significam aceitar (Tô dentro / Eu topo)."
+  },
+  {
+    "id": "eng_010",
+    "categoria": "Inglês",
+    "tipo": "certo_errado",
+    "pergunta": "Na língua inglesa falada, responder a um convite com 'No, thank you, I’m good' é considerado rude e agressivo.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Errado",
+    "explicacao": "Errado. 'I'm good' (Estou bem/Estou satisfeito) é uma das formas casuais mais comuns, educadas e naturais de se recusar uma oferta ou convite em inglês."
+  },
+  {
+    "id": "eng_011",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Relacione as gírias/expressões de convite (1, 2) aos seus significados em português (A, B).\n1. Wanna join us?\n2. Count me in!\n\nA. Tô dentro!\nB. Quer vir com a gente?",
+    "opcoes": [
+      "1-B, 2-A",
+      "1-A, 2-B"
+    ],
+    "resposta_correta": "1-B, 2-A",
+    "explicacao": "1. 'Wanna join us?' (Quer se juntar a nós? / Quer vir com a gente?) é um convite. 2. 'Count me in!' (Conte comigo dentro / Tô dentro!) é uma forte afirmação de aceite."
+  },
+  {
+    "id": "eng_012",
+    "categoria": "Inglês",
+    "tipo": "traducao_escrita",
+    "pergunta": "Traduza a frase para o inglês usando a estrutura do material para recusar um convite: 'Infelizmente eu não posso.'",
+    "opcoes": [],
+    "resposta_correta": "I'm afraid I can't.",
+    "explicacao": "Gramática/Contexto: A expressão 'I am afraid' não significa 'ter medo' neste contexto, mas sim 'receio que' ou 'infelizmente'. É a forma mais educada de dar uma negativa. Tradução: I'm afraid (Infelizmente/Receio que) I can't (eu não posso)."
+  },
+  {
+    "id": "eng_013",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Na cultura pop e no inglês falado rapidamente, é muito comum o uso de 'reduções'. O que significa a contração 'Imma'?",
+    "opcoes": [
+      "I am not.",
+      "I might.",
+      "I am going to.",
+      "I have got to."
+    ],
+    "resposta_correta": "I am going to.",
+    "explicacao": "Reduções (Reductions): A língua falada aglutina sons. 'I am going to' vira 'I'm gonna', que muitas vezes sofre mais uma redução extrema virando 'Imma'. Exemplo: 'Imma tell you the truth' (Eu vou te falar a verdade)."
+  },
+  {
+    "id": "eng_014",
+    "categoria": "Inglês",
+    "tipo": "certo_errado",
+    "pergunta": "A palavra reduzida 'Gotta' é a contração de 'Going to', usada para falar sobre planos futuros.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Errado",
+    "explicacao": "Errado. 'Gotta' é a contração de 'got to' ou 'have got to', que significa 'ter que' (obrigação). A contração de 'going to' para o futuro é 'Gonna'."
+  },
+  {
+    "id": "eng_015",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Relacione as reduções informais (1, 2, 3) às suas formas gramaticais corretas (A, B, C).\n1. Lemme\n2. Gimme\n3. Wanna\n\nA. Want to\nB. Let me\nC. Give me",
+    "opcoes": [
+      "1-C, 2-B, 3-A",
+      "1-B, 2-C, 3-A",
+      "1-A, 2-C, 3-B",
+      "1-B, 2-A, 3-C"
+    ],
+    "resposta_correta": "1-B, 2-C, 3-A",
+    "explicacao": "1. Lemme = Let me (Deixe-me). 2. Gimme = Give me (Dê-me). 3. Wanna = Want to (Querer). Essas reduções são padrão na fala diária americana."
+  },
+  {
+    "id": "eng_016",
+    "categoria": "Inglês",
+    "tipo": "traducao_escrita",
+    "pergunta": "Traduza a frase com redução para o português: 'I gotta go to the bathroom.'",
+    "opcoes": [],
+    "resposta_correta": "Eu tenho que ir ao banheiro.",
+    "explicacao": "Vocabulário: 'Gotta' significa 'ter que'. Tradução: I (Eu) gotta (tenho que) go (ir) to the (para o/ao) bathroom (banheiro)."
+  },
+  {
+    "id": "eng_017",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Assinale a alternativa que representa a nacionalidade correta para alguém nascido na 'Germany' (Alemanha).",
+    "opcoes": [
+      "Germanian",
+      "Germanyish",
+      "German",
+      "Germish"
+    ],
+    "resposta_correta": "German",
+    "explicacao": "Vocabulário de Países: A regra de nacionalidades em inglês varia muito (não há sufixo único). Para Germany (Alemanha), o adjetivo/nacionalidade é German (Alemão/Alemã). Nunca escreva nacionalidades com letra minúscula em inglês."
+  },
+  {
+    "id": "eng_018",
+    "categoria": "Inglês",
+    "tipo": "certo_errado",
+    "pergunta": "Para dizer que alguém é da Turquia (Turkey), a nacionalidade correta em inglês é 'Turkian'.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Errado",
+    "explicacao": "Errado. O adjetivo e a nacionalidade para Turkey (Turquia) é 'Turkish' (Turco/Turca). O sufixo '-ish' é comum em algumas nacionalidades, como Scottish (Escocês) e British (Britânico)."
+  },
+  {
+    "id": "eng_019",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Relacione os países (1, 2, 3) às suas respectivas nacionalidades em inglês (A, B, C).\n1. France\n2. Scotland\n3. The USA\n\nA. Scottish\nB. American\nC. French",
+    "opcoes": [
+      "1-C, 2-A, 3-B",
+      "1-A, 2-C, 3-B",
+      "1-C, 2-B, 3-A",
+      "1-B, 2-A, 3-C"
+    ],
+    "resposta_correta": "1-C, 2-A, 3-B",
+    "explicacao": "1. France (França) -> French (Francês). 2. Scotland (Escócia) -> Scottish (Escocês). 3. The USA (EUA) -> American (Americano)."
+  },
+  {
+    "id": "eng_020",
+    "categoria": "Inglês",
+    "tipo": "traducao_escrita",
+    "pergunta": "Traduza para o português: 'We’re having dinner at an Indian restaurant.'",
+    "opcoes": [],
+    "resposta_correta": "Nós vamos jantar em um restaurante indiano.",
+    "explicacao": "Gramática: O Present Continuous ('We are having') pode ser usado para expressar ações futuras planejadas. 'Have dinner' significa jantar. 'Indian' funciona como adjetivo para o substantivo 'restaurant'. Tradução: We're having dinner (Nós vamos jantar / Nós estamos jantando) at (em) an (um) Indian restaurant (restaurante indiano)."
+  },
+  {
+    "id": "eng_021",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "No texto estudado sobre identidade, a expressão 'bridging divides' tem forte carga semântica. O que ela significa em um contexto social?",
+    "opcoes": [
+      "Construir pontes físicas entre dois países para facilitar a imigração.",
+      "Criar regras estritas para dividir as pessoas por suas nacionalidades.",
+      "Construir pontes metafóricas, unindo diferenças e superando divisões entre pessoas de culturas distintas.",
+      "Ignorar o preconceito e fingir que as divisões sociais não existem."
+    ],
+    "resposta_correta": "Construir pontes metafóricas, unindo diferenças e superando divisões entre pessoas de culturas distintas.",
+    "explicacao": "Vocabulário Crítico: 'Bridge' é ponte (substantivo) ou 'construir uma ponte/conectar' (verbo). 'Divides' são divisões. Logo, 'bridging divides' é a ação de aproximar grupos sociais, construir entendimento mútuo e combater a ignorância que gera o preconceito."
+  },
+  {
+    "id": "eng_022",
+    "categoria": "Inglês",
+    "tipo": "certo_errado",
+    "pergunta": "O verbo 'To assume', na frase 'They assumed I was South American', é um falso cognato e significa 'presumir' ou 'supor', e não 'assumir a culpa ou um cargo'.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Certo",
+    "explicacao": "Certo. 'Assume' em inglês é um falso cognato (False Friend) clássico de concursos. Seu significado primário é deduzir ou presumir algo sem ter certeza absoluta. A frase significa: 'Eles presumiram que eu era sul-americano'."
+  },
+  {
+    "id": "eng_023",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Na frase 'My accent throws people off', o phrasal verb 'throw off' significa:",
+    "opcoes": [
+      "Agredir as pessoas fisicamente.",
+      "Despistar, confundir ou surpreender as pessoas de forma a fazê-las perder o raciocínio ou a suposição inicial.",
+      "Arremessar as pessoas para fora de um local.",
+      "Acalmar e confortar as pessoas."
+    ],
+    "resposta_correta": "Despistar, confundir ou surpreender as pessoas de forma a fazê-las perder o raciocínio ou a suposição inicial.",
+    "explicacao": "Vocabulário/Phrasal Verb: 'Throw off' é usado figurativamente quando um detalhe (como o sotaque) quebra a expectativa de alguém. A frase quer dizer que o sotaque da pessoa causa confusão mental sobre qual é a verdadeira origem dela."
+  },
+  {
+    "id": "eng_024",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Relacione o vocabulário de identidade e questões sociais (1, 2, 3) às suas traduções e conceitos (A, B, C).\n1. Prejudice\n2. Belonging\n3. Racism\n\nA. Sentimento de pertencer a um lugar ou grupo.\nB. Opinião prévia desfavorável sem base na razão.\nC. Discriminação baseada na raça.",
+    "opcoes": [
+      "1-C, 2-A, 3-B",
+      "1-B, 2-A, 3-C",
+      "1-A, 2-C, 3-B",
+      "1-B, 2-C, 3-A"
+    ],
+    "resposta_correta": "1-B, 2-A, 3-C",
+    "explicacao": "1. Prejudice = Preconceito (Pré-julgamento sem lógica - B). 2. Belonging = Pertencimento (A). 3. Racism = Racismo (C)."
+  },
+  {
+    "id": "eng_025",
+    "categoria": "Inglês",
+    "tipo": "traducao_escrita",
+    "pergunta": "Traduza para o inglês: 'O sentimento de pertencimento é importante.'",
+    "opcoes": [],
+    "resposta_correta": "The feeling of belonging is important.",
+    "explicacao": "Tradução das palavras: O (The) sentimento (feeling) de (of) pertencimento (belonging) é (is) importante (important)."
+  },
+  {
+    "id": "eng_026",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Como você diria de forma fluente e natural: 'Minha origem é europeia e indígena' em inglês, conforme o material?",
+    "opcoes": [
+      "My birth is Europe and Indian.",
+      "My background is European and indigenous.",
+      "My start is European and indigenous.",
+      "My country is Europe and India."
+    ],
+    "resposta_correta": "My background is European and indigenous.",
+    "explicacao": "Vocabulário: A palavra 'background' é a forma mais natural em inglês para se referir ao histórico familiar, cultural e étnico (origem) de uma pessoa. 'Indigenous' é o termo correto para povos originários/indígenas."
+  },
+  {
+    "id": "eng_027",
+    "categoria": "Inglês",
+    "tipo": "certo_errado",
+    "pergunta": "O termo 'Middle Eastern' é utilizado como um adjetivo para descrever alguém que é natural ou originário do Oriente Médio.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Certo",
+    "explicacao": "Certo. Middle East é a região geográfica (Oriente Médio). Ao adicionar o sufixo '-ern' nas direções cardeais (East -> Eastern), formamos o adjetivo pátrio (ex: 'He is Middle Eastern' / Ele é do Oriente Médio)."
+  },
+  {
+    "id": "eng_028",
+    "categoria": "Inglês",
+    "tipo": "traducao_escrita",
+    "pergunta": "Traduza para o inglês usando a estrutura do material: 'É importante ter uma conversa aberta sobre preconceito.'",
+    "opcoes": [],
+    "resposta_correta": "It's important to have an open conversation about prejudice.",
+    "explicacao": "Gramática: Frases no inglês exigem um sujeito, por isso o 'It's' (It is) abre a oração. Tradução: É importante (It's important) ter (to have) uma (an) conversa aberta (open conversation) sobre (about) preconceito (prejudice)."
+  },
+  {
+    "id": "eng_029",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Você vai comprar uma jaqueta e precisa informar que ela tem que ficar bem justa (apertada) e feita de couro. Quais os adjetivos corretos?",
+    "opcoes": [
+      "Loose and cotton.",
+      "Baggy and silk.",
+      "Tight and leather.",
+      "Snug and polyester."
+    ],
+    "resposta_correta": "Tight and leather.",
+    "explicacao": "Vocabulário de Roupas: Tight = apertado/justo. Leather = couro. As outras opções: Loose (largo), Cotton (algodão), Baggy (muito folgado), Silk (seda), Snug (confortavelmente justo), Polyester (poliéster)."
+  },
+  {
+    "id": "eng_030",
+    "categoria": "Inglês",
+    "tipo": "certo_errado",
+    "pergunta": "A palavra 'Baggy' descreve uma peça de roupa que tem um caimento perfeito e ajustado à silhueta do corpo (como roupas de alfaiataria).",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Errado",
+    "explicacao": "Errado. O adjetivo 'Baggy' descreve roupas excessivamente largas, folgadas ou 'saco' (vem da palavra bag = saco/bolsa), muito comuns na moda streetwear."
+  },
+  {
+    "id": "eng_031",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Relacione os tecidos (1, 2, 3) às suas traduções em português (A, B, C).\n1. Wool\n2. Silk\n3. Linen\n\nA. Seda\nB. Linho\nC. Lã",
+    "opcoes": [
+      "1-C, 2-A, 3-B",
+      "1-A, 2-B, 3-C",
+      "1-B, 2-C, 3-A",
+      "1-C, 2-B, 3-A"
+    ],
+    "resposta_correta": "1-C, 2-A, 3-B",
+    "explicacao": "1. Wool = Lã. 2. Silk = Seda. 3. Linen = Linho. Dominar esses tecidos é essencial em vocabulário de moda."
+  },
+  {
+    "id": "eng_032",
+    "categoria": "Inglês",
+    "tipo": "traducao_escrita",
+    "pergunta": "Traduza a frase: 'I prefer loose jeans.'",
+    "opcoes": [],
+    "resposta_correta": "Eu prefiro jeans largos.",
+    "explicacao": "Tradução direta: I (Eu) prefer (prefiro) loose (largos/soltos) jeans (calças jeans)."
+  },
+  {
+    "id": "eng_033",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Como se diz que uma peça de roupa tem um padrão 'xadrez' em inglês?",
+    "opcoes": [
+      "Plain ou Solid.",
+      "Striped.",
+      "Checked ou Plaid.",
+      "Polka-dotted."
+    ],
+    "resposta_correta": "Checked ou Plaid.",
+    "explicacao": "Padrões (Patterns): Checked ou Plaid referem-se ao padrão xadrez (como nas camisas de flanela). Plain/Solid = Liso. Striped = Listrado. Polka-dotted = De bolinhas."
+  },
+  {
+    "id": "eng_034",
+    "categoria": "Inglês",
+    "tipo": "certo_errado",
+    "pergunta": "Uma camisa 'sleeveless' possui mangas compridas ideais para o inverno rigoroso.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Errado",
+    "explicacao": "Errado. O sufixo '-less' em inglês significa 'sem'. 'Sleeve' significa manga. Portanto, 'sleeveless' significa sem mangas (regata)."
+  },
+  {
+    "id": "eng_035",
+    "categoria": "Inglês",
+    "tipo": "traducao_escrita",
+    "pergunta": "Traduza a frase: 'She's wearing a striped sweater.'",
+    "opcoes": [],
+    "resposta_correta": "Ela está usando um suéter listrado.",
+    "explicacao": "Gramática: 'She's wearing' (Present Continuous) é usado para o que a pessoa está vestindo agora. Adjetivos (striped) vêm antes do substantivo (sweater). Tradução: Ela está (She's) vestindo/usando (wearing) um (a) listrado (striped) suéter (sweater)."
+  },
+  {
+    "id": "eng_036",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Em concursos de alto nível, os pronomes possessivos (Possessive Pronouns) são alvo de pegadinhas frequentes. Qual das frases abaixo está gramaticalmente correta em inglês?",
+    "opcoes": [
+      "This is mine book.",
+      "This book is mine.",
+      "This is book mine.",
+      "Mine book is this."
+    ],
+    "resposta_correta": "This book is mine.",
+    "explicacao": "Regra de ouro: Os 'Possessive Pronouns' (como 'mine', 'yours', 'hers') NUNCA são seguidos por um substantivo. Eles servem justamente para substituir o substantivo. A forma 'This is mine book' está errada porque o correto seria usar o adjetivo possessivo: 'This is my book'."
+  },
+  {
+    "id": "eng_037",
+    "categoria": "Inglês",
+    "tipo": "certo_errado",
+    "pergunta": "Os pronomes possessivos 'his' (dele) e 'its' (dele/dela para coisas) possuem exatamente a mesma grafia que os seus adjetivos possessivos correspondentes, diferenciando-se apenas pela posição na frase.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Certo",
+    "explicacao": "Certo. Gramática: Para 'He', o adjetivo e o pronome são 'his'. (Ex: 'His car is fast' / 'The fast car is his'). Para 'It', ambos são 'its'. A diferença é que o adjetivo antecede o objeto, e o pronome encerra a ideia substituindo o objeto."
+  },
+  {
+    "id": "eng_038",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Preencha a lacuna com o pronome possessivo correto: 'We worked hard on this project. The success is ________.'",
+    "opcoes": [
+      "our",
+      "ours",
+      "we",
+      "us"
+    ],
+    "resposta_correta": "ours",
+    "explicacao": "Como a palavra aparece no final da frase sem ser seguida por um substantivo, exige-se o Pronome Possessivo (Possessive Pronoun). O pronome possessivo referente a 'We' (nós) é 'ours'. ('Our' seria adjetivo: 'Our success')."
+  },
+  {
+    "id": "eng_039",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Relacione os adjetivos possessivos (1, 2, 3) aos seus respectivos pronomes possessivos (A, B, C).\n1. My\n2. Her\n3. Their\n\nA. Hers\nB. Theirs\nC. Mine",
+    "opcoes": [
+      "1-B, 2-A, 3-C",
+      "1-C, 2-A, 3-B",
+      "1-A, 2-C, 3-B",
+      "1-C, 2-B, 3-A"
+    ],
+    "resposta_correta": "1-C, 2-A, 3-B",
+    "explicacao": "A transformação padrão adiciona um 's' (her -> hers / their -> theirs). A exceção principal é 'my', que muda completamente para 'mine'."
+  },
+  {
+    "id": "eng_040",
+    "categoria": "Inglês",
+    "tipo": "traducao_escrita",
+    "pergunta": "Traduza a frase com pronome possessivo: 'That black jacket is mine.'",
+    "opcoes": [],
+    "resposta_correta": "Aquela jaqueta preta é minha.",
+    "explicacao": "Tradução palavra por palavra: That (Aquela) black (preta) jacket (jaqueta) is (é) mine (minha)."
+  },
+  {
+    "id": "eng_041",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Preencha as lacunas com as classes de palavras possessivas corretas: '____ car is red, but ____ is blue.' (Meu carro é vermelho, mas o dele é azul).",
+    "opcoes": [
+      "Mine / his",
+      "My / his",
+      "My / he",
+      "Mine / him"
+    ],
+    "resposta_correta": "My / his",
+    "explicacao": "Na primeira lacuna, precisamos de um Adjetivo Possessivo ('My') porque vem antes do substantivo 'car'. Na segunda lacuna, precisamos do Pronome Possessivo de 'ele' ('his') porque ele substitui a repetição da palavra 'carro'."
+  },
+  {
+    "id": "eng_042",
+    "categoria": "Inglês",
+    "tipo": "certo_errado",
+    "pergunta": "A frase 'Is this pen yours?' utiliza 'yours' como um adjetivo possessivo.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Errado",
+    "explicacao": "Errado. Na frase, 'yours' atua como Pronome Possessivo (substituindo a necessidade de repetir 'your pen'). Se fosse um adjetivo possessivo, a frase seria 'Is this your pen?'. Tradução: Esta caneta é sua?"
+  },
+  {
+    "id": "eng_043",
+    "categoria": "Inglês",
+    "tipo": "traducao_escrita",
+    "pergunta": "Traduza a frase: 'Is this pen yours?'",
+    "opcoes": [],
+    "resposta_correta": "Esta caneta é sua?",
+    "explicacao": "Gramática: Em perguntas com o verbo 'to be', o verbo (Is) vai para o início da frase. 'Yours' é o pronome possessivo no final. Tradução: Is (É) this (esta) pen (caneta) yours (sua)?"
+  },
+  {
+    "id": "eng_044",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Interpretação (Nível Concurso): Analise o seguinte diálogo: 'May I use the computer?' / 'No, you may not. It is hers.' Qual é a conclusão correta sobre o diálogo?",
+    "opcoes": [
+      "O computador não funciona, e a segunda pessoa está sendo rude.",
+      "A primeira pessoa pediu permissão informal, e a segunda afirmou que o dono do computador é um homem.",
+      "A primeira pessoa pediu permissão formalmente, e o pedido foi negado formalmente porque o computador pertence a uma mulher.",
+      "O computador é público, mas está quebrado no momento."
+    ],
+    "resposta_correta": "A primeira pessoa pediu permissão formalmente, e o pedido foi negado formalmente porque o computador pertence a uma mulher.",
+    "explicacao": "Análise: O modal 'May' indica alto nível de formalidade tanto no pedido quanto na recusa ('May I' / 'you may not'). O pronome possessivo 'hers' confirma que o objeto pertence a 'ela' (uma mulher)."
+  },
+  {
+    "id": "eng_045",
+    "categoria": "Inglês",
+    "tipo": "certo_errado",
+    "pergunta": "Em inglês corporativo ou testes de proficiência, a frase 'How may I help you?' é perfeitamente substituível por 'How can I help you?' sem que haja nenhuma perda de polidez, sendo consideradas 100% idênticas em formalidade.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Errado",
+    "explicacao": "Errado. Embora ambas sejam gramaticalmente corretas e tenham o mesmo propósito prático, elas NÃO são 100% idênticas em formalidade. 'May' carrega uma polidez cerimonial e profissionalismo extremo (típico de hotéis luxuosos e atendimentos refinados), enquanto 'Can' é mais casual e direto."
+  },
+  {
+    "id": "eng_046",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Qual das frases combina corretamente reduções de fala, possessivos e vocabulário de roupas?",
+    "opcoes": [
+      "Imma buy this cotton shirt because its mine.",
+      "I'm gonna buy this cotton shirt because it's mine.",
+      "I gotta buy this cotton shirt because it is my.",
+      "Lemme buy this cotton shirt because the shirt is hers."
+    ],
+    "resposta_correta": "Lemme buy this cotton shirt because the shirt is hers.",
+    "explicacao": "Análise das erradas: 1- 'its' sem apóstrofo é pronome, não contração de 'it is'. 2 - 'it's mine' não faz sentido lógico (vou comprar algo que já é meu). 3 - 'my' exige um substantivo depois. A resposta correta usa a redução 'Lemme' (Let me), descreve a roupa (cotton shirt) e finaliza com um pronome possessivo correto ('hers'). Tradução: Deixe-me comprar esta camisa de algodão porque a camisa é dela."
+  },
+  {
+    "id": "eng_047",
+    "categoria": "Inglês",
+    "tipo": "traducao_escrita",
+    "pergunta": "Traduza esta frase que une Modais, Vocabulário e Possessivos: 'She can wear her floral dress, but this leather jacket is mine.'",
+    "opcoes": [],
+    "resposta_correta": "Ela pode usar seu vestido floral, mas esta jaqueta de couro é minha.",
+    "explicacao": "Tradução gramatical: 'She can wear' (Ela pode usar - capacidade/permissão simples). 'her floral dress' (seu/dela vestido floral - adjetivo possessivo). 'but' (mas). 'this leather jacket' (esta jaqueta de couro - adjetivo antes do substantivo). 'is mine' (é minha - pronome possessivo substituindo jaqueta)."
+  },
+  {
+    "id": "eng_048",
+    "categoria": "Inglês",
+    "tipo": "certo_errado",
+    "pergunta": "A frase 'Its tail is long' contém o erro de falta de apóstrofo na palavra 'Its', visto que toda indicação de posse em inglês exige o uso do apóstrofo ('s).",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Errado",
+    "explicacao": "Errado. Pegadinha clássica gramatical: 'Its' sem apóstrofo é o adjetivo possessivo para 'It' (O rabo DELE/DELA). 'It's' (com apóstrofo) NUNCA indica posse; é sempre a contração do sujeito com o verbo 'It is' (Ele é/está) ou 'It has'."
+  },
+  {
+    "id": "eng_049",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Como você diria de maneira informal 'Eu vou te falar a verdade' aplicando as reduções clássicas da fala norte-americana?",
+    "opcoes": [
+      "I gonna tell you the truth.",
+      "Imma tell you the truth.",
+      "I wanna tell you the truth.",
+      "Lemme tell you the truth."
+    ],
+    "resposta_correta": "Imma tell you the truth.",
+    "explicacao": "A redução extrema de 'I am going to' (Eu vou) é 'Imma'. 'Wanna' significa 'Want to' (querer) e 'Lemme' é 'Let me' (deixe-me). 'I gonna' está gramaticalmente falho mesmo na gíria (precisaria do 'm -> I'm gonna)."
+  },
+  {
+    "id": "eng_050",
+    "categoria": "Inglês",
+    "tipo": "multipla",
+    "pergunta": "Marque a alternativa que descreve uma blusa formal (formal), lisa (plain) e de mangas compridas (long-sleeved).",
+    "opcoes": [
+      "A formal, plain, long-sleeved shirt.",
+      "A formal, printed, short-sleeved shirt.",
+      "A casual, plain, sleeveless shirt.",
+      "A casual, plaid, long-sleeved shirt."
+    ],
+    "resposta_correta": "A formal, plain, long-sleeved shirt.",
+    "explicacao": "Vocabulário: Formal = formal. Plain (ou solid) = lisa (sem estampa/cor única). Long-sleeved = mangas longas. Essa é a ordem correta de acumulação de adjetivos antes do substantivo 'shirt' (camisa)."
+  },
+  {
     "id": "petro_cluster_001",
     "categoria": "Petrobras",
     "tipo": "multipla",
