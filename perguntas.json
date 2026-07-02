@@ -1,5 +1,139 @@
 [
   {
+    "id": "petro_cloud_001",
+    "categoria": "Petrobras",
+    "tipo": "multipla",
+    "pergunta": "Segundo a definição do NIST (SP 800-145), uma das cinco características essenciais da computação em nuvem permite que o consumidor provisione recursos computacionais, como tempo de servidor e armazenamento de rede, automaticamente, sem a necessidade de interação humana com o provedor. Qual é essa característica?",
+    "opcoes": [
+      "Acesso amplo à rede.",
+      "Agrupamento de recursos (Resource Pooling).",
+      "Autoatendimento sob demanda (On-demand self-service).",
+      "Elasticidade rápida.",
+      "Serviço mensurado."
+    ],
+    "resposta_correta": "Autoatendimento sob demanda (On-demand self-service).",
+    "explicacao": "O autoatendimento sob demanda permite que o cliente adquira recursos de forma autônoma e instantânea através de portais ou APIs, eliminando o contato com o suporte do provedor."
+  },
+  {
+    "id": "petro_cloud_002",
+    "categoria": "Petrobras",
+    "tipo": "certo_errado",
+    "pergunta": "A escalabilidade, no contexto da computação em nuvem, refere-se especificamente à capacidade de redimensionar recursos automaticamente em tempo real, sem qualquer tipo de planejamento prévio.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Errado",
+    "explicacao": "O conceito que descreve o ajuste automático e imediato em tempo real é a Elasticidade. A Escalabilidade refere-se à capacidade de lidar com o crescimento da demanda, geralmente de forma planejada."
+  },
+  {
+    "id": "petro_cloud_003",
+    "categoria": "Petrobras",
+    "tipo": "multipla",
+    "pergunta": "Ao planejar a expansão de um banco de dados na nuvem, o administrador decide adicionar mais memória RAM e mais núcleos de processamento ao servidor existente. Essa técnica é conhecida como:",
+    "opcoes": [
+      "Escalabilidade horizontal.",
+      "Elasticidade de rede.",
+      "Escalabilidade vertical.",
+      "Agrupamento de recursos.",
+      "Provisionamento amplo."
+    ],
+    "resposta_correta": "Escalabilidade vertical.",
+    "explicacao": "A escalabilidade vertical (Scale-up) consiste em aumentar o poder de processamento ou memória de uma única máquina. Já a escalabilidade horizontal (Scale-out) consiste em adicionar mais máquinas ao cluster."
+  },
+  {
+    "id": "petro_cloud_004",
+    "categoria": "Petrobras",
+    "tipo": "certo_errado",
+    "pergunta": "A característica 'Agrupamento de recursos' (Resource Pooling) do NIST implica que o provedor atende a múltiplos consumidores utilizando um modelo de multilocação (multi-tenant), no qual os recursos físicos são dinamicamente alocados conforme a demanda.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Certo",
+    "explicacao": "O Resource Pooling permite que o provedor combine recursos para atender múltiplos clientes. O cliente tem a percepção de localização (ex: 'quero servidores no Brasil'), mas não sabe exatamente qual servidor físico específico está processando seus dados."
+  },
+  {
+    "id": "petro_cloud_005",
+    "categoria": "Petrobras",
+    "tipo": "multipla",
+    "pergunta": "Em um cenário de nuvem, o monitoramento do uso de CPU, largura de banda e armazenamento, permitindo que tanto o provedor quanto o consumidor tenham visibilidade do consumo para fins de faturamento, refere-se a qual característica essencial?",
+    "opcoes": [
+      "Autoatendimento sob demanda.",
+      "Acesso amplo à rede.",
+      "Agrupamento de recursos.",
+      "Elasticidade rápida.",
+      "Serviço mensurado."
+    ],
+    "resposta_correta": "Serviço mensurado.",
+    "explicacao": "O Serviço Mensurado (Measured Service) é a característica que garante a medição, controle e reporte do uso de recursos, sendo vital para o modelo 'pay-per-use' (pagamento por uso)."
+  },
+  {
+    "id": "petro_cloud_006",
+    "categoria": "Petrobras",
+    "tipo": "certo_errado",
+    "pergunta": "O 'Acesso amplo à rede' define que os serviços em nuvem devem estar disponíveis por meio de protocolos padrão, permitindo o acesso via diversos dispositivos, como notebooks, tablets e smartphones.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Certo",
+    "explicacao": "Essa característica garante que a nuvem não seja dependente de uma plataforma específica, devendo ser acessível por uma rede de dispositivos heterogêneos."
+  },
+  {
+    "id": "petro_cloud_007",
+    "categoria": "Petrobras",
+    "tipo": "multipla",
+    "pergunta": "Relacione os conceitos de escalabilidade às suas descrições corretas:\n1. Escalabilidade Horizontal\n2. Escalabilidade Vertical\n\n( ) Adição de novos nós ao sistema para dividir a carga.\n( ) Aumento do hardware (CPU/RAM) em um nó existente.",
+    "opcoes": [
+      "1 - 2",
+      "2 - 1",
+      "1 - 1",
+      "2 - 2"
+    ],
+    "resposta_correta": "1 - 2",
+    "explicacao": "A escalabilidade horizontal (Scale-out) foca em aumentar o número de componentes (mais servidores), enquanto a vertical (Scale-up) foca no aumento da potência da máquina atual."
+  },
+  {
+    "id": "petro_cloud_008",
+    "categoria": "Petrobras",
+    "tipo": "certo_errado",
+    "pergunta": "A computação em nuvem é intrinsecamente insegura, sendo este um dos motivos pelos quais órgãos públicos e grandes empresas de energia não deveriam migrar dados para provedores externos.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Errado",
+    "explicacao": "Esta é uma pegadinha clássica. A nuvem não é insegura por natureza. O desafio reside na governança, nos termos contratuais e no controle de acesso. Grandes empresas (como Petrobras) utilizam nuvens com alto nível de segurança, muitas vezes superior ao que seria possível em ambientes on-premises."
+  },
+  {
+    "id": "petro_cloud_009",
+    "categoria": "Petrobras",
+    "tipo": "multipla",
+    "pergunta": "Assinale a alternativa que NÃO é uma das cinco características essenciais da nuvem segundo o NIST SP 800-145:",
+    "opcoes": [
+      "Serviço mensurado.",
+      "Agrupamento de recursos.",
+      "Uso exclusivo de criptografia quântica.",
+      "Elasticidade rápida.",
+      "Acesso amplo à rede."
+    ],
+    "resposta_correta": "Uso exclusivo de criptografia quântica.",
+    "explicacao": "As 5 características são: Autoatendimento sob demanda, Acesso amplo à rede, Agrupamento de recursos, Elasticidade rápida e Serviço mensurado. Criptografia quântica não é critério de definição de nuvem."
+  },
+  {
+    "id": "petro_cloud_010",
+    "categoria": "Petrobras",
+    "tipo": "certo_errado",
+    "pergunta": "O modelo 'On-premises' é o oposto da computação em nuvem, pois pressupõe que a infraestrutura esteja dentro do domínio da organização, sob sua própria gestão e operação física.",
+    "opcoes": [
+      "Certo",
+      "Errado"
+    ],
+    "resposta_correta": "Certo",
+    "explicacao": "Exatamente. On-premises significa infraestrutura própria, interna (no 'local'). A nuvem transfere a gestão da infraestrutura física para o provedor externo."
+  },
+  {
     "id": "quadrix_sedes_001",
     "categoria": "SEDES",
     "tipo": "certo_errado",
