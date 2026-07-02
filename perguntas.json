@@ -1,5 +1,120 @@
 [
   {
+    "id": "quadrix_sedes_001",
+    "categoria": "SEDES",
+    "tipo": "certo_errado",
+    "pergunta": "Durante o atendimento de um adulto em parada cardiorrespiratória, a avaliação da respiração e do pulso carotídeo deve ser realizada de forma simultânea, por um período máximo de 10 segundos.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Certo",
+    "explicacao": "Correto. O protocolo de RCP preconiza a avaliação simultânea de pulso central e respiração por um tempo máximo de 10 segundos para evitar atrasos no início das compressões torácicas."
+  },
+  {
+    "id": "quadrix_sedes_002",
+    "categoria": "SEDES",
+    "tipo": "multipla",
+    "pergunta": "Sobre os ritmos de parada cardiorrespiratória, assinale a alternativa que apresenta apenas ritmos considerados 'chocáveis' pela equipe de suporte básico/avançado:",
+    "opcoes": [
+      "Assistolia e Atividade Elétrica Sem Pulso (AESP).",
+      "Fibrilação Ventricular (FV) e Taquicardia Ventricular Sem Pulso (TVSP).",
+      "Fibrilação Ventricular (FV) e Assistolia.",
+      "Taquicardia Ventricular Sem Pulso (TVSP) e AESP."
+    ],
+    "resposta_correta": "Fibrilação Ventricular (FV) e Taquicardia Ventricular Sem Pulso (TVSP).",
+    "explicacao": "Apenas a FV e a TVSP são ritmos chocáveis, onde a desfibrilação é indicada. Assistolia e AESP são ritmos não chocáveis, cujo tratamento baseia-se em RCP e medicações, sem o uso do choque."
+  },
+  {
+    "id": "quadrix_sedes_003",
+    "categoria": "SEDES",
+    "tipo": "certo_errado",
+    "pergunta": "A respiração agônica, também conhecida como 'gasping', deve ser considerada uma respiração efetiva, dispensando a necessidade de iniciar manobras de RCP.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Errado",
+    "explicacao": "O 'gasping' (respiração agônica) NÃO é uma respiração efetiva. Ele deve ser interpretado como um sinal de PCR, e o socorrista deve proceder imediatamente com a RCP."
+  },
+  {
+    "id": "quadrix_sedes_004",
+    "categoria": "SEDES",
+    "tipo": "multipla",
+    "pergunta": "Em um atendimento de RCP em adultos, com um ou dois socorristas, a relação compressão-ventilação correta é:",
+    "opcoes": [
+      "15 compressões para 2 ventilações.",
+      "30 compressões para 2 ventilações.",
+      "100 compressões para 10 ventilações.",
+      "5 compressões para 1 ventilação."
+    ],
+    "resposta_correta": "30 compressões para 2 ventilações.",
+    "explicacao": "Para adultos, a relação C:V é sempre 30:2, independentemente do número de socorristas. A relação 15:2 é exclusiva para crianças e lactentes quando há 2 ou mais socorristas."
+  },
+  {
+    "id": "quadrix_sedes_005",
+    "categoria": "SEDES",
+    "tipo": "certo_errado",
+    "pergunta": "A cânula orofaríngea (cânula de Guedel) pode ser inserida em qualquer vítima de emergência, inclusive naquelas que apresentam reflexo de tosse ou vômito presente.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Errado",
+    "explicacao": "A cânula de Guedel é contraindicada em pacientes conscientes ou que apresentem reflexo de vômito, pois pode desencadear náuseas, vômitos e aspiração pulmonar."
+  },
+  {
+    "id": "quadrix_sedes_006",
+    "categoria": "SEDES",
+    "tipo": "multipla",
+    "pergunta": "Assinale a alternativa que indica o ritmo de compressões torácicas por minuto preconizado para RCP de alta qualidade:",
+    "opcoes": [
+      "80 a 100 compressões/min.",
+      "100 a 120 compressões/min.",
+      "120 a 140 compressões/min.",
+      "Pelo menos 150 compressões/min."
+    ],
+    "resposta_correta": "100 a 120 compressões/min.",
+    "explicacao": "A RCP de qualidade exige uma frequência entre 100 e 120 compressões por minuto. Abaixo ou acima disso, a eficácia na perfusão sanguínea é reduzida."
+  },
+  {
+    "id": "quadrix_sedes_007",
+    "categoria": "SEDES",
+    "tipo": "certo_errado",
+    "pergunta": "No atendimento a um lactente (abaixo de 1 ano) que está em parada respiratória, mas mantém pulso presente, a frequência de ventilação de resgate deve ser de 1 ventilação a cada 6 segundos.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Errado",
+    "explicacao": "Para lactentes e crianças, com pulso presente (parada respiratória), a ventilação de resgate é mais rápida: 1 ventilação a cada 2 a 3 segundos (20-30/min). A ventilação a cada 6 segundos (10/min) é destinada a adultos."
+  },
+  {
+    "id": "quadrix_sedes_008",
+    "categoria": "SEDES",
+    "tipo": "multipla",
+    "pergunta": "Em relação à profundidade das compressões torácicas para um paciente adulto, qual é o parâmetro correto segundo as diretrizes de RCP?",
+    "opcoes": [
+      "Pelo menos 3 cm e no máximo 4 cm.",
+      "Pelo menos 5 cm e no máximo 6 cm.",
+      "Exatamente 7 cm.",
+      "Cerca de 2 a 3 cm."
+    ],
+    "resposta_correta": "Pelo menos 5 cm e no máximo 6 cm.",
+    "explicacao": "A profundidade correta para adultos deve ser de pelo menos 5 cm (2 polegadas), não excedendo 6 cm (2,4 polegadas), para evitar lesões estruturais no tórax."
+  },
+  {
+    "id": "quadrix_sedes_009",
+    "categoria": "SEDES",
+    "tipo": "certo_errado",
+    "pergunta": "Sinais óbvios de óbito, como rigidez cadavérica e decomposição corporal, dispensam a tentativa de reanimação cardiopulmonar.",
+    "opcoes": ["Certo", "Errado"],
+    "resposta_correta": "Certo",
+    "explicacao": "Sinais claros de morte biológica (rigidez, livores, decomposição) são contraindicações formais para o início de manobras de RCP."
+  },
+  {
+    "id": "quadrix_sedes_010",
+    "categoria": "SEDES",
+    "tipo": "multipla",
+    "pergunta": "Relacione os itens abaixo sobre a sequência e parâmetros de atendimento em SEDEs:\n(1) Adulto\n(2) Criança/Lactente com 2 socorristas\n\n( ) Relação C:V de 15:2\n( ) Relação C:V de 30:2",
+    "opcoes": [
+      "(1) - (2)",
+      "(2) - (1)",
+      "(1) - (1)",
+      "(2) - (2)"
+    ],
+    "resposta_correta": "(2) - (1)",
+    "explicacao": "Crianças e lactentes atendidos por 2 socorristas utilizam a relação 15:2. Adultos, independentemente do número de socorristas, seguem a relação 30:2."
+  }
+  {
     "id": "eng_001",
     "categoria": "Inglês",
     "tipo": "multipla",
