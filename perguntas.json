@@ -1,7 +1,7 @@
 [
   {
     "id": "petro_cluster_001",
-    "categoria": "PETROBRAS",
+    "categoria": "Petrobras",
     "tipo": "multipla",
     "pergunta": "Um engenheiro de infraestrutura precisa projetar um cluster para hospedar o sistema de transações financeiras (pagamentos via Pix) de uma instituição. O requisito primordial é que o sistema não pode parar, mesmo em caso de falha de hardware em um dos servidores. Qual tipo de cluster e quais componentes essenciais ele deve adotar?",
     "opcoes": [
@@ -15,7 +15,7 @@
   },
   {
     "id": "petro_cluster_002",
-    "categoria": "PETROBRAS",
+    "categoria": "Petrobras",
     "tipo": "certo_errado",
     "pergunta": "No contexto de métricas de Alta Disponibilidade (HA), um acordo de nível de serviço (SLA) que garante 'quatro noves' (99,99%) de uptime permite uma indisponibilidade máxima teórica de aproximadamente 8 horas e 45 minutos por ano.",
     "opcoes": [
@@ -27,7 +27,7 @@
   },
   {
     "id": "petro_cluster_003",
-    "categoria": "PETROBRAS",
+    "categoria": "Petrobras",
     "tipo": "multipla",
     "pergunta": "Ao comparar a infraestrutura necessária para diferentes tipos de clusters, assinale a alternativa que descreve os componentes críticos indispensáveis para que um cluster HPC (High Performance Computing) não sofra com gargalos durante simulações massivas:",
     "opcoes": [
@@ -41,7 +41,7 @@
   },
   {
     "id": "petro_cluster_004",
-    "categoria": "PETROBRAS",
+    "categoria": "Petrobras",
     "tipo": "certo_errado",
     "pergunta": "Tolerância a Falhas e Alta Disponibilidade (HA) são conceitos tecnicamente idênticos e sinônimos no design de data centers, ambos buscando um RTO (Recovery Time Objective) maior que 15 minutos utilizando componentes paralelos para evitar a parada total do sistema.",
     "opcoes": [
@@ -53,7 +53,7 @@
   },
   {
     "id": "petro_cluster_005",
-    "categoria": "PETROBRAS",
+    "categoria": "Petrobras",
     "tipo": "multipla",
     "pergunta": "Questão de Relacionamento. Associe a característica central ao seu respectivo tipo de cluster:\n\n1. HPC (High Performance Computing)\n2. HA (High Availability)\n3. Load Balancer\n\n(  ) Distribui requisições web para otimizar o tempo de resposta e evitar sobrecarga.\n(  ) Seu principal mecanismo de proteção envolve o Heartbeat e a transferência de um IP compartilhado para um nó standby.\n(  ) Focado em paralelismo de tarefas e tempo de conclusão, muito utilizado em simulações climáticas.",
     "opcoes": [
@@ -67,7 +67,7 @@
   },
   {
     "id": "petro_cluster_006",
-    "categoria": "PETROBRAS",
+    "categoria": "Petrobras",
     "tipo": "certo_errado",
     "pergunta": "Durante a operação de um cluster de Alta Disponibilidade, se ocorrer a falha do nó primário, o mecanismo de failover transfere os serviços para o nó standby. Ao normalizar e restaurar o nó primário, a devolução dos serviços a ele (conhecida como fallback) deve ocorrer obrigatoriamente e de imediato, independentemente das políticas configuradas.",
     "opcoes": [
@@ -79,7 +79,7 @@
   },
   {
     "id": "petro_cluster_007",
-    "categoria": "PETROBRAS",
+    "categoria": "Petrobras",
     "tipo": "multipla",
     "pergunta": "Para orquestrar os recursos e alocar as cargas de trabalho computacionais através de filas nos nós de um cluster HPC, os administradores utilizam softwares conhecidos como 'Jobs Schedulers'. Qual das alternativas contém exemplos reais desses orquestradores?",
     "opcoes": [
@@ -93,7 +93,7 @@
   },
   {
     "id": "petro_cluster_008",
-    "categoria": "PETROBRAS",
+    "categoria": "Petrobras",
     "tipo": "certo_errado",
     "pergunta": "Uma das grandes restrições arquiteturais dos clusters HPC (High Performance Computing) é a sua limitação geográfica, sendo impossível implementar esse tipo de solução em um modelo multi-site devido à latência de rede externa.",
     "opcoes": [
@@ -105,7 +105,7 @@
   },
   {
     "id": "petro_cluster_009",
-    "categoria": "PETROBRAS",
+    "categoria": "Petrobras",
     "tipo": "multipla",
     "pergunta": "Na arquitetura de cluster HA focado em bancos de dados corporativos (ex: Oracle RAC, SQL Server Failover), para garantir que, caso o 'Nó Ativo' apresente falha de hardware, o 'Nó Standby' possa assumir a operação sem corrupção ou divergência de dados, é imperativo que a arquitetura contenha:",
     "opcoes": [
@@ -119,7 +119,7 @@
   },
   {
     "id": "petro_cluster_010",
-    "categoria": "PETROBRAS",
+    "categoria": "Petrobras",
     "tipo": "certo_errado",
     "pergunta": "Um cluster de servidores estruturado para balanceamento de carga (Load Balancer) tem como benefício colateral o fornecimento parcial de alta disponibilidade, pois se um dos nós de processamento web falhar, as requisições param de ser enviadas a ele e a aplicação como um todo não fica fora do ar para os usuários finais.",
     "opcoes": [
