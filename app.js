@@ -202,8 +202,13 @@ function mostrarPergunta() {
     const opcoesContainer = document.getElementById('opcoes-container');
     opcoesContainer.innerHTML = '';
     document.getElementById('explicacao').classList.add('hidden');
+    
+    // Reseta a área de controles (garante que o botão 'Próxima' normal volte)
+    document.getElementById('controles-feedback').innerHTML = `<button id="btn-proxima" style="background-color: var(--primary); color: white; margin-top: 25px; font-size: 18px; padding: 15px; width: 100%; border: none; border-radius: 10px; cursor: pointer;">Próxima ➔</button>`;
+    document.getElementById('btn-proxima').onclick = proximaPergunta;
     document.getElementById('controles-feedback').classList.add('hidden');
 
+    // Botão de Áudio
     const btnOuvir = document.getElementById('btn-ouvir');
     if (p.categoria.toLowerCase().includes('inglês') || p.categoria.toLowerCase().includes('ingles')) {
         btnOuvir.classList.remove('hidden');
@@ -217,14 +222,30 @@ function mostrarPergunta() {
         btnOuvir.classList.add('hidden');
     }
 
-    const opcoesEmbaralhadas = embaralharArray(p.opcoes);
-    opcoesEmbaralhadas.forEach(op => {
-        const btn = document.createElement('button');
-        btn.className = 'option-btn';
-        btn.textContent = op;
-        btn.onclick = () => verificar(op, p, btn);
-        opcoesContainer.appendChild(btn);
-    });
+    // VERIFICA O TIPO DE QUESTÃO
+    if (p.tipo === 'traducao_escrita') {
+        // --- MODO TRADUÇÃO (Caixa de Texto) ---
+        opcoesContainer.innerHTML = `
+            <textarea id="input-traducao" placeholder="Digite sua tradução aqui..." style="width: 100%; height: 100px; padding: 15px; border-radius: 12px; border: 2px solid var(--border-color); background: var(--bg-color); color: var(--text-color); font-size: 16px; font-family: inherit; margin-bottom: 15px; box-sizing: border-box; resize: none;"></textarea>
+            <button id="btn-revelar-traducao" style="background-color: var(--primary); color: white; padding: 15px; font-size: 16px; border-radius: 10px; width: 100%; border: none; font-weight: bold; cursor: pointer;">Revelar Resposta Mestre</button>
+        `;
+        
+        document.getElementById('btn-revelar-traducao').onclick = () => {
+            document.getElementById('btn-revelar-traducao').classList.add('hidden');
+            document.getElementById('input-traducao').disabled = true;
+            mostrarFeedbackTraducao(p);
+        };
+    } else {
+        // --- MODO NORMAL (Múltipla Escolha / Certo e Errado) ---
+        const opcoesEmbaralhadas = embaralharArray(p.opcoes);
+        opcoesEmbaralhadas.forEach(op => {
+            const btn = document.createElement('button');
+            btn.className = 'option-btn';
+            btn.textContent = op;
+            btn.onclick = () => verificar(op, p, btn);
+            opcoesContainer.appendChild(btn);
+        });
+    }
 }
 
 function verificar(escolha, p, btnClicado) {
@@ -279,6 +300,55 @@ function mostrarFeedback(p, acertou, ehRepescagem) {
     document.getElementById('explicacao').innerHTML = htmlExplicacao;
     document.getElementById('explicacao').classList.remove('hidden');
     document.getElementById('controles-feedback').classList.remove('hidden');
+}
+
+function mostrarFeedbackTraducao(p) {
+    const ehRepescagem = p.jaRespondidaOriginalmente;
+    
+    let htmlExplicacao = `
+        <div style="background: var(--btn-bg); padding: 20px; border-radius: 12px; border: 2px dashed var(--success); margin-bottom: 20px; text-align: center;">
+            <strong style="color: var(--success); font-size: 14px; text-transform: uppercase;">Tradução Oficial do Gabarito</strong><br>
+            <span style="font-size: 20px; color: var(--text-color); font-weight: bold;">${p.resposta_correta}</span>
+        </div>
+        <strong style="color: var(--primary);">Explicação Oficial:</strong><br><br>${p.explicacao}
+    `;
+    
+    document.getElementById('explicacao').innerHTML = htmlExplicacao;
+    document.getElementById('explicacao').classList.remove('hidden');
+    
+    // Troca o botão 'Próxima' pelos botões de Autoavaliação
+    const controles = document.getElementById('controles-feedback');
+    controles.innerHTML = `
+        <div style="background: var(--card-bg); padding: 15px; border-radius: 12px; border: 1px solid var(--border-color); text-align: center; margin-top: 20px;">
+            <h3 style="margin-top: 0; color: var(--text-color);">Seja sincero: você acertou a tradução?</h3>
+            <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 15px;">Pequenos erros de vírgula ou sinônimos valem como acerto.</p>
+            <div style="display: flex; gap: 10px;">
+                <button id="btn-trad-errei" style="background: var(--danger); color: white; margin: 0; width: 100%; padding: 15px; border: none; border-radius: 10px; cursor: pointer; font-weight: bold;">❌ Errei (Fila)</button>
+                <button id="btn-trad-acertei" style="background: var(--success); color: white; margin: 0; width: 100%; padding: 15px; border: none; border-radius: 10px; cursor: pointer; font-weight: bold;">✅ Acertei</button>
+            </div>
+        </div>
+    `;
+    controles.classList.remove('hidden');
+
+    document.getElementById('btn-trad-acertei').onclick = () => {
+        document.getElementById('input-traducao').style.borderColor = 'var(--success)';
+        registrarEstudoDoDia();
+        if (!ehRepescagem) { acertosSessao++; processarDadosDaResposta(p, true); }
+        proximaPergunta();
+    };
+
+    document.getElementById('btn-trad-errei').onclick = () => {
+        document.getElementById('input-traducao').style.borderColor = 'var(--danger)';
+        registrarEstudoDoDia();
+        if (!ehRepescagem) {
+            errosSessao++; 
+            processarDadosDaResposta(p, false);
+            p.jaRespondidaOriginalmente = true; 
+            perguntasFiltradas.push(p); 
+            document.getElementById('contador-label').innerHTML += ` <span style="color:var(--danger); font-size: 13px; font-weight:bold;">(+1 Fila)</span>`;
+        }
+        proximaPergunta();
+    };
 }
 
 // ==========================================
@@ -349,16 +419,13 @@ function fecharModalRecompensa() {
     document.getElementById('modal-recompensa').classList.add('hidden');
 }
 
-document.getElementById('btn-proxima').addEventListener('click', () => {
+function proximaPergunta() {
     window.speechSynthesis.cancel();
     perguntaAtualIndex++;
     
     if (perguntaAtualIndex < perguntasFiltradas.length) {
         mostrarPergunta();
     } else {
-        // Encerramento da Sessão - Computa a Ofensiva Diária
-        processarOfensivaFinalDeSessao();
-
         document.getElementById('flashcard-screen').classList.add('hidden');
         document.getElementById('resultado-screen').classList.remove('hidden');
         
@@ -367,14 +434,14 @@ document.getElementById('btn-proxima').addEventListener('click', () => {
         
         document.getElementById('res-acertos').textContent = acertosSessao;
         document.getElementById('res-erros').textContent = errosSessao;
+        document.getElementById('res-porcentagem').textContent = `${porcentagem}%`;
         
         const spanPorcentagem = document.getElementById('res-porcentagem');
-        spanPorcentagem.textContent = `${porcentagem}%`;
-        if (porcentagem >= 80) spanPorcentagem.style.color = '#22c55e'; 
-        else if (porcentagem >= 50) spanPorcentagem.style.color = '#eab308'; 
-        else spanPorcentagem.style.color = '#ef4444'; 
+        if (porcentagem >= 80) spanPorcentagem.style.color = 'var(--success)'; 
+        else if (porcentagem >= 50) spanPorcentagem.style.color = 'var(--warning)'; 
+        else spanPorcentagem.style.color = 'var(--danger)'; 
     }
-});
+}
 
 // ==========================================
 // SIMULADO IMPRESSO, EXPORTAR / IMPORTAR (Mantidos iguais)
