@@ -4,6 +4,113 @@ let perguntaAtualIndex = 0;
 let acertosSessao = 0;
 let errosSessao = 0;
 
+// Variáveis de controle de conquistas
+let tempoInicioPergunta = 0;
+let acertosSeguidosGeral = 0;
+let acertosSeguidosSeguranca = 0;
+let respostasRapidasSessao = 0;
+let sessaoAtualTipo = "normal";
+
+// ==========================================
+// BANCO DE DADOS DOS PINS (CONQUISTAS)
+// ==========================================
+const LISTA_PINS = [
+    {id: "p1", emoji: "🌱", nome: "Iniciante", desc: "Respondeu 10 perguntas"},
+    {id: "p2", emoji: "🎯", nome: "Foco Total", desc: "Acertou 10 seguidas"},
+    {id: "p3", emoji: "🦉", nome: "Corujão", desc: "Estudou após dez da noite"},
+    {id: "p4", emoji: "♻️", nome: "Mestre da Repescagem", desc: "Zerou uma lista de 15 erros"},
+    {id: "p5", emoji: "🎖️", nome: "Veterano de Guerra", desc: "Respondeu 500 perguntas"},
+    {id: "p6", emoji: "🗣️", nome: "Poliglota", desc: "Respondeu 50 questões de Inglês"},
+    {id: "p7", emoji: "🛡️", nome: "Security Guru", desc: "Acertou 20 seguidas em Segurança"},
+    {id: "p8", emoji: "✨", nome: "Sem Erros", desc: "Sessão de 20 questões sem erros"},
+    {id: "p9", emoji: "🌅", nome: "Madrugador", desc: "Estudou antes das 06:00"},
+    {id: "p10", emoji: "🧠", nome: "Estrategista", desc: "Respondeu questões de 5 categorias diferentes"},
+    {id: "p11", emoji: "🗂️", nome: "Leitner Master", desc: "Revisou 100 cartões atrasados"},
+    {id: "p12", emoji: "🔥", nome: "Imparável", desc: "Ofensiva de 7 dias"},
+    {id: "p13", emoji: "👑", nome: "Legenda Viva", desc: "Ofensiva de 30 dias"},
+    {id: "p14", emoji: "🏹", nome: "Precisão Cirúrgica", desc: "Acertou 50 questões com 100% de aproveitamento"},
+    {id: "p15", emoji: "🐉", nome: "Cinquentão", desc: "Ofensiva de 50 dias"},
+    {id: "p16", emoji: "🧹", nome: "Backlog Zero", desc: "Não tem nenhuma questão atrasada no sistema"},
+    {id: "p17", emoji: "👶", nome: "Primeiros Passos", desc: "Alcançou o nível 2"},
+    {id: "p18", emoji: "🧗‍♂️", nome: "Escalador", desc: "Alcançou o nível 5"},
+    {id: "p19", emoji: "☁️", nome: "Arquiteto de Nuvem", desc: "Acertou 30 questões de Cloud"},
+    {id: "p20", emoji: "🏰", nome: "Defensor Cibernético", desc: "Acertou 50 questões de Segurança"},
+    {id: "p21", emoji: "📚", nome: "Bibliotecário", desc: "Gerou 5 simulados impressos"},
+    {id: "p22", emoji: "💾", nome: "Backup Realizado", desc: "Fez exportação dos dados"},
+    {id: "p23", emoji: "🦇", nome: "Night Owl", desc: "Estudou 10 noites seguidas"},
+    {id: "p24", emoji: "🎧", nome: "Bom de Papo", desc: "Usou o áudio do inglês 10 vezes"},
+    {id: "p25", emoji: "⌨️", nome: "Ninja do Teclado", desc: "Respondeu 10 questões de tradução corretamente"},
+    {id: "p26", emoji: "🥊", nome: "Resiliente", desc: "Errou uma, mas acertou na repescagem"},
+    {id: "p27", emoji: "⚡", nome: "Fast & Furious", desc: "Respondeu 5 questões em menos de 1 minuto cada"},
+    {id: "p28", emoji: "🛢️", nome: "Concurseiro Raiz", desc: "Respondeu 100 questões da Petrobras"},
+    {id: "p29", emoji: "🏗️", nome: "Mestre dos Códigos", desc: "Completou 100% das questões de infraestrutura"},
+    {id: "p30", emoji: "🏢", nome: "Concurseiro", desc: "Acertou 100 questões da Dataprev"}
+];
+
+// ==========================================
+// LÓGICA DE VERIFICAÇÃO E RENDERIZAÇÃO
+// ==========================================
+function verificarConquista(pinId) {
+    let pinsDesbloqueados = JSON.parse(localStorage.getItem('meus_pins')) || [];
+    
+    // Se o usuário ainda não tem esse pin, desbloqueia!
+    if (!pinsDesbloqueados.includes(pinId)) {
+        pinsDesbloqueados.push(pinId);
+        localStorage.setItem('meus_pins', JSON.stringify(pinsDesbloqueados));
+        
+        // Pega os dados do pin para mostrar no alerta
+        const pinData = LISTA_PINS.find(p => p.id === pinId);
+        
+        // Mostra o alerta visual na tela
+        const alerta = document.getElementById('alerta-conquista');
+        document.getElementById('alerta-emoji').textContent = pinData.emoji;
+        document.getElementById('alerta-nome').textContent = pinData.nome;
+        
+        alerta.classList.remove('hidden');
+        
+        // Toca um som de conquista (opcional e nativo)
+        const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+        const oscillator = audioContext.createOscillator();
+        oscillator.type = 'sine';
+        oscillator.frequency.setValueAtTime(523.25, audioContext.currentTime); // Nota C5
+        oscillator.frequency.setValueAtTime(659.25, audioContext.currentTime + 0.1); // Nota E5
+        oscillator.connect(audioContext.destination);
+        oscillator.start();
+        oscillator.stop(audioContext.currentTime + 0.3);
+
+        // Esconde o alerta após 4 segundos
+        setTimeout(() => {
+            alerta.classList.add('hidden');
+        }, 4000);
+    }
+}
+
+function renderizarPainelPins() {
+    const grid = document.getElementById('grid-pins');
+    const pinsDesbloqueados = JSON.parse(localStorage.getItem('meus_pins')) || [];
+    
+    grid.innerHTML = '';
+    
+    LISTA_PINS.forEach(pin => {
+        const isUnlocked = pinsDesbloqueados.includes(pin.id);
+        const statusClass = isUnlocked ? 'unlocked' : 'locked';
+        
+        grid.innerHTML += `
+            <div class="pin-card ${statusClass}">
+                <div class="pin-emoji">${pin.emoji}</div>
+                <div class="pin-nome">${pin.nome}</div>
+                <div class="pin-desc">${pin.desc}</div>
+            </div>
+        `;
+    });
+}
+
+// Botão para abrir o painel
+document.getElementById('btn-ver-pins').addEventListener('click', () => {
+    renderizarPainelPins();
+    document.getElementById('modal-pins').classList.remove('hidden');
+});
+
 // Lista de Recompensas
 const recompensasDisponiveis = [
     "Assista a 1 episódio da sua série favorita! 🍿",
@@ -164,8 +271,14 @@ document.getElementById('btn-iniciar').addEventListener('click', () => {
         disp.forEach(p => p.jaRespondidaOriginalmente = false);
         perguntasFiltradas = perguntasFiltradas.concat(embaralharArray(disp).slice(0, qtdDesejada));
     });
+   
+    if (perguntasFiltradas.length === 0) {
+        verificarConquista("p16");
+        return alert("Parabéns! Nenhuma revisão atrasada.");
+    }
 
     if (perguntasFiltradas.length === 0) return alert("Parabéns! Sua meta diária para essas categorias já foi batida.");
+    sessaoAtualTipo = "normal";
     iniciarSessao();
 });
 
@@ -178,6 +291,7 @@ document.getElementById('btn-reforco').addEventListener('click', () => {
     perguntasComErro.forEach(p => p.jaRespondidaOriginalmente = false);
     let topErros = perguntasComErro.sort((a, b) => rankingErros[b.id] - rankingErros[a.id]).slice(0, 15);
     perguntasFiltradas = embaralharArray(topErros);
+    sessaoAtualTipo = "reforco";
     iniciarSessao();
 });
 
@@ -194,16 +308,24 @@ function iniciarSessao() {
 // LÓGICA DE FLASHCARDS E REPESCAGEM
 // ==========================================
 function mostrarPergunta() {
+    tempoInicioPergunta = Date.now();
     const p = perguntasFiltradas[perguntaAtualIndex];
     document.getElementById('categoria-label').textContent = p.categoria;
     document.getElementById('contador-label').textContent = `${perguntaAtualIndex + 1} / ${perguntasFiltradas.length}`;
-    document.getElementById('pergunta-texto').textContent = p.pergunta;
+    
+    // --- LÓGICA DE FORMATAÇÃO DE TEXTO ---
+    let textoPergunta = p.pergunta;
+    // Se a pergunta contiver números seguidos de ponto (ex: 1. ), adiciona quebra de linha
+    textoPergunta = textoPergunta.replace(/(\d+\.\s)/g, '<br><br>$1');
+    // Se contiver parênteses para preenchimento, adiciona espaçamento
+    textoPergunta = textoPergunta.replace(/\(\s\)/g, '<br><strong>( )</strong>');
+    
+    document.getElementById('pergunta-texto').innerHTML = textoPergunta;
     
     const opcoesContainer = document.getElementById('opcoes-container');
     opcoesContainer.innerHTML = '';
     document.getElementById('explicacao').classList.add('hidden');
     
-    // Reseta a área de controles (garante que o botão 'Próxima' normal volte)
     document.getElementById('controles-feedback').innerHTML = `<button id="btn-proxima" style="background-color: var(--primary); color: white; margin-top: 25px; font-size: 18px; padding: 15px; width: 100%; border: none; border-radius: 10px; cursor: pointer;">Próxima ➔</button>`;
     document.getElementById('btn-proxima').onclick = proximaPergunta;
     document.getElementById('controles-feedback').classList.add('hidden');
@@ -214,7 +336,7 @@ function mostrarPergunta() {
         btnOuvir.classList.remove('hidden');
         window.speechSynthesis.cancel(); 
         btnOuvir.onclick = () => {
-            const leitura = new SpeechSynthesisUtterance(p.pergunta);
+            const leitura = new SpeechSynthesisUtterance(p.pergunta.replace(/<[^>]*>/g, ''));
             leitura.lang = 'en-US'; 
             window.speechSynthesis.speak(leitura);
         };
@@ -222,21 +344,17 @@ function mostrarPergunta() {
         btnOuvir.classList.add('hidden');
     }
 
-    // VERIFICA O TIPO DE QUESTÃO
     if (p.tipo === 'traducao_escrita') {
-        // --- MODO TRADUÇÃO (Caixa de Texto) ---
         opcoesContainer.innerHTML = `
             <textarea id="input-traducao" placeholder="Digite sua tradução aqui..." style="width: 100%; height: 100px; padding: 15px; border-radius: 12px; border: 2px solid var(--border-color); background: var(--bg-color); color: var(--text-color); font-size: 16px; font-family: inherit; margin-bottom: 15px; box-sizing: border-box; resize: none;"></textarea>
             <button id="btn-revelar-traducao" style="background-color: var(--primary); color: white; padding: 15px; font-size: 16px; border-radius: 10px; width: 100%; border: none; font-weight: bold; cursor: pointer;">Revelar Resposta Mestre</button>
         `;
-        
         document.getElementById('btn-revelar-traducao').onclick = () => {
             document.getElementById('btn-revelar-traducao').classList.add('hidden');
             document.getElementById('input-traducao').disabled = true;
             mostrarFeedbackTraducao(p);
         };
     } else {
-        // --- MODO NORMAL (Múltipla Escolha / Certo e Errado) ---
         const opcoesEmbaralhadas = embaralharArray(p.opcoes);
         opcoesEmbaralhadas.forEach(op => {
             const btn = document.createElement('button');
@@ -394,6 +512,88 @@ function processarDadosDaResposta(p, acertou) {
     stats[p.categoria].total++;
     if (acertou) stats[p.categoria].acertos++;
     localStorage.setItem('estatisticas_categorias', JSON.stringify(stats));
+
+    // ==========================================
+    // MOTOR DE CONQUISTAS (TRACKER GLOBAL)
+    // ==========================================
+    const ehRepescagem = p.jaRespondidaOriginalmente;
+    let tracker = JSON.parse(localStorage.getItem('user_tracker')) || {
+        total_respondidas: 0, total_ingles: 0, cloud_acertos: 0,
+        seguranca_acertos: 0, traducoes_acertos: 0, petrobras: 0,
+        infra_acertos: 0, dataprev: 0, categorias: []
+    };
+
+    // Atualiza contadores
+    tracker.total_respondidas++;
+    if (!tracker.categorias.includes(p.categoria)) tracker.categorias.push(p.categoria);
+    
+    // Conquistas de Horário
+    const horaAtual = new Date().getHours();
+    if (horaAtual >= 22) verificarConquista("p3"); // Corujão
+    if (horaAtual < 6) verificarConquista("p9"); // Madrugador
+
+    // Conquistas de Volume e Categoria
+    if (tracker.total_respondidas >= 10) verificarConquista("p1");
+    if (tracker.total_respondidas >= 500) verificarConquista("p5");
+    if (tracker.categorias.length >= 5) verificarConquista("p10");
+
+    const catUpper = p.categoria.toUpperCase();
+
+    if (catUpper.includes('INGL')) tracker.total_ingles++;
+    if (tracker.total_ingles >= 50) verificarConquista("p6");
+
+    if (catUpper.includes('PETROBRAS')) tracker.petrobras++;
+    if (tracker.petrobras >= 100) verificarConquista("p28");
+
+    if (acertou) {
+        // Conquistas de Sequência e Tempo
+        acertosSeguidosGeral++;
+        if (acertosSeguidosGeral >= 10) verificarConquista("p2");
+
+        const tempoGasto = (Date.now() - tempoInicioPergunta) / 1000;
+        if (tempoGasto < 60) respostasRapidasSessao++;
+        if (respostasRapidasSessao >= 5) verificarConquista("p27"); // Fast & Furious
+
+        // Conquistas de Repescagem e Tradução
+        if (ehRepescagem) verificarConquista("p26"); // Resiliente
+        if (p.tipo === 'traducao_escrita') tracker.traducoes_acertos++;
+        if (tracker.traducoes_acertos >= 10) verificarConquista("p25");
+
+        // Conquistas de Especialidade (TI e Bancas)
+        if (catUpper.includes('SEGURANÇA') || catUpper.includes('SECURITY')) {
+            tracker.seguranca_acertos++;
+            acertosSeguidosSeguranca++;
+            if (acertosSeguidosSeguranca >= 20) verificarConquista("p7");
+            if (tracker.seguranca_acertos >= 50) verificarConquista("p20");
+        } else {
+            acertosSeguidosSeguranca = 0; // Quebrou a sequência
+        }
+
+        if (catUpper.includes('CLOUD') || catUpper.includes('NUVEM')) tracker.cloud_acertos++;
+        if (tracker.cloud_acertos >= 30) verificarConquista("p19");
+
+        if (catUpper.includes('INFRA')) tracker.infra_acertos++;
+        if (tracker.infra_acertos >= 30) verificarConquista("p29"); // Adaptado para 30 acertos
+
+        if (catUpper.includes('DATAPREV')) tracker.dataprev++;
+        if (tracker.dataprev >= 100) verificarConquista("p30");
+
+    } else {
+        acertosSeguidosGeral = 0; // Errou, perde a sequência
+        acertosSeguidosSeguranca = 0;
+    }
+
+    // Conquistas de Nível e Ofensiva
+    let streak = parseInt(localStorage.getItem('current_streak')) || 0;
+    if (streak >= 7) verificarConquista("p12");
+    if (streak >= 30) verificarConquista("p13");
+    if (streak >= 50) verificarConquista("p15");
+
+    let nivelAtual = parseInt(localStorage.getItem('user_nivel')) || 1;
+    if (nivelAtual >= 2) verificarConquista("p17");
+    if (nivelAtual >= 5) verificarConquista("p18");
+
+    localStorage.setItem('user_tracker', JSON.stringify(tracker));
 }
 
 function atualizarInterfaceXP(xp, nivel) {
@@ -440,6 +640,9 @@ function proximaPergunta() {
         if (porcentagem >= 80) spanPorcentagem.style.color = 'var(--success)'; 
         else if (porcentagem >= 50) spanPorcentagem.style.color = 'var(--warning)'; 
         else spanPorcentagem.style.color = 'var(--danger)'; 
+        if (errosSessao === 0 && acertosSessao === 20) verificarConquista("p8"); // Sessão 20 limpa
+        if (errosSessao === 0 && acertosSessao === 50) verificarConquista("p14"); // Sessão 50 limpa
+        if (sessaoAtualTipo === "reforco" && acertosSessao >= 15 && errosSessao === 0) verificarConquista("p4"); // Mestre da repescagem
     }
 }
 
@@ -447,6 +650,10 @@ function proximaPergunta() {
 // SIMULADO IMPRESSO, EXPORTAR / IMPORTAR (Mantidos iguais)
 // ==========================================
 document.getElementById('btn-gerar-prova').addEventListener('click', () => { /* Código existente omitido p/ brevidade, mas o seu funciona igual */
+    let prints = parseInt(localStorage.getItem('simulados_impressos')) || 0;
+    prints++;
+    localStorage.setItem('simulados_impressos', prints);
+    if(prints >= 5) verificarConquista("p21");
     const rankingErros = JSON.parse(localStorage.getItem('ranking_erros')) || {};
     let perguntasComErro = perguntas.filter(p => rankingErros[p.id] > 0);
     if (perguntasComErro.length === 0) return alert("Você não tem registros de erros para imprimir!");
@@ -496,6 +703,8 @@ document.getElementById('btn-exportar').addEventListener('click', () => {
         a.download = "meu_progresso_completo.json";
         a.click();
     } catch (e) { alert("Erro ao exportar o progresso."); }
+    
+    verificarConquista("p22");
 });
 
 document.getElementById('btn-importar').addEventListener('change', (event) => {
