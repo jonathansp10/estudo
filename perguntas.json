@@ -1,1254 +1,215 @@
 [
+  Aqui está o JSON completo com 15 perguntas inéditas adaptadas rigorosamente a partir do simulado NSE 2 (Fortinet) que você enviou.
+
+Para as questões que pediam "Escolha 2" ou "Escolha 3", eu as adaptei para o padrão de concurso de múltipla escolha (agrupando as corretas em uma única alternativa) ou para o formato Certo/Errado, mantendo a compatibilidade perfeita com o seu sistema. As explicações foram enriquecidas com os conceitos técnicos para aprofundar seu estudo de Cibersegurança.
+
+Copie o código abaixo e adicione ao seu arquivo de perguntas:
+
+JSON
+[
   {
-    "id": "petro_cloud_001",
-    "categoria": "Petrobras",
+    "id": "cyber_nse2_001",
+    "categoria": "Cibersegurança",
     "tipo": "multipla",
-    "pergunta": "Segundo a definição do NIST (SP 800-145), uma das cinco características essenciais da computação em nuvem permite que o consumidor provisione recursos computacionais, como tempo de servidor e armazenamento de rede, automaticamente, sem a necessidade de interação humana com o provedor. Qual é essa característica?",
+    "pergunta": "Durante o processo de alongamento de chave (key stretching) usando algoritmos como o BCRYPT, que componente é adicionado à senha original para aumentar drasticamente a entropia e dificultar ataques de dicionário ou Rainbow Tables?",
     "opcoes": [
-      "Acesso amplo à rede.",
-      "Agrupamento de recursos (Resource Pooling).",
-      "Autoatendimento sob demanda (On-demand self-service).",
-      "Elasticidade rápida.",
-      "Serviço mensurado."
+      "MAC (Message Authentication Code).",
+      "Salt.",
+      "Código de verificação de duas etapas.",
+      "Um valor estático e globalmente conhecido."
     ],
-    "resposta_correta": "Autoatendimento sob demanda (On-demand self-service).",
-    "explicacao": "O autoatendimento sob demanda permite que o cliente adquira recursos de forma autônoma e instantânea através de portais ou APIs, eliminando o contato com o suporte do provedor."
+    "resposta_correta": "Salt.",
+    "explicacao": "O **Salt** é uma sequência de caracteres aleatórios adicionada à senha antes de ela passar pela função de hash. Isso garante que duas pessoas com a mesma senha (ex: '123456') tenham hashes completamente diferentes no banco de dados, aumentando a entropia e anulando o uso de Rainbow Tables (tabelas de hashes pré-computados)."
   },
   {
-    "id": "petro_cloud_002",
-    "categoria": "Petrobras",
-    "tipo": "certo_errado",
-    "pergunta": "A escalabilidade, no contexto da computação em nuvem, refere-se especificamente à capacidade de redimensionar recursos automaticamente em tempo real, sem qualquer tipo de planejamento prévio.",
-    "opcoes": [
-      "Certo",
-      "Errado"
-    ],
-    "resposta_correta": "Errado",
-    "explicacao": "O conceito que descreve o ajuste automático e imediato em tempo real é a Elasticidade. A Escalabilidade refere-se à capacidade de lidar com o crescimento da demanda, geralmente de forma planejada."
-  },
-  {
-    "id": "petro_cloud_003",
-    "categoria": "Petrobras",
+    "id": "cyber_nse2_002",
+    "categoria": "Cibersegurança",
     "tipo": "multipla",
-    "pergunta": "Ao planejar a expansão de um banco de dados na nuvem, o administrador decide adicionar mais memória RAM e mais núcleos de processamento ao servidor existente. Essa técnica é conhecida como:",
+    "pergunta": "Qual afirmação descreve da melhor forma o processo tecnológico de Hashing?",
     "opcoes": [
-      "Escalabilidade horizontal.",
-      "Elasticidade de rede.",
-      "Escalabilidade vertical.",
-      "Agrupamento de recursos.",
-      "Provisionamento amplo."
+      "O processo de geração de um valor único que pode ser legalmente vinculado a uma entidade para fins de auditoria.",
+      "A arte milenar de escrever, ocultar ou resolver códigos secretos em tempo de guerra.",
+      "O processo de conversão de dados de tamanho arbitrário em um valor exclusivo de tamanho fixo.",
+      "O processo matemático reversível de conversão de texto simples (plaintext) em texto cifrado (ciphertext)."
     ],
-    "resposta_correta": "Escalabilidade vertical.",
-    "explicacao": "A escalabilidade vertical (Scale-up) consiste em aumentar o poder de processamento ou memória de uma única máquina. Já a escalabilidade horizontal (Scale-out) consiste em adicionar mais máquinas ao cluster."
+    "resposta_correta": "O processo de conversão de dados de tamanho arbitrário em um valor exclusivo de tamanho fixo.",
+    "explicacao": "O **Hashing** pega qualquer entrada (um texto de 5 letras ou um vídeo de 5 GB) e a converte em uma string de tamanho fixo (o *digest*). Diferente da criptografia, o hash é **irreversível** (unidirecional) e serve primariamente para garantir a integridade dos dados."
   },
   {
-    "id": "petro_cloud_004",
-    "categoria": "Petrobras",
+    "id": "cyber_nse2_003",
+    "categoria": "Cibersegurança",
     "tipo": "certo_errado",
-    "pergunta": "A característica 'Agrupamento de recursos' (Resource Pooling) do NIST implica que o provedor atende a múltiplos consumidores utilizando um modelo de multilocação (multi-tenant), no qual os recursos físicos são dinamicamente alocados conforme a demanda.",
+    "pergunta": "Na tríade CIA da segurança da informação, a aplicação direta da criptografia (cifragem de dados em repouso ou em trânsito) atende primariamente ao requisito de Confidencialidade.",
     "opcoes": [
       "Certo",
       "Errado"
     ],
     "resposta_correta": "Certo",
-    "explicacao": "O Resource Pooling permite que o provedor combine recursos para atender múltiplos clientes. O cliente tem a percepção de localização (ex: 'quero servidores no Brasil'), mas não sabe exatamente qual servidor físico específico está processando seus dados."
+    "explicacao": "**Certo**. A criptografia embaralha os dados (transforma em texto cifrado) para que pessoas não autorizadas não consigam lê-los, garantindo assim a **Confidencialidade**. Para integridade, usamos Hashing. Para autenticação e não repúdio, usamos Assinaturas Digitais."
   },
   {
-    "id": "petro_cloud_005",
-    "categoria": "Petrobras",
+    "id": "cyber_nse2_004",
+    "categoria": "Cibersegurança",
     "tipo": "multipla",
-    "pergunta": "Em um cenário de nuvem, o monitoramento do uso de CPU, largura de banda e armazenamento, permitindo que tanto o provedor quanto o consumidor tenham visibilidade do consumo para fins de faturamento, refere-se a qual característica essencial?",
+    "pergunta": "Historicamente e tecnicamente, quais são três tipos clássicos de métodos de cifragem utilizados na criptografia?",
     "opcoes": [
-      "Autoatendimento sob demanda.",
-      "Acesso amplo à rede.",
-      "Agrupamento de recursos.",
-      "Elasticidade rápida.",
-      "Serviço mensurado."
+      "Transposicional, Chave de uso único (One-time pad) e Substituição.",
+      "Hashing, Salting e Message Authentication Code (MAC).",
+      "DSA, RSA e AES.",
+      "Cifra de Fluxo, Cifra de Bloco e Criptografia Quântica."
     ],
-    "resposta_correta": "Serviço mensurado.",
-    "explicacao": "O Serviço Mensurado (Measured Service) é a característica que garante a medição, controle e reporte do uso de recursos, sendo vital para o modelo 'pay-per-use' (pagamento por uso)."
+    "resposta_correta": "Transposicional, Chave de uso único (One-time pad) e Substituição.",
+    "explicacao": "Os métodos clássicos de cifragem envolvem a **Substituição** (trocar uma letra por outra, como a Cifra de César), a **Transposição** (embaralhar a ordem dos caracteres) e a **Chave de uso único** (One-time pad, um método teoricamente inquebrável se a chave for aleatória e usada apenas uma vez). Hashing e MAC não são métodos de cifragem."
   },
   {
-    "id": "petro_cloud_006",
-    "categoria": "Petrobras",
-    "tipo": "certo_errado",
-    "pergunta": "O 'Acesso amplo à rede' define que os serviços em nuvem devem estar disponíveis por meio de protocolos padrão, permitindo o acesso via diversos dispositivos, como notebooks, tablets e smartphones.",
-    "opcoes": [
-      "Certo",
-      "Errado"
-    ],
-    "resposta_correta": "Certo",
-    "explicacao": "Essa característica garante que a nuvem não seja dependente de uma plataforma específica, devendo ser acessível por uma rede de dispositivos heterogêneos."
-  },
-  {
-    "id": "petro_cloud_007",
-    "categoria": "Petrobras",
+    "id": "cyber_nse2_005",
+    "categoria": "Cibersegurança",
     "tipo": "multipla",
-    "pergunta": "Relacione os conceitos de escalabilidade às suas descrições corretas:\n1. Escalabilidade Horizontal\n2. Escalabilidade Vertical\n\n( ) Adição de novos nós ao sistema para dividir a carga.\n( ) Aumento do hardware (CPU/RAM) em um nó existente.",
+    "pergunta": "Para proteger dados em tempo real (como chamadas de vídeo ou streaming), os computadores frequentemente utilizam um tipo de cifragem que criptografa os dados bit a bit de forma contínua. Como é chamado esse tipo de cifragem?",
     "opcoes": [
-      "1 - 2",
-      "2 - 1",
-      "1 - 1",
-      "2 - 2"
+      "Cifra de Bloco (Block Cipher).",
+      "Hashing Dinâmico.",
+      "Cifra de Fluxo (Stream Cipher).",
+      "Gêiser Criptográfico."
     ],
-    "resposta_correta": "1 - 2",
-    "explicacao": "A escalabilidade horizontal (Scale-out) foca em aumentar o número de componentes (mais servidores), enquanto a vertical (Scale-up) foca no aumento da potência da máquina atual."
+    "resposta_correta": "Cifra de Fluxo (Stream Cipher).",
+    "explicacao": "A **Cifra de Fluxo (Stream)** processa a informação de forma contínua (bit a bit ou byte a byte), sendo extremamente rápida e ideal para comunicações em tempo real. Já a Cifra de Bloco divide os dados em pedaços (blocos de 64, 128 bits) antes de criptografá-los."
   },
   {
-    "id": "petro_cloud_008",
-    "categoria": "Petrobras",
-    "tipo": "certo_errado",
-    "pergunta": "A computação em nuvem é intrinsecamente insegura, sendo este um dos motivos pelos quais órgãos públicos e grandes empresas de energia não deveriam migrar dados para provedores externos.",
-    "opcoes": [
-      "Certo",
-      "Errado"
-    ],
-    "resposta_correta": "Errado",
-    "explicacao": "Esta é uma pegadinha clássica. A nuvem não é insegura por natureza. O desafio reside na governança, nos termos contratuais e no controle de acesso. Grandes empresas (como Petrobras) utilizam nuvens com alto nível de segurança, muitas vezes superior ao que seria possível em ambientes on-premises."
-  },
-  {
-    "id": "petro_cloud_009",
-    "categoria": "Petrobras",
+    "id": "cyber_nse2_006",
+    "categoria": "Cibersegurança",
     "tipo": "multipla",
-    "pergunta": "Assinale a alternativa que NÃO é uma das cinco características essenciais da nuvem segundo o NIST SP 800-145:",
+    "pergunta": "Em uma Infraestrutura de Chaves Públicas (PKI), quais são as duas entidades fundamentais e necessárias para a emissão e validação de identidades?",
     "opcoes": [
-      "Serviço mensurado.",
-      "Agrupamento de recursos.",
-      "Uso exclusivo de criptografia quântica.",
-      "Elasticidade rápida.",
-      "Acesso amplo à rede."
+      "Firewall NGFW e Controlador de Domínio.",
+      "CA (Autoridade de Certificação) e RA (Autoridade de Registro).",
+      "Microsoft CAPI e Servidor RADIUS.",
+      "FortiAnalyzer e CA Raiz."
     ],
-    "resposta_correta": "Uso exclusivo de criptografia quântica.",
-    "explicacao": "As 5 características são: Autoatendimento sob demanda, Acesso amplo à rede, Agrupamento de recursos, Elasticidade rápida e Serviço mensurado. Criptografia quântica não é critério de definição de nuvem."
+    "resposta_correta": "CA (Autoridade de Certificação) e RA (Autoridade de Registro).",
+    "explicacao": "A **CA (Certificate Authority)** é a entidade central que emite, revoga e gerencia os certificados digitais. A **RA (Registration Authority)** é a entidade responsável por verificar a identidade do usuário no mundo físico ou lógico antes de autorizar a CA a emitir o certificado."
   },
   {
-    "id": "petro_cloud_010",
-    "categoria": "Petrobras",
-    "tipo": "certo_errado",
-    "pergunta": "O modelo 'On-premises' é o oposto da computação em nuvem, pois pressupõe que a infraestrutura esteja dentro do domínio da organização, sob sua própria gestão e operação física.",
-    "opcoes": [
-      "Certo",
-      "Errado"
-    ],
-    "resposta_correta": "Certo",
-    "explicacao": "Exatamente. On-premises significa infraestrutura própria, interna (no 'local'). A nuvem transfere a gestão da infraestrutura física para o provedor externo."
-  },
-  {
-    "id": "quadrix_sedes_001",
-    "categoria": "SEDES",
-    "tipo": "certo_errado",
-    "pergunta": "Durante o atendimento de um adulto em parada cardiorrespiratória, a avaliação da respiração e do pulso carotídeo deve ser realizada de forma simultânea, por um período máximo de 10 segundos.",
-    "opcoes": ["Certo", "Errado"],
-    "resposta_correta": "Certo",
-    "explicacao": "Correto. O protocolo de RCP preconiza a avaliação simultânea de pulso central e respiração por um tempo máximo de 10 segundos para evitar atrasos no início das compressões torácicas."
-  },
-  {
-    "id": "quadrix_sedes_002",
-    "categoria": "SEDES",
+    "id": "cyber_nse2_007",
+    "categoria": "Cibersegurança",
     "tipo": "multipla",
-    "pergunta": "Sobre os ritmos de parada cardiorrespiratória, assinale a alternativa que apresenta apenas ritmos considerados 'chocáveis' pela equipe de suporte básico/avançado:",
+    "pergunta": "Assinale a alternativa que contém EXCLUSIVAMENTE algoritmos de criptografia simétrica (aqueles que usam a mesma chave para criptografar e descriptografar):",
     "opcoes": [
-      "Assistolia e Atividade Elétrica Sem Pulso (AESP).",
-      "Fibrilação Ventricular (FV) e Taquicardia Ventricular Sem Pulso (TVSP).",
-      "Fibrilação Ventricular (FV) e Assistolia.",
-      "Taquicardia Ventricular Sem Pulso (TVSP) e AESP."
+      "DSA e RSA.",
+      "RSA e AES.",
+      "IDEA e AES.",
+      "ECC (Curvas Elípticas) e IDEA."
     ],
-    "resposta_correta": "Fibrilação Ventricular (FV) e Taquicardia Ventricular Sem Pulso (TVSP).",
-    "explicacao": "Apenas a FV e a TVSP são ritmos chocáveis, onde a desfibrilação é indicada. Assistolia e AESP são ritmos não chocáveis, cujo tratamento baseia-se em RCP e medicações, sem o uso do choque."
+    "resposta_correta": "IDEA e AES.",
+    "explicacao": "**IDEA** e **AES** são algoritmos simétricos (rápidos, usam uma chave secreta única). Já o RSA, o DSA e as Curvas Elípticas (ECC) são algoritmos assimétricos (usam um par de chaves: pública e privada)."
   },
   {
-    "id": "quadrix_sedes_003",
-    "categoria": "SEDES",
+    "id": "cyber_nse2_008",
+    "categoria": "Cibersegurança",
     "tipo": "certo_errado",
-    "pergunta": "A respiração agônica, também conhecida como 'gasping', deve ser considerada uma respiração efetiva, dispensando a necessidade de iniciar manobras de RCP.",
-    "opcoes": ["Certo", "Errado"],
-    "resposta_correta": "Errado",
-    "explicacao": "O 'gasping' (respiração agônica) NÃO é uma respiração efetiva. Ele deve ser interpretado como um sinal de PCR, e o socorrista deve proceder imediatamente com a RCP."
-  },
-  {
-    "id": "quadrix_sedes_004",
-    "categoria": "SEDES",
-    "tipo": "multipla",
-    "pergunta": "Em um atendimento de RCP em adultos, com um ou dois socorristas, a relação compressão-ventilação correta é:",
-    "opcoes": [
-      "15 compressões para 2 ventilações.",
-      "30 compressões para 2 ventilações.",
-      "100 compressões para 10 ventilações.",
-      "5 compressões para 1 ventilação."
-    ],
-    "resposta_correta": "30 compressões para 2 ventilações.",
-    "explicacao": "Para adultos, a relação C:V é sempre 30:2, independentemente do número de socorristas. A relação 15:2 é exclusiva para crianças e lactentes quando há 2 ou mais socorristas."
-  },
-  {
-    "id": "quadrix_sedes_005",
-    "categoria": "SEDES",
-    "tipo": "certo_errado",
-    "pergunta": "A cânula orofaríngea (cânula de Guedel) pode ser inserida em qualquer vítima de emergência, inclusive naquelas que apresentam reflexo de tosse ou vômito presente.",
-    "opcoes": ["Certo", "Errado"],
-    "resposta_correta": "Errado",
-    "explicacao": "A cânula de Guedel é contraindicada em pacientes conscientes ou que apresentem reflexo de vômito, pois pode desencadear náuseas, vômitos e aspiração pulmonar."
-  },
-  {
-    "id": "quadrix_sedes_006",
-    "categoria": "SEDES",
-    "tipo": "multipla",
-    "pergunta": "Assinale a alternativa que indica o ritmo de compressões torácicas por minuto preconizado para RCP de alta qualidade:",
-    "opcoes": [
-      "80 a 100 compressões/min.",
-      "100 a 120 compressões/min.",
-      "120 a 140 compressões/min.",
-      "Pelo menos 150 compressões/min."
-    ],
-    "resposta_correta": "100 a 120 compressões/min.",
-    "explicacao": "A RCP de qualidade exige uma frequência entre 100 e 120 compressões por minuto. Abaixo ou acima disso, a eficácia na perfusão sanguínea é reduzida."
-  },
-  {
-    "id": "quadrix_sedes_007",
-    "categoria": "SEDES",
-    "tipo": "certo_errado",
-    "pergunta": "No atendimento a um lactente (abaixo de 1 ano) que está em parada respiratória, mas mantém pulso presente, a frequência de ventilação de resgate deve ser de 1 ventilação a cada 6 segundos.",
-    "opcoes": ["Certo", "Errado"],
-    "resposta_correta": "Errado",
-    "explicacao": "Para lactentes e crianças, com pulso presente (parada respiratória), a ventilação de resgate é mais rápida: 1 ventilação a cada 2 a 3 segundos (20-30/min). A ventilação a cada 6 segundos (10/min) é destinada a adultos."
-  },
-  {
-    "id": "quadrix_sedes_008",
-    "categoria": "SEDES",
-    "tipo": "multipla",
-    "pergunta": "Em relação à profundidade das compressões torácicas para um paciente adulto, qual é o parâmetro correto segundo as diretrizes de RCP?",
-    "opcoes": [
-      "Pelo menos 3 cm e no máximo 4 cm.",
-      "Pelo menos 5 cm e no máximo 6 cm.",
-      "Exatamente 7 cm.",
-      "Cerca de 2 a 3 cm."
-    ],
-    "resposta_correta": "Pelo menos 5 cm e no máximo 6 cm.",
-    "explicacao": "A profundidade correta para adultos deve ser de pelo menos 5 cm (2 polegadas), não excedendo 6 cm (2,4 polegadas), para evitar lesões estruturais no tórax."
-  },
-  {
-    "id": "quadrix_sedes_009",
-    "categoria": "SEDES",
-    "tipo": "certo_errado",
-    "pergunta": "Sinais óbvios de óbito, como rigidez cadavérica e decomposição corporal, dispensam a tentativa de reanimação cardiopulmonar.",
-    "opcoes": ["Certo", "Errado"],
-    "resposta_correta": "Certo",
-    "explicacao": "Sinais claros de morte biológica (rigidez, livores, decomposição) são contraindicações formais para o início de manobras de RCP."
-  },
-  {
-    "id": "quadrix_sedes_010",
-    "categoria": "SEDES",
-    "tipo": "multipla",
-    "pergunta": "Relacione os itens abaixo sobre a sequência e parâmetros de atendimento em SEDEs:\n(1) Adulto\n(2) Criança/Lactente com 2 socorristas\n\n( ) Relação C:V de 15:2\n( ) Relação C:V de 30:2",
-    "opcoes": [
-      "(1) - (2)",
-      "(2) - (1)",
-      "(1) - (1)",
-      "(2) - (2)"
-    ],
-    "resposta_correta": "(2) - (1)",
-    "explicacao": "Crianças e lactentes atendidos por 2 socorristas utilizam a relação 15:2. Adultos, independentemente do número de socorristas, seguem a relação 30:2."
-  }
-  {
-    "id": "eng_001",
-    "categoria": "Inglês",
-    "tipo": "multipla",
-    "pergunta": "Qual é a principal diferença gramatical e de uso entre os modais 'Can' e 'May' ao solicitar permissão?",
-    "opcoes": [
-      "'Can' é usado apenas para o passado, enquanto 'May' é usado para o presente.",
-      "'Can' exige a preposição 'to' após o verbo, enquanto 'May' não exige.",
-      "'Can' é mais informal e foca em habilidade ou pedidos simples, enquanto 'May' é mais formal e polido, focando na permissão em si.",
-      "Ambos são idênticos em nível de formalidade, mas 'May' é usado apenas no inglês britânico."
-    ],
-    "resposta_correta": "'Can' é mais informal e foca em habilidade ou pedidos simples, enquanto 'May' é mais formal e polido, focando na permissão em si.",
-    "explicacao": "Gramática e Contexto: Verbos modais em inglês nunca são seguidos por 'to' (exceção para 'ought to'). 'Can' (poder/conseguir) é amplamente usado no dia a dia para capacidade e pedidos informais ('Can you help me?'). 'May' (poder) carrega um tom muito mais educado e cerimonial ('May I come in?')."
-  },
-  {
-    "id": "eng_002",
-    "categoria": "Inglês",
-    "tipo": "certo_errado",
-    "pergunta": "A frase 'She may cook delicious dishes' significa que ela tem a habilidade técnica (ela sabe) cozinhar pratos deliciosos.",
+    "pergunta": "Dentro de uma hierarquia PKI, a fonte definitiva de confiança que sustenta toda a árvore de certificados é a chave pública da Autoridade de Registro (RA).",
     "opcoes": [
       "Certo",
       "Errado"
     ],
     "resposta_correta": "Errado",
-    "explicacao": "Errado. Para expressar HABILIDADE (saber fazer algo), usamos 'can' ('She can cook'). O uso de 'may' ('She may cook') expressa PROBABILIDADE ou PERMISSÃO, significando 'Talvez ela cozinhe' ou 'Ela tem permissão para cozinhar'. Tradução: Ela (she) pode/talvez (may) cozinhar (cook) pratos (dishes) deliciosos (delicious)."
+    "explicacao": "**Errado.** A fonte definitiva de confiança em uma PKI é a **chave privada da CA Raiz (Root CA)**. É ela quem assina o próprio certificado (autoassinado) e os certificados das CAs intermediárias. Se a chave privada da CA Raiz for comprometida, toda a infraestrutura PKI deixa de ser confiável."
   },
   {
-    "id": "eng_003",
-    "categoria": "Inglês",
+    "id": "cyber_nse2_009",
+    "categoria": "Cibersegurança",
     "tipo": "multipla",
-    "pergunta": "Em um contexto de prova de concurso (nível formal), preencha a lacuna corretamente: '_______ I see your passport, sir?'",
+    "pergunta": "Em sistemas modernos (como o TLS/SSL), utiliza-se a 'criptografia híbrida'. Nesse processo, a criptografia assimétrica é usada primeiro para enviar com segurança a chave simétrica (chave de sessão) pela rede. Qual chave é utilizada para criptografar essa chave de sessão?",
     "opcoes": [
-      "Can",
-      "May",
-      "Am",
-      "Do"
+      "A chave privada do remetente.",
+      "A chave privada do destinatário.",
+      "A chave pública do remetente.",
+      "A chave pública do destinatário."
     ],
-    "resposta_correta": "May",
-    "explicacao": "Contexto: A presença da palavra 'sir' (senhor) indica um ambiente formal (ex: imigração). Para pedir permissão de forma educada e oficial, usa-se 'May'. 'Can' seria muito informal. Tradução: Posso (May I) ver (see) seu (your) passaporte (passport), senhor (sir)?"
+    "resposta_correta": "A chave pública do destinatário.",
+    "explicacao": "Para garantir que APENAS o destinatário consiga ler a chave de sessão, o remetente deve criptografá-la usando a **chave pública do destinatário**. Assim, quando a mensagem chegar, o destinatário usará sua própria **chave privada** (que só ele possui) para descriptografar e revelar a chave simétrica de sessão."
   },
   {
-    "id": "eng_004",
-    "categoria": "Inglês",
-    "tipo": "traducao_escrita",
-    "pergunta": "Traduza a seguinte frase para o inglês: 'Crianças não devem correr durante eventos.' (Utilize o modal formal que expressa proibição/dever, conforme o material).",
-    "opcoes": [],
-    "resposta_correta": "Children may not run during events.",
-    "explicacao": "Gramática: O modal 'may not' é usado para ditar regras formais ou proibições. Tradução das palavras: Crianças (Children) não devem/não têm permissão (may not) correr (run) durante (during) eventos (events)."
+    "id": "cyber_nse2_010",
+    "categoria": "Cibersegurança",
+    "tipo": "multipla",
+    "pergunta": "A implementação de Assinaturas Digitais em um documento eletrônico garante o atendimento direto a quais requisitos fundamentais da segurança da informação?",
+    "opcoes": [
+      "Confidencialidade e Disponibilidade.",
+      "Autorização e Criptografia Híbrida.",
+      "Autenticação e Integridade de dados.",
+      "Confidencialidade e Autorização."
+    ],
+    "resposta_correta": "Autenticação e Integridade de dados.",
+    "explicacao": "A Assinatura Digital utiliza Hashing (garantindo a **Integridade** de que o documento não foi alterado) e a chave privada do remetente para assinar o hash (garantindo a **Autenticação** e o Não Repúdio, pois prova quem foi o autor). A assinatura digital NÃO criptografa o conteúdo do documento, portanto, não fornece confidencialidade."
   },
   {
-    "id": "eng_005",
-    "categoria": "Inglês",
+    "id": "cyber_nse2_011",
+    "categoria": "Cibersegurança",
     "tipo": "certo_errado",
-    "pergunta": "O verbo modal 'Could' pode ser utilizado tanto para fazer pedidos de forma muito educada no presente, quanto para expressar uma capacidade que alguém possuía no passado.",
-    "opcoes": [
-      "Certo",
-      "Errado"
-    ],
-    "resposta_correta": "Certo",
-    "explicacao": "Certo. Gramática: 'Could' é o passado de 'Can' (ex: 'I could run fast when I was young' - Eu conseguia correr rápido quando era jovem). No entanto, ele também atua como um modal de polidez extrema no presente (ex: 'Could you help me?' - Você poderia me ajudar?)."
-  },
-  {
-    "id": "eng_006",
-    "categoria": "Inglês",
-    "tipo": "multipla",
-    "pergunta": "Qual das alternativas abaixo expressa uma probabilidade incerta (talvez aconteça) de forma adequada?",
-    "opcoes": [
-      "It can rains tomorrow.",
-      "It may rain tomorrow.",
-      "It can to rain tomorrow.",
-      "It may to rain tomorrow."
-    ],
-    "resposta_correta": "It may rain tomorrow.",
-    "explicacao": "Gramática: Modais não aceitam 's' na terceira pessoa (eliminando a primeira opção) e não são seguidos de 'to' (eliminando a terceira e a quarta opções). Além disso, 'may' é o modal perfeito para expressar probabilidade (talvez). Tradução: Pode ser que (may) chova (rain) amanhã (tomorrow)."
-  },
-  {
-    "id": "eng_007",
-    "categoria": "Inglês",
-    "tipo": "multipla",
-    "pergunta": "Relacione as frases (1, 2, 3) aos seus respectivos usos gramaticais (A, B, C) e assinale a sequência correta.\n1. A bird can fly.\n2. May I leave the table?\n3. Can you pass me the salt?\n\nA. Pedido simples/informal.\nB. Habilidade física.\nC. Permissão formal.",
-    "opcoes": [
-      "1-B, 2-C, 3-A",
-      "1-C, 2-A, 3-B",
-      "1-B, 2-A, 3-C",
-      "1-A, 2-C, 3-B"
-    ],
-    "resposta_correta": "1-B, 2-C, 3-A",
-    "explicacao": "1 (A bird can fly / Um pássaro sabe voar) = Habilidade física (B). 2 (May I leave the table? / Posso me retirar da mesa?) = Permissão formal exigida em ambientes restritos (C). 3 (Can you pass me the salt? / Pode me passar o sal?) = Pedido informal diário (A)."
-  },
-  {
-    "id": "eng_008",
-    "categoria": "Inglês",
-    "tipo": "traducao_escrita",
-    "pergunta": "Traduza para o português: 'Can you grab my coat, please?'",
-    "opcoes": [],
-    "resposta_correta": "Você pode pegar meu casaco, por favor?",
-    "explicacao": "Contexto: Um pedido simples e cotidiano usando 'Can'. Tradução detalhada: Can you (Você pode) grab (pegar/agarrar) my (meu) coat (casaco), please (por favor)?"
-  },
-  {
-    "id": "eng_009",
-    "categoria": "Inglês",
-    "tipo": "multipla",
-    "pergunta": "Um amigo diz: 'Are you up for that?'. Se você deseja recusar de forma educada, qual resposta é a correta?",
-    "opcoes": [
-      "I'm in!",
-      "Count me in!",
-      "I'm alright, thanks.",
-      "I'm down with that!"
-    ],
-    "resposta_correta": "I'm alright, thanks.",
-    "explicacao": "Expressões: 'Are you up for that?' significa 'Você topa?'. Para recusar educadamente, dizemos 'I'm alright, thanks' (Eu estou bem, obrigado) ou 'I'm good'. Todas as outras opções ('I'm in', 'Count me in', 'I'm down') significam aceitar (Tô dentro / Eu topo)."
-  },
-  {
-    "id": "eng_010",
-    "categoria": "Inglês",
-    "tipo": "certo_errado",
-    "pergunta": "Na língua inglesa falada, responder a um convite com 'No, thank you, I’m good' é considerado rude e agressivo.",
+    "pergunta": "Na criptografia, as colisões de hash ocorrem quando o exato mesmo valor de entrada, ao ser processado duas vezes, produz dois valores de saída (digests) diferentes.",
     "opcoes": [
       "Certo",
       "Errado"
     ],
     "resposta_correta": "Errado",
-    "explicacao": "Errado. 'I'm good' (Estou bem/Estou satisfeito) é uma das formas casuais mais comuns, educadas e naturais de se recusar uma oferta ou convite em inglês."
+    "explicacao": "**Errado!** Essa é uma pegadinha de conceitos lógicos. Funções de hash são determinísticas: a mesma entrada sempre produzirá a mesma saída. Uma **colisão** ocorre exatamente no cenário oposto: quando **duas entradas DIFERENTES** resultam no **MESMO valor de saída** (digest)."
   },
   {
-    "id": "eng_011",
-    "categoria": "Inglês",
+    "id": "cyber_nse2_012",
+    "categoria": "Cibersegurança",
     "tipo": "multipla",
-    "pergunta": "Relacione as gírias/expressões de convite (1, 2) aos seus significados em português (A, B).\n1. Wanna join us?\n2. Count me in!\n\nA. Tô dentro!\nB. Quer vir com a gente?",
+    "pergunta": "Quais são as duas principais afirmações corretas que diferenciam a operação de uma Cifra de Fluxo (Stream Cipher) de uma Cifra de Bloco (Block Cipher)?",
     "opcoes": [
-      "1-B, 2-A",
-      "1-A, 2-B"
+      "A cifra de fluxo usa chaves assimétricas, enquanto a cifra de bloco usa algoritmos de hash irreversíveis.",
+      "A cifra de fluxo é sempre mais forte e invulnerável; a cifra de bloco protege nativamente contra ataques de repetição.",
+      "A cifra de fluxo é geralmente mais rápida; a cifra de bloco divide os dados em blocos de tamanho fixo antes de criptografá-los.",
+      "A cifra de bloco processa a informação em tempo real bit a bit; a cifra de fluxo agrupa os dados em HDDs."
     ],
-    "resposta_correta": "1-B, 2-A",
-    "explicacao": "1. 'Wanna join us?' (Quer se juntar a nós? / Quer vir com a gente?) é um convite. 2. 'Count me in!' (Conte comigo dentro / Tô dentro!) é uma forte afirmação de aceite."
+    "resposta_correta": "A cifra de fluxo é geralmente mais rápida; a cifra de bloco divide os dados em blocos de tamanho fixo antes de criptografá-los.",
+    "explicacao": "Cifras de **Fluxo** criptografam bit a bit, consumindo menos memória e operando de forma muito rápida. Cifras de **Bloco** (como o AES) seccionam a mensagem em blocos (ex: 128 bits) e aplicam a chave matemática bloco por bloco. Nenhuma é 'sempre mais forte' que a outra; a força depende do algoritmo e do tamanho da chave."
   },
   {
-    "id": "eng_012",
-    "categoria": "Inglês",
-    "tipo": "traducao_escrita",
-    "pergunta": "Traduza a frase para o inglês usando a estrutura do material para recusar um convite: 'Infelizmente eu não posso.'",
-    "opcoes": [],
-    "resposta_correta": "I'm afraid I can't.",
-    "explicacao": "Gramática/Contexto: A expressão 'I am afraid' não significa 'ter medo' neste contexto, mas sim 'receio que' ou 'infelizmente'. É a forma mais educada de dar uma negativa. Tradução: I'm afraid (Infelizmente/Receio que) I can't (eu não posso)."
-  },
-  {
-    "id": "eng_013",
-    "categoria": "Inglês",
+    "id": "cyber_nse2_013",
+    "categoria": "Cibersegurança",
     "tipo": "multipla",
-    "pergunta": "Na cultura pop e no inglês falado rapidamente, é muito comum o uso de 'reduções'. O que significa a contração 'Imma'?",
+    "pergunta": "A arquitetura do 'Fortinet Security Fabric' é definida por três atributos fundamentais que guiam a integração de seus produtos. Quais são eles?",
     "opcoes": [
-      "I am not.",
-      "I might.",
-      "I am going to.",
-      "I have got to."
+      "Fechado (Closed), Focado no Perímetro (Perimeter-focused) e Manual.",
+      "Amplo (Broad), Integrado (Integrated) e Automatizado (Automated).",
+      "Descentralizado (Decentralized), Baseado em Assinaturas (Signature-based) e Híbrido.",
+      "On-premises, Orientado a Hardware e Modular."
     ],
-    "resposta_correta": "I am going to.",
-    "explicacao": "Reduções (Reductions): A língua falada aglutina sons. 'I am going to' vira 'I'm gonna', que muitas vezes sofre mais uma redução extrema virando 'Imma'. Exemplo: 'Imma tell you the truth' (Eu vou te falar a verdade)."
+    "resposta_correta": "Amplo (Broad), Integrado (Integrated) e Automatizado (Automated).",
+    "explicacao": "Esses são os três pilares da solução: **Amplo** (cobre toda a superfície de ataque, de IoT a nuvem), **Integrado** (os componentes se comunicam e compartilham contexto em uma solução unificada) e **Automatizado** (utiliza IA para responder a ameaças em tempo real sem depender de ação humana constante)."
   },
   {
-    "id": "eng_014",
-    "categoria": "Inglês",
-    "tipo": "certo_errado",
-    "pergunta": "A palavra reduzida 'Gotta' é a contração de 'Going to', usada para falar sobre planos futuros.",
-    "opcoes": [
-      "Certo",
-      "Errado"
-    ],
-    "resposta_correta": "Errado",
-    "explicacao": "Errado. 'Gotta' é a contração de 'got to' ou 'have got to', que significa 'ter que' (obrigação). A contração de 'going to' para o futuro é 'Gonna'."
-  },
-  {
-    "id": "eng_015",
-    "categoria": "Inglês",
+    "id": "cyber_nse2_014",
+    "categoria": "Cibersegurança",
     "tipo": "multipla",
-    "pergunta": "Relacione as reduções informais (1, 2, 3) às suas formas gramaticais corretas (A, B, C).\n1. Lemme\n2. Gimme\n3. Wanna\n\nA. Want to\nB. Let me\nC. Give me",
+    "pergunta": "Sob a ótica de defesa de endpoints corporativos, qual é a principal diferença técnica e operacional entre uma Plataforma de Proteção de Endpoint (EPP / Antivírus tradicional) e uma solução de Detecção e Resposta de Endpoint (EDR)?",
     "opcoes": [
-      "1-C, 2-B, 3-A",
-      "1-B, 2-C, 3-A",
-      "1-A, 2-C, 3-B",
-      "1-B, 2-A, 3-C"
+      "O EDR foca apenas em bloquear ameaças já conhecidas globalmente utilizando um banco de dados estático de assinaturas de vírus.",
+      "O antivírus tradicional (EPP) protege contra ataques de 'Dia Zero' de forma muito mais eficiente e inteligente que o EDR.",
+      "O EDR atua exclusivamente interceptando o tráfego da rede corporativa no roteador, não inspecionando processos internos no notebook do usuário.",
+      "O EDR monitora continuamente o comportamento do dispositivo, identificando atividades anômalas e avançadas que conseguem burlar as defesas baseadas em assinatura do EPP."
     ],
-    "resposta_correta": "1-B, 2-C, 3-A",
-    "explicacao": "1. Lemme = Let me (Deixe-me). 2. Gimme = Give me (Dê-me). 3. Wanna = Want to (Querer). Essas reduções são padrão na fala diária americana."
+    "resposta_correta": "O EDR monitora continuamente o comportamento do dispositivo, identificando atividades anômalas e avançadas que conseguem burlar as defesas baseadas em assinatura do EPP.",
+    "explicacao": "O **EPP (Antivírus)** atua na linha de frente como uma barreira preventiva, focada em arquivos e assinaturas conhecidas. O **EDR** atua como uma 'câmera de segurança', gravando e analisando o comportamento dos processos (Behavioral Analysis) para detectar Ransomwares e ameaças 'Zero-Day' (desconhecidas) que o antivírus deixou passar."
   },
   {
-    "id": "eng_016",
-    "categoria": "Inglês",
-    "tipo": "traducao_escrita",
-    "pergunta": "Traduza a frase com redução para o português: 'I gotta go to the bathroom.'",
-    "opcoes": [],
-    "resposta_correta": "Eu tenho que ir ao banheiro.",
-    "explicacao": "Vocabulário: 'Gotta' significa 'ter que'. Tradução: I (Eu) gotta (tenho que) go (ir) to the (para o/ao) bathroom (banheiro)."
-  },
-  {
-    "id": "eng_017",
-    "categoria": "Inglês",
+    "id": "cyber_nse2_015",
+    "categoria": "Cibersegurança",
     "tipo": "multipla",
-    "pergunta": "Assinale a alternativa que representa a nacionalidade correta para alguém nascido na 'Germany' (Alemanha).",
+    "pergunta": "Dentro do ecossistema de segurança cibernética, qual componente atua como o laboratório global de pesquisas, responsável por compilar dados globais, gerar Threat Intelligence (inteligência de ameaças) e enviar atualizações dinâmicas de segurança para os firewalls e endpoints?",
     "opcoes": [
-      "Germanian",
-      "Germanyish",
-      "German",
-      "Germish"
+      "FortiAnalyzer.",
+      "FortiManager.",
+      "Protocolo BGP (Border Gateway Protocol).",
+      "FortiGuard Labs."
     ],
-    "resposta_correta": "German",
-    "explicacao": "Vocabulário de Países: A regra de nacionalidades em inglês varia muito (não há sufixo único). Para Germany (Alemanha), o adjetivo/nacionalidade é German (Alemão/Alemã). Nunca escreva nacionalidades com letra minúscula em inglês."
-  },
-  {
-    "id": "eng_018",
-    "categoria": "Inglês",
-    "tipo": "certo_errado",
-    "pergunta": "Para dizer que alguém é da Turquia (Turkey), a nacionalidade correta em inglês é 'Turkian'.",
-    "opcoes": [
-      "Certo",
-      "Errado"
-    ],
-    "resposta_correta": "Errado",
-    "explicacao": "Errado. O adjetivo e a nacionalidade para Turkey (Turquia) é 'Turkish' (Turco/Turca). O sufixo '-ish' é comum em algumas nacionalidades, como Scottish (Escocês) e British (Britânico)."
-  },
-  {
-    "id": "eng_019",
-    "categoria": "Inglês",
-    "tipo": "multipla",
-    "pergunta": "Relacione os países (1, 2, 3) às suas respectivas nacionalidades em inglês (A, B, C).\n1. France\n2. Scotland\n3. The USA\n\nA. Scottish\nB. American\nC. French",
-    "opcoes": [
-      "1-C, 2-A, 3-B",
-      "1-A, 2-C, 3-B",
-      "1-C, 2-B, 3-A",
-      "1-B, 2-A, 3-C"
-    ],
-    "resposta_correta": "1-C, 2-A, 3-B",
-    "explicacao": "1. France (França) -> French (Francês). 2. Scotland (Escócia) -> Scottish (Escocês). 3. The USA (EUA) -> American (Americano)."
-  },
-  {
-    "id": "eng_020",
-    "categoria": "Inglês",
-    "tipo": "traducao_escrita",
-    "pergunta": "Traduza para o português: 'We’re having dinner at an Indian restaurant.'",
-    "opcoes": [],
-    "resposta_correta": "Nós vamos jantar em um restaurante indiano.",
-    "explicacao": "Gramática: O Present Continuous ('We are having') pode ser usado para expressar ações futuras planejadas. 'Have dinner' significa jantar. 'Indian' funciona como adjetivo para o substantivo 'restaurant'. Tradução: We're having dinner (Nós vamos jantar / Nós estamos jantando) at (em) an (um) Indian restaurant (restaurante indiano)."
-  },
-  {
-    "id": "eng_021",
-    "categoria": "Inglês",
-    "tipo": "multipla",
-    "pergunta": "No texto estudado sobre identidade, a expressão 'bridging divides' tem forte carga semântica. O que ela significa em um contexto social?",
-    "opcoes": [
-      "Construir pontes físicas entre dois países para facilitar a imigração.",
-      "Criar regras estritas para dividir as pessoas por suas nacionalidades.",
-      "Construir pontes metafóricas, unindo diferenças e superando divisões entre pessoas de culturas distintas.",
-      "Ignorar o preconceito e fingir que as divisões sociais não existem."
-    ],
-    "resposta_correta": "Construir pontes metafóricas, unindo diferenças e superando divisões entre pessoas de culturas distintas.",
-    "explicacao": "Vocabulário Crítico: 'Bridge' é ponte (substantivo) ou 'construir uma ponte/conectar' (verbo). 'Divides' são divisões. Logo, 'bridging divides' é a ação de aproximar grupos sociais, construir entendimento mútuo e combater a ignorância que gera o preconceito."
-  },
-  {
-    "id": "eng_022",
-    "categoria": "Inglês",
-    "tipo": "certo_errado",
-    "pergunta": "O verbo 'To assume', na frase 'They assumed I was South American', é um falso cognato e significa 'presumir' ou 'supor', e não 'assumir a culpa ou um cargo'.",
-    "opcoes": [
-      "Certo",
-      "Errado"
-    ],
-    "resposta_correta": "Certo",
-    "explicacao": "Certo. 'Assume' em inglês é um falso cognato (False Friend) clássico de concursos. Seu significado primário é deduzir ou presumir algo sem ter certeza absoluta. A frase significa: 'Eles presumiram que eu era sul-americano'."
-  },
-  {
-    "id": "eng_023",
-    "categoria": "Inglês",
-    "tipo": "multipla",
-    "pergunta": "Na frase 'My accent throws people off', o phrasal verb 'throw off' significa:",
-    "opcoes": [
-      "Agredir as pessoas fisicamente.",
-      "Despistar, confundir ou surpreender as pessoas de forma a fazê-las perder o raciocínio ou a suposição inicial.",
-      "Arremessar as pessoas para fora de um local.",
-      "Acalmar e confortar as pessoas."
-    ],
-    "resposta_correta": "Despistar, confundir ou surpreender as pessoas de forma a fazê-las perder o raciocínio ou a suposição inicial.",
-    "explicacao": "Vocabulário/Phrasal Verb: 'Throw off' é usado figurativamente quando um detalhe (como o sotaque) quebra a expectativa de alguém. A frase quer dizer que o sotaque da pessoa causa confusão mental sobre qual é a verdadeira origem dela."
-  },
-  {
-    "id": "eng_024",
-    "categoria": "Inglês",
-    "tipo": "multipla",
-    "pergunta": "Relacione o vocabulário de identidade e questões sociais (1, 2, 3) às suas traduções e conceitos (A, B, C).\n1. Prejudice\n2. Belonging\n3. Racism\n\nA. Sentimento de pertencer a um lugar ou grupo.\nB. Opinião prévia desfavorável sem base na razão.\nC. Discriminação baseada na raça.",
-    "opcoes": [
-      "1-C, 2-A, 3-B",
-      "1-B, 2-A, 3-C",
-      "1-A, 2-C, 3-B",
-      "1-B, 2-C, 3-A"
-    ],
-    "resposta_correta": "1-B, 2-A, 3-C",
-    "explicacao": "1. Prejudice = Preconceito (Pré-julgamento sem lógica - B). 2. Belonging = Pertencimento (A). 3. Racism = Racismo (C)."
-  },
-  {
-    "id": "eng_025",
-    "categoria": "Inglês",
-    "tipo": "traducao_escrita",
-    "pergunta": "Traduza para o inglês: 'O sentimento de pertencimento é importante.'",
-    "opcoes": [],
-    "resposta_correta": "The feeling of belonging is important.",
-    "explicacao": "Tradução das palavras: O (The) sentimento (feeling) de (of) pertencimento (belonging) é (is) importante (important)."
-  },
-  {
-    "id": "eng_026",
-    "categoria": "Inglês",
-    "tipo": "multipla",
-    "pergunta": "Como você diria de forma fluente e natural: 'Minha origem é europeia e indígena' em inglês, conforme o material?",
-    "opcoes": [
-      "My birth is Europe and Indian.",
-      "My background is European and indigenous.",
-      "My start is European and indigenous.",
-      "My country is Europe and India."
-    ],
-    "resposta_correta": "My background is European and indigenous.",
-    "explicacao": "Vocabulário: A palavra 'background' é a forma mais natural em inglês para se referir ao histórico familiar, cultural e étnico (origem) de uma pessoa. 'Indigenous' é o termo correto para povos originários/indígenas."
-  },
-  {
-    "id": "eng_027",
-    "categoria": "Inglês",
-    "tipo": "certo_errado",
-    "pergunta": "O termo 'Middle Eastern' é utilizado como um adjetivo para descrever alguém que é natural ou originário do Oriente Médio.",
-    "opcoes": [
-      "Certo",
-      "Errado"
-    ],
-    "resposta_correta": "Certo",
-    "explicacao": "Certo. Middle East é a região geográfica (Oriente Médio). Ao adicionar o sufixo '-ern' nas direções cardeais (East -> Eastern), formamos o adjetivo pátrio (ex: 'He is Middle Eastern' / Ele é do Oriente Médio)."
-  },
-  {
-    "id": "eng_028",
-    "categoria": "Inglês",
-    "tipo": "traducao_escrita",
-    "pergunta": "Traduza para o inglês usando a estrutura do material: 'É importante ter uma conversa aberta sobre preconceito.'",
-    "opcoes": [],
-    "resposta_correta": "It's important to have an open conversation about prejudice.",
-    "explicacao": "Gramática: Frases no inglês exigem um sujeito, por isso o 'It's' (It is) abre a oração. Tradução: É importante (It's important) ter (to have) uma (an) conversa aberta (open conversation) sobre (about) preconceito (prejudice)."
-  },
-  {
-    "id": "eng_029",
-    "categoria": "Inglês",
-    "tipo": "multipla",
-    "pergunta": "Você vai comprar uma jaqueta e precisa informar que ela tem que ficar bem justa (apertada) e feita de couro. Quais os adjetivos corretos?",
-    "opcoes": [
-      "Loose and cotton.",
-      "Baggy and silk.",
-      "Tight and leather.",
-      "Snug and polyester."
-    ],
-    "resposta_correta": "Tight and leather.",
-    "explicacao": "Vocabulário de Roupas: Tight = apertado/justo. Leather = couro. As outras opções: Loose (largo), Cotton (algodão), Baggy (muito folgado), Silk (seda), Snug (confortavelmente justo), Polyester (poliéster)."
-  },
-  {
-    "id": "eng_030",
-    "categoria": "Inglês",
-    "tipo": "certo_errado",
-    "pergunta": "A palavra 'Baggy' descreve uma peça de roupa que tem um caimento perfeito e ajustado à silhueta do corpo (como roupas de alfaiataria).",
-    "opcoes": [
-      "Certo",
-      "Errado"
-    ],
-    "resposta_correta": "Errado",
-    "explicacao": "Errado. O adjetivo 'Baggy' descreve roupas excessivamente largas, folgadas ou 'saco' (vem da palavra bag = saco/bolsa), muito comuns na moda streetwear."
-  },
-  {
-    "id": "eng_031",
-    "categoria": "Inglês",
-    "tipo": "multipla",
-    "pergunta": "Relacione os tecidos (1, 2, 3) às suas traduções em português (A, B, C).\n1. Wool\n2. Silk\n3. Linen\n\nA. Seda\nB. Linho\nC. Lã",
-    "opcoes": [
-      "1-C, 2-A, 3-B",
-      "1-A, 2-B, 3-C",
-      "1-B, 2-C, 3-A",
-      "1-C, 2-B, 3-A"
-    ],
-    "resposta_correta": "1-C, 2-A, 3-B",
-    "explicacao": "1. Wool = Lã. 2. Silk = Seda. 3. Linen = Linho. Dominar esses tecidos é essencial em vocabulário de moda."
-  },
-  {
-    "id": "eng_032",
-    "categoria": "Inglês",
-    "tipo": "traducao_escrita",
-    "pergunta": "Traduza a frase: 'I prefer loose jeans.'",
-    "opcoes": [],
-    "resposta_correta": "Eu prefiro jeans largos.",
-    "explicacao": "Tradução direta: I (Eu) prefer (prefiro) loose (largos/soltos) jeans (calças jeans)."
-  },
-  {
-    "id": "eng_033",
-    "categoria": "Inglês",
-    "tipo": "multipla",
-    "pergunta": "Como se diz que uma peça de roupa tem um padrão 'xadrez' em inglês?",
-    "opcoes": [
-      "Plain ou Solid.",
-      "Striped.",
-      "Checked ou Plaid.",
-      "Polka-dotted."
-    ],
-    "resposta_correta": "Checked ou Plaid.",
-    "explicacao": "Padrões (Patterns): Checked ou Plaid referem-se ao padrão xadrez (como nas camisas de flanela). Plain/Solid = Liso. Striped = Listrado. Polka-dotted = De bolinhas."
-  },
-  {
-    "id": "eng_034",
-    "categoria": "Inglês",
-    "tipo": "certo_errado",
-    "pergunta": "Uma camisa 'sleeveless' possui mangas compridas ideais para o inverno rigoroso.",
-    "opcoes": [
-      "Certo",
-      "Errado"
-    ],
-    "resposta_correta": "Errado",
-    "explicacao": "Errado. O sufixo '-less' em inglês significa 'sem'. 'Sleeve' significa manga. Portanto, 'sleeveless' significa sem mangas (regata)."
-  },
-  {
-    "id": "eng_035",
-    "categoria": "Inglês",
-    "tipo": "traducao_escrita",
-    "pergunta": "Traduza a frase: 'She's wearing a striped sweater.'",
-    "opcoes": [],
-    "resposta_correta": "Ela está usando um suéter listrado.",
-    "explicacao": "Gramática: 'She's wearing' (Present Continuous) é usado para o que a pessoa está vestindo agora. Adjetivos (striped) vêm antes do substantivo (sweater). Tradução: Ela está (She's) vestindo/usando (wearing) um (a) listrado (striped) suéter (sweater)."
-  },
-  {
-    "id": "eng_036",
-    "categoria": "Inglês",
-    "tipo": "multipla",
-    "pergunta": "Em concursos de alto nível, os pronomes possessivos (Possessive Pronouns) são alvo de pegadinhas frequentes. Qual das frases abaixo está gramaticalmente correta em inglês?",
-    "opcoes": [
-      "This is mine book.",
-      "This book is mine.",
-      "This is book mine.",
-      "Mine book is this."
-    ],
-    "resposta_correta": "This book is mine.",
-    "explicacao": "Regra de ouro: Os 'Possessive Pronouns' (como 'mine', 'yours', 'hers') NUNCA são seguidos por um substantivo. Eles servem justamente para substituir o substantivo. A forma 'This is mine book' está errada porque o correto seria usar o adjetivo possessivo: 'This is my book'."
-  },
-  {
-    "id": "eng_037",
-    "categoria": "Inglês",
-    "tipo": "certo_errado",
-    "pergunta": "Os pronomes possessivos 'his' (dele) e 'its' (dele/dela para coisas) possuem exatamente a mesma grafia que os seus adjetivos possessivos correspondentes, diferenciando-se apenas pela posição na frase.",
-    "opcoes": [
-      "Certo",
-      "Errado"
-    ],
-    "resposta_correta": "Certo",
-    "explicacao": "Certo. Gramática: Para 'He', o adjetivo e o pronome são 'his'. (Ex: 'His car is fast' / 'The fast car is his'). Para 'It', ambos são 'its'. A diferença é que o adjetivo antecede o objeto, e o pronome encerra a ideia substituindo o objeto."
-  },
-  {
-    "id": "eng_038",
-    "categoria": "Inglês",
-    "tipo": "multipla",
-    "pergunta": "Preencha a lacuna com o pronome possessivo correto: 'We worked hard on this project. The success is ________.'",
-    "opcoes": [
-      "our",
-      "ours",
-      "we",
-      "us"
-    ],
-    "resposta_correta": "ours",
-    "explicacao": "Como a palavra aparece no final da frase sem ser seguida por um substantivo, exige-se o Pronome Possessivo (Possessive Pronoun). O pronome possessivo referente a 'We' (nós) é 'ours'. ('Our' seria adjetivo: 'Our success')."
-  },
-  {
-    "id": "eng_039",
-    "categoria": "Inglês",
-    "tipo": "multipla",
-    "pergunta": "Relacione os adjetivos possessivos (1, 2, 3) aos seus respectivos pronomes possessivos (A, B, C).\n1. My\n2. Her\n3. Their\n\nA. Hers\nB. Theirs\nC. Mine",
-    "opcoes": [
-      "1-B, 2-A, 3-C",
-      "1-C, 2-A, 3-B",
-      "1-A, 2-C, 3-B",
-      "1-C, 2-B, 3-A"
-    ],
-    "resposta_correta": "1-C, 2-A, 3-B",
-    "explicacao": "A transformação padrão adiciona um 's' (her -> hers / their -> theirs). A exceção principal é 'my', que muda completamente para 'mine'."
-  },
-  {
-    "id": "eng_040",
-    "categoria": "Inglês",
-    "tipo": "traducao_escrita",
-    "pergunta": "Traduza a frase com pronome possessivo: 'That black jacket is mine.'",
-    "opcoes": [],
-    "resposta_correta": "Aquela jaqueta preta é minha.",
-    "explicacao": "Tradução palavra por palavra: That (Aquela) black (preta) jacket (jaqueta) is (é) mine (minha)."
-  },
-  {
-    "id": "eng_041",
-    "categoria": "Inglês",
-    "tipo": "multipla",
-    "pergunta": "Preencha as lacunas com as classes de palavras possessivas corretas: '____ car is red, but ____ is blue.' (Meu carro é vermelho, mas o dele é azul).",
-    "opcoes": [
-      "Mine / his",
-      "My / his",
-      "My / he",
-      "Mine / him"
-    ],
-    "resposta_correta": "My / his",
-    "explicacao": "Na primeira lacuna, precisamos de um Adjetivo Possessivo ('My') porque vem antes do substantivo 'car'. Na segunda lacuna, precisamos do Pronome Possessivo de 'ele' ('his') porque ele substitui a repetição da palavra 'carro'."
-  },
-  {
-    "id": "eng_042",
-    "categoria": "Inglês",
-    "tipo": "certo_errado",
-    "pergunta": "A frase 'Is this pen yours?' utiliza 'yours' como um adjetivo possessivo.",
-    "opcoes": [
-      "Certo",
-      "Errado"
-    ],
-    "resposta_correta": "Errado",
-    "explicacao": "Errado. Na frase, 'yours' atua como Pronome Possessivo (substituindo a necessidade de repetir 'your pen'). Se fosse um adjetivo possessivo, a frase seria 'Is this your pen?'. Tradução: Esta caneta é sua?"
-  },
-  {
-    "id": "eng_043",
-    "categoria": "Inglês",
-    "tipo": "traducao_escrita",
-    "pergunta": "Traduza a frase: 'Is this pen yours?'",
-    "opcoes": [],
-    "resposta_correta": "Esta caneta é sua?",
-    "explicacao": "Gramática: Em perguntas com o verbo 'to be', o verbo (Is) vai para o início da frase. 'Yours' é o pronome possessivo no final. Tradução: Is (É) this (esta) pen (caneta) yours (sua)?"
-  },
-  {
-    "id": "eng_044",
-    "categoria": "Inglês",
-    "tipo": "multipla",
-    "pergunta": "Interpretação (Nível Concurso): Analise o seguinte diálogo: 'May I use the computer?' / 'No, you may not. It is hers.' Qual é a conclusão correta sobre o diálogo?",
-    "opcoes": [
-      "O computador não funciona, e a segunda pessoa está sendo rude.",
-      "A primeira pessoa pediu permissão informal, e a segunda afirmou que o dono do computador é um homem.",
-      "A primeira pessoa pediu permissão formalmente, e o pedido foi negado formalmente porque o computador pertence a uma mulher.",
-      "O computador é público, mas está quebrado no momento."
-    ],
-    "resposta_correta": "A primeira pessoa pediu permissão formalmente, e o pedido foi negado formalmente porque o computador pertence a uma mulher.",
-    "explicacao": "Análise: O modal 'May' indica alto nível de formalidade tanto no pedido quanto na recusa ('May I' / 'you may not'). O pronome possessivo 'hers' confirma que o objeto pertence a 'ela' (uma mulher)."
-  },
-  {
-    "id": "eng_045",
-    "categoria": "Inglês",
-    "tipo": "certo_errado",
-    "pergunta": "Em inglês corporativo ou testes de proficiência, a frase 'How may I help you?' é perfeitamente substituível por 'How can I help you?' sem que haja nenhuma perda de polidez, sendo consideradas 100% idênticas em formalidade.",
-    "opcoes": [
-      "Certo",
-      "Errado"
-    ],
-    "resposta_correta": "Errado",
-    "explicacao": "Errado. Embora ambas sejam gramaticalmente corretas e tenham o mesmo propósito prático, elas NÃO são 100% idênticas em formalidade. 'May' carrega uma polidez cerimonial e profissionalismo extremo (típico de hotéis luxuosos e atendimentos refinados), enquanto 'Can' é mais casual e direto."
-  },
-  {
-    "id": "eng_046",
-    "categoria": "Inglês",
-    "tipo": "multipla",
-    "pergunta": "Qual das frases combina corretamente reduções de fala, possessivos e vocabulário de roupas?",
-    "opcoes": [
-      "Imma buy this cotton shirt because its mine.",
-      "I'm gonna buy this cotton shirt because it's mine.",
-      "I gotta buy this cotton shirt because it is my.",
-      "Lemme buy this cotton shirt because the shirt is hers."
-    ],
-    "resposta_correta": "Lemme buy this cotton shirt because the shirt is hers.",
-    "explicacao": "Análise das erradas: 1- 'its' sem apóstrofo é pronome, não contração de 'it is'. 2 - 'it's mine' não faz sentido lógico (vou comprar algo que já é meu). 3 - 'my' exige um substantivo depois. A resposta correta usa a redução 'Lemme' (Let me), descreve a roupa (cotton shirt) e finaliza com um pronome possessivo correto ('hers'). Tradução: Deixe-me comprar esta camisa de algodão porque a camisa é dela."
-  },
-  {
-    "id": "eng_047",
-    "categoria": "Inglês",
-    "tipo": "traducao_escrita",
-    "pergunta": "Traduza esta frase que une Modais, Vocabulário e Possessivos: 'She can wear her floral dress, but this leather jacket is mine.'",
-    "opcoes": [],
-    "resposta_correta": "Ela pode usar seu vestido floral, mas esta jaqueta de couro é minha.",
-    "explicacao": "Tradução gramatical: 'She can wear' (Ela pode usar - capacidade/permissão simples). 'her floral dress' (seu/dela vestido floral - adjetivo possessivo). 'but' (mas). 'this leather jacket' (esta jaqueta de couro - adjetivo antes do substantivo). 'is mine' (é minha - pronome possessivo substituindo jaqueta)."
-  },
-  {
-    "id": "eng_048",
-    "categoria": "Inglês",
-    "tipo": "certo_errado",
-    "pergunta": "A frase 'Its tail is long' contém o erro de falta de apóstrofo na palavra 'Its', visto que toda indicação de posse em inglês exige o uso do apóstrofo ('s).",
-    "opcoes": [
-      "Certo",
-      "Errado"
-    ],
-    "resposta_correta": "Errado",
-    "explicacao": "Errado. Pegadinha clássica gramatical: 'Its' sem apóstrofo é o adjetivo possessivo para 'It' (O rabo DELE/DELA). 'It's' (com apóstrofo) NUNCA indica posse; é sempre a contração do sujeito com o verbo 'It is' (Ele é/está) ou 'It has'."
-  },
-  {
-    "id": "eng_049",
-    "categoria": "Inglês",
-    "tipo": "multipla",
-    "pergunta": "Como você diria de maneira informal 'Eu vou te falar a verdade' aplicando as reduções clássicas da fala norte-americana?",
-    "opcoes": [
-      "I gonna tell you the truth.",
-      "Imma tell you the truth.",
-      "I wanna tell you the truth.",
-      "Lemme tell you the truth."
-    ],
-    "resposta_correta": "Imma tell you the truth.",
-    "explicacao": "A redução extrema de 'I am going to' (Eu vou) é 'Imma'. 'Wanna' significa 'Want to' (querer) e 'Lemme' é 'Let me' (deixe-me). 'I gonna' está gramaticalmente falho mesmo na gíria (precisaria do 'm -> I'm gonna)."
-  },
-  {
-    "id": "eng_050",
-    "categoria": "Inglês",
-    "tipo": "multipla",
-    "pergunta": "Marque a alternativa que descreve uma blusa formal (formal), lisa (plain) e de mangas compridas (long-sleeved).",
-    "opcoes": [
-      "A formal, plain, long-sleeved shirt.",
-      "A formal, printed, short-sleeved shirt.",
-      "A casual, plain, sleeveless shirt.",
-      "A casual, plaid, long-sleeved shirt."
-    ],
-    "resposta_correta": "A formal, plain, long-sleeved shirt.",
-    "explicacao": "Vocabulário: Formal = formal. Plain (ou solid) = lisa (sem estampa/cor única). Long-sleeved = mangas longas. Essa é a ordem correta de acumulação de adjetivos antes do substantivo 'shirt' (camisa)."
-  },
-  {
-    "id": "petro_cluster_001",
-    "categoria": "Petrobras",
-    "tipo": "multipla",
-    "pergunta": "Um engenheiro de infraestrutura precisa projetar um cluster para hospedar o sistema de transações financeiras (pagamentos via Pix) de uma instituição. O requisito primordial é que o sistema não pode parar, mesmo em caso de falha de hardware em um dos servidores. Qual tipo de cluster e quais componentes essenciais ele deve adotar?",
-    "opcoes": [
-      "HPC (High Performance Computing), utilizando InfiniBand e Open MPI.",
-      "Load Balancer, focando apenas em distribuir as requisições entre as CPUs para acelerar a resposta.",
-      "HA (High Availability), utilizando Storage compartilhado, IP virtual compartilhado e um mecanismo de Heartbeat para acionar o failover.",
-      "Cluster de Processamento Paralelo, utilizando escalabilidade vertical e GPUs."
-    ],
-    "resposta_correta": "HA (High Availability), utilizando Storage compartilhado, IP virtual compartilhado e um mecanismo de Heartbeat para acionar o failover.",
-    "explicacao": "Sistemas críticos que exigem 'não parar' (alta continuidade) demandam clusters de Alta Disponibilidade (HA). Os pilares técnicos do HA para garantir a continuidade transparente incluem o failover, orquestrado pelo monitoramento do Heartbeat, além da migração de IP virtual e acesso a um Storage compartilhado."
-  },
-  {
-    "id": "petro_cluster_002",
-    "categoria": "Petrobras",
-    "tipo": "certo_errado",
-    "pergunta": "No contexto de métricas de Alta Disponibilidade (HA), um acordo de nível de serviço (SLA) que garante 'quatro noves' (99,99%) de uptime permite uma indisponibilidade máxima teórica de aproximadamente 8 horas e 45 minutos por ano.",
-    "opcoes": [
-      "Certo",
-      "Errado"
-    ],
-    "resposta_correta": "Errado",
-    "explicacao": "Pegadinha clássica de métricas de HA. 'Três noves' (99,9%) equivalem a cerca de 8h45min de indisponibilidade por ano. 'Quatro noves' (99,99%) são muito mais rigorosos, equivalendo a no máximo 52 minutos de indisponibilidade por ano."
-  },
-  {
-    "id": "petro_cluster_003",
-    "categoria": "Petrobras",
-    "tipo": "multipla",
-    "pergunta": "Ao comparar a infraestrutura necessária para diferentes tipos de clusters, assinale a alternativa que descreve os componentes críticos indispensáveis para que um cluster HPC (High Performance Computing) não sofra com gargalos durante simulações massivas:",
-    "opcoes": [
-      "Rede de alta velocidade (como InfiniBand), Sistemas de arquivos paralelos (como Lustre ou GPFS) e Jobs Schedulers.",
-      "Balanceadores de carga externos, IP flutuante e bancos de dados isolados por nó.",
-      "Redundância total de hardware sem tolerância a falhas e mecanismos estritos de fallback automático.",
-      "Virtualização de desktops e armazenamento unificado em HDDs mecânicos conectados por Gigabit Ethernet padrão."
-    ],
-    "resposta_correta": "Rede de alta velocidade (como InfiniBand), Sistemas de arquivos paralelos (como Lustre ou GPFS) e Jobs Schedulers.",
-    "explicacao": "A essência do HPC é o processamento paralelo. Para que dezenas de nós calculem juntos sem criar filas de I/O, eles dependem vitalmente de redes de baixa latência (InfiniBand/10G+), sistemas de arquivos paralelos e orquestradores (Schedulers como Slurm ou PBS)."
-  },
-  {
-    "id": "petro_cluster_004",
-    "categoria": "Petrobras",
-    "tipo": "certo_errado",
-    "pergunta": "Tolerância a Falhas e Alta Disponibilidade (HA) são conceitos tecnicamente idênticos e sinônimos no design de data centers, ambos buscando um RTO (Recovery Time Objective) maior que 15 minutos utilizando componentes paralelos para evitar a parada total do sistema.",
-    "opcoes": [
-      "Certo",
-      "Errado"
-    ],
-    "resposta_correta": "Errado",
-    "explicacao": "Eles não são sinônimos. Alta Disponibilidade (HA) utiliza redundância com failover e aceita uma interrupção mínima (segundos a minutos) para transferir o serviço. Tolerância a Falhas (Fault Tolerance) é um nível extremo, muito mais caro, que busca zero interrupção, executando processos idênticos em hardwares redundantes simultaneamente."
-  },
-  {
-    "id": "petro_cluster_005",
-    "categoria": "Petrobras",
-    "tipo": "multipla",
-    "pergunta": "Questão de Relacionamento. Associe a característica central ao seu respectivo tipo de cluster:\n\n1. HPC (High Performance Computing)\n2. HA (High Availability)\n3. Load Balancer\n\n(  ) Distribui requisições web para otimizar o tempo de resposta e evitar sobrecarga.\n(  ) Seu principal mecanismo de proteção envolve o Heartbeat e a transferência de um IP compartilhado para um nó standby.\n(  ) Focado em paralelismo de tarefas e tempo de conclusão, muito utilizado em simulações climáticas.",
-    "opcoes": [
-      "3 - 2 - 1",
-      "1 - 3 - 2",
-      "2 - 1 - 3",
-      "3 - 1 - 2"
-    ],
-    "resposta_correta": "3 - 2 - 1",
-    "explicacao": "A ordem correta é: Load Balancer (3) foca em distribuição de requisições web. HA (2) foca em não parar, usando Heartbeat, Failover e IPs/Storage compartilhados. HPC (1) foca em performance de cálculo (paralelismo) para modelagens e simulações."
-  },
-  {
-    "id": "petro_cluster_006",
-    "categoria": "Petrobras",
-    "tipo": "certo_errado",
-    "pergunta": "Durante a operação de um cluster de Alta Disponibilidade, se ocorrer a falha do nó primário, o mecanismo de failover transfere os serviços para o nó standby. Ao normalizar e restaurar o nó primário, a devolução dos serviços a ele (conhecida como fallback) deve ocorrer obrigatoriamente e de imediato, independentemente das políticas configuradas.",
-    "opcoes": [
-      "Certo",
-      "Errado"
-    ],
-    "resposta_correta": "Errado",
-    "explicacao": "O fallback (ou failback) não é obrigatório nem sempre imediato. Ele é opcional e depende estritamente das políticas do gerenciador do cluster. Em muitos ambientes de missão crítica, a devolução do serviço ao nó original é feita manualmente em janelas de manutenção para evitar novas interrupções inesperadas."
-  },
-  {
-    "id": "petro_cluster_007",
-    "categoria": "Petrobras",
-    "tipo": "multipla",
-    "pergunta": "Para orquestrar os recursos e alocar as cargas de trabalho computacionais através de filas nos nós de um cluster HPC, os administradores utilizam softwares conhecidos como 'Jobs Schedulers'. Qual das alternativas contém exemplos reais desses orquestradores?",
-    "opcoes": [
-      "Pacemaker e Microsoft Failover Cluster.",
-      "Slurm, PBS Torque e HTCondor.",
-      "VMware vSphere HA e Proxmox.",
-      "Message Passing Interface (MPI) e OpenMP."
-    ],
-    "resposta_correta": "Slurm, PBS Torque e HTCondor.",
-    "explicacao": "Slurm, PBS/Torque e HTCondor são schedulers típicos de HPC. Pacemaker e VMware HA são orquestradores/gerenciadores para clusters de Alta Disponibilidade (HA). MPI e OpenMP são bibliotecas/middlewares de paralelismo."
-  },
-  {
-    "id": "petro_cluster_008",
-    "categoria": "Petrobras",
-    "tipo": "certo_errado",
-    "pergunta": "Uma das grandes restrições arquiteturais dos clusters HPC (High Performance Computing) é a sua limitação geográfica, sendo impossível implementar esse tipo de solução em um modelo multi-site devido à latência de rede externa.",
-    "opcoes": [
-      "Certo",
-      "Errado"
-    ],
-    "resposta_correta": "Errado",
-    "explicacao": "Afirmação falsa (e comum em concursos). Embora a baixa latência seja crítica para o HPC, a tecnologia não limita o cluster a uma única localização física num único rack. É possível implementar HPC multi-site utilizando links dedicados de altíssima velocidade (ex: links escuros de fibra ou InfiniBand estendido)."
-  },
-  {
-    "id": "petro_cluster_009",
-    "categoria": "Petrobras",
-    "tipo": "multipla",
-    "pergunta": "Na arquitetura de cluster HA focado em bancos de dados corporativos (ex: Oracle RAC, SQL Server Failover), para garantir que, caso o 'Nó Ativo' apresente falha de hardware, o 'Nó Standby' possa assumir a operação sem corrupção ou divergência de dados, é imperativo que a arquitetura contenha:",
-    "opcoes": [
-      "Múltiplos bancos de dados fragmentados, mantidos nos discos locais mecânicos de cada servidor individualmente.",
-      "Um Storage compartilhado (Shared Storage) conectado via SAN/NAS, permitindo que todos os nós acessem a mesma base de dados.",
-      "Um sistema de arquivos em paralelo como o Lustre otimizado para pequenos pacotes de rede sem uso de IP virtual.",
-      "Uma rede InfiniBand configurada exclusivamente para a criação de Jobs no Scheduler Slurm."
-    ],
-    "resposta_correta": "Um Storage compartilhado (Shared Storage) conectado via SAN/NAS, permitindo que todos os nós acessem a mesma base de dados.",
-    "explicacao": "O coração de um cluster HA de banco de dados clássico (Active/Passive) é o Storage compartilhado. Sem ele, se o disco estivesse atrelado apenas fisicamente ao nó que falhou, o nó Standby não teria acesso aos dados transacionais atualizados. A migração do IP Virtual também acompanha o serviço."
-  },
-  {
-    "id": "petro_cluster_010",
-    "categoria": "Petrobras",
-    "tipo": "certo_errado",
-    "pergunta": "Um cluster de servidores estruturado para balanceamento de carga (Load Balancer) tem como benefício colateral o fornecimento parcial de alta disponibilidade, pois se um dos nós de processamento web falhar, as requisições param de ser enviadas a ele e a aplicação como um todo não fica fora do ar para os usuários finais.",
-    "opcoes": [
-      "Certo",
-      "Errado"
-    ],
-    "resposta_correta": "Certo",
-    "explicacao": "Correto. Embora o objetivo primário do Load Balancer seja distribuir carga para melhorar o desempenho (Performance/Throughput), ele fornece inerentemente um grau de disponibilidade. Quando configurado corretamente, o balanceador detecta o nó 'morto' e para de enviar tráfego a ele, redirecionando as novas conexões aos nós saudáveis, mantendo o serviço operacional."
-  },
-  {
-    "id": "eng_soft_req_001",
-    "categoria": "Engenharia de software",
-    "tipo": "multipla",
-    "pergunta": "Durante a especificação de um novo sistema de e-commerce, a equipe de análise documentou a seguinte restrição: 'O sistema deve mascarar os números de CPF dos clientes nas telas de consulta para adequação à Lei Geral de Proteção de Dados (LGPD) e seguir o modelo de acessibilidade Magno do governo federal'. Como esse requisito não funcional é subclassificado?",
-    "opcoes": [
-      "Requisito de Produto.",
-      "Requisito Funcional de Interface.",
-      "Requisito Organizacional.",
-      "Requisito Externo."
-    ],
-    "resposta_correta": "Requisito Externo.",
-    "explicacao": "**Requisitos Externos** são aqueles derivados de obrigações regulatórias, leis, normas éticas ou exigências externas à organização. Exemplos clássicos em concursos incluem regras da LGPD, normas de acessibilidade impostas por governos e regras de tributação."
-  },
-  {
-    "id": "eng_soft_req_002",
-    "categoria": "Engenharia de software",
-    "tipo": "certo_errado",
-    "pergunta": "Os 'requisitos de usuário' devem ser escritos utilizando uma linguagem estritamente técnica, detalhando serviços, algoritmos e restrições de arquitetura, servindo como o manual definitivo para a equipe de programadores.",
-    "opcoes": [
-      "Certo",
-      "Errado"
-    ],
-    "resposta_correta": "Errado",
-    "explicacao": "Pegadinha clássica! Os **requisitos de usuário** expressam a visão do negócio e utilizam linguagem natural (não técnica) para descrever o que o usuário espera. O detalhamento técnico feito especificamente para os programadores constitui os **requisitos de sistema**."
-  },
-  {
-    "id": "eng_soft_req_003",
-    "categoria": "Engenharia de software",
-    "tipo": "multipla",
-    "pergunta": "Um analista júnior escreveu os seguintes requisitos não funcionais. Assinale a única alternativa que apresenta um requisito escrito de forma verificável e mensurável, conforme as boas práticas da Engenharia de Requisitos:",
-    "opcoes": [
-      "O sistema deve ser extremamente rápido e responsivo durante os picos de acesso no fim de ano.",
-      "A plataforma deverá suportar até mil usuários simultâneos com um tempo de resposta de no máximo dois segundos por transação.",
-      "O módulo de pagamento deve ser muito seguro contra ataques de hackers externos.",
-      "O software precisa ter uma interface amigável para que idosos aprendam a usá-lo facilmente."
-    ],
-    "resposta_correta": "A plataforma deverá suportar até mil usuários simultâneos com um tempo de resposta de no máximo dois segundos por transação.",
-    "explicacao": "Requisitos não funcionais (RNF) com termos vagos como 'rápido', 'seguro' ou 'fácil' são impossíveis de testar. Um bom RNF precisa de **métricas numéricas** ou limites exatos (throughput, tempo de resposta, capacidade, RTO) para que a equipe de qualidade possa validar a entrega."
-  },
-  {
-    "id": "eng_soft_req_004",
-    "categoria": "Engenharia de software",
-    "tipo": "certo_errado",
-    "pergunta": "A definição de uma meta de disponibilidade de '100% (cem por cento)' é uma exigência padrão e altamente recomendada para sistemas críticos, garantindo que o software nunca saia do ar sob nenhuma circunstância.",
-    "opcoes": [
-      "Certo",
-      "Errado"
-    ],
-    "resposta_correta": "Errado",
-    "explicacao": "Estabelecer disponibilidade de '100%' é uma armadilha, pois é virtualmente inalcançável. Sistemas precisam de janelas de manutenção, atualizações de banco de dados e patches de segurança. O correto é acordar metas realistas, como '98%' ou '99,9%', alinhadas com o cliente."
-  },
-  {
-    "id": "eng_soft_req_005",
-    "categoria": "Engenharia de software",
-    "tipo": "multipla",
-    "pergunta": "Um analista precisa entender detalhadamente o comportamento de um sistema de faturamento que possui muitas regras e exceções complexas, como isenção de impostos para empresas sem fins lucrativos. Qual técnica de elicitação é a mais indicada para mapear esse fluxo passo a passo e suas variações?",
-    "opcoes": [
-      "Brainstorming.",
-      "Cenários.",
-      "Questionário.",
-      "Garimpo de documentos."
-    ],
-    "resposta_correta": "Cenários.",
-    "explicacao": "Os **Cenários** (ou casos de uso) são histórias detalhadas que mapeiam o Ator, o Objetivo, os Passos e, principalmente, as **exceções**. É a técnica ideal para lidar com processos sensíveis a regras específicas (como tributação) e suas variações."
-  },
-  {
-    "id": "eng_soft_req_006",
-    "categoria": "Engenharia de software",
-    "tipo": "certo_errado",
-    "pergunta": "A Prototipagem é uma técnica de elicitação de requisitos livre de desvantagens, sendo sempre recomendada pois garante o engajamento do cliente sem gerar nenhum impacto negativo no entendimento do cronograma do projeto.",
-    "opcoes": [
-      "Certo",
-      "Errado"
-    ],
-    "resposta_correta": "Errado",
-    "explicacao": "Embora a prototipagem valide fluxos de forma imediata, ela possui desvantagens clássicas: consome tempo, pode fazer o cliente focar indevidamente na aparência (cores/fontes) em vez da funcionalidade e, perigosamente, gera a ilusão no cliente de que 'o sistema já está pronto'."
-  },
-  {
-    "id": "eng_soft_req_007",
-    "categoria": "Engenharia de software",
-    "tipo": "multipla",
-    "pergunta": "Qual é a principal recomendação doutrinária sobre a escolha das técnicas de elicitação (levantamento) de requisitos em um projeto de software?",
-    "opcoes": [
-      "Deve-se escolher uma única técnica e aplicá-la do início ao fim do projeto para manter a padronização e evitar confusão documental.",
-      "A técnica de Questionário deve ser evitada em todos os cenários, pois a interação fria impede a coleta de requisitos não funcionais.",
-      "Não existe uma 'única técnica' suficiente. A melhor prática é mesclar e combinar múltiplas técnicas conforme o objetivo, o contexto e as restrições de tempo/custo.",
-      "Workshops devem ser usados exclusivamente para documentar fluxos de exceção após o software estar programado."
-    ],
-    "resposta_correta": "Não existe uma 'única técnica' suficiente. A melhor prática é mesclar e combinar múltiplas técnicas conforme o objetivo, o contexto e as restrições de tempo/custo.",
-    "explicacao": "A regra de ouro da engenharia de requisitos é a complementariedade. Cada técnica tem vantagens e riscos. Um fluxo eficiente mistura várias delas (ex: garimpo de documentos → entrevistas para preencher lacunas → protótipos para validar)."
-  },
-  {
-    "id": "eng_soft_req_008",
-    "categoria": "Engenharia de software",
-    "tipo": "certo_errado",
-    "pergunta": "A técnica de 'Garimpo de documentos' é extremamente confiável por utilizar fontes oficiais, eliminando totalmente o risco de desatualização dos processos e dispensando a necessidade de confirmar os fluxos com os usuários finais.",
-    "opcoes": [
-      "Certo",
-      "Errado"
-    ],
-    "resposta_correta": "Errado",
-    "explicacao": "O grande perigo do garimpo de documentos é exatamente a **desatualização**. Muitas vezes a empresa possui manuais antigos, mas, na prática diária, os funcionários já executam as tarefas de outra forma. Por isso, essa técnica deve ser complementada com entrevistas ou observação em campo."
-  },
-  {
-    "id": "eng_soft_req_009",
-    "categoria": "Engenharia de software",
-    "tipo": "multipla",
-    "pergunta": "Ao enfrentar um processo crítico e muito engessado em que o usuário não consegue explicar verbalmente as dificuldades do dia a dia, o Analista de Requisitos decide sentar na cadeira do usuário e executar a tarefa sob a orientação do mesmo. Qual é o nome dessa técnica de elicitação?",
-    "opcoes": [
-      "Fotografia (Observação).",
-      "Inversão de papéis (Role play).",
-      "Brainstorming.",
-      "Entrevista não estruturada."
-    ],
-    "resposta_correta": "Inversão de papéis (Role play).",
-    "explicacao": "Na **Inversão de papéis**, o analista executa o trabalho na prática para 'sentir' as dores e descobrir lacunas do processo. É diferente da Fotografia (Observação), onde o analista fica apenas assistindo o usuário trabalhar sem interferir."
-  },
-  {
-    "id": "eng_soft_req_010",
-    "categoria": "Engenharia de software",
-    "tipo": "certo_errado",
-    "pergunta": "Ao aplicar a técnica de Questionários para um público muito extenso, o analista deve priorizar a utilização de perguntas abertas, pois elas garantem uma análise estatística rápida e não impactam o cronograma do projeto.",
-    "opcoes": [
-      "Certo",
-      "Errado"
-    ],
-    "resposta_correta": "Errado",
-    "explicacao": "É exatamente o oposto. Questionários com muitas perguntas abertas disparados para um público grande geram um volume de texto caótico, tornando a tabulação e análise demoradas e inviáveis, o que impacta severamente o cronograma. Em questionários, deve-se priorizar perguntas **fechadas** (múltipla escolha) para triagem."
-  },
-  {
-    "id": "pnas_001",
-    "categoria": "SEDES",
-    "tipo": "certo_errado",
-    "pergunta": "O financiamento da Assistência Social, integrado ao orçamento da Seguridade Social, obedece ao princípio da solidariedade e é custeado exclusivamente por impostos municipais, dispensando contribuições de empregadores e trabalhadores.",
-    "opcoes": [
-      "Certo",
-      "Errado"
-    ],
-    "resposta_correta": "Errado",
-    "explicacao": "A afirmativa é incorreta. De acordo com o Art. 195 da CF e a LOAS (Art. 28), o financiamento segue o princípio da solidariedade, significando que TODA a sociedade financia a seguridade social. Isso inclui contribuições do empregador, do empregado, sobre receitas de concursos de prognósticos e de importadores, além dos orçamentos da União, Estados, DF e Municípios."
-  },
-  {
-    "id": "pnas_002",
-    "categoria": "SEDES",
-    "tipo": "multipla",
-    "pergunta": "A Constituição Federal de 1988 estabelece os alicerces estruturais da Assistência Social. Assinale a alternativa que indica corretamente o escopo dos artigos 203 e 204 da CF/88, temática frequente em pegadinhas de prova:",
-    "opcoes": [
-      "O art. 203 define as diretrizes de descentralização, enquanto o art. 204 lista os beneficiários do BPC.",
-      "Ambos os artigos tratam do financiamento da política e da criação compulsória de Fundos Estaduais.",
-      "O art. 203 define os objetivos da assistência social (como proteção à família e amparo a crianças), enquanto o art. 204 estabelece suas diretrizes (descentralização e participação da população).",
-      "O art. 203 cria o Conselho Nacional de Assistência Social (CNAS), ao passo que o art. 204 define os valores pagos na Proteção Social Básica."
-    ],
-    "resposta_correta": "O art. 203 define os objetivos da assistência social (como proteção à família e amparo a crianças), enquanto o art. 204 estabelece suas diretrizes (descentralização e participação da população).",
-    "explicacao": "É essencial não confundir: Art. 203 = Objetivos da Assistência Social. Art. 204 = Diretrizes (lembre-se do mnemônico DE-PAPO: Descentralização político-administrativa e Participação da população)."
-  },
-  {
-    "id": "pnas_003",
-    "categoria": "SEDES",
-    "tipo": "multipla",
-    "pergunta": "Um adolescente é resgatado de uma situação de trabalho infantil (corte de cana). Foi constatada a violação de seus direitos, mas ele mantém vínculos familiares fortes e não necessita ser retirado de casa. De acordo com a PNAS (2004) e a Tipificação Nacional (2009), qual nível de proteção deve atender esse caso?",
-    "opcoes": [
-      "Proteção Social Básica.",
-      "Proteção Social Especial de Alta Complexidade.",
-      "Proteção Social Especial de Média Complexidade.",
-      "Rede Intersetorial de Saúde Exclusiva."
-    ],
-    "resposta_correta": "Proteção Social Especial de Média Complexidade.",
-    "explicacao": "A Proteção Social Básica atua na prevenção. Como já houve violação de direitos (trabalho infantil / risco social consumado), o caso vai para a Proteção Especial. Como os vínculos familiares foram mantidos, enquadra-se na Média Complexidade. A Alta Complexidade seria exigida apenas se houvesse rompimento de vínculos necessitando de acolhimento institucional."
-  },
-  {
-    "id": "pnas_004",
-    "categoria": "SEDES",
-    "tipo": "certo_errado",
-    "pergunta": "A transferência regular e automática de recursos federais destinados à Assistência Social, conhecida como modalidade 'fundo a fundo', exige obrigatoriamente que o ente recebedor (Estado, DF ou Município) possua um Fundo de Assistência Social próprio e formalmente instituído.",
-    "opcoes": [
-      "Certo",
-      "Errado"
-    ],
-    "resposta_correta": "Certo",
-    "explicacao": "Correto. O cofinanciamento do SUAS flui do Fundo Nacional de Assistência Social (FNAS) diretamente para os fundos locais. É requisito indispensável, normatizado na LOAS, que o ente governamental tenha o seu próprio Fundo (além do Conselho e Plano de Assistência) para receber esses recursos fundo a fundo."
-  },
-  {
-    "id": "pnas_005",
-    "categoria": "SEDES",
-    "tipo": "multipla",
-    "pergunta": "No modelo de governança e pactuação do SUAS, o debate, negociação e operacionalização da gestão ocorrem nas chamadas Comissões Intergestores. Como se divide a composição da Comissão Intergestores Tripartite (CIT)?",
-    "opcoes": [
-      "Apenas por representantes do Ministério da Saúde, Educação e Trabalho.",
-      "Por representantes da União, dos Estados/DF e dos Municípios.",
-      "Por representantes exclusivos da Sociedade Civil e do Terceiro Setor.",
-      "Por representantes do Poder Legislativo, Judiciário e Executivo."
-    ],
-    "resposta_correta": "Por representantes da União, dos Estados/DF e dos Municípios.",
-    "explicacao": "A CIT (Comissão Intergestores Tripartite) representa as três esferas de governo no pacto federativo: União, Estados/DF e Municípios. Já a CIB (Comissão Intergestores Bipartite) atua no âmbito estadual, unindo representantes do Estado e de seus Municípios."
-  },
-  {
-    "id": "pnas_006",
-    "categoria": "SEDES",
-    "tipo": "multipla",
-    "pergunta": "Associe os marcos normativos da Assistência Social aos seus respectivos anos de consolidação:\n\n1. Resolução que aprovou a NOB e instituiu o SUAS.\n2. Lei que incorporou formalmente o SUAS à LOAS.\n3. Resolução (145) do CNAS que instituiu a PNAS.\n\nA ordem correta das datas (2005 / 2011 / 2004) é:",
-    "opcoes": [
-      "1 - 2 - 3",
-      "2 - 3 - 1",
-      "3 - 1 - 2",
-      "2 - 1 - 3"
-    ],
-    "resposta_correta": "2 - 3 - 1",
-    "explicacao": "A cronologia exigida em concursos é: 2004 = Resolução nº 145 instituiu a PNAS (item 3). 2005 = Resolução nº 130 aprovou a NOB e instituiu o SUAS (item 1). 2011 = Lei nº 12.435 incorporou o SUAS na LOAS (item 2)."
-  },
-  {
-    "id": "pnas_007",
-    "categoria": "SEDES",
-    "tipo": "certo_errado",
-    "pergunta": "Ao contrário da política filantrópica e do assistencialismo, a Assistência Social como política pública não exige participação popular em sua formulação, sendo as Conferências de Assistência Social fóruns meramente consultivos coordenados verticalmente (Top-Down) pela União.",
-    "opcoes": [
-      "Certo",
-      "Errado"
-    ],
-    "resposta_correta": "Errado",
-    "explicacao": "A afirmativa comete vários erros gravíssimos: a Assistência Social garante o controle social (CF, art. 204) e as Conferências e Conselhos (como o CNAS) são espaços *deliberativos* (não apenas consultivos) que horizontalizam as decisões, afastando a lógica 'Top-Down' e o assistencialismo clientelista."
-  },
-  {
-    "id": "pnas_008",
-    "categoria": "SEDES",
-    "tipo": "multipla",
-    "pergunta": "No contexto da PNAS, os conceitos de 'Vulnerabilidade' e 'Risco' norteiam as diferentes esferas de proteção. Assinale a alternativa que os diferencia corretamente:",
-    "opcoes": [
-      "Vulnerabilidade refere-se à violação de direitos já efetivada, enquanto o risco indica apenas a possibilidade dessa violação ocorrer.",
-      "Vulnerabilidade é uma condição socioeconômica que pode levar à violação de direitos, enquanto o risco social ocorre quando essa violação já foi consumada.",
-      "Risco e vulnerabilidade são sinônimos normativos que justificam a concessão exclusiva do BPC.",
-      "A vulnerabilidade é tratada exclusivamente pela saúde, e o risco apenas pela segurança pública, isentando o SUAS."
-    ],
-    "resposta_correta": "Vulnerabilidade é uma condição socioeconômica que pode levar à violação de direitos, enquanto o risco social ocorre quando essa violação já foi consumada.",
-    "explicacao": "Pegadinha clássica de banca! Vulnerabilidade (foco da Proteção Básica) é a 'possibilidade' ou condição precarizada (ex: pobreza, insegurança alimentar). Risco (foco da Proteção Especial) é o dano já ocorrido / violação consumada (ex: abuso, trabalho escravo, abandono)."
-  },
-  {
-    "id": "pnas_009",
-    "categoria": "SEDES",
-    "tipo": "certo_errado",
-    "pergunta": "O sistema de Seguridade Social brasileiro atua sobre um tripé. Nele, a Saúde obedece ao princípio da universalidade, a Previdência Social exige caráter contributivo, e a Assistência Social é prestada de forma não contributiva a quem dela necessitar.",
-    "opcoes": [
-      "Certo",
-      "Errado"
-    ],
-    "resposta_correta": "Certo",
-    "explicacao": "Corretíssimo. Esse é o panorama fundamental do art. 194 da CF/88. A Assistência Social se difere da Previdência pois independe de contribuição prévia (não contributiva) e difere da Saúde, pois não é estritamente universal, mas direcionada 'a quem dela necessitar'."
-  },
-  {
-    "id": "pnas_010",
-    "categoria": "SEDES",
-    "tipo": "certo_errado",
-    "pergunta": "No contexto das visões críticas sobre políticas públicas, a perspectiva neoliberal do 'Estado Mínimo' contribui para o fortalecimento do SUAS, pois reduz a focalização e elimina condicionalidades, gerando estabilidade empregatícia para os trabalhadores da rede socioassistencial.",
-    "opcoes": [
-      "Certo",
-      "Errado"
-    ],
-    "resposta_correta": "Errado",
-    "explicacao": "A afirmativa inverte os conceitos críticos da teoria do Serviço Social. A perspectiva do Estado Mínimo (neoliberal) causa exatamente o oposto: *precarização* do trabalho (rotatividade, ausência de direitos) e *focalização excessiva* na pobreza extrema, criando burocracias e cortando benefícios por pequenas diferenças de renda."
+    "resposta_correta": "FortiGuard Labs.",
+    "explicacao": "O **FortiGuard Labs** é a equipe e infraestrutura global de pesquisa e inteligência artificial da Fortinet. Eles analisam bilhões de eventos diários e geram as 'vacinas' (atualizações de IPS, listas de IPs maliciosos, filtros web) que protegem os equipamentos FortiGate. FortiAnalyzer é para logs e FortiManager é para gerência centralizada."
   },
   {
     "id": "arq_001",
@@ -1379,202 +340,6 @@
     ],
     "resposta_correta": "Errado",
     "explicacao": "O material faz a distinção clara, alertando para essa pegadinha: O barramento de instruções transfere as instruções (o que a CPU deve fazer), enquanto o barramento de dados transfere os operandos e os resultados (os dados que serão calculados)."
-  },
-  {
-    "id": "sedes_qdx_001",
-    "categoria": "SEDES",
-    "tipo": "certo_errado",
-    "pergunta": "De acordo com a jurisprudência pacificada do Supremo Tribunal Federal (STF), o Preâmbulo da Constituição Federal de 1988 possui força normativa plena, servindo como parâmetro direto e isolado para o controle de constitucionalidade de leis estaduais.",
-    "opcoes": [
-      "Certo",
-      "Errado"
-    ],
-    "resposta_correta": "Errado",
-    "explicacao": "O STF firmou o entendimento (ADI 2076) de que o preâmbulo não tem força normativa, não cria direitos nem deveres e não serve como parâmetro para o controle de constitucionalidade. Sua função é puramente interpretativa."
-  },
-  {
-    "id": "sedes_qdx_002",
-    "categoria": "SEDES",
-    "tipo": "multipla",
-    "pergunta": "A Constituição do Estado 'X' foi promulgada sem a expressão 'sob a proteção de Deus' em seu texto introdutório. Diante disso, é correto afirmar que:",
-    "opcoes": [
-      "A Constituição Estadual é inconstitucional, pois fere a norma de reprodução obrigatória imposta pelo preâmbulo da Constituição Federal.",
-      "O Estado deve sofrer intervenção federal imediata para corrigir a omissão preambular.",
-      "Não há inconstitucionalidade, pois o STF entende que o preâmbulo da CF/88 não é norma de reprodução obrigatória pelos Estados e Municípios.",
-      "A omissão anula todos os efeitos jurídicos dos direitos fundamentais previstos na referida Constituição Estadual."
-    ],
-    "resposta_correta": "Não há inconstitucionalidade, pois o STF entende que o preâmbulo da CF/88 não é norma de reprodução obrigatória pelos Estados e Municípios.",
-    "explicacao": "O STF já decidiu (ADI 2076) que a invocação a Deus presente no preâmbulo da CF não configura norma de reprodução obrigatória nas Constituições Estaduais ou Leis Orgânicas Municipais."
-  },
-  {
-    "id": "sedes_qdx_003",
-    "categoria": "SEDES",
-    "tipo": "multipla",
-    "pergunta": "A República Federativa do Brasil é formada pela união indissolúvel de seus entes. Quando o Art. 1º da CF/88 menciona a expressão 'união indissolúvel', ele está se referindo a:",
-    "opcoes": [
-      "Indissolubilidade da pessoa jurídica de Direito Público Interno chamada 'União'.",
-      "Indissolubilidade do pacto federativo, garantindo que não existe direito de secessão (separação) por parte de nenhum Estado-membro ou ente.",
-      "Indissolubilidade entre o Estado e a Igreja no âmbito da administração federal.",
-      "Garantia de que os Municípios não possuem autonomia política dentro do pacto."
-    ],
-    "resposta_correta": "Indissolubilidade do pacto federativo, garantindo que não existe direito de secessão (separação) por parte de nenhum Estado-membro ou ente.",
-    "explicacao": "Pegadinha comum: a palavra 'união' com letra minúscula no art. 1º refere-se à união (vínculo) do pacto federativo, e não à União como ente político. Por isso, não há direito de secessão."
-  },
-  {
-    "id": "sedes_qdx_004",
-    "categoria": "SEDES",
-    "tipo": "certo_errado",
-    "pergunta": "No modelo federativo adotado pelo Brasil, os entes da Federação (União, Estados, DF e Municípios) são dotados de autonomia política plena. No entanto, os Municípios representam uma exceção à capacidade de autogoverno total, visto que não possuem Poder Judiciário próprio.",
-    "opcoes": [
-      "Certo",
-      "Errado"
-    ],
-    "resposta_correta": "Certo",
-    "explicacao": "Correto. Os municípios possuem autonomia (auto-organização via lei orgânica, autolegislação e autoadministração), mas seu autogoverno se restringe ao Executivo (Prefeito) e Legislativo (Câmara). Não existe Judiciário Municipal no Brasil."
-  },
-  {
-    "id": "sedes_qdx_005",
-    "categoria": "SEDES",
-    "tipo": "multipla",
-    "pergunta": "Questão de Relacionamento de Artigos Constitucionais. Associe o conceito à sua correta localização nos princípios fundamentais:\n\n1. Fundamentos da República\n2. Objetivos Fundamentais\n3. Princípios das Relações Internacionais\n\n( ) Artigo 3º (Construir, Garantir, Erradicar, Promover)\n( ) Artigo 4º (Defesa da Paz, Repúdio ao Terrorismo)\n( ) Artigo 1º (Soberania, Cidadania, Dignidade da Pessoa Humana)",
-    "opcoes": [
-      "1 - 2 - 3",
-      "2 - 3 - 1",
-      "3 - 1 - 2",
-      "2 - 1 - 3"
-    ],
-    "resposta_correta": "2 - 3 - 1",
-    "explicacao": "A associação estrutural exata da CF é: Art. 1º = Fundamentos; Art. 3º = Objetivos Fundamentais (verbos no infinitivo); Art. 4º = Relações Internacionais."
-  },
-  {
-    "id": "sedes_qdx_006",
-    "categoria": "SEDES",
-    "tipo": "certo_errado",
-    "pergunta": "Se um Estado da Federação aprovar, mediante plebiscito popular com 90% de aprovação, a sua separação do restante do Brasil para formar um novo país independente, tal ato será válido sob a ótica da soberania popular garantida na CF/88.",
-    "opcoes": [
-      "Certo",
-      "Errado"
-    ],
-    "resposta_correta": "Errado",
-    "explicacao": "O pacto federativo brasileiro é indissolúvel (não há direito de secessão). Qualquer tentativa de separação, mesmo via plebiscito, é inconstitucional e pode ensejar intervenção federal imediata para manter a integridade nacional."
-  },
-  {
-    "id": "sedes_qdx_007",
-    "categoria": "SEDES",
-    "tipo": "multipla",
-    "pergunta": "De acordo com o Art. 60, § 4º da CF/88, não será objeto de deliberação a proposta de emenda tendente a abolir determinadas matérias, conhecidas como Cláusulas Pétreas. Qual das opções abaixo NÃO constitui uma cláusula pétrea?",
-    "opcoes": [
-      "O voto direto, secreto, universal e periódico.",
-      "A separação dos Poderes.",
-      "A forma federativa de Estado.",
-      "A obrigatoriedade do voto para maiores de 18 anos."
-    ],
-    "resposta_correta": "A obrigatoriedade do voto para maiores de 18 anos.",
-    "explicacao": "Pegadinha frequente de bancas como a Quadrix: O voto obrigatório NÃO é cláusula pétrea e pode ser alterado por emenda constitucional. A proteção pétrea recai apenas sobre o voto direto, secreto, universal e periódico."
-  },
-  {
-    "id": "sedes_qdx_008",
-    "categoria": "SEDES",
-    "tipo": "certo_errado",
-    "pergunta": "No âmbito do princípio federativo e da capacidade de 'Auto-organização', a União organiza-se por meio da Constituição Federal, os Estados por meio de suas Constituições Estaduais e o Distrito Federal e os Municípios por meio de Leis Orgânicas.",
-    "opcoes": [
-      "Certo",
-      "Errado"
-    ],
-    "resposta_correta": "Certo",
-    "explicacao": "Exatamente. A auto-organização confere aos Estados a criação de suas próprias Constituições. Já o DF e os Municípios se estruturam juridicamente através de Leis Orgânicas, e não Constituições."
-  },
-  {
-    "id": "sedes_qdx_009",
-    "categoria": "SEDES",
-    "tipo": "multipla",
-    "pergunta": "Ao comparar o modelo de Federação com o modelo de Estado Unitário, qual é a principal diferença jurídica que caracteriza a República Federativa do Brasil?",
-    "opcoes": [
-      "Na Federação há centralização política total no Governo Federal, enquanto no Estado Unitário os Estados possuem autonomia de secessão.",
-      "Na Federação ocorre a descentralização do poder, garantindo autonomia política, administrativa e financeira aos entes regionais e locais.",
-      "O Estado Unitário possui três poderes distintos, ao passo que a Federação concentra os poderes no Executivo Federal.",
-      "A Federação permite que Estados-membros se relacionem de forma soberana com outros países, celebrando tratados internacionais independentes da União."
-    ],
-    "resposta_correta": "Na Federação ocorre a descentralização do poder, garantindo autonomia política, administrativa e financeira aos entes regionais e locais.",
-    "explicacao": "A essência da Federação é a descentralização do poder político, criando entes (União, Estados, Municípios) dotados de autonomia própria. Estados não possuem soberania (não podem negociar com outros países), apenas autonomia."
-  },
-  {
-    "id": "sedes_qdx_010",
-    "categoria": "SEDES",
-    "tipo": "certo_errado",
-    "pergunta": "Conforme entendimento doutrinário majoritário cobrado em concursos, a cláusula pétrea que protege os 'direitos e garantias individuais' restringe-se estritamente àqueles elencados no artigo 5º da Constituição Federal, não se aplicando a outros direitos difusos no texto.",
-    "opcoes": [
-      "Certo",
-      "Errado"
-    ],
-    "resposta_correta": "Errado",
-    "explicacao": "Erro comum. A doutrina e a jurisprudência majoritárias consideram que a proteção pétrea aos 'direitos e garantias individuais' abrange um sentido material mais amplo, englobando direitos e garantias fundamentais espalhados por todo o texto constitucional."
-  },
-  {
-    "id": "sedes_qdx_011",
-    "categoria": "SEDES",
-    "tipo": "multipla",
-    "pergunta": "Qual das características abaixo NÃO compõe uma das 4 capacidades da autonomia política dos entes federativos (União, Estados, DF e Municípios)?",
-    "opcoes": [
-      "Auto-organização (elaborar suas próprias leis orgânicas ou constituições).",
-      "Autogoverno (eleição de seus próprios governantes e legisladores).",
-      "Soberania Absoluta (capacidade de declarar guerra a nações estrangeiras).",
-      "Autoadministração (gestão e prestação dos próprios serviços e servidores)."
-    ],
-    "resposta_correta": "Soberania Absoluta (capacidade de declarar guerra a nações estrangeiras).",
-    "explicacao": "Soberania é um atributo exclusivo da República Federativa do Brasil (o país como um todo no cenário internacional). Os entes internos (Estados e Municípios) possuem apenas autonomia (autoadministração, autolegislação, autogoverno e auto-organização)."
-  },
-  {
-    "id": "sedes_qdx_012",
-    "categoria": "SEDES",
-    "tipo": "certo_errado",
-    "pergunta": "O Distrito Federal é um ente anômalo da Federação, mas, assim como os Estados e os Municípios, é dotado de autonomia política e não pode se separar do pacto federativo brasileiro.",
-    "opcoes": [
-      "Certo",
-      "Errado"
-    ],
-    "resposta_correta": "Certo",
-    "explicacao": "Correto. O Distrito Federal integra a organização político-administrativa do país como um ente dotado de autonomia política (auto-organização, autogoverno, autolegislação e autoadministração) e submete-se ao princípio da indissolubilidade."
-  },
-  {
-    "id": "sedes_qdx_013",
-    "categoria": "SEDES",
-    "tipo": "multipla",
-    "pergunta": "Sobre o Preâmbulo da Constituição de 1988, indique a afirmação que está em total consonância com a interpretação jurisprudencial do Supremo Tribunal Federal:",
-    "opcoes": [
-      "O Preâmbulo atua no vácuo jurídico, servindo para anular leis anteriores a 1988 que não mencionem Deus.",
-      "As normas de repúdio ao terrorismo estão listadas no preâmbulo e devem ser replicadas pelos Estados.",
-      "O Preâmbulo serve para orientar e nortear a interpretação do texto constitucional, embora não possua força normativa vinculante.",
-      "Os princípios republicano e federativo estão exclusivamente definidos no preâmbulo."
-    ],
-    "resposta_correta": "O Preâmbulo serve para orientar e nortear a interpretação do texto constitucional, embora não possua força normativa vinculante.",
-    "explicacao": "Conforme a ADI 2076, o STF decretou que o preâmbulo é um vetor de interpretação principiológica. Ele inspira o legislador e o juiz, mas não vincula, não é parâmetro de controle e não tem força normativa própria."
-  },
-  {
-    "id": "sedes_qdx_014",
-    "categoria": "SEDES",
-    "tipo": "certo_errado",
-    "pergunta": "O Princípio Republicano, que adota a República como forma de governo no Brasil, assegura a eletividade, a temporariedade dos mandatos e a responsabilidade dos governantes (prestação de contas).",
-    "opcoes": [
-      "Certo",
-      "Errado"
-    ],
-    "resposta_correta": "Certo",
-    "explicacao": "Correto. Essa é a definição clássica cobrada em provas sobre o princípio republicano (forma de governo). A República opõe-se à Monarquia, garantindo que o poder emane do povo por tempo determinado e com dever de prestação de contas."
-  },
-  {
-    "id": "sedes_qdx_015",
-    "categoria": "SEDES",
-    "tipo": "multipla",
-    "pergunta": "Questão de Relacionamento. Associe a característica de autonomia à sua descrição aplicável aos entes da federação:\n\n1. Autolegislação\n2. Autogoverno\n3. Autoadministração\n\n( ) Competência para organizar e gerir seus próprios serviços públicos e patrimônio.\n( ) Capacidade de eleger seus próprios representantes políticos para o Poder Executivo e Legislativo.\n( ) Competência para editar leis federais, estaduais, distritais ou municipais sobre matérias específicas.",
-    "opcoes": [
-      "2 - 1 - 3",
-      "3 - 2 - 1",
-      "1 - 3 - 2",
-      "3 - 1 - 2"
-    ],
-    "resposta_correta": "3 - 2 - 1",
-    "explicacao": "A associação exata é: (3) Autoadministração (gestão de serviços/bens); (2) Autogoverno (capacidade de eleger Prefeitos, Governadores, Vereadores, Deputados); (1) Autolegislação (capacidade de criar leis próprias no limite de suas competências)."
   },
   {
     "id": "opa_001",
