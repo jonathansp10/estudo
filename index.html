@@ -153,6 +153,40 @@
             color: var(--text-main);
         }
 
+        /* --- ESTILOS DOS PINS (CONQUISTAS) --- */
+.pin-card {
+    background: var(--btn-bg);
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.pin-card.locked {
+    filter: grayscale(100%) opacity(40%);
+}
+
+.pin-card.unlocked {
+    border-color: var(--warning);
+    background: rgba(245, 158, 11, 0.1);
+    box-shadow: 0 4px 10px rgba(245, 158, 11, 0.2);
+    transform: translateY(-2px);
+}
+
+.pin-emoji { font-size: 32px; margin-bottom: 8px; }
+.pin-nome { font-size: 12px; font-weight: bold; color: var(--text-color); margin-bottom: 4px; line-height: 1.2; }
+.pin-desc { font-size: 10px; color: var(--text-muted); line-height: 1.2; }
+
+@keyframes slideDown {
+    0% { top: -100px; opacity: 0; }
+    100% { top: 20px; opacity: 1; }
+}
+
         /* --- MODAL DE RECOMPENSA --- */
         .modal-overlay {
             position: fixed; top: 0; left: 0; width: 100%; height: 100%;
@@ -228,6 +262,9 @@
         </div>
         <button id="btn-iniciar" class="btn-success" style="padding: 15px; font-size: 18px;">▶ Iniciar Sessão do Dia</button>
         
+        <!-- 1. Adicione este botão logo ABAIXO do botão "🚀 Iniciar Sessão" no seu setup-screen -->
+        <button id="btn-ver-pins" style="background: var(--warning); color: white; font-size: 16px; padding: 12px; margin-top: 10px;">🏅 Ver Minhas Conquistas</button>
+        
         <hr style="margin: 25px 0; border: 0; border-top: 1px solid var(--border-color);">
         
         <h3 style="margin-top:0;">Sincronização & Impressão</h3>
@@ -292,6 +329,30 @@
         <h1 style="text-align: center; margin-bottom: 30px;">Caderno de Erros - Simulado</h1>
         <div id="prova-conteudo" style="column-count: 2; column-gap: 40px;"></div>
         <div id="prova-gabarito" style="column-count: 2; column-gap: 40px; margin-top: 40px; page-break-before: always; border-top: 2px solid #000; padding-top: 20px;"></div>
+    </div>
+
+    <!-- ========================================== -->
+        <!-- 2. Adicione este bloco lá no FINAL do <body>, logo ANTES do <script src="app.js"></script> -->
+        <div id="modal-pins" class="modal-overlay hidden">
+            <div class="modal-content" style="max-width: 600px; width: 95%; max-height: 90vh; overflow-y: auto;">
+                <h2 style="margin-top: 0; color: var(--primary);">🏅 Suas Conquistas</h2>
+                <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 20px;">Complete desafios para colorir sua coleção.</p>
+
+                <div id="grid-pins" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 15px;">
+                    <!-- Os pins serão gerados aqui pelo JavaScript -->
+                </div>
+
+                <button onclick="document.getElementById('modal-pins').classList.add('hidden')" style="background: var(--text-color); color: var(--bg-color); margin-top: 25px;">Fechar Painel</button>
+            </div>
+        </div>
+
+    <!-- ALERTA DE NOVA CONQUISTA -->
+    <div id="alerta-conquista" class="hidden" style="position: fixed; top: 20px; left: 50%; transform: translateX(-50%); background: var(--card-bg); border: 2px solid var(--warning); padding: 15px 25px; border-radius: 50px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); z-index: 9999; display: flex; align-items: center; gap: 15px; animation: slideDown 0.5s ease-out;">
+        <span id="alerta-emoji" style="font-size: 30px;">🏆</span>
+        <div>
+            <strong style="color: var(--warning); font-size: 12px; text-transform: uppercase; display: block;">Nova Conquista!</strong>
+            <span id="alerta-nome" style="font-size: 16px; font-weight: bold; color: var(--text-color);">Nome do Pin</span>
+        </div>
     </div>
 
     <script src="app.js"></script>
