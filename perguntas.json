@@ -1,5 +1,155 @@
 [
   {
+    "id": "dataprev_fgv_xp_001",
+    "categoria": "DATAPREV",
+    "tipo": "multipla",
+    "pergunta": "Uma equipe ágil da DATAPREV está conduzindo o 'Jogo de Planejamento' (Planning Game) para definir o escopo da próxima iteração do projeto, utilizando as práticas do Extreme Programming (XP). Assinale a alternativa que descreve corretamente a divisão de responsabilidades nessa reunião, de acordo com o XP.",
+    "opcoes": [
+      "A equipe de desenvolvimento define as prioridades das histórias com base no esforço, e o cliente estima o tempo necessário para implementação.",
+      "O cliente e a equipe de desenvolvimento estimam conjuntamente o esforço, mas a seleção final do que entra na iteração cabe apenas ao Scrum Master.",
+      "O cliente ou dono do produto prioriza os requisitos pelo valor de negócio, enquanto a equipe de desenvolvimento (programadores) estima o esforço e o tempo necessários.",
+      "Os programadores decidem as histórias a implementar e suas prioridades, enquanto o cliente atua apenas como um validador no final da iteração.",
+      "O cliente define as prioridades e o esforço técnico, cabendo aos programadores apenas a execução do código sem envolvimento no planejamento."
+    ],
+    "resposta_correta": "O cliente ou dono do produto prioriza os requisitos pelo valor de negócio, enquanto a equipe de desenvolvimento (programadores) estima o esforço e o tempo necessários.",
+    "explicacao": "No Jogo de Planejamento do XP, as responsabilidades são claramente divididas: o cliente (ou dono do produto) é responsável por definir as prioridades com base no valor de negócio. Por outro lado, a equipe de desenvolvimento (programadores) é responsável por estimar o esforço e o tempo para implementação. A seleção final é uma combinação dessas prioridades com a capacidade da equipe para aquele ciclo. Afirmar que os programadores decidem as prioridades ou que o cliente não participa ativamente é uma pegadinha clássica."
+  },
+  {
+    "id": "dataprev_fgv_xp_002",
+    "categoria": "DATAPREV",
+    "tipo": "multipla",
+    "pergunta": "Um desenvolvedor recém-contratado pela DATAPREV está sendo treinado nas práticas de Extreme Programming (XP). Ao aplicar a prática de Desenvolvimento Orientado a Testes (TDD), ele é instruído sobre o ciclo correto de codificação. Assinale a alternativa que apresenta a ordem correta de execução no TDD segundo o XP.",
+    "opcoes": [
+      "Escrever o código completo da funcionalidade, escrever os testes automatizados para validá-la e, em seguida, refatorar o código.",
+      "Escrever o mínimo de código para passar na compilação, refatorar o design do sistema e, por fim, escrever o teste que valide o comportamento.",
+      "Escrever o teste que falha, escrever o mínimo de código para o teste passar e, em seguida, refatorar mantendo o comportamento visível.",
+      "Refatorar a estrutura interna do código existente, escrever testes para garantir que nada quebrou e escrever o novo código funcional.",
+      "Escrever testes e código simultaneamente através de programação em pares, ignorando a etapa de refatoração para garantir entregas rápidas."
+    ],
+    "resposta_correta": "Escrever o teste que falha, escrever o mínimo de código para o teste passar e, em seguida, refatorar mantendo o comportamento visível.",
+    "explicacao": "A prática de TDD (Test-Driven Development) no XP segue uma ordem estrita e obrigatória: primeiro escreve-se o teste que falha, depois escreve-se o mínimo de código necessário para fazer esse teste passar e, por fim, refatora-se o código para melhorar sua estrutura interna sem mudar o comportamento visível. A alternativa que sugere codar e depois testar está incorreta, pois inverter essa ordem contraria os princípios do XP e gera maior risco de falhas."
+  },
+  {
+    "id": "dataprev_fgv_xp_003",
+    "categoria": "DATAPREV",
+    "tipo": "multipla",
+    "pergunta": "O Extreme Programming (XP) agrupa suas diversas práticas em categorias para facilitar sua compreensão e aplicação. Assinale a alternativa que contém APENAS práticas pertencentes ao grupo de 'Feedback rápido'.",
+    "opcoes": [
+      "Jogos de planejamento, metáforas e design simples.",
+      "Pequenas entregas, refatoração e integração contínua.",
+      "Propriedade coletiva do código, padrões de qualificação e ritmo sustentável.",
+      "Desenvolvimento orientado a teste (TDD), programação em pares e cliente sempre presente.",
+      "Integração contínua, histórias de usuário e metáforas."
+    ],
+    "resposta_correta": "Desenvolvimento orientado a teste (TDD), programação em pares e cliente sempre presente.",
+    "explicacao": "De acordo com os conceitos do XP, as práticas são divididas em grupos. O grupo de 'Feedback rápido' é composto exclusivamente por: desenvolvimento orientado a teste (TDD), programação em pares e cliente sempre presente. Práticas como pequenas entregas e integração contínua pertencem ao 'Processo contínuo de entregas'. Metáforas, design simples e propriedade coletiva do código pertencem ao 'Entendimento compartilhado'."
+  },
+  {
+    "id": "dataprev_fgv_xp_004",
+    "categoria": "DATAPREV",
+    "tipo": "multipla",
+    "pergunta": "Com a proximidade da implantação de um grande sistema na DATAPREV, o gerente de projeto, preocupado com prazos, sugere que a equipe trabalhe 60 horas semanais no próximo mês e integre o código de todos os desenvolvedores apenas no final desse período para evitar 'quebras' no ambiente. À luz do Extreme Programming (XP), a sugestão do gerente é:",
+    "opcoes": [
+      "Adequada, pois o XP defende longas jornadas e grandes releases esporádicos para reduzir o número de entregas e garantir o cumprimento do prazo.",
+      "Adequada em partes, pois a integração contínua é incompatível com o XP, mas o ritmo de trabalho deveria ser de 40 horas semanais.",
+      "Incorreta em ambos os aspectos, pois o XP defende um ritmo sustentável de 40 horas semanais e a integração contínua do código frequentemente.",
+      "Incorreta, pois a equipe deve fazer horas extras apenas se o cliente estiver presente durante todo o período para priorizar as falhas na integração final.",
+      "Incorreta apenas na questão das horas, pois o XP aprova a integração do código apenas no final do projeto para assegurar a qualidade de vida do desenvolvedor."
+    ],
+    "resposta_correta": "Incorreta em ambos os aspectos, pois o XP defende um ritmo sustentável de 40 horas semanais e a integração contínua do código frequentemente.",
+    "explicacao": "A sugestão do gerente viola duas práticas fundamentais do XP. Primeiro, o XP defende a prática de 'Qualidade de vida: ritmo sustentável', estipulando o trabalho com 40 horas por semana para evitar o cansaço, a queda de qualidade e proteger a previsibilidade. Segundo, o XP exige a 'Integração contínua', que consiste em integrar e testar mudanças com frequência, tipicamente diária, em oposição a integrar apenas no final do projeto."
+  },
+  {
+    "id": "dataprev_fgv_xp_005",
+    "categoria": "DATAPREV",
+    "tipo": "multipla",
+    "pergunta": "A prática da 'Propriedade Coletiva do Código' é uma das bases do entendimento compartilhado no XP. Em uma prova de concurso da FGV, um candidato precisa identificar a definição exata desse conceito. Assinale a alternativa que o descreve corretamente no contexto do Extreme Programming.",
+    "opcoes": [
+      "Significa que os desenvolvedores têm direito a participação nos lucros gerados pelo código que produzem.",
+      "Garante que qualquer desenvolvedor da equipe possui autorização para alterar qualquer parte do código-fonte a qualquer momento.",
+      "Exige que o código-fonte seja mantido em domínio público (open source) para que clientes de outras organizações possam inspecioná-lo.",
+      "Limita o acesso ao código apenas a especialistas sêniores, restringindo as alterações para evitar introdução de falhas.",
+      "Determina que o código é de propriedade exclusiva do cliente ou dono do produto, e a equipe só pode alterá-lo após o Jogo de Planejamento."
+    ],
+    "resposta_correta": "Garante que qualquer desenvolvedor da equipe possui autorização para alterar qualquer parte do código-fonte a qualquer momento.",
+    "explicacao": "No Extreme Programming, a propriedade coletiva do código significa que qualquer desenvolvedor pode alterar qualquer parte do código, não existindo 'donos' de módulos específicos. Isso dissemina o conhecimento pela equipe. Confundir propriedade coletiva com participação nos lucros ou restrição de segurança é uma pegadinha e um erro comum em questões de concurso."
+  },
+  {
+    "id": "dataprev_fgv_xp_006",
+    "categoria": "DATAPREV",
+    "tipo": "multipla",
+    "pergunta": "Em relação à documentação e ao tamanho das entregas em projetos regidos pela metodologia Extreme Programming (XP), é correto afirmar que:",
+    "opcoes": [
+      "O XP exige uma matriz de rastreabilidade obrigatória e foca na documentação detalhada e diversificada para garantir a manutenção futura.",
+      "O XP prioriza grandes releases esporádicas, chamadas de pacotes grandes, para minimizar o esforço de homologação pelo cliente.",
+      "O XP descarta completamente a documentação em prol de programação em pares, realizando apenas uma entrega no encerramento do projeto.",
+      "O XP privilegia a simplicidade, comunicação direta e documentação mínima necessária, defendendo entregas pequenas e frequentes.",
+      "O XP defende que as entregas devem ocorrer semanalmente, desde que a documentação técnica seja exaustivamente aprovada no Jogo de Planejamento."
+    ],
+    "resposta_correta": "O XP privilegia a simplicidade, comunicação direta e documentação mínima necessária, defendendo entregas pequenas e frequentes.",
+    "explicacao": "O XP, como metodologia ágil, foca em simplicidade, colaboração intensa e entregas frequentes. Portanto, ele privilegia pequenas entregas (incrementos pequenos) para coletar feedback rápido e adaptar o plano. Além disso, o XP privilegia a comunicação direta e a simplicidade, produzindo apenas a documentação mínima necessária, tornando incorreta a afirmação de que há foco em documentação pesada ou matriz de rastreabilidade obrigatória."
+  },
+  {
+    "id": "dataprev_fgv_xp_007",
+    "categoria": "DATAPREV",
+    "tipo": "multipla",
+    "pergunta": "Durante o desenvolvimento de um módulo crítico para o pagamento de benefícios, dois desenvolvedores da DATAPREV sentam-se à mesma estação de trabalho. Um digita o código enquanto o outro revisa simultaneamente cada linha sendo escrita, trocando de papéis periodicamente. Qual prática do XP está sendo descrita?",
+    "opcoes": [
+      "Cliente sempre presente.",
+      "Refatoração estrutural.",
+      "Integração contínua.",
+      "Jogo de planejamento.",
+      "Programação em pares."
+    ],
+    "resposta_correta": "Programação em pares.",
+    "explicacao": "A situação descrita é exatamente a definição da prática 'Programação em pares' (pair programming) do XP. Nessa prática, dois desenvolvedores atuam no mesmo código com papéis alternados (quem escreve e quem revisa em tempo real), o que promove feedback imediato e disseminação de conhecimento entre a equipe."
+  },
+  {
+    "id": "dataprev_fgv_xp_008",
+    "categoria": "DATAPREV",
+    "tipo": "multipla",
+    "pergunta": "Analise o cenário: Um auditor verifica os processos de uma equipe de desenvolvimento da DATAPREV que afirma usar XP. Ele nota que a equipe realiza reuniões no final da iteração cujo foco exclusivo é discutir problemas enfrentados e lições aprendidas do que já foi feito, sem debater o que será desenvolvido na próxima semana. Na terminologia ágil e do XP, essa reunião corresponde ao:",
+    "opcoes": [
+      "Jogo de planejamento (Planning Game).",
+      "Ritmo Sustentável.",
+      "Não corresponde ao Jogo de Planejamento, e sim a uma retrospectiva ou reunião de status.",
+      "Entendimento Compartilhado.",
+      "Desenvolvimento orientado a testes (TDD)."
+    ],
+    "resposta_correta": "Não corresponde ao Jogo de Planejamento, e sim a uma retrospectiva ou reunião de status.",
+    "explicacao": "No XP, o 'Jogo de Planejamento' (Planning Game) não é focado em discutir problemas passados, lições ou o que foi feito. Em vez disso, o jogo de planejamento serve estritamente para estimar, priorizar e selecionar as histórias de usuário que entrarão no próximo release ou iteração com base em valor e esforço. Uma reunião voltada a lições aprendidas e análise de desempenho é uma retrospectiva ou reunião de status, que é diferente do jogo de planejamento."
+  },
+  {
+    "id": "dataprev_fgv_xp_009",
+    "categoria": "DATAPREV",
+    "tipo": "multipla",
+    "pergunta": "Em relação à presença do cliente e às características da equipe no Extreme Programming (XP), identifique a afirmação correta que evitaria uma armadilha comum em provas elaboradas pela FGV.",
+    "opcoes": [
+      "O cliente deve participar apenas ao final do projeto para homologação, enquanto a equipe deve ser composta unicamente por especialistas sêniores.",
+      "O cliente deve estar sempre presente para fornecer feedback rápido, e a equipe pode ser composta por membros com diferentes níveis de conhecimento.",
+      "O cliente participa exclusivamente do Jogo de Planejamento, ausentando-se das demais fases, sendo a propriedade do código restrita aos líderes técnicos.",
+      "O cliente dita como o código deve ser refatorado, e a equipe segue um ritmo exaustivo para antecipar pequenas entregas.",
+      "O XP exige cliente sempre presente, mas impede a refatoração do código para não comprometer as entregas frequentes, exigindo apenas desenvolvedores sêniores."
+    ],
+    "resposta_correta": "O cliente deve estar sempre presente para fornecer feedback rápido, e a equipe pode ser composta por membros com diferentes níveis de conhecimento.",
+    "explicacao": "Uma das práticas essenciais de feedback rápido no XP é o 'cliente sempre presente'. Afirmar que o cliente participa apenas no final é um erro. Além disso, o XP aceita diferentes níveis de conhecimento na equipe, tornando errada a pegadinha de que a equipe deve ter apenas especialistas sêniores. A refatoração não é impedida, mas sim uma prática contínua no XP."
+  },
+  {
+    "id": "dataprev_fgv_xp_010",
+    "categoria": "DATAPREV",
+    "tipo": "multipla",
+    "pergunta": "A prática da Refatoração é inerente ao Processo Contínuo de Entregas no Extreme Programming. Conceitualmente, a refatoração, conforme as diretrizes do XP, consiste em:",
+    "opcoes": [
+      "Alterar o comportamento visível do sistema para acomodar novas histórias de usuário exigidas no jogo de planejamento.",
+      "Descartar o código antigo e reescrevê-lo completamente do zero sempre que o cliente alterar a prioridade pelo valor de negócio.",
+      "Adicionar novas funcionalidades ao sistema sem a necessidade de criar testes automatizados previamente.",
+      "Melhorar a estrutura interna do código, tornando-o mais limpo e organizado, sem alterar o seu comportamento funcional e visível.",
+      "Transferir a propriedade coletiva do código para apenas um desenvolvedor com o intuito de padronizar a qualificação do sistema."
+    ],
+    "resposta_correta": "Melhorar a estrutura interna do código, tornando-o mais limpo e organizado, sem alterar o seu comportamento funcional e visível.",
+    "explicacao": "No XP, a prática de Refatoração significa exatamente realizar melhorias estruturais contínuas no código, melhorando a estrutura interna sem mudar o seu comportamento visível. Adicionar novas funcionalidades ou alterar o comportamento do sistema não é refatoração."
+  },
+  {
     "id": "dataprev_xp_001",
     "categoria": "DATAPREV",
     "tipo": "multipla",
