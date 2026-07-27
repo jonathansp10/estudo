@@ -1,5 +1,155 @@
 [
   {
+    "id": "dataprev_xp_001",
+    "categoria": "DATAPREV",
+    "tipo": "multipla",
+    "pergunta": "Uma equipe de desenvolvimento da DATAPREV está avaliando a adoção do Extreme Programming (XP) para um novo projeto governamental. Considerando as características e o contexto ideal de uso dessa metodologia ágil, assinale a opção que descreve o cenário mais adequado para a implantação do XP.",
+    "opcoes": [
+      "Equipe de 15 programadores, lidando com requisitos estáveis e conhecidos desde o início do projeto, com entregas anuais.",
+      "Equipe de 2 até 10 programadores, enfrentando requisitos vagos ou sujeitos a mudanças frequentes, com necessidade de feedback constante e entregas curtas.",
+      "Equipe limitada a até 7 membros, com requisitos fixos e documentação extensa, onde a integração do código ocorre apenas no final do projeto.",
+      "Equipe de 5 programadores, lidando com requisitos mutáveis, mas onde a refatoração do código e a programação em pares são expressamente evitadas.",
+      "Equipe de 12 programadores, com requisitos voláteis, na qual a interação com o cliente é dispensada para não atrasar a velocidade de codificação individual."
+    ],
+    "resposta_correta": "Equipe de 2 até 10 programadores, enfrentando requisitos vagos ou sujeitos a mudanças frequentes, com necessidade de feedback constante e entregas curtas.",
+    "explicacao": "O contexto ideal para o uso do XP exige equipes de dois até dez programadores. Além disso, o XP é indicado quando os requisitos são vagos ou sujeitos a mudanças frequentes, exigindo feedback constante, entregas curtas e integração em fração de um dia."
+  },
+  {
+    "id": "dataprev_xp_002",
+    "categoria": "DATAPREV",
+    "tipo": "multipla",
+    "pergunta": "A estrutura conceitual do Extreme Programming (XP) divide-se em Valores (por que), Princípios (o que perseguir) e Práticas (como fazer). Com base no mapeamento entre esses três níveis, assinale a opção que relaciona CORRETAMENTE o valor da 'Simplicidade' ao seu respectivo princípio e à sua prática.",
+    "opcoes": [
+      "Princípio: Feedback rápido / Prática: Programação em pares e cliente sempre presente.",
+      "Princípio: Trabalho de qualidade / Prática: Testes automatizados e código limpo.",
+      "Princípio: Assumir a simplicidade / Prática: Design simples e evitar complexidade desnecessária.",
+      "Princípio: Abraçar as mudanças / Prática: Pequenas entregas e integração contínua.",
+      "Princípio: Mudança incremental / Prática: Histórias de usuário e desenvolvimento incremental."
+    ],
+    "resposta_correta": "Princípio: Assumir a simplicidade / Prática: Design simples e evitar complexidade desnecessária.",
+    "explicacao": "No mapeamento do XP, o valor 'Simplicidade' está diretamente ligado ao princípio 'Assumir a simplicidade'. As práticas que materializam esse princípio no dia a dia são o design simples, evitar a complexidade desnecessária e atender ao necessário agora e nada além."
+  },
+  {
+    "id": "dataprev_xp_003",
+    "categoria": "DATAPREV",
+    "tipo": "multipla",
+    "pergunta": "Durante a implantação do Extreme Programming (XP), diversas práticas são agrupadas para facilitar sua execução. Considerando os grupos 'Feedback rápido' e 'Qualidade de vida do desenvolvedor', assinale a alternativa que apresenta práticas que pertencem, respectivamente, a esses dois grupos.",
+    "opcoes": [
+      "Propriedade coletiva do código e Pequenas entregas.",
+      "Jogos de planejamento e Histórias de usuário.",
+      "Desenvolvimento orientado a testes (TDD) e Ritmo sustentável (cerca de quarenta horas/semana).",
+      "Metáforas e Integração contínua.",
+      "Cliente sempre presente e Refatoração."
+    ],
+    "resposta_correta": "Desenvolvimento orientado a testes (TDD) e Ritmo sustentável (cerca de quarenta horas/semana).",
+    "explicacao": "O grupo de práticas voltado para o 'Feedback rápido' engloba o desenvolvimento orientado a testes (teste first/TDD), a programação em pares, o cliente sempre presente e o feedback constante. Já o grupo 'Qualidade de vida do desenvolvedor' é representado pela prática do ritmo sustentável, que prega cerca de quarenta horas de trabalho por semana, protegendo a produtividade de longo prazo."
+  },
+  {
+    "id": "dataprev_xp_004",
+    "categoria": "DATAPREV",
+    "tipo": "multipla",
+    "pergunta": "Um líder técnico está treinando novos colaboradores sobre os macetes operacionais e regras do Extreme Programming (XP). Para evitar armadilhas e más compreensões sobre o método, ele elaborou um teste com afirmações comuns. Assinale a única afirmação considerada CORRETA e alinhada às premissas do XP.",
+    "opcoes": [
+      "A integração dos códigos produzidos pelos desenvolvedores deve ocorrer somente ao final do projeto para evitar que bugs intermediários quebrem a aplicação.",
+      "O XP é altamente recomendável para projetos cujos requisitos são perfeitamente conhecidos, documentados detalhadamente e estáveis desde o seu início.",
+      "A refatoração do código deve ser evitada a todo custo, pois atrasa as entregas curtas e o ritmo sustentável da equipe.",
+      "O método exige que o cliente esteja sempre presente junto à equipe de desenvolvimento para fornecer feedback constante.",
+      "O tamanho da equipe não é um fator limitante no XP, sendo a metodologia adequada para qualquer quantidade de programadores, desde que divididos em pares."
+    ],
+    "resposta_correta": "O método exige que o cliente esteja sempre presente junto à equipe de desenvolvimento para fornecer feedback constante.",
+    "explicacao": "Uma das práticas centrais e inegociáveis do XP é ter o 'cliente sempre presente' para prover feedback rápido. Afirmar que a integração ocorre 'só ao final do projeto', ou que XP é para 'requisitos estáveis' ou para 'equipes de qualquer tamanho' são erros clássicos da banca FGV."
+  },
+  {
+    "id": "dataprev_xp_005",
+    "categoria": "DATAPREV",
+    "tipo": "multipla",
+    "pergunta": "As práticas do XP buscam garantir que a equipe atue em sintonia e com alta previsibilidade. O conjunto de práticas voltado para o 'Entendimento compartilhado' do projeto e do código engloba rotinas específicas. Assinale a opção que lista APENAS práticas classificadas no grupo 'Entendimento compartilhado'.",
+    "opcoes": [
+      "Desenvolvimento orientado a testes (TDD), programação em pares e cliente sempre presente.",
+      "Jogos de planejamento, metáforas, design simples, propriedade coletiva do código e padrões de qualificação.",
+      "Pequenas entregas, refatoração e integração contínua.",
+      "Histórias de usuário, ritmo sustentável e equipe auto-organizada.",
+      "Desenvolvimento orientado a testes (TDD), refatoração e programação em pares."
+    ],
+    "resposta_correta": "Jogos de planejamento, metáforas, design simples, propriedade coletiva do código e padrões de qualificação.",
+    "explicacao": "De acordo com a doutrina, o grupo 'Entendimento compartilhado' é composto estritamente pelas práticas de: jogos de planejamento, metáforas, design simples, propriedade coletiva do código e padrões de qualificação."
+  },
+  {
+    "id": "dataprev_xp_006",
+    "categoria": "DATAPREV",
+    "tipo": "multipla",
+    "pergunta": "No framework conceitual do Extreme Programming (XP), a atitude da equipe é norteada por quatro valores essenciais, sendo um deles a 'Coragem'. Segundo o mapeamento conceitual (Valor → Princípio → Prática), assinale a alternativa que indica corretamente o princípio e as práticas derivadas do valor 'Coragem'.",
+    "opcoes": [
+      "Princípio: Feedback rápido / Práticas: Cliente sempre presente e programação em pares.",
+      "Princípio: Mudança incremental / Práticas: Histórias de usuário e desenvolvimento incremental.",
+      "Princípio: Assumir a simplicidade / Práticas: Design simples e evitar complexidade desnecessária.",
+      "Princípio: Trabalho de qualidade / Práticas: Testes automatizados, código limpo e padrões de qualificação.",
+      "Princípio: Abraçar as mudanças / Práticas: Pequenas entregas e integração contínua."
+    ],
+    "resposta_correta": "Princípio: Abraçar as mudanças / Práticas: Pequenas entregas e integração contínua.",
+    "explicacao": "No XP, o valor 'Coragem' direciona a equipe a seguir o princípio de 'Abraçar as mudanças'. Para que esse princípio seja executado de forma segura, a equipe utiliza as práticas de 'Pequenas entregas' e 'Integração contínua'."
+  },
+  {
+    "id": "dataprev_xp_007",
+    "categoria": "DATAPREV",
+    "tipo": "multipla",
+    "pergunta": "O método XP possui um macete operacional reconhecido em materiais de estudo para memorização rápida das suas práticas fundamentais. A fórmula consolidada da metodologia Extreme Programming é perfeitamente representada por:",
+    "opcoes": [
+      "XP = TDD + Programação individual + Reunião diária + Integração no fim + Refatoração opcional + Entregas semestrais.",
+      "XP = Testes ao final + Pares + Cliente ausente + Integração contínua + Evitar refatoração + Pequenas entregas.",
+      "XP = TDD + Pares + Cliente presente + Integração contínua + Refatoração + Pequenas entregas.",
+      "XP = BDD + Pares rotativos + Product Owner presente + Integração mensal + Código estático + Entregas em grandes lotes.",
+      "XP = Cascata rápida + TDD + Equipe auto-organizada + Ferramentas pesadas + Integração contínua + Documentação extensa."
+    ],
+    "resposta_correta": "XP = TDD + Pares + Cliente presente + Integração contínua + Refatoração + Pequenas entregas.",
+    "explicacao": "O macete operacional que define a base prática do XP consolida as seguintes técnicas inseparáveis: XP = TDD + Pares + Cliente presente + Integração contínua + Refatoração + Pequenas entregas. As demais opções negam princípios da agilidade."
+  },
+  {
+    "id": "dataprev_xp_008",
+    "categoria": "DATAPREV",
+    "tipo": "multipla",
+    "pergunta": "O Extreme Programming (XP) é notável pela sua abordagem rigorosa na forma como o software é construído, testado e montado pela equipe. Em relação ao momento correto da integração do código-fonte (Integração Contínua), é correto afirmar que, no XP, essa integração ocorre:",
+    "opcoes": [
+      "Múltiplas vezes por dia, em uma fração de um dia.",
+      "Exclusivamente no final do projeto, para consolidar todas as funcionalidades.",
+      "Semanalmente, alinhada à prática do ritmo sustentável de quarenta horas.",
+      "Apenas no momento da entrega final do incremento do produto ao cliente.",
+      "Somente quando todos os requisitos, anteriormente vagos, se tornam completamente estáveis."
+    ],
+    "resposta_correta": "Múltiplas vezes por dia, em uma fração de um dia.",
+    "explicacao": "O XP estipula que o contexto ideal e as práticas de processo contínuo exigem que a integração seja feita em 'fração de um dia', configurando a integração contínua (que integra o código múltiplas vezes por dia). Pegadinhas de 'fim do projeto' ou 'semanalmente' referem-se a práticas não-XP."
+  },
+  {
+    "id": "dataprev_xp_009",
+    "categoria": "DATAPREV",
+    "tipo": "multipla",
+    "pergunta": "Na estrutura do Extreme Programming (XP), os Valores respondem ao questionamento sobre o 'por que' a equipe age de determinada forma, norteando a postura e a atitude dos desenvolvedores. Assinale a opção que lista corretamente e integralmente os quatro valores fundamentais do método XP citados na literatura clássica.",
+    "opcoes": [
+      "Colaboração com o cliente, Software funcionando, Resposta rápida e Processos eficientes.",
+      "Feedback rápido, Mudança incremental, Ritmo sustentável e Trabalho de qualidade.",
+      "Comunicação, Simplicidade, Coragem e Respeito.",
+      "Jogo de planejamento, Design simples, Testes e Refatoração.",
+      "Planejamento, Projeto, Design e Codificação."
+    ],
+    "resposta_correta": "Comunicação, Simplicidade, Coragem e Respeito.",
+    "explicacao": "O Extreme Programming possui como estrutura conceitual quatro Valores principais, que representam a postura/atitude da equipe: Comunicação, Simplicidade, Coragem e Respeito. O restante são Princípios ou Práticas."
+  },
+  {
+    "id": "dataprev_xp_010",
+    "categoria": "DATAPREV",
+    "tipo": "multipla",
+    "pergunta": "A literatura acerca de Engenharia de Software e Metodologias Ágeis muitas vezes descreve as sequências de trabalho adotadas nos métodos iterativos. Em provas de concurso, existem fluxos de processo específicos aceitos didaticamente para o XP. Qual das alternativas apresenta uma sequência válida e aceita como fluxo de atividades no Extreme Programming?",
+    "opcoes": [
+      "Congelamento de escopo → design monolítico → programação em pares → documentação → integração anual.",
+      "Planejamento → projeto → design → codificação → teste.",
+      "Qualificação → integração no fim → planejamento anual → cliente ausente → incremento.",
+      "Requisitos estáveis → refatoração evitada → design → teste no fim → entrega do produto.",
+      "Testes de aceitação → planejamento → evitar refatoração → integração → codificação."
+    ],
+    "resposta_correta": "Planejamento → projeto → design → codificação → teste.",
+    "explicacao": "Dentre os fluxos de processo citados e aceitos didaticamente para o XP, a doutrina valida a sequência 'Planejamento → projeto → design → codificação → teste'. Todas as demais alternativas negam práticas essenciais do XP (como evitar refatoração, integração no fim, etc.)."
+  },
+  {
     "id": "cyber_nse2_001",
     "categoria": "Cibersegurança",
     "tipo": "multipla",
