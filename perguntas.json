@@ -1,5 +1,295 @@
 [
   {
+    "id": "html_fundamentos_001",
+    "categoria": "HTML",
+    "tipo": "multipla",
+    "pergunta": "Qual é a principal finalidade da linguagem HTML no desenvolvimento web?",
+    "opcoes": [
+      "Criar e estruturar conteúdos na web através de marcações",
+      "Programar a lógica de comportamento e interatividade dinâmica de aplicações",
+      "Gerenciar bancos de dados e realizar consultas em servidores",
+      "Estilizar visualmente os elementos de uma página através de propriedades de design"
+    ],
+    "resposta_correta": "Criar e estruturar conteúdos na web através de marcações",
+    "explicacao": "A principal função do HTML (HyperText Markup Language) é estruturar o conteúdo de páginas web, definindo a organização dos elementos como textos, imagens, links e formulários por meio de \"marcações\" ou \"tags\". É a base de qualquer página na internet, fornecendo a espinha dorsal para o conteúdo."
+  },
+  {
+    "id": "html_fundamentos_002",
+    "categoria": "HTML",
+    "tipo": "multipla",
+    "pergunta": "Como são denominados os elementos de marcação utilizados na linguagem HTML?",
+    "opcoes": [
+      "Comandos de execução",
+      "Seletores de estilo",
+      "Atributos de formatação",
+      "Tags de marcação"
+    ],
+    "resposta_correta": "Tags de marcação",
+    "explicacao": "Os elementos de marcação utilizados na linguagem HTML são chamados de \"tags\". Essas tags (do inglês, \"etiquetas\") são palavras-chave envoltas em colchetes angulares (por exemplo, <p>, <div>, <img>) que definem a estrutura e o tipo de conteúdo na página web."
+  },
+  {
+    "id": "html_fundamentos_003",
+    "categoria": "HTML",
+    "tipo": "multipla",
+    "pergunta": "Qual é a característica principal das tags vazias em HTML?",
+    "opcoes": [
+      "São utilizadas exclusivamente para criar formulários e campos de entrada",
+      "Devem sempre conter atributos obrigatórios para funcionarem corretamente",
+      "Não possuem conteúdo interno e não necessitam de tag de fechamento separada",
+      "Possuem conteúdo interno extenso e requerem múltiplas tags de fechamento"
+    ],
+    "resposta_correta": "Não possuem conteúdo interno e não necessitam de tag de fechamento separada",
+    "explicacao": "A característica principal das tags vazias (também conhecidas como tags de \"elemento vazio\" ou \"self-closing tags\") é que elas não contêm conteúdo textual ou outras tags entre uma tag de abertura e uma de fechamento. Sua funcionalidade é definida por atributos dentro da própria tag. Exemplos incluem <img>, <br> e <meta>."
+  },
+  {
+    "id": "html_fundamentos_004",
+    "categoria": "HTML",
+    "tipo": "multipla",
+    "pergunta": "Qual é a função da tag <title> em um documento HTML?",
+    "opcoes": [
+      "Criar cabeçalhos e subtítulos dentro do conteúdo visível",
+      "Indicar o nome que aparecerá na aba do navegador",
+      "Definir o título principal exibido no corpo da página web",
+      "Estabelecer metadados sobre o autor do documento"
+    ],
+    "resposta_correta": "Indicar o nome que aparecerá na aba do navegador",
+    "explicacao": "A tag <title> define o título do documento HTML, que é exibido na aba do navegador ou na barra de título da janela. Este título também é usado por mecanismos de busca. Em contrapartida, o título principal visível dentro do conteúdo da página é geralmente definido por tags de cabeçalho, como de <h1> a <h6>."
+  },
+  {
+    "id": "html_fundamentos_005",
+    "categoria": "HTML",
+    "tipo": "multipla",
+    "pergunta": "Qual tag HTML é utilizada para inserir comentários que não serão exibidos no navegador?",
+    "opcoes": [
+      "<comment>texto</comment>",
+      "<note>texto</note>",
+      "<!-- texto -->",
+      "// texto //"
+    ],
+    "resposta_correta": "<!-- texto -->",
+    "explicacao": "A sintaxe <!-- texto --> é a forma padrão e universalmente reconhecida para inserir comentários em documentos HTML. Qualquer conteúdo colocado entre <!-- e --> será ignorado pelo navegador. Sintaxes como // texto // são usadas em linguagens como JavaScript ou C++, mas são inválidas em HTML."
+  },
+  {
+    "id": "html_fundamentos_006",
+    "categoria": "HTML",
+    "tipo": "multipla",
+    "pergunta": "Qual é a função do atributo 'lang' na tag <html>?",
+    "opcoes": [
+      "Configurar a direção de leitura do texto na página",
+      "Indicar o idioma em que o conteúdo da página está escrito",
+      "Especificar a versão do HTML que está sendo utilizada",
+      "Definir o conjunto de caracteres utilizado no documento"
+    ],
+    "resposta_correta": "Indicar o idioma em que o conteúdo da página está escrito",
+    "explicacao": "O atributo 'lang' na tag <html> serve para indicar o idioma principal do conteúdo da página (ex: lang=\"pt-BR\"). Isso é fundamental para acessibilidade (orientando leitores de tela na pronúncia correta) e para motores de busca durante a indexação."
+  },
+  {
+    "id": "html_fundamentos_007",
+    "categoria": "HTML",
+    "tipo": "multipla",
+    "pergunta": "Qual é a diferença fundamental entre listas ordenadas e listas não ordenadas em HTML?",
+    "opcoes": [
+      "Listas ordenadas seguem uma sequência específica com numeração ou letras, enquanto listas não ordenadas utilizam símbolos sem hierarquia",
+      "Listas ordenadas permitem apenas três itens, enquanto listas não ordenadas aceitam quantidade ilimitada",
+      "Listas ordenadas são criadas com a tag <ul>, enquanto listas não ordenadas utilizam a tag <ol>",
+      "Listas ordenadas utilizam símbolos como marcadores, enquanto listas não ordenadas utilizam números"
+    ],
+    "resposta_correta": "Listas ordenadas seguem uma sequência específica com numeração ou letras, enquanto listas não ordenadas utilizam símbolos sem hierarquia",
+    "explicacao": "A principal distinção reside na semântica: listas ordenadas (<ol>) são empregadas quando a sequência dos itens é importante, exibindo marcadores numéricos ou alfabéticos. Já as listas não ordenadas (<ul>) são usadas quando a ordem dos itens não é relevante, apresentando-os com marcadores gráficos (como pontos ou quadrados)."
+  },
+  {
+    "id": "html_fundamentos_008",
+    "categoria": "HTML",
+    "tipo": "multipla",
+    "pergunta": "Em uma lista de descrição HTML, qual é a relação entre as tags <dt> e <dd>?",
+    "opcoes": [
+      "A tag <dt> agrupa múltiplas listas, enquanto a tag <dd> separa seções distintas",
+      "A tag <dt> cria itens numerados, enquanto a tag <dd> cria itens com marcadores circulares",
+      "A tag <dt> estabelece a ordem dos elementos, enquanto a tag <dd> define o estilo visual",
+      "A tag <dt> define o termo ou título, enquanto a tag <dd> fornece a descrição ou explicação desse termo"
+    ],
+    "resposta_correta": "A tag <dt> define o termo ou título, enquanto a tag <dd> fornece a descrição ou explicação desse termo",
+    "explicacao": "Em uma lista de descrição (<dl>), a tag <dt> (description term) é utilizada para definir o termo ou conceito que será explicado. Em seguida, a tag <dd> (description details) fornece a descrição, definição ou explicação correspondente. Juntas, formam pares termo-descrição."
+  },
+  {
+    "id": "html_fundamentos_009",
+    "categoria": "HTML",
+    "tipo": "multipla",
+    "pergunta": "Qual é a finalidade da declaração <!DOCTYPE html> no início de um documento HTML?",
+    "opcoes": [
+      "Declarar os metadados obrigatórios para validação do documento",
+      "Indicar a versão do HTML que está sendo utilizada, sempre apontando para a mais recente",
+      "Especificar o idioma padrão do conteúdo da página",
+      "Definir o conjunto de caracteres que será utilizado no documento"
+    ],
+    "resposta_correta": "Indicar a versão do HTML que está sendo utilizada, sempre apontando para a mais recente",
+    "explicacao": "A declaração <!DOCTYPE html> é uma instrução para o navegador que informa qual versão do HTML o documento está usando. Para o HTML5 (versão atual), a sintaxe simplificada garante que o navegador renderize a página no 'modo padrão', evitando modos de compatibilidade que simulam comportamentos de navegadores antigos."
+  },
+  {
+    "id": "html_fundamentos_010",
+    "categoria": "HTML",
+    "tipo": "multipla",
+    "pergunta": "Considerando os cabeçalhos HTML (h1 a h6), qual é o critério que determina a escolha entre eles?",
+    "opcoes": [
+      "A hierarquia e importância do título ou subtítulo no contexto da página",
+      "A posição física onde o cabeçalho será exibido na estrutura do documento",
+      "A compatibilidade com diferentes versões de navegadores web",
+      "A quantidade de texto que cada cabeçalho pode conter em seu interior"
+    ],
+    "resposta_correta": "A hierarquia e importância do título ou subtítulo no contexto da página",
+    "explicacao": "A escolha entre os cabeçalhos <h1> a <h6> é ditada pela hierarquia e importância semântica do conteúdo. O <h1> é reservado para o título principal da página, enquanto os de <h2> a <h6> são usados para subtítulos e seções hierarquicamente inferiores, otimizando a acessibilidade e a leitura por motores de busca (SEO)."
+  },
+  {
+    "id": "dataprev_html5_001",
+    "categoria": "DATAPREV",
+    "tipo": "multipla",
+    "pergunta": "Analisando a evolução e estrutura do HTML, um desenvolvedor da DATAPREV precisa definir o padrão de um novo documento. Assinale a alternativa correta sobre a declaração DOCTYPE e a relação do HTML5 com SGML/XML.",
+    "opcoes": [
+      "O SGML é a versão anterior ao HTML5 e a tag <!DOCTYPE html> baixa a versão mais recente para o navegador.",
+      "O XML é a versão atual do HTML, substituindo o padrão HTML5 desde 2014.",
+      "SGML e XML são linguagens de marcação genéricas, não são versões de HTML, e a tag <!DOCTYPE html> apenas declara que o documento segue o padrão HTML5.",
+      "A tag <!DOCTYPE html> instala os componentes do HTML5, que é uma subversão do XML.",
+      "O HTML5 é o padrão vigente e requer a tag <!DOCTYPE html> para importar os estilos obrigatórios do SGML."
+    ],
+    "resposta_correta": "SGML e XML são linguagens de marcação genéricas, não são versões de HTML, e a tag <!DOCTYPE html> apenas declara que o documento segue o padrão HTML5.",
+    "explicacao": "A resposta correta é a opção que separa o HTML5 do SGML/XML.\n* SGML e XML são linguagens de marcação genéricas, não são 'versões de HTML'.\n* O HTML5 é o padrão vigente (desde 2014).\n* A declaração <!DOCTYPE html> apenas declara que o documento segue HTML5, não 'baixa' nem instala versão alguma."
+  },
+  {
+    "id": "dataprev_html5_002",
+    "categoria": "DATAPREV",
+    "tipo": "multipla",
+    "pergunta": "Ao revisar o código-fonte de uma página da intranet da DATAPREV, o desenvolvedor notou diferentes tentativas de inserir comentários. Segundo o padrão HTML5, qual a sintaxe exata e correta para inserir um comentário que não deve aparecer no navegador?",
+    "opcoes": [
+      "// comentário //",
+      "<!-- comentário -->",
+      "/* comentário */",
+      "<comentário>",
+      "<! comentário !>"
+    ],
+    "resposta_correta": "<!-- comentário -->",
+    "explicacao": "A resposta correta é a sintaxe exclusiva do HTML para comentários.\n* A sintaxe exata para um comentário HTML é <!-- comentário -->.\n* Este tipo de comentário não aparece (não é exibido) no navegador.\n* Qualquer variação diferente de <!-- ... --> está errada."
+  },
+  {
+    "id": "dataprev_html5_003",
+    "categoria": "DATAPREV",
+    "tipo": "multipla",
+    "pergunta": "Para exibir uma lista de candidatos aprovados em um concurso da DATAPREV utilizando ordem alfabética minúscula e iniciando pela terceira letra do alfabeto ('c'), qual código HTML5 deve ser utilizado?",
+    "opcoes": [
+      "<ul type=\"a\" start=\"3\">",
+      "<ol type=\"A\" start=\"3\">",
+      "<ol type=\"a\" start=\"3\">",
+      "<dl type=\"a\" start=\"c\">",
+      "<list type=\"a\" start=\"3\">"
+    ],
+    "resposta_correta": "<ol type=\"a\" start=\"3\">",
+    "explicacao": "A resposta correta é a que combina a tag de ordenação correta com os parâmetros desejados.\n* Para listas onde a ordem importa (como aprovações por classificação), deve-se usar a tag <ol>.\n* Para criar uma lista alfabética minúscula, utiliza-se o atributo type='a'.\n* Para iniciar na terceira letra, utiliza-se o atributo start='3', que gerará a saída c, d, e."
+  },
+  {
+    "id": "dataprev_html5_004",
+    "categoria": "DATAPREV",
+    "tipo": "multipla",
+    "pergunta": "Em um painel de contagem regressiva de processos, deseja-se exibir 4 itens numerados de forma decrescente (4, 3, 2, 1). De acordo com o HTML5, qual a forma correta de configurar a lista para que inicie pelo número total de itens sem definir manualmente o atributo 'start'?",
+    "opcoes": [
+      "Utilizar a tag <ol> com o atributo reversed.",
+      "Utilizar a tag <ul> com o atributo reversed.",
+      "Utilizar a tag <ol> com o atributo type=\"desc\".",
+      "Utilizar a tag <ol> e ordenar os elementos <li> de baixo para cima manualmente.",
+      "Utilizar a tag <dl> com o atributo start=\"4\"."
+    ],
+    "resposta_correta": "Utilizar a tag <ol> com o atributo reversed.",
+    "explicacao": "A resposta correta aplica o atributo de inversão do HTML5.\n* A tag <ol> é utilizada para listas ordenadas (onde há ordem ou numeração).\n* O atributo reversed inverte a ordem da lista.\n* Se o atributo reversed for usado sem o atributo start, a lista começa nativamente pelo número total de itens."
+  },
+  {
+    "id": "dataprev_html5_005",
+    "categoria": "DATAPREV",
+    "tipo": "multipla",
+    "pergunta": "Ao criar um glossário com termos técnicos e suas respectivas definições para um portal interno, qual conjunto de tags HTML5 é o mais semântico e adequado de acordo com os padrões da linguagem?",
+    "opcoes": [
+      "<ul> para a lista, <li> para o termo e <div> para a definição.",
+      "<ol> para a lista, <dt> para o termo e <dd> para a definição.",
+      "<dl> para a lista, <dt> para o termo e <dd> para a definição.",
+      "<dl> para a lista, <li> para o termo e <div> para a definição.",
+      "<ul> para a lista, <h1> para o termo e <p> para a definição."
+    ],
+    "resposta_correta": "<dl> para a lista, <dt> para o termo e <dd> para a definição.",
+    "explicacao": "A resposta correta é a estrutura semântica para descrições.\n* Quando se trabalha com termos e definições (glossários ou pares termo-definição), utiliza-se a lista de descrição representada pela tag <dl>.\n* O termo a ser descrito é envolvido pela tag <dt>.\n* A definição em si é declarada utilizando a tag <dd>."
+  },
+  {
+    "id": "dataprev_html5_006",
+    "categoria": "DATAPREV",
+    "tipo": "multipla",
+    "pergunta": "Durante a marcação de um documento HTML5, é essencial distinguir tags que possuem conteúdo daquelas classificadas como vazias. Assinale a alternativa correta sobre o comportamento e a sintaxe da tag de imagem.",
+    "opcoes": [
+      "A tag <img> possui conteúdo e deve ser fechada separadamente com </img>.",
+      "A tag <img> é uma tag vazia e não possui fechamento separado.",
+      "A tag <img> deve ser sempre declarada dentro de uma tag <dl> para ser válida.",
+      "A tag <img> define a hierarquia de títulos visuais da página web.",
+      "A tag <img> substitui a tag <!DOCTYPE html> em páginas focadas em imagens."
+    ],
+    "resposta_correta": "A tag <img> é uma tag vazia e não possui fechamento separado.",
+    "explicacao": "A resposta correta reflete a definição de elementos vazios no HTML5.\n* A tag <img> é caracterizada estruturalmente como uma tag vazia.\n* Tags vazias não têm fechamento separado.\n* Sendo assim, tentar utilizar a sintaxe </img> está incorreto segundo o padrão vigente."
+  },
+  {
+    "id": "dataprev_html5_007",
+    "categoria": "DATAPREV",
+    "tipo": "multipla",
+    "pergunta": "Sobre a utilização e o comportamento de listas ordenadas e não ordenadas no padrão HTML5, assinale a afirmativa correta.",
+    "opcoes": [
+      "A tag <li> sozinha determina se a ordenação do item será numérica ou alfabética.",
+      "A tag <ul> cria uma lista numerada de forma sequencial por padrão.",
+      "O uso genérico da tag <div> dentro de um <ol> cria automaticamente um sub-item numerado.",
+      "A ordenação dos itens não depende puramente da tag <li>, mas do seu elemento pai, que deve ser <ol> para gerar numeração.",
+      "A tag <ul> serve exclusivamente para criar listas de descrição de termos (glossários)."
+    ],
+    "resposta_correta": "A ordenação dos itens não depende puramente da tag <li>, mas do seu elemento pai, que deve ser <ol> para gerar numeração.",
+    "explicacao": "A resposta correta descreve a hierarquia funcional das listas no HTML5.\n* A tag <li> atua apenas como um item de lista e, sozinha, não determina ordenação.\n* A ordenação dos itens depende integralmente do elemento pai.\n* Para que haja ordem ou numeração, o elemento pai deve ser a tag <ol>.\n* Por outro lado, a tag <ul> cria listas simples sem hierarquia rígida, logo não numera os itens."
+  },
+  {
+    "id": "dataprev_html5_008",
+    "categoria": "DATAPREV",
+    "tipo": "multipla",
+    "pergunta": "Para garantir a acessibilidade e a indexação correta do idioma de um sistema web da DATAPREV para o português do Brasil, em qual tag e através de qual atributo essa configuração deve ser declarada no padrão HTML5?",
+    "opcoes": [
+      "Na tag <meta>, utilizando o atributo language=\"pt-BR\".",
+      "No cabeçalho <head>, através de um comentário específico <!-- lang=\"pt-BR\" -->.",
+      "No elemento raiz <html>, utilizando o atributo lang=\"pt-BR\".",
+      "Na tag <body>, utilizando o atributo charset=\"pt-BR\".",
+      "Na tag <!DOCTYPE html>, adicionando o sufixo \"pt-BR\" ao final da declaração."
+    ],
+    "resposta_correta": "No elemento raiz <html>, utilizando o atributo lang=\"pt-BR\".",
+    "explicacao": "A resposta correta identifica onde a linguagem base deve ser informada.\n* O idioma do documento é definido através do atributo lang.\n* Esse atributo deve ser alocado no elemento raiz do documento, configurando a tag como <html lang=\"pt-BR\">.\n* A tag <html> envolve todo o documento e o atributo lang com valor como 'pt-BR' ou 'en' garante a correta formatação, devendo utilizar hífen e país em maiúsculas."
+  },
+  {
+    "id": "dataprev_html5_009",
+    "categoria": "DATAPREV",
+    "tipo": "multipla",
+    "pergunta": "Na estruturação do conteúdo textual de um portal governamental, os cabeçalhos são fundamentais para definir a semântica e a hierarquia da informação. Segundo os padrões do HTML5, assinale a alternativa que indica a tag utilizada para representar o cabeçalho mais importante.",
+    "opcoes": [
+      "<head>",
+      "<h6>",
+      "<header>",
+      "<h1>",
+      "<title>"
+    ],
+    "resposta_correta": "<h1>",
+    "explicacao": "A resposta correta foca na semântica de titulação.\n* No HTML5, os cabeçalhos que vão de <h1> a <h6> são utilizados para definir a hierarquia de títulos da página.\n* A tag <h1> é a que representa o título principal, sendo o cabeçalho mais importante da hierarquia."
+  },
+  {
+    "id": "dataprev_html5_010",
+    "categoria": "DATAPREV",
+    "tipo": "multipla",
+    "pergunta": "No elemento <head> de um documento estruturado em HTML5, a inclusão de metadados é essencial para configurações técnicas do navegador. Assinale a alternativa que apresenta a tag utilizada especificamente para definir a codificação de caracteres do documento.",
+    "opcoes": [
+      "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+      "<title>",
+      "<html lang=\"pt-BR\">",
+      "<meta charset=\"UTF-8\">",
+      "<!DOCTYPE html>"
+    ],
+    "resposta_correta": "<meta charset=\"UTF-8\">",
+    "explicacao": "A resposta correta aponta a configuração exata de codificação textual.\n* Os metadados essenciais para a página ficam localizados dentro da tag <head>.\n* Para definir a codificação de caracteres do documento, a tag específica exigida pelo padrão HTML5 é a <meta charset=\"UTF-8\">."
+  },
+  {
     "id": "dataprev_fgv_xp_001",
     "categoria": "DATAPREV",
     "tipo": "multipla",
