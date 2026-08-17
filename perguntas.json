@@ -1,7 +1,7 @@
 [
-  {
+   {
     "id": "html_fundamentos_001",
-    "categoria": "HTML",
+    "categoria": "DATAPREV",
     "tipo": "multipla",
     "pergunta": "Qual é a principal finalidade da linguagem HTML no desenvolvimento web?",
     "opcoes": [
@@ -15,7 +15,7 @@
   },
   {
     "id": "html_fundamentos_002",
-    "categoria": "HTML",
+    "categoria": "DATAPREV",
     "tipo": "multipla",
     "pergunta": "Como são denominados os elementos de marcação utilizados na linguagem HTML?",
     "opcoes": [
@@ -29,7 +29,7 @@
   },
   {
     "id": "html_fundamentos_003",
-    "categoria": "HTML",
+    "categoria": "DATAPREV",
     "tipo": "multipla",
     "pergunta": "Qual é a característica principal das tags vazias em HTML?",
     "opcoes": [
@@ -43,7 +43,7 @@
   },
   {
     "id": "html_fundamentos_004",
-    "categoria": "HTML",
+    "categoria": "DATAPREV",
     "tipo": "multipla",
     "pergunta": "Qual é a função da tag <title> em um documento HTML?",
     "opcoes": [
@@ -57,7 +57,7 @@
   },
   {
     "id": "html_fundamentos_005",
-    "categoria": "HTML",
+    "categoria": "DATAPREV",
     "tipo": "multipla",
     "pergunta": "Qual tag HTML é utilizada para inserir comentários que não serão exibidos no navegador?",
     "opcoes": [
@@ -71,7 +71,7 @@
   },
   {
     "id": "html_fundamentos_006",
-    "categoria": "HTML",
+    "categoria": "DATAPREV",
     "tipo": "multipla",
     "pergunta": "Qual é a função do atributo 'lang' na tag <html>?",
     "opcoes": [
@@ -85,7 +85,7 @@
   },
   {
     "id": "html_fundamentos_007",
-    "categoria": "HTML",
+    "categoria": "DATAPREV",
     "tipo": "multipla",
     "pergunta": "Qual é a diferença fundamental entre listas ordenadas e listas não ordenadas em HTML?",
     "opcoes": [
@@ -99,7 +99,7 @@
   },
   {
     "id": "html_fundamentos_008",
-    "categoria": "HTML",
+    "categoria": "DATAPREV",
     "tipo": "multipla",
     "pergunta": "Em uma lista de descrição HTML, qual é a relação entre as tags <dt> e <dd>?",
     "opcoes": [
@@ -113,7 +113,7 @@
   },
   {
     "id": "html_fundamentos_009",
-    "categoria": "HTML",
+    "categoria": "DATAPREV",
     "tipo": "multipla",
     "pergunta": "Qual é a finalidade da declaração <!DOCTYPE html> no início de um documento HTML?",
     "opcoes": [
@@ -127,7 +127,7 @@
   },
   {
     "id": "html_fundamentos_010",
-    "categoria": "HTML",
+    "categoria": "DATAPREV",
     "tipo": "multipla",
     "pergunta": "Considerando os cabeçalhos HTML (h1 a h6), qual é o critério que determina a escolha entre eles?",
     "opcoes": [
